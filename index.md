@@ -7,7 +7,7 @@
 - Project Title: Mapping Human Brain Connections using Diffusion MRI Fiber Tracking
 - Participating Labs/Departments: 
 
-  - [High Definition Fiber Tracking Laboratory](https://hdft.labsolver.org/)
+  - [Fiber Tractography Laboratory](https://hdft.labsolver.org/)
   - Department of Neurosurgery, University of Pittsburgh Medical School.
 
 - Location: 9F Scaife Hall, University of Pittsburgh Medical School
