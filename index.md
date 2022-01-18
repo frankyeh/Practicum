@@ -7,7 +7,7 @@
 - Project Title: Mapping Human Brain Connections using Diffusion MRI Fiber Tracking
 - Participating Labs/Departments: 
 
-  - High Definition Fiber Tracking Laboratory (https://hdft.labsolver.org/)
+  - [High Definition Fiber Tracking Laboratory](https://hdft.labsolver.org/)
   - Department of Neurosurgery, University of Pittsburgh Medical School.
 
 - Location: 9F Scaife Hall, University of Pittsburgh Medical School
@@ -41,3 +41,11 @@ trajectories on a population averaged template. In 2018, there are 110 journal p
 carry out their studies (http://dsi-studio.labsolver.org/publications). The learned skills in thie course can be
 applied to any brain studies that investigate the structural trajectories of fiber connections.
 
+- Opportunities
+
+1. The project can be extended into a publication (see publication below), with the student listed as the first author of the publication.
+2. With the permission of the student’s advisor, the publication could be used as his/her master thesis.
+3. Possibility to receive party-time RA support if the project is selected to be continued after the Practicum.
+
+- Practicum publication
+Ghulam‐Jelani Z, Barrios‐Martinez J, Eguiluz‐Melendez A, Gomez R, Anania Y, Yeh FC. Redundancy circuits of the commissural pathways in human and rhesus macaque brains. Human brain mapping. 2021 May;42(7):2250-61.
