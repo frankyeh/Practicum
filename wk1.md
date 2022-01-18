@@ -39,10 +39,6 @@ Some materials will be shared via our [google drive folder](https://drive.google
 <img src="https://user-images.githubusercontent.com/275569/149856392-53f31245-4c58-47f0-8347-57960a2a6b04.png" width="600">
 
 
-### Homework 1
-
-- Download [homework 1](https://drive.google.com/file/d/1S12jVb7iCe_gQRO_BGZ-ig9cLtTOuvar/view?usp=sharing) from shared folder - homework. Email me once finished.
-
 
 ## During practicum on Friday:
 
@@ -50,6 +46,6 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Quiz on brain anatomical regions. Student should be able to load fib file provided on DSI-Studio, which neuroanatomy will be quized upon. Be sure wherever the region resides, student is capable of visulize it using different techniques (e.g. adjust transparency) in order to show the quized anatomical region.
 
-
+- Download [homework 1](https://drive.google.com/file/d/1S12jVb7iCe_gQRO_BGZ-ig9cLtTOuvar/view?usp=sharing) from shared folder - homework. 
 
 
