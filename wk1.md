@@ -14,7 +14,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Other open resourses like [UBC Neuroanatomy Season 1](https://www.youtube.com/watch?v=xB7rXw_3gVY&t=104s) and [Brain Anatomy for Health Professionals Series](https://www.youtube.com/watch?v=_aCCsRCw78g&list=PLp9HSlEm97VXyQ32Uwjfz3dpmQ8nl63zJ&index=1&t=539s) would help if you are a visual learner and more comfortable with video tutorials.
 
-- Brain anatomical region student should become familiar with (listed as different systems):
+- Brain anatomical region that student should become familiar with (listed as in different systems):
     - Fissures: longitudinal fissure and Sylvian fissure
     - Sulci: Lateral sulcus, precentral sulcus, central sulcus, and postcentral sulcus
     - Gyri: precentral gyrus and postcentral gyrus
@@ -44,7 +44,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Dr. Yeh's Q&A.
 
-- Quiz on brain anatomical regions. Student should be able to load fib file provided on DSI-Studio, which neuroanatomy will be quized upon. Be sure wherever the region resides, student is capable of visulize it using different techniques (e.g. adjust transparency) in order to show the quized anatomical region.
+- Quiz on brain anatomical regions. Student should be able to load fib file provided on DSI-Studio, which neuroanatomy will be quized upon. Be sure that wherever the region resides, student is capable of visulize it using different techniques (e.g. adjust transparency) in order to show the quized anatomical region.
 
 - Download [Practicum Task WK1](https://drive.google.com/file/d/1S12jVb7iCe_gQRO_BGZ-ig9cLtTOuvar/view?usp=sharing) from shared folder. 
 
