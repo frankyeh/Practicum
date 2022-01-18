@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% include google_network_domain.html %}
+    {% endif %}
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h2>Fiber Tractography Lab Practicum</h2>
+      <h3><a href="wk1.html">Week1</a></h3>
+      <h3><a href="wk2.html">Week2</a></h3>
+      <h3><a href="wk3.html">Week3</a></h3>
+      <h3><a href="wk4.html">Week4</a></h3>
+      <br>
+      <h2>Contact</h2>
+      <p>Linggang Luo<br>E-mail: LIL153@pitt.edu</p>	
+      <br>
+      <p>Fang-Cheng (Frank) Yeh<br>E-mail: frank.yeh@pitt.edu</p>
+    </header>
+
+    <main id="content" class="main-content" role="main" >
+      {{ content }}
+      <footer class="site-footer">
+      </footer>
+    </main>
+  </body>
+</html>

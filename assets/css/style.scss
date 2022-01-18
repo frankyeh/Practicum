@@ -1,0 +1,58 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+
+.main-content {width:80%;}
+main {width:80%;padding-left:340px;padding-top:50px}
+
+h1 {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+h3 {margin-left:20px}
+h4 {margin-left:30px}
+body {padding:0px}
+header {
+  padding-left:10px;
+  padding-top:20px
+}
+
+
+
+
+
+
+button { padding: 0px;}
+
+.collapsible {
+  width: 100%;
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  color: #393939;
+  background-color: white
+}
+
+.collapsible:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
