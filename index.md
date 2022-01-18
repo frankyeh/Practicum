@@ -48,4 +48,5 @@ applied to any brain studies that investigate the structural trajectories of fib
 3. Possibility to receive party-time RA support if the project is selected to be continued after the Practicum.
 
 - Practicum publication
-Ghulam‐Jelani Z, Barrios‐Martinez J, Eguiluz‐Melendez A, Gomez R, Anania Y, Yeh FC. Redundancy circuits of the commissural pathways in human and rhesus macaque brains. Human brain mapping. 2021 May;42(7):2250-61.
+
+**Ghulam‐Jelani Z, Barrios‐Martinez J, Eguiluz‐Melendez A, Gomez R, Anania Y, Yeh FC. Redundancy circuits of the commissural pathways in human and rhesus macaque brains. Human brain mapping. 2021 May;42(7):2250-61.**
