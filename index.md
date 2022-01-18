@@ -23,7 +23,7 @@
 
 - Requirement:
 
-  Join a weekly progress meeting in the Friday afternoon with the course advisors.
+  Join a weekly practicum meeting in the Friday morning or afternoon with the course advisors.
 
 - Research Description:
 
@@ -36,10 +36,7 @@ In this practicum course, students will
 
 - Laboratory Exposure
 
-Students will learn the neuroanatomy of the target fiber bundle and use “DSI Studio” to map its connection
-trajectories on a population averaged template. In 2018, there are 110 journal publications using DSI Studio to
-carry out their studies (http://dsi-studio.labsolver.org/publications). The learned skills in thie course can be
-applied to any brain studies that investigate the structural trajectories of fiber connections.
+Students will learn the neuroanatomy of the target fiber bundle and use “DSI Studio” to map its connection trajectories on a population averaged template. In 2021, there are [250 journal publications using DSI Studio](http://dsi-studio.labsolver.org/citation.html) to carry out their studies. The learned skills in thie course can be applied to any brain studies that investigate the structural trajectories of fiber connections.
 
 - Opportunities
 
