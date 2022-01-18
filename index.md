@@ -1,5 +1,8 @@
 # Fiber Tractography Lab Practicum
 
+![image](https://user-images.githubusercontent.com/275569/149856247-7315a680-fda4-417e-9028-6f6552a56ed6.png)
+![image](https://user-images.githubusercontent.com/275569/149856299-a2277a1a-8d6b-41ad-a6e8-f81f4dba0344.png)
+
 
 - Project Title: Mapping Human Brain Connections using Diffusion MRI Fiber Tracking
 - Participating Labs/Departments: 
@@ -24,15 +27,12 @@
 
 - Research Description:
 
-Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity
-in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of
-the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the
-essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many
-dysfunctions.
+Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.
 
-In this practicum course, students will (1) learn a tractography software tool called DSI Studio (http://dsi-
-studio.labsolver) for mapping brain connection trajectories, (2) develop his/her own project under the guidance
-of Dr. Yeh in mapping one fiber pathway, (3) write a manuscript as the final report.
+In this practicum course, students will 
+  1. learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
+  2. develop his/her own project in mapping one fiber pathway
+  3. write a manuscript as the final report.
 
 - Laboratory Exposure
 
