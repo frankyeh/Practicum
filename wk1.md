@@ -14,7 +14,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Other open resourses like [UBC Neuroanatomy Season 1](https://www.youtube.com/watch?v=xB7rXw_3gVY&t=104s) and [Brain Anatomy for Health Professionals Series](https://www.youtube.com/watch?v=_aCCsRCw78g&list=PLp9HSlEm97VXyQ32Uwjfz3dpmQ8nl63zJ&index=1&t=539s) would help if you are a visual learner and more comfortable with video tutorials.
 
-- Brain anatomical region that student should become familiar with (listed as in different systems):
+- Brain anatomical regions that student should become familiar with (listed as in different systems):
     - Fissures: longitudinal fissure and Sylvian fissure
     - Sulci: Lateral sulcus, precentral sulcus, central sulcus, and postcentral sulcus
     - Gyri: precentral gyrus and postcentral gyrus
