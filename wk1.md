@@ -36,7 +36,8 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Download [HCP1065.1mm.fib.gz](https://drive.google.com/file/d/16UDflRtCtJ2IAmrxrMJqq69GArU_su8H/view?usp=sharing) from google drive shared folder. Load the fib file on DSI-Studio and then open FreeSurferDKT atlas from the atlas menu in order to learn different brain region. Check the tutorial metioned above if needed. The interface should look like this:
 
-![](Image/SnapshotDSIDKTatlas.png)
+<img src="https://user-images.githubusercontent.com/275569/149856392-53f31245-4c58-47f0-8347-57960a2a6b04.png" width="600">
+
 
 ### Homework 1
 
