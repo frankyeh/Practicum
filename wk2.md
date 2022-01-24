@@ -38,9 +38,9 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Load 100206_T1w.nii.gz by clicking on ***"Insert Other Images"*** under ***Slices*** menu.
 
-- According to the video of ***[quick 3D manual segmentation of a brain tumor](https://www.youtube.com/watch?v=ZkWBU_qnaKg&t=1s)***, draw an ROI of left thalamus.
+- According to the video of ***["quick 3D manual segmentation of a brain tumor"](https://www.youtube.com/watch?v=ZkWBU_qnaKg&t=1s)***, draw an ROI of left thalamus.
 
-- Open atlases, choose FreeSurferDKT subcortical atlas, load left thalamus.
+- Open atlases, choose FreeSurferDKT subcortical atlas, and load left thalamus.
 
 - Compare your thalamus ROI to that of FreeSurferDKT subcortical atlas.
 
