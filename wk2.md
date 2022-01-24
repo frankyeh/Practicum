@@ -47,7 +47,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ## During practicum on Friday:
 
-- Dr. Yeh's Q&A
+- Dr. Yeh's Q&A.
 
 - Introduction to white matter pathways mentioned above.
 
