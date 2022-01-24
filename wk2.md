@@ -1,4 +1,4 @@
-# Week 1 Guidance
+# Week 2 Guidance
 
 Linggang Luo
 
