@@ -68,13 +68,13 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 1. Download subject (A00008326)'s dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 (under SES-DS2), including *.nii.gz and .bval and .bvec
 2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) and check if there are artifacts [(youtube](https://www.youtube.com/embed/stL4GMeTC1I)
-3. [Reconstruct the SRC file using DTI, GQI, and QSDR](http://dsi-studio.labsolver.org/doc/gui_t2.html).
-4. Reconstruct eddy-corrected SRC file using DTI, GQI, and QSDR
+3. [Reconstruct the SRC file using DTI and GQI](http://dsi-studio.labsolver.org/doc/gui_t2.html).
+4. Reconstruct eddy-corrected SRC file using DTI and GQI
 
 ## Practicum task 2: Mapping pathways
 
 1. Run [whole brain fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html) on each FIB file
-2. Manually select left arcuate fasciculus from whole brain tracks. 
-3. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result.
-4. Compare their differences in FA/QA map and tractogram.
+2. Manually select left arcuate fasciculus from whole brain tracks (on DTI and GQI fib files). 
+3. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result (on DTI and GQI fib files).
+4. Compare their differences in FA/QA map and tractogram (on DTI and GQI fib files).
 
