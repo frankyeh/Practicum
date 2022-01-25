@@ -16,6 +16,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/su-uRdPTpEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 ### Anatomy
 
 - In DSI-Studio white matter atlas, pathways can be catogorized as 3 major types: commissural, association and prjoction pathways:
