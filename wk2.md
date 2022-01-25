@@ -57,6 +57,6 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ## Practicum task 1: Reconstruct SRC files
 
-1. Download subject 1 data from https://openneuro.org/datasets/ds000206/versions/1.0.0
+1. Download subject 1's dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 , including *.nii.gz and .bval and .bvec
 
 ## Practicum task 2: Mapping
