@@ -55,8 +55,10 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Introduction to DSI Studio (reconstruction, fiber tracking).
 
-## Practicum task 1: Reconstruct SRC files
+## Practicum task 1: Generate and Reconstruct SRC files
 
-1. Download subject 1's dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 , including *.nii.gz and .bval and .bvec
+1. Download subject (A00008326)'s dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 (under SES-DS2), including *.nii.gz and .bval and .bvec
+2. Generate SRC file and reconstruct it using DTI, GQI, and QSDR.
+3. 
 
-## Practicum task 2: Mapping
+## Practicum task 2: Mapping pathways
