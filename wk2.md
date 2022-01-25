@@ -62,8 +62,8 @@ Some materials will be shared via our [google drive folder](https://drive.google
 ## Practicum task 1: Generate and Reconstruct SRC files
 
 1. Download subject (A00008326)'s dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 (under SES-DS2), including *.nii.gz and .bval and .bvec
-2. Generate SRC file and check if there are artifacts
-3. Reconstruct the SRC file using DTI, GQI, and QSDR.
+2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) and check if there are artifacts [(youtube](https://www.youtube.com/embed/stL4GMeTC1I)
+3. [Reconstruct the SRC file using DTI, GQI, and QSDR](http://dsi-studio.labsolver.org/doc/gui_t2.html).
 4. Reconstruct eddy-corrected SRC file using DTI, GQI, and QSDR
 
 ## Practicum task 2: Mapping pathways
