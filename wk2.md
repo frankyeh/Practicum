@@ -18,18 +18,17 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ### Anatomy
 
+- In DSI-Studio white matter atlas, pathways can be catogorized as 3 major types: commissural, association and prjoction pathways:
+    - Commisural pathways: anterior commissure and corpus callosum
+
+    - Projection pathways: acoustic radiation, corticobulbar tract, corticopontine tract (frontal, parietal, and occipital), corticostriatal tract(anterior, superior and posterior), corticospinal tract, dentatorubrothalamic tract, fornix, medial lemniscus, optic radiation, reticulospinal tract, and thalamic radiation (anterior, posterior and superior)
+    
+    - Association pathways: arcuate fasciculus, cingulum(frontal parahippocampal, frontal parietal, parahippocampal parietal, parahippocampal, and parolfactory), extreme capsule, frontal aslant, inferior fronto-occipital fasciculus, inferior longitudinal fasciculus, middle longitudinal fasciculus, parietal aslant tract, superior longitudinal fasciculus (I, II and III), uncinate fasciculus, and vertical occipital fasciculus
+
 - Read through ***[Overview of White Matter Tracts- Commissural Pathways](https://drive.google.com/file/d/1gq0uCRHmOKP9zp7uEKBH3rMIrvbivA8N/view?usp=sharing)***.
 
-- Read through ***[Overview of White Matter Tracts- Perisylvian Pathways](https://drive.google.com/file/d/1arn8hbdF8YP6j09Gq6Z1ip2PITbMwzoo/view?usp=sharing)***.
+- Read through ***[Overview of White Matter Tracts- Perisylvian Pathways](https://drive.google.com/file/d/1arn8hbdF8YP6j09Gq6Z1ip2PITbMwzoo/view?usp=sharing)***. Note that perisylvian pathways is a subdivision of association pathways.
 
-- Brain white matter tracts that student should become familiar with:
-    - Commissural Pathways:
-        - Diencephalic commissures: Habenular commisure, supraoptic commissure and posterior commissure 
-        - Telencephalic commissures: Anterior commissure, hippocampal commissure and corpus callosum (genu, body and splenium)
-    - Perisylvian pathways: 
-        - Arcuate Fasciculus
-        - Superior Logitudinal Fasciculus (SLF)
-        - Frontal Aslant
 
 
 ### DSI-Studio
@@ -61,12 +60,12 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Introduction to DSI Studio (reconstruction, fiber tracking).
 
-- Diffusion MRI quality control
+- Diffusion MRI quality control:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/stL4GMeTC1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-- Manual track editing
+- Manual track editing:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1xfhaFQhCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -74,22 +73,22 @@ Some materials will be shared via our [google drive folder](https://drive.google
 ---
 
 
-## Practicum task 1: Generate and Reconstruct SRC files
+### Practicum task 1: Generate and Reconstruct SRC files
 
-1. Download subject (A00008326)'s dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 (under SES-DS2), including *.nii.gz and .bval and .bvec
-2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) and check if there are artifacts [(youtube)](https://www.youtube.com/embed/stL4GMeTC1I)
+1. Download subject (A00008326)'s dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 (under SES-DS2), including *.nii.gz and .bval and .bvec.
+2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) and check if there are artifacts [(youtube)](https://www.youtube.com/embed/stL4GMeTC1I).
 3. [Reconstruct the SRC file using DTI and GQI](http://dsi-studio.labsolver.org/doc/gui_t2.html).
-4. Reconstruct eddy-corrected SRC file using DTI and GQI
+4. Reconstruct eddy-corrected SRC file using DTI and GQI.
 
-## Practicum task 2: Mapping pathways
+### Practicum task 2: Mapping pathways
 
-1. Run [whole brain fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html) on each FIB file
+1. Run [whole brain fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html) on each FIB file.
 2. Manually select left arcuate fasciculus from whole brain tracks (on DTI and GQI fib files). 
 3. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result (on DTI and GQI fib files).
 4. Compare their differences in FA/QA map and tractogram (on DTI and GQI fib files).
 
-## Practicum test:
+### Practicum test:
 
-1. Point out susceptibility artifact in raw image
-2. Point out which FA map has eddy current artifact
-3. Manually select cingulum pathways from whole brain track
+1. Point out susceptibility artifact in raw image.
+2. Point out which FA map has eddy current artifact.
+3. Manually select cingulum pathways from whole brain track.
