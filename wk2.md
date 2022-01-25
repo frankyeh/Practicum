@@ -88,3 +88,8 @@ Some materials will be shared via our [google drive folder](https://drive.google
 3. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result (on DTI and GQI fib files).
 4. Compare their differences in FA/QA map and tractogram (on DTI and GQI fib files).
 
+## Practicum test:
+
+1. Point out susceptibility artifact in raw image
+2. Point out which FA map has eddy current artifact
+3. Manually select cingulum pathways from whole brain track
