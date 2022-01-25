@@ -6,6 +6,10 @@ Linggang Luo
 
 Some materials will be shared via our [google drive folder](https://drive.google.com/drive/folders/12XGKtBVUb7i-uW_LSkMERFRhP7S95OrQ?usp=sharing) for confidentiality reasons.
 
+---
+
+
+
 ## Before practicum on Friday, please complete following:
 
 ### Watch [Dr. Schneider's TED Talk]
@@ -46,6 +50,8 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Compare your thalamus ROI to that of FreeSurferDKT subcortical atlas.
 
+---
+
 
 ## During practicum on Friday:
 
@@ -66,6 +72,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 
 ---
+
 
 ## Practicum task 1: Generate and Reconstruct SRC files
 
