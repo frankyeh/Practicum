@@ -59,6 +59,10 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/stL4GMeTC1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+- Manual track editing
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1xfhaFQhCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Practicum task 1: Generate and Reconstruct SRC files
 
 1. Download subject (A00008326)'s dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 (under SES-DS2), including *.nii.gz and .bval and .bvec
@@ -69,5 +73,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 ## Practicum task 2: Mapping pathways
 
 1. Run [whole brain fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html) on each FIB file
-2. Compare their differences in FA/QA map and tractogram.
+2. Manually select left arcuate fasciculus from whole brain tracks. 
+3. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result.
+4. Compare their differences in FA/QA map and tractogram.
 
