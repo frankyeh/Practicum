@@ -8,7 +8,9 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ## Before practicum on Friday, please complete following:
 
-### Watch [Dr. Schneider's TED Talk](https://www.youtube.com/watch?v=su-uRdPTpEY)
+### Watch [Dr. Schneider's TED Talk]
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/su-uRdPTpEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Anatomy
 
