@@ -68,6 +68,6 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ## Practicum task 2: Mapping pathways
 
-1. Run whole brain fiber tracking on each FIB file
+1. Run [whole brain fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html) on each FIB file
 2. Compare their differences in FA/QA map and tractogram.
 
