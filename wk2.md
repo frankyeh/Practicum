@@ -38,17 +38,17 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 #### Delineate thalamus in DSI-Studio
 
-- Download [100206.src.gz.gqi.1.25.fib.gz](https://drive.google.com/file/d/1l4Qvyf1FHsLGKQs2axVYqcbBo7Hv2Kox/view?usp=sharing) and [100206_T1w.nii.gz](https://drive.google.com/file/d/1S_j00jZgq7YhMCz6XiM_gwG1zajkZrhu/view?usp=sharing) from google drive.
+1. Download [100206.src.gz.gqi.1.25.fib.gz](https://drive.google.com/file/d/1l4Qvyf1FHsLGKQs2axVYqcbBo7Hv2Kox/view?usp=sharing) and [100206_T1w.nii.gz](https://drive.google.com/file/d/1S_j00jZgq7YhMCz6XiM_gwG1zajkZrhu/view?usp=sharing) from google drive.
 
-- Load 100206.src.gz.gqi.1.25.fib.gz onto DSI-Studio.
+2. Load 100206.src.gz.gqi.1.25.fib.gz onto DSI-Studio.
 
-- Load 100206_T1w.nii.gz by clicking on ***"Insert Other Images"*** under ***Slices*** menu.
+3. Load 100206_T1w.nii.gz by clicking on ***"Insert Other Images"*** under ***Slices*** menu.
 
-- According to the video of ***["quick 3D manual segmentation of a brain tumor"](https://www.youtube.com/watch?v=ZkWBU_qnaKg&t=1s)***, draw an ROI of left thalamus.
+4. According to the video of ***["quick 3D manual segmentation of a brain tumor"](https://www.youtube.com/watch?v=ZkWBU_qnaKg&t=1s)***, draw an ROI of left thalamus.
 
-- Open atlases, choose FreeSurferDKT subcortical atlas, and load left thalamus.
+5. Open atlases, choose FreeSurferDKT subcortical atlas, and load left thalamus.
 
-- Compare your thalamus ROI to that of FreeSurferDKT subcortical atlas.
+6. Compare your thalamus ROI to that of FreeSurferDKT subcortical atlas.
 
 ---
 
