@@ -19,7 +19,8 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ### Anatomy
 
-- In DSI-Studio white matter atlas, pathways can be catogorized as 3 major types: commissural, association and prjoction pathways:
+- In DSI-Studio white matter atlas, pathways can be catogorized as 3 major types: commissural, association and prjoction pathways.
+
     - Commisural pathways: anterior commissure and corpus callosum
 
     - Projection pathways: acoustic radiation, corticobulbar tract, corticopontine tract (frontal, parietal, and occipital), corticostriatal tract(anterior, superior and posterior), corticospinal tract, dentatorubrothalamic tract, fornix, medial lemniscus, optic radiation, reticulospinal tract, and thalamic radiation (anterior, posterior and superior)
