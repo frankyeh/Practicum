@@ -55,10 +55,19 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Introduction to DSI Studio (reconstruction, fiber tracking).
 
+- Diffusion MRI quality control
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/stL4GMeTC1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Practicum task 1: Generate and Reconstruct SRC files
 
 1. Download subject (A00008326)'s dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 (under SES-DS2), including *.nii.gz and .bval and .bvec
-2. Generate SRC file and reconstruct it using DTI, GQI, and QSDR.
-3. 
+2. Generate SRC file and check if there are artifacts
+
+
+
+4. 
+5. reconstruct it using DTI, GQI, and QSDR.
+6. 
 
 ## Practicum task 2: Mapping pathways
