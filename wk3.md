@@ -55,19 +55,16 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ---
 
-### Practicum task 1: Draw ROIs and ROAs for generating raw tracts of corpus callosum (body)
+### Practicum task: Mapping unknown pathways using ROI-based fiber tracking
 
 ![image](https://user-images.githubusercontent.com/275569/151996479-7ef66e70-68c6-4f54-812e-98b01249830d.png)
 
 
-1. Using manual to identify which regions need to be draw.
+1. Download HCP1065 1-mm FIB file from https://brain.labsolver.org/hcp_template.html 
 
-2. According to manual, draw those ROIs and ROAs correspondingly.
+2. Use region-based fiber tracking, map the orbital connections in nuclei 5
 
-### Practicum task 2: Generate raw tracts of corpus callosum (body) and compare to auto-tracts
+3. Use region-based fiber tracking, map the temporal connections in nuclei 5
 
-1. Fiber tracking with regions drawn above.
+4. Use region-based fiber tracking, map the occipital connections in nuclei 5
 
-2. Uncheck all the regions and using auto-tracking function to generate auto-tracts.
-
-3. Compare your tract with auto-tracts.
