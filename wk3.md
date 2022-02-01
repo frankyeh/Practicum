@@ -1,4 +1,4 @@
-# Week 3 Guidance
+# Week 3 Region-Based Fiber Tracking
 
 Linggang Luo
 
@@ -25,9 +25,15 @@ Some materials will be shared via our [google drive folder](https://drive.google
     - Occipital visual pathways: Optic radiations, inferior frontal occipital fasciculus (IFOF), and inferior logitudinal fasciculus (ILF).
 
 
-### DSI-Studio
 
-#### Genrating left arcuate fasciculus raw tracts
+---
+
+
+## During practicum on Friday:
+
+- Dr. Yeh's Q&A.
+
+#### Using regions to map left arcuate fasciculus
 
 - Down load [Region Manual](https://drive.google.com/file/d/1LZTUz2-dybD8LHrZNrnFimXHKWxAG8DK/view?usp=sharing) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://drive.google.com/file/d/1l4Qvyf1FHsLGKQs2axVYqcbBo7Hv2Kox/view?usp=sharing) from shared folder.
 
@@ -46,18 +52,6 @@ Some materials will be shared via our [google drive folder](https://drive.google
 3. Remember to define the type of the region drawn, either ROI or ROA in the GUI. In the region window, click ***Type*** and then select ***ROI/ROA***.
 
 4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
-
-
----
-
-
-## During practicum on Friday:
-
-- Dr. Yeh's Q&A.
-
-- Introduction to white matter pathways mentioned above.
-
-- Demonstration of how to generate the raw left arcuate fasciculus.
 
 
 ---
