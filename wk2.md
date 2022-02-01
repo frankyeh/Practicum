@@ -19,7 +19,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ### Anatomy
 
-- In DSI-Studio white matter atlas, pathways can be catogorized as 3 major types: commissural, association and prjoction pathways.
+- In DSI-Studio white matter atlas, pathways can be catogorized as 3 major types: commissural, association and prjection pathways.
 
     - Commisural pathways: anterior commissure and corpus callosum
 
