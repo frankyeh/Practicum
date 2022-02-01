@@ -6,6 +6,10 @@ Linggang Luo
 
 Some materials will be shared via our [google drive folder](https://drive.google.com/drive/folders/12XGKtBVUb7i-uW_LSkMERFRhP7S95OrQ?usp=sharing) for confidentiality reasons.
 
+
+---
+
+
 ## Before practicum on Friday, please complete following:
 
 ### Anatomy
@@ -38,6 +42,8 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 <img src="https://user-images.githubusercontent.com/275569/149856392-53f31245-4c58-47f0-8347-57960a2a6b04.png" width="600">
 
+
+---
 
 
 ## During practicum on Friday:
