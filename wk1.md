@@ -1,4 +1,4 @@
-# Week 1 Guidance
+# Week 1 Brain Regions
 
 Linggang Luo
 
