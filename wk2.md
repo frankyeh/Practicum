@@ -1,4 +1,4 @@
-# Week 2 Guidance
+# Week 2 Automatic Fiber Tracking
 
 Linggang Luo
 
