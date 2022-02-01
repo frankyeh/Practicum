@@ -35,7 +35,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 #### Using regions to map left arcuate fasciculus
 
-reference: https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html
+[Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
 - Down load [Region Manual](https://drive.google.com/file/d/1LZTUz2-dybD8LHrZNrnFimXHKWxAG8DK/view?usp=sharing) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://drive.google.com/file/d/1l4Qvyf1FHsLGKQs2axVYqcbBo7Hv2Kox/view?usp=sharing) from shared folder.
 
@@ -49,15 +49,13 @@ reference: https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html
 
 1. Look up ***Table of Contents*** in page 2, find ***Regions*** - ***ArcuateCoronal_SIDE (AC)*** - ***page 63***.
 
-2. Turn to page 63, follow the instructions of how to draw ArcuateCoronal_SIDE to identify the region looked for. Details of how to create regions are introduced in this [tutorial](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
+2. Turn to page 63, follow the instructions of how to draw ArcuateCoronal_SIDE to identify the region looked for.
 
 3. Remember to define the type of the region drawn, either ROI or ROA in the GUI. In the region window, click ***Type*** and then select ***ROI/ROA***.
 
 4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
 
-
 ---
-
 
 ### Practicum task 1: Draw ROIs and ROAs for generating raw tracts of corpus callosum (body)
 
