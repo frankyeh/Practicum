@@ -37,7 +37,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Demonstrate function of different region types: seed, ROI, ROA, END, terminative
 
-  - Seed region: the starting location of fiber tracking
+  - Seed: the starting location of fiber tracking
   - ROI: a filtering region that filters IN tracks
   - ROA: a filtering region that filters OUT tracks
   - END: a filtering region that filters IN tracks ending in the region
