@@ -69,7 +69,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 ![image](https://user-images.githubusercontent.com/275569/151996479-7ef66e70-68c6-4f54-812e-98b01249830d.png)
 
 
-1. Download HCP1065 1-mm FIB file from https://brain.labsolver.org/hcp_template.html. 
+1. Download [HCP1065 1-mm FIB file](https://brain.labsolver.org/hcp_template.html) 
 
 2. Use region-based fiber tracking, map the orbital connections in nuclei 5.
 
