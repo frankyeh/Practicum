@@ -33,7 +33,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 #### Using regions to map left arcuate fasciculus
 
-[Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
+- [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
 - Demonstrate function of different region types: seed, ROI, ROA, END, terminative
 
@@ -46,7 +46,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Down load [Region Manual](https://drive.google.com/file/d/1LZTUz2-dybD8LHrZNrnFimXHKWxAG8DK/view?usp=sharing) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://drive.google.com/file/d/1l4Qvyf1FHsLGKQs2axVYqcbBo7Hv2Kox/view?usp=sharing) from shared folder.
 
-- Load the fib file on DSI-Studio by click "StepT3: Fiber Tracking & Visualization".
+- Load the fib file on DSI-Studio by clicking "StepT3: Fiber Tracking & Visualization".
 
 - According to page 17 of the Region Manual, in order to generate raw left arcuate fasciculus, we need to draw regions of interests (ROI) and regions of avoidance (ROA):
     - ROIs: ArcuateCoronal_left and ArcuateAxial_left
@@ -69,11 +69,11 @@ Some materials will be shared via our [google drive folder](https://drive.google
 ![image](https://user-images.githubusercontent.com/275569/151996479-7ef66e70-68c6-4f54-812e-98b01249830d.png)
 
 
-1. Download HCP1065 1-mm FIB file from https://brain.labsolver.org/hcp_template.html 
+1. Download HCP1065 1-mm FIB file from https://brain.labsolver.org/hcp_template.html. 
 
-2. Use region-based fiber tracking, map the orbital connections in nuclei 5
+2. Use region-based fiber tracking, map the orbital connections in nuclei 5.
 
-3. Use region-based fiber tracking, map the temporal connections in nuclei 5
+3. Use region-based fiber tracking, map the temporal connections in nuclei 5.
 
-4. Use region-based fiber tracking, map the occipital connections in nuclei 5
+4. Use region-based fiber tracking, map the occipital connections in nuclei 5.
 
