@@ -37,6 +37,13 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Demonstrate function of different region types: seed, ROI, ROA, END, terminative
 
+  - Seed region: the starting location of fiber tracking
+  - ROI: a filtering region that filters IN tracks
+  - ROA: a filtering region that filters OUT tracks
+  - END: a filtering region that filters IN tracks ending in the region
+  - Not-END: a filtering region that filters OUT tracks ending in the region
+  - Terminative: cut tracks that enters the region
+
 - Down load [Region Manual](https://drive.google.com/file/d/1LZTUz2-dybD8LHrZNrnFimXHKWxAG8DK/view?usp=sharing) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://drive.google.com/file/d/1l4Qvyf1FHsLGKQs2axVYqcbBo7Hv2Kox/view?usp=sharing) from shared folder.
 
 - Load the fib file on DSI-Studio by click "StepT3: Fiber Tracking & Visualization".
