@@ -1,4 +1,4 @@
-# Week 4 Region-Based & Track-Based Analysis (Tractometry) 
+# Week 4 Region-Based & Tract-Based Analysis (Tractometry) 
 
 Linggang Luo
 
@@ -36,13 +36,15 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Demonstrate CST fiber tracking to get diffusion metrics at CST.
 
-- Use tract cutting (with selection & separate deleted tract) to segment CST into segments above IC, IC, below IC sections.
+- Use tract cutting (with selection & separate deleted tract) to segment CST into segments above internal capsule (IC), IC, and below IC sections.
+<img src="Image/tract.png" width="300">
 
 #### Tract profile
 
 - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
 - Plot along tract metrics at z-direction or fiber direction.
+<img src="Image/zdir.png" width="600">
 
 ---
 
