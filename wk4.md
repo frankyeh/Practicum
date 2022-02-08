@@ -52,7 +52,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ---
 
-### Practicum task: Mapping unknown pathways using ROI-based fiber tracking
+### Practicum task: ROI-based and Track-based analysis comparing ALS with controls
 
 
 1. Download subject FIB files at (pending).
