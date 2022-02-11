@@ -55,7 +55,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 ### Practicum task: ROI-based and Track-based analysis comparing ALS with controls
 
 
-1. Download subject FIB files at (pending).
+1. Download subject FIB files at [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
 
 2. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
 
