@@ -18,7 +18,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ### Differential tractography tutorial
 
-- [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_dt.html)
+- [Documentation.](https://dsi-studio.labsolver.org/doc/gui_t3_dt.html)
 
 - Tutorial video:
-<iframe width="896" height="504" src="https://www.youtube.com/watch?v=EWOGQ3QTrnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/EWOGQ3QTrnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
