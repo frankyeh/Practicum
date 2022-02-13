@@ -1,4 +1,4 @@
-# Week 4 Region-Based & Tract-Based Analysis (Tractometry) 
+# Week 5 Differential Tractography
 
 Linggang Luo
 
