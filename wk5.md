@@ -22,3 +22,26 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Tutorial video:
 <iframe width="896" height="504" src="https://www.youtube.com/embed/EWOGQ3QTrnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+---
+
+
+## During practicum on Friday:
+
+- Dr. Yeh's Q&A.
+
+#### Differential tractography presentation and demonstration
+
+- [Slides.](Materials/slides_DT.pdf)
+
+
+---
+
+
+### Practicum task: 
+
+
+1. Download subject FIB files at [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
+
+2. 
