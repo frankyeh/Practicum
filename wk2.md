@@ -31,7 +31,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Read through ***[Overview of White Matter Tracts- Perisylvian Pathways](https://drive.google.com/file/d/1arn8hbdF8YP6j09Gq6Z1ip2PITbMwzoo/view?usp=sharing)***. Note that perisylvian pathways is a subdivision of association pathways.
 
-
+- A review on recent known and unknown about white matter pathways: [Bullock DN, Hayday EA, Grier MD, Tang W, Pestilli F, Heilbronner S. A taxonomy of the brain’s white matter: Twenty-one major tracts for the twenty-first century.](psyarxiv.com/fvk5r/)
 
 ### DSI-Studio
 
