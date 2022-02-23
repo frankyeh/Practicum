@@ -31,9 +31,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Dr. Yeh's Q&A.
 
-#### Differential tractography presentation and demonstration
-
-- [Slides.](Materials/slides_DT.pdf)
+#### Differential tractography demonstration
 
 
 ---
@@ -42,6 +40,10 @@ Some materials will be shared via our [google drive folder](https://drive.google
 ### Practicum task: 
 
 
-1. Download subject FIB files at [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
+1. Download subject files at [TBI](https://drive.google.com/drive/folders/1Dj59qTblO96Q2xDKaEjtsghMuT8FYE54).
 
-2. 
+2. Convert and reconstruct base.nii.gz and follow.nii.gz to fib files.
+
+3. Check if both fib files generate whole brain tractography right.
+
+4. 
