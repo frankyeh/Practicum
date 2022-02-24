@@ -42,8 +42,14 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 1. Download subject files at [TBI](https://drive.google.com/drive/folders/1Dj59qTblO96Q2xDKaEjtsghMuT8FYE54).
 
-2. Convert and reconstruct base.nii.gz and follow.nii.gz to fib files.
+2. Convert and reconstruct base.nii.gz and follow.nii.gz to fib files (using QSDR to register baseline and follow-up scan in the same MNI space).
 
 3. Check if both fib files generate whole brain tractography right.
 
-4. 
+4. Open the follow-up fib file and export nqa as a NIFTI file.
+
+5. Open the baseline fib file, and insert the nqa file generated above under "Slices" - "insert MNI image" menu.
+
+6. From "Analysis" menu add new tracking metrics: "nqa-follow_nqa". This metric shows decrease in nqa between baseline and follow-up scan. Make sure the name "follow_nqa" matches that in "Slice" droplist.
+
+7. In "Differential Tracking" under "traking parameters", choose the new metric just generated, and hit "Fiber Tracking". You may want to increase minimum length to get rid of noises.
