@@ -36,20 +36,20 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ---
 
+### Practicum task 1: Differential tractography comparing subject data to a template: 
 
-### Practicum task: 
+1. Download als05.gqi.1.25.fib.gz, template_nqa.nii.gz, and template_dti_fa.nii.gz from [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
 
+2. Follow the instruction video to get differential tractography. 
+
+3. Adjust minimum length and differential tracking threshold to observe how they change the results.
+
+### Practicum task 2: Differential tractography on longitudinal data: 
 
 1. Download subject files at [TBI](https://drive.google.com/drive/folders/1Dj59qTblO96Q2xDKaEjtsghMuT8FYE54).
 
 2. Convert and reconstruct base.nii.gz and follow.nii.gz to fib files (using QSDR to register baseline and follow-up scan in the same MNI space).
 
-3. Check if both fib files generate whole brain tractography right.
+3. Follow the instruction video to get differential tractography. 
 
-4. Open the follow-up fib file and export nqa as a NIFTI file.
-
-5. Open the baseline fib file, and insert the nqa file generated above under "Slices" - "insert MNI image" menu.
-
-6. From "Analysis" menu add new tracking metrics: "nqa-follow_nqa". This metric shows decrease in nqa between baseline and follow-up scan. Make sure the name "follow_nqa" matches that in "Slice" droplist.
-
-7. In "Differential Tracking" under "traking parameters", choose the new metric just generated, and hit "Fiber Tracking". You may want to increase minimum length to get rid of noises.
+4. Adjust minimum length and differential tracking threshold to observe how they change the results.
