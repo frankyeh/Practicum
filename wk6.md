@@ -31,7 +31,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Dr. Yeh's Q&A.
 
-#### Differential tractography demonstration
+#### Correlational tractography demonstration
 
 
 ---
