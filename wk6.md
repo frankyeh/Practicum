@@ -51,3 +51,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 3. Repeat 2 on female group
 
+### Practicum task 3: Post=hoc analysis
+
+1. Use tractography results from task 1 to extract QA values from the connectometry DB file
+2. Plot scatter plot (BMI vs QA).
