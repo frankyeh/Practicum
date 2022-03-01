@@ -38,14 +38,14 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ### Practicum task 1: white matter tract correlated with BMI
 
-1. Download als05.gqi.1.25.fib.gz, template_nqa.nii.gz, and template_dti_fa.nii.gz from [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
+1. Download cmu60.db.fib.gz and cmu60.csv.
 2. Set permutation count to 500
-3. uncheck [FDR control] and run analysis using different T threshold (2, 2.5, 3.0).
-4. check [FDR control] (< 0.05) and run analysis use different T threshold to see how it affects results.
+3. uncheck [FDR control] and run analysis using different T threshold (2 and 3).
+4. check [FDR control] (< 0.05) and run analysis use different T threshold (2 and 3)to see how it affects results.
 
 ### Practicum task 2: Group stratified analysis 
 
-1. Download subject files at [TBI](https://drive.google.com/drive/folders/1Dj59qTblO96Q2xDKaEjtsghMuT8FYE54).
+1. Download cmu60.db.fib.gz and cmu60.csv.
 2. Repeat 1 on male group
 3. Repeat 2 on female group
 
