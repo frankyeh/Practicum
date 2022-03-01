@@ -36,7 +36,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ---
 
-### Practicum task 1: Differential tractography comparing subject data to a template: 
+### Practicum task 1: white matter tract correlated with BMI
 
 1. Download als05.gqi.1.25.fib.gz, template_nqa.nii.gz, and template_dti_fa.nii.gz from [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
 
@@ -44,7 +44,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 3. Adjust minimum length and differential tracking threshold to observe how they change the results.
 
-### Practicum task 2: Differential tractography on longitudinal data: 
+### Practicum task 2: Group stratified analysis 
 
 1. Download subject files at [TBI](https://drive.google.com/drive/folders/1Dj59qTblO96Q2xDKaEjtsghMuT8FYE54).
 
