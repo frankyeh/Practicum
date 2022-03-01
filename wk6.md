@@ -1,4 +1,4 @@
-# Week 5 Differential Tractography
+# Week 6 Differential Tractography
 
 Linggang Luo
 
