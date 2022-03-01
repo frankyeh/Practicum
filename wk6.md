@@ -1,4 +1,4 @@
-# Week 6 Differential Tractography
+# Week 6 Correlational Tractography
 
 Linggang Luo
 
