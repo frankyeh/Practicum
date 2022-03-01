@@ -39,9 +39,9 @@ Some materials will be shared via our [google drive folder](https://drive.google
 ### Practicum task 1: white matter tract correlated with BMI
 
 1. Download als05.gqi.1.25.fib.gz, template_nqa.nii.gz, and template_dti_fa.nii.gz from [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
-
-2. FDR control (< 0.05) use different T threshold (2, 2.5, 3.0) to see how it affects results.
-3. report FDR value instead of FDR control, use different T threshold and length threshold.
+2. Set permutation count to 500
+3. FDR control (< 0.05) use different T threshold (2, 2.5, 3.0) to see how it affects results.
+4. report FDR value instead of FDR control, use different T threshold.
 
 ### Practicum task 2: Group stratified analysis 
 
