@@ -27,10 +27,6 @@ Linggang Luo/Fang-Cheng Yeh
 
 - A review on recent known and unknown about white matter pathways: [Bullock DN, Hayday EA, Grier MD, Tang W, Pestilli F, Heilbronner S. A taxonomy of the brain’s white matter: Twenty-one major tracts for the twenty-first century.](psyarxiv.com/fvk5r/)
 
-### DSI-Studio
-
-#### Read through ***[HDFT Pipeline](https://drive.google.com/file/d/1I3HZT_SGo680efozNhpf60Oes1ErSkz2/view?usp=sharing)***.
-
 
 ---
 
