@@ -1,9 +1,5 @@
 # Week 2 Automatic Fiber Tracking
 
-Linggang Luo/Fang-Cheng Yeh
-
----
-
 ## Before practicum on Friday, please complete following:
 
 ### Watch [Dr. Schneider's TED Talk]
