@@ -1,15 +1,5 @@
 # Week 6 Correlational Tractography
 
-Linggang Luo
-
-*Feb 26th 2022*
-
-Some materials will be shared via our [google drive folder](https://drive.google.com/drive/folders/12XGKtBVUb7i-uW_LSkMERFRhP7S95OrQ?usp=sharing) for confidentiality reasons.
-
-
----
-
-
 ## Before practicum on Friday, please complete following:
 
 ### Review Paper
@@ -26,10 +16,8 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ---
 
-
 ## During practicum on Friday:
 
-- Dr. Yeh's Q&A.
 
 #### Correlational tractography demonstration
 
@@ -38,7 +26,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ### Practicum task 1: white matter tract correlated with BMI
 
-1. Download cmu60.db.fib.gz and cmu60.csv.
+1. Download [cmu60.db.fib.gz](https://zenodo.org/record/6324701/files/CMU60.db.fib.gz?download=1) and [cmu60.csv](https://zenodo.org/record/6324701/files/CMU60.demo.csv?download=1).
 2. Set permutation count to 500.
 3. uncheck [FDR control] and run analysis using different T threshold (2 and 3).
 4. check [FDR control] (< 0.05) and run analysis use different T threshold (2 and 3)to see how it affects results.
