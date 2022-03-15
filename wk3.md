@@ -1,15 +1,5 @@
 # Week 3 Region-Based Fiber Tracking
 
-Linggang Luo
-
-*January 2022*
-
-Some materials will be shared via our [google drive folder](https://drive.google.com/drive/folders/12XGKtBVUb7i-uW_LSkMERFRhP7S95OrQ?usp=sharing) for confidentiality reasons.
-
-
----
-
-
 ## Before practicum on Friday, please complete following:
 
 ### Anatomy
@@ -29,8 +19,6 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ## During practicum on Friday:
 
-- Dr. Yeh's Q&A.
-
 #### Using regions to map left arcuate fasciculus
 
 - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
@@ -44,7 +32,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
   - Not-END: a filtering region that filters OUT tracks ending in the region
   - Terminative: cut tracks that enters the region
 
-- Down load [Region Manual](https://drive.google.com/file/d/1LZTUz2-dybD8LHrZNrnFimXHKWxAG8DK/view?usp=sharing) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://drive.google.com/file/d/1l4Qvyf1FHsLGKQs2axVYqcbBo7Hv2Kox/view?usp=sharing) from shared folder.
+- Down load [Region Manual](/Materials/Region Manual v2_0_1_1.pdf) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) from shared folder.
 
 - Load the fib file on DSI-Studio by clicking "StepT3: Fiber Tracking & Visualization".
 
@@ -68,8 +56,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ![image](https://user-images.githubusercontent.com/275569/151996479-7ef66e70-68c6-4f54-812e-98b01249830d.png)
 
-
-1. Download [HCP1065 1-mm FIB file](https://brain.labsolver.org/hcp_template.html) 
+1. Download [HCP1065 1-mm FIB file](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) 
 
 2. Use region-based fiber tracking, map the orbital connections in nuclei 5.
 
