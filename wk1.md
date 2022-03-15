@@ -1,11 +1,5 @@
 # Week 1 Brain Regions
 
-Linggang Luo
-
-*January 2022*
-
----
-
 ## Before practicum on Friday, please complete following:
 
 ### Anatomy
