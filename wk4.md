@@ -1,27 +1,13 @@
 # Week 4 Region-Based & Tract-Based Analysis (Tractometry) 
 
-Linggang Luo
-
-*Feb 8th 2022*
-
-Some materials will be shared via our [google drive folder](https://drive.google.com/drive/folders/12XGKtBVUb7i-uW_LSkMERFRhP7S95OrQ?usp=sharing) for confidentiality reasons.
-
-
----
-
-
 ## Before practicum on Friday, please complete following:
 
 ### Review Paper
 
 - [Abhinav, Kumar, et al. "Advanced diffusion MRI fiber tracking in neurosurgical and neurodegenerative disorders and neuroanatomical studies: a review." Biochimica et Biophysica Acta (BBA)-Molecular Basis of Disease 1842.11 (2014): 2286-2297.](Materials/paper/review2.pdf) SECTION 3.4 analytical approaches.
 
- 
-
 
 ## During practicum on Friday:
-
-- Dr. Yeh's Q&A.
 
 #### Region-based analysis 
 
