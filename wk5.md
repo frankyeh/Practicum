@@ -1,15 +1,5 @@
 # Week 5 Differential Tractography
 
-Linggang Luo
-
-*Feb 13th 2022*
-
-Some materials will be shared via our [google drive folder](https://drive.google.com/drive/folders/12XGKtBVUb7i-uW_LSkMERFRhP7S95OrQ?usp=sharing) for confidentiality reasons.
-
-
----
-
-
 ## Before practicum on Friday, please complete following:
 
 ### Review Paper
@@ -29,7 +19,6 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ## During practicum on Friday:
 
-- Dr. Yeh's Q&A.
 
 #### Differential tractography demonstration
 
@@ -38,11 +27,13 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ### Practicum task 1: Differential tractography comparing subject data to a template: 
 
-1. Download als05.gqi.1.25.fib.gz, template_nqa.nii.gz, and template_dti_fa.nii.gz from [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
+1. Download als05.gqi.1.25.fib.gz, from [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
 
-2. Follow the instruction video to get differential tractography. 
+2. Healthy subjects averaged [NQA map](https://zenodo.org/record/6324701/files/Grid258_nqa.nii.gz?download=1) and [FA map](https://zenodo.org/record/6324701/files/Grid258_dti_fa.nii.gz?download=1)
 
-3. Adjust minimum length and differential tracking threshold to observe how they change the results.
+3. Follow the instruction video to get differential tractography. 
+
+4. Adjust minimum length and differential tracking threshold to observe how they change the results.
 
 ### Practicum task 2: Differential tractography on longitudinal data: 
 
