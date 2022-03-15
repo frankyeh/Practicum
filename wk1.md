@@ -39,7 +39,7 @@
 ## During practicum on Friday:
 
 - Task 1: Neuroantomy test
-Complete the [neuroanatomy worksheet](/Materials/HW1.pdf) . 
+Complete the [neuroanatomy worksheet](/Materials/HM1.pdf) . 
 
 
 - Task 2: Identify structure in DSI Studio
