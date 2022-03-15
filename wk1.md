@@ -4,11 +4,7 @@ Linggang Luo
 
 *January 2022*
 
-Some materials will be shared via our [google drive folder](https://drive.google.com/drive/folders/12XGKtBVUb7i-uW_LSkMERFRhP7S95OrQ?usp=sharing) for confidentiality reasons.
-
-
 ---
-
 
 ## Before practicum on Friday, please complete following:
 
@@ -38,7 +34,7 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 - Learn [ROI-based fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html). Watch the tutorial video at the end of the webpage.
 
-- Download [HCP1065.1mm.fib.gz](https://drive.google.com/file/d/16UDflRtCtJ2IAmrxrMJqq69GArU_su8H/view?usp=sharing) from google drive shared folder. Load the fib file on DSI-Studio and then open FreeSurferDKT atlas from the atlas menu in order to learn different brain region. Check the tutorial metioned above if needed. The interface should look like this:
+- Download [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1). Load the fib file on DSI-Studio and then open FreeSurferDKT atlas from the atlas menu in order to learn different brain region. Check the tutorial metioned above if needed. The interface should look like this:
 
 <img src="https://user-images.githubusercontent.com/275569/149856392-53f31245-4c58-47f0-8347-57960a2a6b04.png" width="600">
 
@@ -48,10 +44,9 @@ Some materials will be shared via our [google drive folder](https://drive.google
 
 ## During practicum on Friday:
 
-- Dr. Yeh's Q&A.
+- Task 1
+Complete the [neuroanatomy worksheet](/Materials/HW1.pdf) . 
 
-- Quiz on brain anatomical regions. Student should be able to load fib file provided on DSI-Studio, which neuroanatomy will be quized upon. Be sure that wherever the region resides, student is capable of visulize it using different techniques (e.g. adjust transparency) in order to show the quized anatomical region.
 
-- Download [Practicum Task WK1](https://drive.google.com/file/d/1S12jVb7iCe_gQRO_BGZ-ig9cLtTOuvar/view?usp=sharing) from shared folder. 
 
 
