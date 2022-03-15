@@ -32,7 +32,7 @@
   - Not-END: a filtering region that filters OUT tracks ending in the region
   - Terminative: cut tracks that enters the region
 
-- Down load [Region Manual](/Materials/Region Manual v2_0_1_1.pdf) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) from shared folder.
+- Down load [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) from shared folder.
 
 - Load the fib file on DSI-Studio by clicking "StepT3: Fiber Tracking & Visualization".
 
