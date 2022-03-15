@@ -44,9 +44,19 @@ Linggang Luo
 
 ## During practicum on Friday:
 
-- Task 1
+- Task 1: Neuroantomy test
 Complete the [neuroanatomy worksheet](/Materials/HW1.pdf) . 
 
 
+- Task 2: Identify structure in DSI Studio
 
+1. Load [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz) onto DSI-Studio.
+
+2. Load 100206_T1w.nii.gz by clicking on ***"Insert Other Images"*** under ***Slices*** menu.
+
+3. According to the video of ***["quick 3D manual segmentation of a brain tumor"](https://www.youtube.com/watch?v=ZkWBU_qnaKg&t=1s)***, draw an ROI of left thalamus.
+
+4. Open atlases, choose FreeSurferDKT subcortical atlas, and load left thalamus.
+
+5. Compare your thalamus ROI to that of FreeSurferDKT subcortical atlas.
 
