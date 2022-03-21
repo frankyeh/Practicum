@@ -6,7 +6,7 @@
 
 - Read through [Intro to Neuroanatomy slides](https://drive.google.com/file/d/1HPWgLRGzq_l_V7UDE8PC2hVZSaLnawOr/view?usp=sharing) along with Nieuwenhuys 2008 chapters [3](https://drive.google.com/file/d/1r-MC1X7mnUOC2H4Or91BR6y2AQlZs-Dt/view?usp=sharing) and [5](https://drive.google.com/file/d/1-36-KH6Ejxe8s4m9isibjJ2HAGSkEeK2/view?usp=sharing).
 
-- Other open resourses like [UBC Neuroanatomy Season 1](https://www.youtube.com/watch?v=xB7rXw_3gVY&t=104s) and [Brain Anatomy for Health Professionals Series](https://www.youtube.com/watch?v=_aCCsRCw78g&list=PLp9HSlEm97VXyQ32Uwjfz3dpmQ8nl63zJ&index=1&t=539s) would help if you are a visual learner and more comfortable with video tutorials.
+- Other open resourses like [UBC Neuroanatomy Season 1](https://www.youtube.com/watch?v=xB7rXw_3gVY&t=104s), [Brain Anatomy for Health Professionals Series](https://www.youtube.com/watch?v=_aCCsRCw78g&list=PLp9HSlEm97VXyQ32Uwjfz3dpmQ8nl63zJ&index=1&t=539s), or [Computational Neuroanatomy at DIPY Workshop](https://www.youtube.com/watch?v=0gffgCBDOfk) would help if you are a visual learner and more comfortable with video tutorials.
 
 - Brain anatomical regions that student should become familiar with (listed as in different systems):
     - Fissures: longitudinal fissure and Sylvian fissure
