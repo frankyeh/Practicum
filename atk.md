@@ -1,4 +1,4 @@
-# Week 2 Automatic Fiber Tracking
+# Diffusion MRI Processing & Automatic Fiber Tracking
 
 ## Before practicum on Friday, please complete following:
 
