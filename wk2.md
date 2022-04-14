@@ -6,32 +6,25 @@
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/su-uRdPTpEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Diffusion MRI basics
-
-- Read through Dr. Yeh's [review paper](Materials/paper/review.pdf) on diffusion MRI, which also can be found under the shared folder. Pay special attention to part 3 (tractography methods), 5.2 (model-free methods), part 6 (fiber tracking methods) and part 7 (DTI tractography in brain tumors).
-
 ### White Matter Anatomy 
 
-- In DSI-Studio white matter atlas, pathways can be catogorized as 3 major types: commissural, association and prjection pathways.
+- Video: [Computational Neuroanatomy at DIPY Workshop](https://www.youtube.com/watch?v=0gffgCBDOfk)
 
-    - Commisural pathways: anterior commissure and corpus callosum
+- White matter pathways can be catogorized into commissural, association, and prjection pathways.
+
+    - Commissural pathways: anterior commissure and corpus callosum
 
     - Projection pathways: acoustic radiation, corticobulbar tract, corticopontine tract (frontal, parietal, and occipital), corticostriatal tract(anterior, superior and posterior), corticospinal tract, dentatorubrothalamic tract, fornix, medial lemniscus, optic radiation, reticulospinal tract, and thalamic radiation (anterior, posterior and superior)
     
     - Association pathways: arcuate fasciculus, cingulum(frontal parahippocampal, frontal parietal, parahippocampal parietal, parahippocampal, and parolfactory), extreme capsule, frontal aslant, inferior fronto-occipital fasciculus, inferior longitudinal fasciculus, middle longitudinal fasciculus, parietal aslant tract, superior longitudinal fasciculus (I, II and III), uncinate fasciculus, and vertical occipital fasciculus
 
-- Read through ***[Overview of White Matter Tracts- Commissural Pathways](https://drive.google.com/file/d/1gq0uCRHmOKP9zp7uEKBH3rMIrvbivA8N/view?usp=sharing)***.
+- Reading: ***[Overview of White Matter Tracts- Commissural Pathways](https://drive.google.com/file/d/1gq0uCRHmOKP9zp7uEKBH3rMIrvbivA8N/view?usp=sharing)***, ***[Overview of White Matter Tracts- Perisylvian Pathways](https://drive.google.com/file/d/1arn8hbdF8YP6j09Gq6Z1ip2PITbMwzoo/view?usp=sharing)***. Note that perisylvian pathways is a subdivision of association pathways.
 
-- Read through ***[Overview of White Matter Tracts- Perisylvian Pathways](https://drive.google.com/file/d/1arn8hbdF8YP6j09Gq6Z1ip2PITbMwzoo/view?usp=sharing)***. Note that perisylvian pathways is a subdivision of association pathways.
-
-- A review on recent known and unknown about white matter pathways: [Bullock DN, Hayday EA, Grier MD, Tang W, Pestilli F, Heilbronner S. A taxonomy of the brain’s white matter: Twenty-one major tracts for the twenty-first century.](psyarxiv.com/fvk5r/)
-
+- Review papers: a review on recent known and unknown about white matter pathways: [Bullock DN, Hayday EA, Grier MD, Tang W, Pestilli F, Heilbronner S. A taxonomy of the brain’s white matter: Twenty-one major tracts for the twenty-first century.](psyarxiv.com/fvk5r/)
 
 ---
 
-
 ## During practicum on Friday:
-
 
 - Introduction to white matter pathways mentioned above.
 
