@@ -1,4 +1,4 @@
-# Week 1 Brain Anatomy Basics
+# Week 1 Brain Anatomy Basics & Region Drawing
 
 ## Before practicum on Friday, please complete following:
 
@@ -40,7 +40,7 @@ Complete the [neuroanatomy worksheet](/Materials/HM1.pdf) .
 
 - Task 2: Identify structure in DSI Studio
 
-1. Load [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz) onto DSI-Studio.
+1. Load [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz) onto DSI-Studio.
 
 2. Load 100206_T1w.nii.gz by clicking on ***"Insert Other Images"*** under ***Slices*** menu.
 
@@ -49,7 +49,4 @@ Complete the [neuroanatomy worksheet](/Materials/HM1.pdf) .
 4. Open atlases, choose FreeSurferDKT subcortical atlas, and load **left thalamus**.
 
 5. Compare your thalamus ROI to that of FreeSurferDKT subcortical atlas.
-
-6. Draw **red nucleus** and compare it with atlas.
-
 
