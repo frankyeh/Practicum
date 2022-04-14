@@ -26,9 +26,9 @@
 
 Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.
 
-In this practicum course, students will 
-  1. learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
-  2. conduct a short study and write a final report.
+In this practicum course, participants will 
+  1. [First 6 weeks] learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
+  2. [Optional] Conduct a short study and write a final report.
 
 - Laboratory Exposure
 
