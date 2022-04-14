@@ -20,13 +20,9 @@
     - Cerebellum  
     - FreeSurferDKT atlas
 
-### DSI-Studio
-
-- Read through Dr. Yeh's [review paper](Materials/paper/review.pdf) on diffusion MRI, which also can be found under the shared folder. Pay special attention to part 3 (tractography methods), 5.2 (model-free methods), part 6 (fiber tracking methods) and part 7 (DTI tractography in brain tumors).
+### Download DSI-Studio
 
 - Download [DSI-Studio](http://dsi-studio.labsolver.org/). Skim the document and play with the software. Data and tutorials can be found on [DSI-Studio website](http://dsi-studio.labsolver.org/).
-
-- Learn [ROI-based fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html). Watch the tutorial video at the end of the webpage.
 
 - Download [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1). Load the fib file on DSI-Studio and then open FreeSurferDKT atlas from the atlas menu in order to learn different brain region. Check the tutorial metioned above if needed. The interface should look like this:
 
