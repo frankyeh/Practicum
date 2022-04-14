@@ -1,4 +1,4 @@
-# Week 1 Brain Anatomy Basics & Region Drawing
+Brain Anatomy Basics & Region Drawing
 
 ## Before practicum on Friday, please complete following:
 
