@@ -8,7 +8,7 @@
   - [Fiber Tractography Laboratory](https://hdft.labsolver.org/)
   - Department of Neurosurgery, University of Pittsburgh Medical School.
 
-- Location: 9F Scaife Hall, University of Pittsburgh Medical School
+- Zoom meeting
 - Project Instructors:
 
   - Fang-Cheng (Frank) Yeh, M.D. Ph.D.
@@ -17,7 +17,6 @@
 - Prerequisites:
 
   - Prior training in general neural science (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)
-  - Basic knowledge about brain structures and functions
 
 - Requirement:
 
@@ -29,13 +28,12 @@ Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and a
 
 In this practicum course, students will 
   1. learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
-  2. develop his/her own project in mapping one fiber pathway
-  3. write a manuscript as the final report.
+  2. conduct a short study and write a final report.
 
 - Laboratory Exposure
 
 Participants will learn the neuroanatomy of the target fiber bundle and use “DSI Studio” to map its connection trajectories on a population averaged template. In 2021, there are [250 journal publications using DSI Studio](http://dsi-studio.labsolver.org/citation.html) to carry out their studies. The learned skills in thie course can be applied to any brain studies that investigate the structural trajectories of fiber connections.
 
-- Practicum publication
+- Practicum publications
 
 **Ghulam‐Jelani Z, Barrios‐Martinez J, Eguiluz‐Melendez A, Gomez R, Anania Y, Yeh FC. Redundancy circuits of the commissural pathways in human and rhesus macaque brains. Human brain mapping. 2021 May;42(7):2250-61.**
