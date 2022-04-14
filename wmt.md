@@ -1,4 +1,4 @@
-# Week 2 White Matter Tracts
+# White Matter Tracts & Virtual Dissection
 
 ## Before practicum on Friday, please complete following:
 
