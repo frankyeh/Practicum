@@ -1,8 +1,6 @@
-# Week 1 Brain Regions
+# Week 1 Brain Anatomy Basics
 
 ## Before practicum on Friday, please complete following:
-
-### Brain Anatomy Basics
 
 - Read through [Intro to Neuroanatomy slides](https://drive.google.com/file/d/1HPWgLRGzq_l_V7UDE8PC2hVZSaLnawOr/view?usp=sharing) along with Nieuwenhuys 2008 chapters [3](https://drive.google.com/file/d/1r-MC1X7mnUOC2H4Or91BR6y2AQlZs-Dt/view?usp=sharing) and [5](https://drive.google.com/file/d/1-36-KH6Ejxe8s4m9isibjJ2HAGSkEeK2/view?usp=sharing).
 
