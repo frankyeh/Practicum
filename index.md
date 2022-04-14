@@ -8,7 +8,12 @@
   - [Fiber Tractography Laboratory](https://hdft.labsolver.org/)
   - Department of Neurosurgery, University of Pittsburgh Medical School.
 
-- Zoom meeting
+- Format:
+
+  - Zoom meeting on Friday
+  - 30 min instruction/demostration and Q&A
+  - 30 min hands-on practice and/or tests 
+
 - Project Instructors:
 
   - Fang-Cheng (Frank) Yeh, M.D. Ph.D.
