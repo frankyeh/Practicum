@@ -8,31 +8,29 @@
   - [Fiber Tractography Laboratory](https://hdft.labsolver.org/)
   - Department of Neurosurgery, University of Pittsburgh Medical School.
 
-- Format:
-
-  - Zoom meeting on Friday
-  - 30 min instruction/demostration and Q&A
-  - 30 min hands-on practice and/or tests 
+- Zoom meeting on 4-5 pm EST Friday
+  
+  - 10 min review last weeks materials and check tasks.
+  - 20 min instruction and Q&A
+  - 20 min DSI Studio hands-on demostration
+  - tasks to be done after course
 
 - Project Instructors:
 
-  - Fang-Cheng (Frank) Yeh, M.D. Ph.D.
   - Linggang Luo
+  - Fang-Cheng (Frank) Yeh
 
 - Prerequisites:
 
-  - Prior training in general neural science (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)
+  - Background in general neuroscience (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)
 
-- Requirement:
-
-  Join a weekly practicum meeting in the Friday morning or afternoon with the course advisors.
 
 - Research Description:
 
 Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.
 
 In this practicum course, participants will 
-  1. [First 6 weeks] learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
+  1. [First 7 weeks] learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
   2. [Optional] Conduct a short study and write a final report.
 
 - Laboratory Exposure
