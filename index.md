@@ -8,12 +8,15 @@
   - [Fiber Tractography Laboratory](https://hdft.labsolver.org/)
   - Department of Neurosurgery, University of Pittsburgh Medical School.
 
-- Zoom meeting on 4-5 pm EST Friday (email frank.yeh@pitt.edu to get zoom link)
+- Activities
+  - reading materials before course (est 1 hr)
+  - Zoom meeting on 4-5 pm EST Friday (email frank.yeh@pitt.edu to get zoom link)
   
-  - 10 min review last weeks materials and check tasks.
-  - 20 min instruction and Q&A
-  - 20 min DSI Studio hands-on demostration
-  - tasks to be done after course
+    - 20 min discuss tasks assignment from the last week + Q&A
+    - 20 min instruction + Q&A
+    - 20 min DSI Studio hands-on demo
+  
+  - after-course assignments/tasks (est 1 hr)
 
 - Project Instructors:
 
