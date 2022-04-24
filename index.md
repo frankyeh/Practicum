@@ -9,14 +9,14 @@
   - Department of Neurosurgery, University of Pittsburgh Medical School.
 
 - Activities
-  - reading materials before course (est 1 hr)
+  - Reading materials before course (est 1 hr)
   - Zoom meeting on 4-5 pm EST Friday (email frank.yeh@pitt.edu to get zoom link)
   
     - 20 min discuss tasks assignment from the last week + Q&A
     - 20 min instruction + Q&A
     - 20 min DSI Studio hands-on demo
   
-  - after-course assignments/tasks (est 1 hr)
+  - After-course assignments/tasks (est 1 hr)
 
 - Project Instructors:
 
@@ -33,8 +33,8 @@
 Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.
 
 In this practicum course, participants will 
-  1. [First 7 weeks] learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
-  2. [Optional] Conduct a short study and write a final report.
+  - first 7 weeks: learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
+  - conduct a tractography project after training (optional, unless taking the CMU Practicum credit).
 
 - Laboratory Exposure
 
