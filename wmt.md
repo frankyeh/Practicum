@@ -25,9 +25,11 @@
 
 - Introduction to white matter pathways mentioned above.
 
-- Virtual dissection using 
+- Virtual dissection 
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/1xfhaFQhCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Tract Editing Functions: https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html
 
 ### Practicum task:
 
