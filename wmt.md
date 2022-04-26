@@ -33,7 +33,7 @@
 
 ## Assignment:
 
-Manually select while matter pathways from whole brain tractogram.
+Manually select white matter pathways from whole brain tractogram.
 
 ### task 1: Download FIB file
 
