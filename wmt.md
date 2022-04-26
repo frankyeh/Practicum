@@ -16,7 +16,7 @@
 
 - Reading: ***[Overview of White Matter Tracts- Commissural Pathways](https://drive.google.com/file/d/1gq0uCRHmOKP9zp7uEKBH3rMIrvbivA8N/view?usp=sharing)***, ***[Overview of White Matter Tracts- Perisylvian Pathways](https://drive.google.com/file/d/1arn8hbdF8YP6j09Gq6Z1ip2PITbMwzoo/view?usp=sharing)***. Note that perisylvian pathways is a subdivision of association pathways.
 
-- Review papers: a review on recent known and unknown about white matter pathways: [Bullock DN, Hayday EA, Grier MD, Tang W, Pestilli F, Heilbronner S. A taxonomy of the brain’s white matter: Twenty-one major tracts for the twenty-first century.](psyarxiv.com/fvk5r/)
+- Review papers: a review on recent known and unknown about white matter pathways: [Bullock DN, Hayday EA, Grier MD, Tang W, Pestilli F, Heilbronner S. A taxonomy of the brain’s white matter: Twenty-one major tracts for the twenty-first century.](https://psyarxiv.com/fvk5r/)
 
 ---
 
