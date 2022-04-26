@@ -32,13 +32,13 @@
     - Limbic area: Hypothalamic nuclei, amygdala, hippocampus, thalamus, corpus callosum and cingulate gyrus
     - Cerebellum  
 
-## Hands-on activities:
+## Assignment:
 
-- Task 1: Neuroantomy test
+### Task 1: Neuroantomy test
 
 Complete the [neuroanatomy worksheet](/Materials/HM1.pdf) . 
 
-- Task 2: Identify structure in DSI Studio
+### Task 2: Identify structure in DSI Studio
 
 1. Load [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz) onto DSI-Studio.
 
