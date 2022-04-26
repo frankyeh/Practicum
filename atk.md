@@ -14,11 +14,20 @@
 
 ## During practicum on Friday:
 
-- Introduction to DSI Studio (reconstruction, fiber tracking).
+- Introduction to DSI Studio 
+  - [create SRC files from NIFTI or DICOM](https://dsi-studio.labsolver.org/doc/gui_t1.html)
+  - [reconstruct DWI data](https://dsi-studio.labsolver.org/doc/gui_t2.html)
+  - [fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
 - Diffusion MRI quality control:
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/stL4GMeTC1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Automatic Fiber Tracking
+
+  - https://dsi-studio.labsolver.org/doc/gui_t3_atk.html
+ 
+<iframe width="896" height="504" src="https://www.youtube.com/embed/Hzeb_q6ux-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Assignment :
 
