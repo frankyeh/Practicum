@@ -31,21 +31,19 @@
 
 - [Tract Editing Functions](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
-### Practicum task:
+## Assignment:
 
-Manually select while matter pathways from whole brain track.
+Manually select while matter pathways from whole brain tractogram.
 
----
-
-### Practicum task 1: Download FIB file
+### task 1: Download FIB file
 
 1. Download [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
 
 2. Open the FIB file using [Step T3 Fiber Tracking] and click on [Step T3d Tracts][Fiber Tracking] to generate whole brain tracts 
 
-### Practicum task 2: Manual tract segmentation
+### task 2: Manual tract segmentation
 
-1. Manually select **left arcuate fasciculus**, **cingulum**, **uncinate fasciculus**, **corticospinal tract** from whole brain tracks. 
+1. Manually segment **left arcuate fasciculus**, **cingulum**, **uncinate fasciculus**, **corticospinal tract** from whole brain tracks. 
 
 2. Further segment left arcuate fasciculus into the acoustic, visual, and lexical encoding part and assign different colors, as done in [a review study](https://doi.org/10.1093/brain/awac057)
 
