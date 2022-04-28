@@ -31,9 +31,9 @@
 
 ## Assignment :
 
-### task 1: Process dMRI files
+### Task 1: Process dMRI data
 
-1. Download dwi data from [openenruo](https://openneuro.org/datasets/ds002087/versions/1.0.0)
+1. Download dwi data from [OpenNeuro](https://openneuro.org/datasets/ds002087/versions/1.0.0)
 
 run 1:
   - [NIFTI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
@@ -49,9 +49,9 @@ run 2:
 
 3. [Reconstruct the SRC file using DTI and GQI](http://dsi-studio.labsolver.org/doc/gui_t2.html).
 
-### task 2: Automated fiber tracking
+### Task 2: Automated fiber tracking
 
 3. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result (on DTI and GQI fib files).
 
-4. Compare their differences in FA/QA map and tractogram (on DTI and GQI fib files).
+4. Compare their differences in tractograms.
 
