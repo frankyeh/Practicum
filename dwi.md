@@ -1,4 +1,4 @@
-# Diffusion MRI Processing & Automatic Fiber Tracking
+# Diffusion MRI Processing
 
 ## Before practicum on Friday, please complete following:
 
@@ -23,12 +23,6 @@
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/stL4GMeTC1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Automatic Fiber Tracking
-
-  - https://dsi-studio.labsolver.org/doc/gui_t3_atk.html
- 
-<iframe width="896" height="504" src="https://www.youtube.com/embed/Hzeb_q6ux-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Assignment :
 
 ### Task 1: Process dMRI data
@@ -47,11 +41,13 @@ run 2:
 
 2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) for run 1 and run 2, respectively, and check if there is any quality issue. [(youtube)](https://www.youtube.com/embed/stL4GMeTC1I).
 
-3. [Reconstruct the SRC file using DTI and GQI](http://dsi-studio.labsolver.org/doc/gui_t2.html).
+4. Apply [Eddy Correction] to run 2 SRC file at [Step T2][Correction] and save it as a new SRC.gz file
 
-4. Apply [Eddy Correction] to run 2 SRC file at [Step T2][Correction] and compare the raw images with/without [Eddy Correction]
+5. compare the raw images with/without [Eddy Correction]
 
-5. Compare whole brain tractogram with/without [Eddy Correction].
+6. Move all SRC.gz files (run1, run2, run2 after eddy) to a folder, and use [Step T1a Quality Control] to get a report. Identify metrics that show quality issues.
+
+7. Compare whole brain tractogram with/without [Eddy Correction].
 
 ### Task 2: Automated fiber tracking
 
