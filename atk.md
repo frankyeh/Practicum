@@ -33,7 +33,10 @@
 
 ### task 1: Process dMRI files
 
-1. Download subject (A00008326)'s dwi data from https://openneuro.org/datasets/ds001021/versions/1.0.0 (under SES-DS2), including *.nii.gz and .bval and .bvec.
+1. Download subject (A00008326)'s dwi data from [openenruo](https://openneuro.org/datasets/ds001021/versions/1.0.0)
+  - [NIFTI](https://openneuro.org/crn/datasets/ds001021/snapshots/1.0.0/files/sub-A00008326:ses-DS2:dwi:sub-A00008326_ses-DS2_dwi.nii.gz)
+  - [BVAL](https://openneuro.org/crn/datasets/ds001021/snapshots/1.0.0/files/sub-A00008326:ses-DS2:dwi:sub-A00008326_ses-DS2_dwi.bval)
+  - [BVEC](https://openneuro.org/crn/datasets/ds001021/snapshots/1.0.0/files/sub-A00008326:ses-DS2:dwi:sub-A00008326_ses-DS2_dwi.bvec)
 
 2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) and check if there are artifacts [(youtube)](https://www.youtube.com/embed/stL4GMeTC1I).
 
