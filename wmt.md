@@ -31,6 +31,12 @@
 
 - [Tract Editing Functions](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
+- Automatic Fiber Tracking
+
+  - https://dsi-studio.labsolver.org/doc/gui_t3_atk.html
+ 
+<iframe width="896" height="504" src="https://www.youtube.com/embed/Hzeb_q6ux-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Assignment:
 
 Manually select white matter pathways from whole brain tractogram.
@@ -43,7 +49,7 @@ Manually select white matter pathways from whole brain tractogram.
 
 ### task 2: Manual tract segmentation
 
-1. Manually segment **left arcuate fasciculus**, **cingulum**, **uncinate fasciculus**, **corticospinal tract** from whole brain tracks. 
+1. Manually segment **left arcuate fasciculus**, **cingulum**, **uncinate fasciculus**, **corticospinal tract** from whole brain tracks. Compare it with automatic tracking results.
 
 2. Further segment left arcuate fasciculus into the acoustic, visual, and lexical encoding part and assign different colors, as done in [a review study](https://doi.org/10.1093/brain/awac057)
 
