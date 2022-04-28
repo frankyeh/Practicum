@@ -33,12 +33,19 @@
 
 ### task 1: Process dMRI files
 
-1. Download subject (A00008326)'s dwi data from [openenruo](https://openneuro.org/datasets/ds001021/versions/1.0.0)
-  - [NIFTI](https://openneuro.org/crn/datasets/ds001021/snapshots/1.0.0/files/sub-A00008326:ses-DS2:dwi:sub-A00008326_ses-DS2_dwi.nii.gz)
-  - [BVAL](https://openneuro.org/crn/datasets/ds001021/snapshots/1.0.0/files/sub-A00008326:ses-DS2:dwi:sub-A00008326_ses-DS2_dwi.bval)
-  - [BVEC](https://openneuro.org/crn/datasets/ds001021/snapshots/1.0.0/files/sub-A00008326:ses-DS2:dwi:sub-A00008326_ses-DS2_dwi.bvec)
+1. Download dwi data from [openenruo](https://openneuro.org/datasets/ds002087/versions/1.0.0)
 
-2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) and check if there are artifacts [(youtube)](https://www.youtube.com/embed/stL4GMeTC1I).
+run 1:
+  - [NIFTI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
+  - [BVAL](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
+  - [BVEC](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
+
+run 2:
+  - [NIFTI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
+  - [BVAL](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
+  - [BVEC](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
+
+2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) for run 1 and run 2, respectively, and check if there are artifacts [(youtube)](https://www.youtube.com/embed/stL4GMeTC1I).
 
 3. [Reconstruct the SRC file using DTI and GQI](http://dsi-studio.labsolver.org/doc/gui_t2.html).
 
