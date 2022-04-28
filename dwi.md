@@ -2,13 +2,17 @@
 
 ## Before practicum on Friday, please complete following:
 
-### Watch [Dr. Schneider's TED Talk]
-
-<iframe width="896" height="504" src="https://www.youtube.com/embed/su-uRdPTpEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ### Diffusion MRI basics
 
 - Read through Dr. Yeh's [review paper](Materials/paper/review.pdf) on diffusion MRI, which also can be found under the shared folder. Pay special attention to part 3 (tractography methods), 5.2 (model-free methods), part 6 (fiber tracking methods) and part 7 (DTI tractography in brain tumors).
+
+- Diffusion MRI acquisition
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VGD1dwtTyEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Diffusion tensor imaging
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h44z9_xX8ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
