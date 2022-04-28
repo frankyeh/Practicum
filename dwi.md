@@ -27,6 +27,11 @@
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/stL4GMeTC1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+- dMRI Preprossing
+
+  - Eddy current distortion and artifacts
+  - Sucetibility artifacts
+
 ## Assignment :
 
 ### Task 1: Process dMRI data
