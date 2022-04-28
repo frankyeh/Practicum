@@ -34,17 +34,17 @@
 
 ## Assignment :
 
-### Task 1: Process dMRI data
+### Task 1: Eddy current and motion correction
 
-1. Download dwi data from [OpenNeuro](https://openneuro.org/datasets/ds002087/versions/1.0.0)
+1. Download DWI data from [OpenNeuro](https://openneuro.org/datasets/ds002087/versions/1.0.0)
 
 run 1:
-  - [NIFTI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
+  - [DWI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
   - [BVAL](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
   - [BVEC](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
 
 run 2:
-  - [NIFTI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
+  - [DWI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
   - [BVAL](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
   - [BVEC](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
 
@@ -58,7 +58,17 @@ run 2:
 
 7. Compare whole brain tractogram with/without [Eddy Correction].
 
-### Task 2: Automated fiber tracking
+### Task 2: Susceptibility artifact correction
 
-1. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result (on DTI and GQI fib files).
+1. Download DWI data from [OpenNeuro](https://openneuro.org/datasets/ds003974/versions/1.0.0)
 
+  - [DWI](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
+  - [DWI_PA](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
+  - [BVAL](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
+  - [BVEC](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
+  
+2. [Generate SRC file](http://dsi-studio.labsolver.org/doc/gui_t1.html) 
+
+3. Apply [Correction][Topup/EDDY] and save as a new SRC file after correction.
+
+4. Compare raw DWI and tractography with/without 
