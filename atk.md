@@ -49,9 +49,9 @@ run 2:
 
 3. [Reconstruct the SRC file using DTI and GQI](http://dsi-studio.labsolver.org/doc/gui_t2.html).
 
+4. Run whole brain fiber tracking and compare results
+
 ### Task 2: Automated fiber tracking
 
-3. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result (on DTI and GQI fib files).
-
-4. Compare their differences in tractograms.
+1. Run [automatic fiber tracking](http://dsi-studio.labsolver.org/doc/gui_t3_atk.html) on left arcuate fasciculus and compare it with manual result (on DTI and GQI fib files).
 
