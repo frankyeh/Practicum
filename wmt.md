@@ -16,8 +16,6 @@
     
     - Association pathways: arcuate fasciculus, cingulum (frontal parahippocampal, frontal parietal, parahippocampal parietal, parahippocampal, and parolfactory), extreme capsule, frontal aslant, inferior fronto-occipital fasciculus, inferior longitudinal fasciculus, middle longitudinal fasciculus, parietal aslant tract, superior longitudinal fasciculus (I, II and III), uncinate fasciculus, and vertical occipital fasciculus
 
-- Reading: ***[Overview of White Matter Tracts- Commissural Pathways](https://drive.google.com/file/d/1gq0uCRHmOKP9zp7uEKBH3rMIrvbivA8N/view?usp=sharing)***, ***[Overview of White Matter Tracts- Perisylvian Pathways](https://drive.google.com/file/d/1arn8hbdF8YP6j09Gq6Z1ip2PITbMwzoo/view?usp=sharing)***. Note that perisylvian pathways is a subdivision of association pathways.
-
 
 ---
 
@@ -25,7 +23,11 @@
 
 - Introduction to white matter pathways mentioned above.
 
+  - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
+  - [Tractography atlas](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz)
+  
 - Virtual dissection 
+
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/1xfhaFQhCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
