@@ -17,7 +17,9 @@
 
 ## During practicum on Friday:
 
-- Open [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1) on DSI-Studio at [Step T3 Fiber Tracking] 
+- Hands-on
+  - Open [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1) on DSI-Studio at [Step T3 Fiber Tracking] 
+  - Practice [shortcuts](https://dsi-studio.labsolver.org/doc/gui_t3_visualization.html#shortcuts-and-graphic-control)
 
 <img src="https://user-images.githubusercontent.com/275569/149856392-53f31245-4c58-47f0-8347-57960a2a6b04.png" width="600">
 
