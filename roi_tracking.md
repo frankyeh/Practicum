@@ -4,13 +4,17 @@
 
 ### Anatomy
 
-- Read **2. Challenges in mapping brain pathways** and **3. Tractography methods—an overview** in [a review paper](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
+- Read **[2. Challenges in mapping brain pathways]** and **[3.Tractography methods—an overview]** in [a review paper](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
 
 - Get familiarized with fiber tracking parameters [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
 ## During practicum on Friday:
 
-#### Using regions to map left arcuate fasciculus
+### an overview of fiber tracking
+
+- [a review paper](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
+
+### Using regions to map left arcuate fasciculus
 
 - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
