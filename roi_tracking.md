@@ -4,18 +4,9 @@
 
 ### Anatomy
 
-- Read through [Overview of White Matter Tracts - Limbic Pathways](https://drive.google.com/file/d/1YJMb8yeKxmFG5b8f7PrA9GQ--H4OnBxE/view?usp=sharing), [Overview of White Matter Tracts - Projection Pathways](https://drive.google.com/file/d/1IUyredH2rEBrBNBDDKgI0_Bm-pXlz5M3/view?usp=sharing) and [Overview of White Matter Tracts - Occipital Visual Pathways](https://drive.google.com/file/d/1IXLd6TMpu6dpzWhcwv7NwlUMTErnMTFO/view?usp=sharing).
+- Read **2. Challenges in mapping brain pathways** and **3. Tractography methods—an overview** in [a review paper](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
 
-- Association pathways include ***Perisylvian***, ***limbic*** and ***occipital visual***, categorized by their functions.
-    
-    - Perisylvian pathways: Arcuate fasciculus, superior longitudinal fasciculus (SLF), and frontal aslant.
-    
-    - Limbic pathways: Fornix, cingulum, and uncinate fasciculus.
-    
-    - Occipital visual pathways: Optic radiations, inferior frontal occipital fasciculus (IFOF), and inferior logitudinal fasciculus (ILF).
-
----
-
+- Get familiarized with fiber tracking parameters [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
 ## During practicum on Friday:
 
