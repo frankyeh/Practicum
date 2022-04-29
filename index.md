@@ -2,14 +2,18 @@
 
 ![image](https://user-images.githubusercontent.com/275569/149856247-7315a680-fda4-417e-9028-6f6552a56ed6.png)
 ![image](https://user-images.githubusercontent.com/275569/149856299-a2277a1a-8d6b-41ad-a6e8-f81f4dba0344.png)
-- Schedule
-  - 4-5 pm (EST) Friday (email frank.yeh@pitt.edu to get zoom link)
-  - wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)
+---
 
-- Participating Labs/Departments: 
+We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.
+
+- Schedule
+  - 4-5 pm (EST) Friday 
+  - wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)
+  - email frank.yeh@pitt.edu to get zoom link.
+
+- Participating Labs: 
 
   - [Fiber Tractography Laboratory](https://hdft.labsolver.org/)
-  - Department of Neurosurgery, University of Pittsburgh Medical School.
 
 - Activities
   - Reading materials before course (est 1 hr)
