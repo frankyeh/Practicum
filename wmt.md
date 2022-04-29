@@ -21,22 +21,28 @@
 
 ## During practicum on Friday:
 
-- Introduction to white matter pathways mentioned above.
+- Introduction to white matter pathways
 
-  - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
-  - [Tractography atlas](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz)
+  - Hands-on (Frank)
+    - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
+    - [Tractography atlas](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz)
+
+  - White matter tract anatomy (Linggang)  
   
-- Virtual dissection 
+- Virtual dissection
 
+  - Hands-on (Frank)
+    - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
+    - [Whole brain fiber tracking & Track dissection](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/1xfhaFQhCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- [Tract Editing Functions](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
-
 - Automatic Fiber Tracking
 
-  - https://dsi-studio.labsolver.org/doc/gui_t3_atk.html
- 
+  - Hands-on (Linggang)
+    - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
+    - [Automatic fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_atk.html)
+   
 <iframe width="896" height="504" src="https://www.youtube.com/embed/Hzeb_q6ux-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Assignment:
@@ -53,6 +59,13 @@ Manually select white matter pathways from whole brain tractogram.
 
 1. Manually segment **left arcuate fasciculus**, **cingulum**, **uncinate fasciculus**, **corticospinal tract** from whole brain tracks. Compare it with automatic tracking results.
 
-2. Further segment left arcuate fasciculus into the acoustic, visual, and lexical encoding part and assign different colors, as done in [a review study](https://doi.org/10.1093/brain/awac057)
+2. Segment left arcuate fasciculus into the acoustic, visual, and lexical encoding part and assign different colors (reference: Giampiccolo D, Duffau H. Controversy over the temporal cortical terminations of the left arcuate fasciculus: a reappraisal. Brain. 2022 Feb 10.)
+
+![image](https://user-images.githubusercontent.com/275569/165971411-eeab4e61-f356-4456-b582-627a05f778da.png)
+(Giampiccolo et al. 2022)
+
+<img src="https://user-images.githubusercontent.com/275569/165971142-40f86637-b727-47da-9e8d-2ffa2338f70f.png" width=500>
+(Segmented on HCP1065 tractography atlas)
+
 
 
