@@ -1,4 +1,4 @@
-# Week 3 Region-Based Fiber Tracking
+# Region-Based Fiber Tracking
 
 ## Before practicum on Friday, please complete following:
 
