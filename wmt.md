@@ -26,7 +26,7 @@
   - Hands-on (Frank)
     - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
     - [Tractography atlas](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz)
-
+    - Add isosurface from T1W
   - White matter tract anatomy (Linggang)  
   
 - Virtual dissection
@@ -47,7 +47,7 @@
 
 ## Assignment: Download FIB file
 
-1. Download [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+1. Download [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) and [100206_T1w.nii.gz](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ET42Z4taJRtKrxvYKmEHZiIBJHdng-G-YyyHQjYCwM7vRg?e=Rjk7sA)
 
 2. Open the FIB file using [Step T3 Fiber Tracking] and click on [Step T3d Tracts][Fiber Tracking] to generate whole brain tracts 
 
