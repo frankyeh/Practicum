@@ -4,7 +4,7 @@
 
 ### Anatomy
 
-- Read **[2. Challenges in mapping brain pathways]** and **[3.Tractography methods—an overview]** in [a review paper](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
+- Read [**[2. Challenges in mapping brain pathways]**](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0002) and [**[6. Fiber tracking methods]**](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0025). 
 
 - Get familiarized with fiber tracking parameters [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
