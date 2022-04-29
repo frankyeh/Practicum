@@ -14,7 +14,7 @@
 
 ## During practicum on Friday:
 
-### an overview of fiber tracking
+### Introduction to tractography
 
 - [a review paper](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
 
