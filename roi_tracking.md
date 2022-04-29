@@ -18,33 +18,33 @@
 
 - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
-- Demonstrate function of different region types: seed, ROI, ROA, END, terminative
+- Hnads-on
+  - Different region types: seed, ROI, ROA, END, terminative
+    - Seed: the starting location of fiber tracking
+    - ROI: a filtering region that filters IN tracks
+    - ROA: a filtering region that filters OUT tracks
+    - END: a filtering region that filters IN tracks ending in the region
+    - Not-END: a filtering region that filters OUT tracks ending in the region
+    - Terminative: cut tracks that enters the region
 
-  - Seed: the starting location of fiber tracking
-  - ROI: a filtering region that filters IN tracks
-  - ROA: a filtering region that filters OUT tracks
-  - END: a filtering region that filters IN tracks ending in the region
-  - Not-END: a filtering region that filters OUT tracks ending in the region
-  - Terminative: cut tracks that enters the region
+  - Download [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1).
 
-- Down load [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf) of [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/), and fib file [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) from shared folder.
+  - Load the fib file on DSI-Studio by clicking "StepT3: Fiber Tracking & Visualization".
 
-- Load the fib file on DSI-Studio by clicking "StepT3: Fiber Tracking & Visualization".
+  - According to page 17 of the Region Manual, in order to generate raw left arcuate fasciculus, we need to draw regions of interests (ROI) and regions of avoidance (ROA):
+      - ROIs: ArcuateCoronal_left and ArcuateAxial_left
+      - ROAs: SagittalROA, TemporalCoronal_left, InternalCapsule_left, ExternalCapsule_left, Midbody, InferiorOccipital_left and SFG_left
 
-- According to page 17 of the Region Manual, in order to generate raw left arcuate fasciculus, we need to draw regions of interests (ROI) and regions of avoidance (ROA):
-    - ROIs: ArcuateCoronal_left and ArcuateAxial_left
-    - ROAs: SagittalROA, TemporalCoronal_left, InternalCapsule_left, ExternalCapsule_left, Midbody, InferiorOccipital_left and SFG_left
+  - To draw region ArcuateCoronal_left, for example, steps include:
 
-- To draw region ArcuateCoronal_left, for example, steps include:
+    1. Look up ***Table of Contents*** in page 2, find ***Regions*** - ***ArcuateCoronal_SIDE (AC)*** - ***page 63***.
 
-1. Look up ***Table of Contents*** in page 2, find ***Regions*** - ***ArcuateCoronal_SIDE (AC)*** - ***page 63***.
+    2. Turn to page 63, follow the instructions of how to draw ArcuateCoronal_SIDE to identify the region looked for.
 
-2. Turn to page 63, follow the instructions of how to draw ArcuateCoronal_SIDE to identify the region looked for.
+    3. Remember to define the type of the region drawn, either ROI or ROA in the GUI. In the region window, click ***Type*** and then select ***ROI/ROA***.
 
-3. Remember to define the type of the region drawn, either ROI or ROA in the GUI. In the region window, click ***Type*** and then select ***ROI/ROA***.
-
-4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
-
+    4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
+   
 ---
 
 ### Practicum task: Mapping unknown pathways using ROI-based fiber tracking
