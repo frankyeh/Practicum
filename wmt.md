@@ -24,24 +24,25 @@
 - Introduction to white matter pathways
 
   - Hands-on (Frank)
-    - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
-    - [Tractography atlas](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz)
-    - Add isosurface from T1W
+    - HCP1065 Group-average template 1mm [[download]](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) [(details)](https://brain.labsolver.org/hcp_template.html)
+    - Tractography atlas [[download]](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) [(details)](https://brain.labsolver.org/hcp_trk_atlas.html)
+    - Add isosurface from T1W [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_visualization.html)
+    
   - White matter tract anatomy (Linggang)  
   
 - Virtual dissection
 
   - Hands-on (Frank)
-    - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
-    - [Whole brain fiber tracking & Track dissection](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
+    - open HCP1065 Group-average template 1mm in [Step T3]
+    - Whole brain fiber tracking & Track dissection [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/1xfhaFQhCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - Automatic Fiber Tracking
 
   - Hands-on (Linggang)
-    - [HCP1065 Group-average template 1mm](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
-    - [Automatic fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_atk.html)
+    - open HCP1065 Group-average template 1mm in [Step T3]
+    - Automatic fiber tracking [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_atk.html)
    
 <iframe width="896" height="504" src="https://www.youtube.com/embed/Hzeb_q6ux-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -49,8 +50,10 @@
 
 1. Download [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) and [100206_T1w.nii.gz](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ET42Z4taJRtKrxvYKmEHZiIBJHdng-G-YyyHQjYCwM7vRg?e=Rjk7sA)
 
-2. Open the FIB file using [Step T3 Fiber Tracking] and click on [Step T3d Tracts][Fiber Tracking] to generate whole brain tracts 
+2. Open the FIB file using [Step T3 Fiber Tracking] and click on [Step T3d Tracts][Fiber Tracking] to generate whole brain tracts.
 
+  - [Optional] check out [document](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html) and test different fiber tracking parameters. Observe how changing them leads to different results.
+  
 3. Manually segment **left arcuate fasciculus**, **cingulum**, **uncinate fasciculus**, **corticospinal tract** from whole brain tracks. Compare it with automatic tracking results.
 
 4. Segment left arcuate fasciculus into the acoustic, visual, and lexical encoding part and assign different colors (reference: Giampiccolo D, Duffau H. Controversy over the temporal cortical terminations of the left arcuate fasciculus: a reappraisal. Brain. 2022 Feb 10.)
