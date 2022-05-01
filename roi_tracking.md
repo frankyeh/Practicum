@@ -64,7 +64,15 @@ source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
    
 ---
 
-### Practicum task: Mapping unknown pathways using ROI-based fiber tracking
+## Assignment: 
+
+### Refine fiber tracking results 
+
+1. Map **left corticospinal tracts** on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1)
+
+2. Identify false results and use ROI-based fiber tracking to improve the results.
+
+### Mapping difficult pathways using ROI-based fiber tracking
 
 ![image](https://user-images.githubusercontent.com/275569/151996479-7ef66e70-68c6-4f54-812e-98b01249830d.png)
 
