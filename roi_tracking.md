@@ -2,7 +2,7 @@
 
 ## Before practicum on Friday, please complete following:
 
-### Anatomy
+### Fiber Tracking
 
 - Watch a video about tractography
 
@@ -11,13 +11,22 @@
 
 - Read [[2. Challenges in mapping brain pathways]](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0002) and [[6. Fiber tracking methods]](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0025) of [a review paper](https://www.sciencedirect.com/science/article/pii/S1053811921009241).
 
-- Get familiarized with fiber tracking parameters [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
 ## During practicum on Friday:
 
 ### Introduction to tractography
 
-- [a review paper](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
+- Deterministic fiber tracking
+
+![image](http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/images/euler_ani.gif)
+
+source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
+
+- Limitation: Crossing-Branching Problem
+
+![image](https://user-images.githubusercontent.com/275569/166164844-cbc4b071-4ef1-44e1-b407-70921f6b2727.png)
+
+source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 
 ### Using regions to map left arcuate fasciculus
 
