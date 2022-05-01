@@ -22,9 +22,12 @@
 
 source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
 
-- Limitation: Crossing-Branching Problem
+- Limitation: gyral bias, crossing branching, signal loss
 
-![image](https://user-images.githubusercontent.com/275569/166164844-cbc4b071-4ef1-44e1-b407-70921f6b2727.png)
+<img src="https://user-images.githubusercontent.com/275569/166165047-0d1c3319-b621-4982-b6e7-017b42e34d2a.png" width=600>
+
+<img src="https://user-images.githubusercontent.com/275569/166164844-cbc4b071-4ef1-44e1-b407-70921f6b2727.png" width=600>
+
 
 source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 
