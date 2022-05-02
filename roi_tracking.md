@@ -35,7 +35,7 @@ source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 
 - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
-- Hnads-on
+- Hands-on
   - Different region types: seed, ROI, ROA, END, terminative
     - Seed: the starting location of fiber tracking
     - ROI: a filtering region that filters IN tracks
