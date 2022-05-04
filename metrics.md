@@ -1,10 +1,17 @@
-# Week 4 Region-Based & Tract-Based Analysis (Tractometry) 
+# Week 4 Diffusion MRI Metrics
 
 ## Before practicum on Friday, please complete following:
 
-### Review Paper
+- Read [[5. Fiber resolving methods]](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
+  - 5.1. Model-based methods
+  - 5.2. Model-free methods
+  - 5.3. Spherical deconvolution
+  - 5.4. Comparison
 
-- [Abhinav, Kumar, et al. "Advanced diffusion MRI fiber tracking in neurosurgical and neurodegenerative disorders and neuroanatomical studies: a review." Biochimica et Biophysica Acta (BBA)-Molecular Basis of Disease 1842.11 (2014): 2286-2297.](Materials/paper/review2.pdf) SECTION 3.4 analytical approaches.
+- Watch a video about diffusion tensor imaging
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e_xFMpjeZuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 ## During practicum on Friday:
