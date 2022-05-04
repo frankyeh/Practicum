@@ -15,12 +15,16 @@
 
 ---
 
-
 - Read [[5. Fiber resolving methods]](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
   - 5.1. Model-based methods
   - 5.2. Model-free methods
   - 5.3. Spherical deconvolution
   - 5.4. Comparison
+
+- Watch a video about diffusion tensor imaging
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e_xFMpjeZuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 ## During practicum on Friday:
