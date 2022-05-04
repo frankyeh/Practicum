@@ -72,7 +72,7 @@
 
 ### Process dMRI data on real-world studies
 
-1. 1. Download data from the [SCA2 Diffusion Tensor Imaging](https://openneuro.org/datasets/ds001378/versions/00003) study to a folder (e.g. D:/SCA2) study
+1. Download data from the [SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003) to a folder (e.g. D:/SCA2) study
 
 2. Click [Batch Processing][Step B2a: NIFTI to SRC (BIDS)] and select the folder. Move all constructed SRC files to a new folder (e.g. D:/SCA2)
 
