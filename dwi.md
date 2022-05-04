@@ -82,5 +82,5 @@
 
 5. Open the problematic SRC file in [Step T2 Reconstruction] and identify the cause. 
 
-6. Apply correction and compare arcuate fasciculus results with/without correction.
+6. Apply correction and compare the quality control report with/without correction.
 
