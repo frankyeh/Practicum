@@ -40,7 +40,6 @@
 
 ## During practicum on Friday:
 
-
 - [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
   - Diffusion sensitization (a.k.a. b-value)
@@ -50,13 +49,29 @@
 
   - Diffusion encoding directions (a.k.a. b-vector)
 
-  - Apparent diffusion coefficient
-    - b0 vs DWI
+- Hands-on: create SRC files
+  - [sub-01:dwi:sub-01_run-1_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
+  - [sub-01:dwi:sub-01_run-1_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
+  - [sub-01:dwi:sub-01_run-1_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
+  - Create an SRC file
 
 - Sampling schemes
-  - [Single-shell](https://zenodo.org/record/6320992/files/20081006_M025Y_DTI_30.src.gz?download=1) 
-  - [Multi-Shell] 
-  - [Grid](https://zenodo.org/record/6320992/files/20081006_M025Y_DSI_203.src.gz?download=1)
+  - [Single-shell](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EQQ5M77hJWpJlE8w4Byd5-sBIJikasowtgAerUTmQHbL9Q?e=UXLlh3) 
+  - [Multi-Shell](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EYW7Ym4EOXNKhV7a_SthyHAB6u1e71zGIwOjb67mUyNT0w?e=2BeFFJ)
+  - [Grid](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ESBC8VHWJNVBpwp6rn68Pu8ByIiwQ8KYPLS0E8wbIZkz8w?e=4YczQ7)
+
+- Quality Checks on dMRI data
+  - dMRI data with motion
+    - [sub-01:dwi:sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
+    - [sub-01:dwi:sub-01_run-2_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
+    - [sub-01:dwi:sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
+  - Identify motion artifacts
+
+- Correcting eddy current distortion and motion
+
+
+- Correcting susceptibility distortion and artifacts
+
 
 - Reconstruction methods
   - Model-based: diffusion tensor imaging
