@@ -1,8 +1,6 @@
-# Region-Based Fiber Tracking
+# Fiber Tracking
 
 ## Before practicum on Friday, please complete following:
-
-### Fiber Tracking
 
 - Watch a video about tractography
 
