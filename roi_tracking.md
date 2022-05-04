@@ -25,17 +25,17 @@ source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method
 
   - **false routing and premature termination**:
 
-<img src="https://user-images.githubusercontent.com/275569/166743312-c200c685-c7b7-4510-bb6a-48253ef44c7a.png" width=600>
+<img src="https://user-images.githubusercontent.com/275569/166743312-c200c685-c7b7-4510-bb6a-48253ef44c7a.png" width=800>
 
 source: Yeh, Fang-Cheng, et al. "Tractography methods and findings in brain tumors and traumatic brain injury." NeuroImage 245 (2021): 118651.
 
-<img src="https://user-images.githubusercontent.com/275569/166164844-cbc4b071-4ef1-44e1-b407-70921f6b2727.png" width=600>
+<img src="https://user-images.githubusercontent.com/275569/166164844-cbc4b071-4ef1-44e1-b407-70921f6b2727.png" width=800>
 
 source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 
   - **gyral bias**
 
-<img src="https://user-images.githubusercontent.com/275569/166742047-192c4a92-96b0-412a-9907-f7ddabf6b90c.png" width=600>
+<img src="https://user-images.githubusercontent.com/275569/166742047-192c4a92-96b0-412a-9907-f7ddabf6b90c.png" width=800>
 
 source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymmetric fiber orientation distributions." Medical image analysis 59 (2020): 101543.  
 
