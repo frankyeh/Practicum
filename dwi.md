@@ -70,11 +70,11 @@
 
 ## Assignment :
 
-### Process dMRI data from a real-world study
+### Process dMRI data on real-world studies
 
-1. Download data from the [Unilateral Glaucoma 3T dMRI] study(https://openneuro.org/datasets/ds001743/versions/1.0.1) to a folder (e.g. D:/Glaucoma_3T_dMRI)
+1. 1. Download data from the [SCA2 Diffusion Tensor Imaging](https://openneuro.org/datasets/ds001378/versions/00003) study to a folder (e.g. D:/SCA2) study
 
-2. Click [Batch Processing][Step B2a: NIFTI to SRC (BIDS)] and select the folder. Move all constructed SRC files to a new folder (e.g. D:/Glaucoma_3T_dMRI/src)
+2. Click [Batch Processing][Step B2a: NIFTI to SRC (BIDS)] and select the folder. Move all constructed SRC files to a new folder (e.g. D:/SCA2)
 
 3. Run [Diffusion MRI Analysis][Step T1a: Quality Control] and select the folder storing the SRC files. Save the report as a text file (e.g. report.txt)
 
@@ -83,4 +83,3 @@
 5. Open the problematic SRC file in [Step T2 Reconstruction] and identify the cause. 
 
 6. Apply correction and compare the quality control report with/without correction.
-
