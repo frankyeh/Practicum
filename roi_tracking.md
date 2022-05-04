@@ -23,14 +23,30 @@
 
 source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
 
-- Limitation: gyral bias, crossing branching, signal loss
+### Limitations 
+
+  - **false routing and premature termination**:
+
+![image](https://user-images.githubusercontent.com/275569/166743312-c200c685-c7b7-4510-bb6a-48253ef44c7a.png)
+
+source: Yeh, Fang-Cheng, et al. "Tractography methods and findings in brain tumors and traumatic brain injury." NeuroImage 245 (2021): 118651.
+
+  - **gyral bias**
+
+![image](https://user-images.githubusercontent.com/275569/166742047-192c4a92-96b0-412a-9907-f7ddabf6b90c.png)
+
+source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymmetric fiber orientation distributions." Medical image analysis 59 (2020): 101543.  
+
+  - **crossing branching**: affects corpus callosum, corticobulbar tract, optic chiasm
+
+<img src="https://user-images.githubusercontent.com/275569/166164844-cbc4b071-4ef1-44e1-b407-70921f6b2727.png" width=600>
+source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
+
+
+  - **signal loss**: pathways within putamen and globus pallidus.
 
 <img src="https://user-images.githubusercontent.com/275569/166165047-0d1c3319-b621-4982-b6e7-017b42e34d2a.png" width=600>
 
-<img src="https://user-images.githubusercontent.com/275569/166164844-cbc4b071-4ef1-44e1-b407-70921f6b2727.png" width=600>
-
-
-source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 
 ### Using regions to map left arcuate fasciculus
 
