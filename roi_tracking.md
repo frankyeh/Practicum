@@ -17,6 +17,7 @@
 ### Introduction to tractography
 
 - Deterministic fiber tracking
+- Probablistic fiber tracking
 
 ![image](http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/images/euler_ani.gif)
 
