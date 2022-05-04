@@ -15,6 +15,16 @@
 
 ---
 
+- Read [[4.4 Distortions and artifacts]](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0015) 
+  - 4.4.1. Eddy current distortion
+  - 4.4.2. Susceptibility-induced distortions and artifacts
+
+- Watch a video about distortions and artifacts in dMRI
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fXdhCdG4S_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 - Read [[5. Fiber resolving methods]](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
   - 5.1. Model-based methods
   - 5.2. Model-free methods
@@ -24,6 +34,7 @@
 - Watch a video about diffusion tensor imaging
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e_xFMpjeZuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ---
 
