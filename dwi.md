@@ -9,42 +9,36 @@
   - 4.2. B-value
   - 4.3. Sampling scheme
 - Read [[5. Fiber resolving methods]](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
-
+  - 5.1. Model-based methods
+  - 5.2. Model-free methods
+  - 5.3. Spherical deconvolution
+  - 5.4. Comparison
 ---
 
 ## During practicum on Friday:
 
-- Introduction to DSI Studio 
-  - [create SRC files from NIFTI or DICOM](https://dsi-studio.labsolver.org/doc/gui_t1.html)
-  - [reconstruct DWI data](https://dsi-studio.labsolver.org/doc/gui_t2.html)
-  - [fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
-- Diffusion MRI quality control:
+- [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
-<iframe width="896" height="504" src="https://www.youtube.com/embed/stL4GMeTC1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  - Diffusion sensitization (a.k.a. b-value)
+    - Diffusion time
+    - Diffusion gradient strength
+    - Diffusion gradient duration
 
-  - dMRI data without motion:
-    - [DWI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
-    - [BVAL](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
-    - [BVEC](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
+  - Diffusion encoding directions (a.k.a. b-vector)
 
-  - dMRI data with motion:
-    - [DWI](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
-    - [BVAL](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
-    - [BVEC](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
+  - Apparent diffusion coefficient
+    - b0 vs DWI
 
-  - Identify suscetibility artifact and motion artifact.
-  - Compare tractography before/after correction
+- Sampling schemes
+  - [Single-shell](https://zenodo.org/record/6320992/files/20081006_M025Y_DTI_30.src.gz?download=1) 
+  - [Multi-Shell] 
+  - [Grid](https://zenodo.org/record/6320992/files/20081006_M025Y_DSI_203.src.gz?download=1)
 
-- dMRI Preprossing
-
-  - Eddy current distortion and artifacts correction
-  - Sucetibility artifacts correction
+- Reconstruction methods
+  - Model-based: diffusion tensor imaging
+  - Model-free: q-space imaging
   
-    - [DWI](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
-    - [DWI_PA](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
-    - [BVAL](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
-    - [BVEC](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)   
 
 ## Assignment :
 
