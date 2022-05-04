@@ -1,4 +1,4 @@
-# Diffusion MRI Processing
+# Diffusion MRI Basics
 
 ## Before practicum on Friday, please complete following:
 
