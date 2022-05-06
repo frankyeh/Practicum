@@ -12,7 +12,7 @@
 
 ## During practicum on Friday:
 
-### Introduction to tractography
+### 1.Introduction to tractography
 
 - [Fiber tracking method](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0025)
   - Input: local fiber orientations (a.k.a. fixel)
@@ -35,7 +35,7 @@ source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method
     - Step size
     - Minimum and maximum length
 
-### Limitations 
+### 2.Limitations 
 
   - **false routing and premature termination**:
 
@@ -54,7 +54,7 @@ source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymmetric fiber orientation distributions." Medical image analysis 59 (2020): 101543.  
 
 
-### Region types used in fiber tracking
+### 3.Region types used in fiber tracking
 
 - Hands-on: [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
   - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
@@ -66,7 +66,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
     - Not-END: a filtering region that filters OUT tracks ending in the region
     - Terminative: cut tracks that enters the region
 
-### Fiber tracking protocols
+### 4.Fiber tracking protocols
 
 - [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
 - [TractEM](https://my.vanderbilt.edu/tractem/)
@@ -90,7 +90,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
 
 ## Assignment: 
 
-### Refine fiber tracking results 
+### 1. Combine automatic fiber tracking and region-based fiber tracking
 
 1. Use [AutoTract] to map **left corticospinal tracts** on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1)
 
@@ -100,7 +100,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
   - rename the regions files to include "mni" in the file name, and DSI Studio will load it as MNI regions
   - [examples](https://dsi-studio.labsolver.org/doc/cli_t3.html) 
 
-### Mapping difficult pathways using ROI-based fiber tracking
+### 2. Mapping difficult pathways using region-based fiber tracking
 
 ![image](https://user-images.githubusercontent.com/275569/151996479-7ef66e70-68c6-4f54-812e-98b01249830d.png)
 
