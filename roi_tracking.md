@@ -28,7 +28,7 @@ Local fiber orientations derived from dMRI
 source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
 
 - Hands-on: [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
-  - [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
   - Parameters
     - Anisotropy threshold
     - Angular threshold
@@ -83,7 +83,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
     4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
    
   - Save regions using [Regions][Save Checked Regions in Multiple Files]
-  - Repeat the mapping on [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) by loading the saved regions from [Regions Misc][Open MNI Regions]
+  - Repeat the mapping on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) by loading the saved regions from [Regions Misc][Open MNI Regions]
 
 
 ---
