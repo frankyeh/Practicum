@@ -54,11 +54,11 @@ source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymmetric fiber orientation distributions." Medical image analysis 59 (2020): 101543.  
 
 
-### Using regions to map left arcuate fasciculus
+### Region types used in fiber tracking
 
 - Hands-on: [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
-  - [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1)
-  - Different region types: seed, ROI, ROA, END, terminative
+  - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
+  - Demonstrate Region types: seed, ROI, ROA, END, terminative
     - Seed: the starting location of fiber tracking
     - ROI: a filtering region that filters IN tracks
     - ROA: a filtering region that filters OUT tracks
@@ -66,23 +66,24 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
     - Not-END: a filtering region that filters OUT tracks ending in the region
     - Terminative: cut tracks that enters the region
 
-  - Protocols
-    - [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
-    - [TractEM](https://my.vanderbilt.edu/tractem/)
-  - Map left arcuate fasciculus
-    - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) by clicking "StepT3: Fiber Tracking & Visualization".
-    - According to page 17 of the Region Manual, in order to generate raw left arcuate fasciculus, we need:
-      - ROIs: ArcuateCoronal_left, ArcuateAxial_left
-      - ROAs: SagittalROA, TemporalCoronal_left, ExternalCapsule_left
-    - To draw region ArcuateCoronal_left, for example, steps include:
+### Fiber tracking protocols
 
-      1. Look up ***Table of Contents*** in page 2, find ***Regions*** - ***ArcuateCoronal_SIDE (AC)*** - ***page 63***.
-      2. Turn to page 63, follow the instructions of how to draw ArcuateCoronal_SIDE to identify the region looked for.
-      3. Remember to define the type of the region drawn, either ROI or ROA in the GUI. In the region window, click ***Type*** and then select ***ROI/ROA***.
-      4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
+- [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
+- [TractEM](https://my.vanderbilt.edu/tractem/)
+- Hands-on: mapping left arcuate fasciculus
+  - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) by clicking "StepT3: Fiber Tracking & Visualization".
+  - According to page 17 of the Region Manual, in order to generate raw left arcuate fasciculus, we need:
+    - ROIs: ArcuateCoronal_left, ArcuateAxial_left
+    - ROAs: SagittalROA, TemporalCoronal_left, ExternalCapsule_left
+  - To draw region ArcuateCoronal_left, for example, steps include:
+
+    1. Look up ***Table of Contents*** in page 2, find ***Regions*** - ***ArcuateCoronal_SIDE (AC)*** - ***page 63***.
+    2. Turn to page 63, follow the instructions of how to draw ArcuateCoronal_SIDE to identify the region looked for.
+    3. Remember to define the type of the region drawn, either ROI or ROA in the GUI. In the region window, click ***Type*** and then select ***ROI/ROA***.
+    4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
    
-    - Save regions using [Regions][Save Checked Regions in Multiple Files]
-    - Repeat the mapping on [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) by loading the saved regions from [Regions Misc][Open MNI Regions]
+  - Save regions using [Regions][Save Checked Regions in Multiple Files]
+  - Repeat the mapping on [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) by loading the saved regions from [Regions Misc][Open MNI Regions]
 
 
 ---
@@ -94,6 +95,10 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
 1. Use [AutoTract] to map **left corticospinal tracts** on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1)
 
 2. Identify false results and use ROI-based fiber tracking to improve the results.
+
+3. [Optional] write a script to mapp CST in [multiple FIB files](https://zenodo.org/record/6307812)(Download 3~5 FIB files)
+  - rename the regions files to include "mni" in the file name, and DSI Studio will load it as MNI regions
+  - [examples](https://dsi-studio.labsolver.org/doc/cli_t3.html) 
 
 ### Mapping difficult pathways using ROI-based fiber tracking
 
