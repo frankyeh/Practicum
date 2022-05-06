@@ -19,17 +19,21 @@
   - Output: sequences of 3D coordinates
   - Deterministic vs probablistic
 
-- Hands-on: [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
-  - [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
-  - Parameters:
-    - Anisotropy threshold
-    - Angular threshold
-    - Step size
-    - Minimum and maximum length
+![image](https://user-images.githubusercontent.com/275569/167182297-129fb316-60a5-40b1-8c77-f3d0f3ed1122.png)
+
+Local fiber orientations derived from dMRI
 
 ![image](http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/images/euler_ani.gif)
 
 source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
+
+- Hands-on: [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
+  - [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+  - Parameters
+    - Anisotropy threshold
+    - Angular threshold
+    - Step size
+    - Minimum and maximum length
 
 ### Limitations 
 
