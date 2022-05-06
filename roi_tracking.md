@@ -96,7 +96,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
 
 2. Identify false results and use ROI-based fiber tracking to improve the results.
 
-3. [Optional] write a script to mapp CST in [multiple FIB files](https://zenodo.org/record/6307812)(Download 3~5 FIB files)
+3. [Optional] write a script to map CST in [multiple FIB files](https://zenodo.org/record/6307812)(Download 3~5 FIB files)
   - rename the regions files to include "mni" in the file name, and DSI Studio will load it as MNI regions
   - [examples](https://dsi-studio.labsolver.org/doc/cli_t3.html) 
 
