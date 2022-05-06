@@ -74,7 +74,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
   - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) by clicking "StepT3: Fiber Tracking & Visualization".
   - According to page 17 of the Region Manual, in order to generate raw left arcuate fasciculus, we need:
     - ROIs: ArcuateCoronal_left, ArcuateAxial_left
-    - ROAs: SagittalROA, TemporalCoronal_left, ExternalCapsule_left
+    - ROAs: SagittalROA, ExternalCapsule_left
   - To draw region ArcuateCoronal_left, for example, steps include:
 
     1. Look up ***Table of Contents*** in page 2, find ***Regions*** - ***ArcuateCoronal_SIDE (AC)*** - ***page 63***.
