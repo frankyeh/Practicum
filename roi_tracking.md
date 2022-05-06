@@ -14,8 +14,11 @@
 
 ### Introduction to tractography
 
-- Deterministic fiber tracking
-- Probablistic fiber tracking
+- [Fiber tracking method](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0025)
+  - Input: local fiber orientations (a.k.a. fixel)
+  - Output: sequences of 3D coordinates
+  - Deterministic vs probablistic
+
 - Hands-on: [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
   - [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
   - Parameters:
