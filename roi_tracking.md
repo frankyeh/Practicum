@@ -81,7 +81,8 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
       3. Remember to define the type of the region drawn, either ROI or ROA in the GUI. In the region window, click ***Type*** and then select ***ROI/ROA***.
       4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
    
-    - Repeat the mapping on [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+    - Save regions using [Regions][Save Checked Regions in Multiple Files]
+    - Repeat the mapping on [100206.src.gz.gqi.1.25.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) by loading the saved regions from [Regions Misc][Open MNI Regions]
 ---
 
 ## Assignment: 
