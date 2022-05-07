@@ -1,4 +1,4 @@
-# Week 4 Diffusion MRI Metrics
+# Week 4 Diffusion Metrics
 
 ## Before practicum on Friday, please complete following:
 
