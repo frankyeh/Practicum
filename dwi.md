@@ -67,6 +67,11 @@
     
     - Suscetibility distortion and artifact 
     
+      <img src="https://user-images.githubusercontent.com/275569/167231465-26a3d2b7-d3ad-42d6-abb7-7720330aac14.png" width=500>
+      
+      (source: http://ftp.nmr.mgh.harvard.edu/pub/dist/freesurfer/tutorial_packages/centos6/fsl_507/doc/wiki/topup(2f)TopupUsersGuide.html)
+
+    
     - Inconsistent parameters (TE, TR, b-table)
     
   - Hands-on: 
