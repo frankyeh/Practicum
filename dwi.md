@@ -52,21 +52,40 @@
     - [Grid](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ESBC8VHWJNVBpwp6rn68Pu8ByIiwQ8KYPLS0E8wbIZkz8w?e=4YczQ7)
 
 - Quality Checks on dMRI data
-  - Hands-on: Quality Control using DSI Studio
-
-  - Correcting motion
-    - [sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
-    - [sub-01_run-2_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
-    - [sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
-  
-  - Correcting eddy current distortion
+  - Possible quality issues
+    - Motion artifacts & signal dropout
     
+      <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
 
-  - Correcting susceptibility distortion and artifacts
-    - [sub-01_acq-multiband_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
-    - [sub-01_acq-multiband_dir-PA_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
-    - [sub-01_acq-multiband_dwi.bval](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
-    - [sub-01:dwi:sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
+      (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+
+    - Eddy current distortion
+
+      <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=500>
+
+      (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+    
+    - Suscetibility distortion and artifact 
+    
+    - Inconsistent parameters (TE, TR, b-table)
+    
+  - Hands-on: 
+    - Identify quality problems
+      - Dataset 1
+        - [sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
+        - [sub-01_run-2_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
+        - [sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
+      - Dataset 2
+
+    - Correcting eddy current distortion and motion
+      - [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+
+    - Correcting susceptibility distortion and artifacts
+      - [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)
+      - [sub-01_acq-multiband_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
+      - [sub-01_acq-multiband_dir-PA_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
+      - [sub-01_acq-multiband_dwi.bval](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
+      - [sub-01:dwi:sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
 
 ## Assignment :
 
