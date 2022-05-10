@@ -42,14 +42,16 @@
     - [sub-01_run-1_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
     - Create an SRC file
 
-- Sampling schemes
-  - Single-shell: one b-value at 30 directions (e.g. DTI, high angular resolution diffusion imaging, a.k.a. HARDI)
-  - Multi-shell: 2 or 3 b-values with 90 directions acquired at each b-value
-  - Grid: a total of 258 directions acquired by 23 b-values.
+  - Sampling schemes
+    - Single-shell: one b-value at 30 directions (e.g. DTI, high angular resolution diffusion imaging, a.k.a. HARDI)
+    - Multi-shell: 2 or 3 b-values with 90 directions acquired at each b-value
+    - Grid: a total of 258 directions acquired by 23 b-values.
+ 
   - Hands-on: identify sampling schemes
     - [Single-shell](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EQQ5M77hJWpJlE8w4Byd5-sBIJikasowtgAerUTmQHbL9Q?e=UXLlh3) 
     - [Multi-Shell](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EYW7Ym4EOXNKhV7a_SthyHAB6u1e71zGIwOjb67mUyNT0w?e=2BeFFJ)
     - [Grid](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ESBC8VHWJNVBpwp6rn68Pu8ByIiwQ8KYPLS0E8wbIZkz8w?e=4YczQ7)
+
 
 - Quality Checks on dMRI data
   - Possible quality issues
