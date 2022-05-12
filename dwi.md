@@ -97,7 +97,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
 
     (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
     
-- Suscetibility distortion and artifact     
+- Susceptibility distortion and artifact     
   
   <img src="https://user-images.githubusercontent.com/275569/167231465-26a3d2b7-d3ad-42d6-abb7-7720330aac14.png" width=500>
       
@@ -108,7 +108,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
     - [sub-01_acq-multiband_dir-PA_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
     - [sub-01_acq-multiband_dwi.bval](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
     - [sub-01:dwi:sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
-    - Correct suscetibility artifact and distortion using [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)   
+    - Correct susceptibility artifact and distortion using [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)   
 
 - Inconsistent parameters (TE, TR, b-table, resolution...etc.)     
   - Quality check on SRC files
