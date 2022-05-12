@@ -29,9 +29,9 @@
 
 - Diffusion MRI 
 
-<img source="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00863-w/MediaObjects/13244_2020_863_Fig1_HTML.png" width=500>
+<img src="https://user-images.githubusercontent.com/275569/168139630-595e86c8-440e-4e3e-8ba4-bf4a608201c5.png" width=500>
 
-<img source="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00863-w/MediaObjects/13244_2020_863_Fig3_HTML.png" width=500>
+<img src="https://user-images.githubusercontent.com/275569/168139693-32751d64-985b-4651-9040-8da96541552a.png" width=500>
 
 source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
