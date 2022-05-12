@@ -48,6 +48,8 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - Create an SRC file
 
 - Sampling schemes of the b-table
+![image](https://user-images.githubusercontent.com/275569/168138897-e96f3fd6-e690-4b2d-a72f-5036437a6612.png)
+
   - Single-shell: one b-value at 30 directions (e.g. DTI, high angular resolution diffusion imaging, a.k.a. HARDI)
   - Multi-shell: 2 or 3 b-values with 90 directions acquired at each b-value
   - Grid: a total of 258 directions acquired by 23 b-values.
