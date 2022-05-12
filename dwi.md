@@ -30,6 +30,9 @@
 - Diffusion MRI 
 
 <img source="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00863-w/MediaObjects/13244_2020_863_Fig1_HTML.png?as=webp" width=500>
+
+<img source="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00863-w/MediaObjects/13244_2020_863_Fig3_HTML.png?as=webp" width=500>
+
 source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
   - B-value: Diffusion sensitization
