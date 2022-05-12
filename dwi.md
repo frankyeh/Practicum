@@ -84,7 +84,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
       - Larger with higher b-value
       - Can be corrected in the MRI sequence to cancel eddy currents
         
-      <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=500>
+      <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=250>
 
       (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
     
