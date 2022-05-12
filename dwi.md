@@ -29,18 +29,18 @@
 
 - [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
+  - Hands-on: create SRC files from NIFTI data
+    - [sub-01_run-1_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
+    - [sub-01_run-1_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
+    - [sub-01_run-1_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
+    - Create an SRC file
+
   - B-value: Diffusion sensitization
     - Diffusion time
     - Diffusion gradient strength
     - Diffusion gradient duration
 
   - B-vector: Diffusion encoding directions
-
-  - Hands-on: create SRC files
-    - [sub-01_run-1_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
-    - [sub-01_run-1_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
-    - [sub-01_run-1_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
-    - Create an SRC file
 
   - Sampling schemes
     - Single-shell: one b-value at 30 directions (e.g. DTI, high angular resolution diffusion imaging, a.k.a. HARDI)
@@ -54,35 +54,33 @@
 
 
 - Quality Checks on dMRI data
-  - Possible quality issues
-    - Motion artifacts & signal dropout
     
+  1. Motion artifacts and eddy distortion 
+    - Hands-on
+      - [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
+      - [sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
+      - [sub-01_run-2_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
+      - [sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
+      - Identify motion induced signals issues
+
+    - Motion artifacts
+      - often has slice signal dropout
       <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
 
       (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
 
+      - Correction using [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+        
     - Eddy current distortion
-
+      - Larger with higher b-value
+      - Can be corrected in the MRI sequence to cancel eddy currents
+        
       <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=500>
 
       (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
     
-    - Suscetibility distortion and artifact 
-    
-      <img src="https://user-images.githubusercontent.com/275569/167231465-26a3d2b7-d3ad-42d6-abb7-7720330aac14.png" width=500>
-      
-      (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup/TopupUsersGuide)
-
-    - Inconsistent parameters (TE, TR, b-table, resolution...etc.)
-    
-  - Hands-on: 
-
-    - Identify and correct eddy current distortion and motion artifact
-      - [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
-      - [sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
-      - [sub-01_run-2_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
-      - [sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
-
+  2. Suscetibility distortion and artifact     
+    - Hands-on: 
     - Identify and correct susceptibility distortion/artifacts
       - [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)
       - [sub-01_acq-multiband_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
@@ -90,6 +88,11 @@
       - [sub-01_acq-multiband_dwi.bval](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
       - [sub-01:dwi:sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
 
+      <img src="https://user-images.githubusercontent.com/275569/167231465-26a3d2b7-d3ad-42d6-abb7-7720330aac14.png" width=500>
+      
+      (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup/TopupUsersGuide)
+
+  3. Inconsistent parameters (TE, TR, b-table, resolution...etc.)     
     - Quality check on SRC files
 
 ## Assignment :
