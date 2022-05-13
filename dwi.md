@@ -107,11 +107,13 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
     - [sub-01_acq-multiband_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
     - [sub-01_acq-multiband_dir-PA_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
     - [sub-01_acq-multiband_dwi.bval](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
-    - [sub-01:dwi:sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
+    - [sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
     - Correct susceptibility artifact and distortion using [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)   
 
 - Inconsistent parameters (TE, TR, b-table, resolution...etc.)     
   - Quality check on SRC files
+
+- [Batch processing](https://dsi-studio.labsolver.org/doc/gui_bx.html)
 
 ## Assignment :
 
@@ -119,7 +121,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
 
 1. Download data from the [SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003) to a folder (e.g. D:/SCA2) study
 
-2. Click [Batch Processing][Step B2a: NIFTI to SRC (BIDS)] and select the folder. Move all constructed SRC files to a new folder (e.g. D:/SCA2)
+2. Click [Batch Processing][Step B2a: NIFTI to SRC (BIDS)] and select the folder. DSI Studio will ask to specify another folder to output the SRC files (e.g. D:/src).
 
 3. Run [Diffusion MRI Analysis][Step T1a: Quality Control] and select the folder storing the SRC files. Save the report as a text file (e.g. report.txt)
 
@@ -127,4 +129,4 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
 
 5. Open the problematic SRC file in [Step T2 Reconstruction] and identify the cause. 
 
-6. Apply correction and compare the quality control report with/without correction.
+6. Apply eddy correction and compare the quality control report with/without correction.
