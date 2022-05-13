@@ -53,6 +53,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
     - [sub-01_run-1_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
     - [sub-01_run-1_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
     - [sub-01_run-1_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
+    - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
     - Create an SRC file
 
 ### Sampling schemes of the b-table
@@ -73,10 +74,10 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
     
 - Motion artifacts and eddy distortion 
   - Hands-on
-    - [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
     - [sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
     - [sub-01_run-2_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
     - [sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
+    - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
     - Identify motion induced signals issues
 
   - Motion artifacts
