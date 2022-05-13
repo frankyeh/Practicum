@@ -1,4 +1,4 @@
-# Week 4 Diffusion Metrics
+# Diffusion Models and Metrics
 
 ## Before practicum on Friday, please complete following:
 
