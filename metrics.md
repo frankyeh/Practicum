@@ -22,7 +22,7 @@
 
 - Demonstrate using corticospinal tract (CST) ROI to get diffusion metrics.
 
-<img src="https://user-images.githubusercontent.com/275569/153015590-a367f769-8694-4dd9-8680-03716c6d5830.png" width="600">
+<img src="https://user-images.githubusercontent.com/275569/153015590-a367f769-8694-4dd9-8680-03716c6d5830.png" width="400">
 
 
 #### Tract-based analysis 
@@ -33,7 +33,7 @@
 
 - Use tract cutting (with selection & separate deleted tract) to segment CST into segments above internal capsule (IC), IC, and below IC sections.
 
-<img src="https://user-images.githubusercontent.com/275569/153015773-27d4d62c-8126-49b2-b125-a7532688c47e.png" width="300">
+<img src="https://user-images.githubusercontent.com/275569/153015773-27d4d62c-8126-49b2-b125-a7532688c47e.png" width="200">
 
 #### Tract profile
 
@@ -41,7 +41,7 @@
 
 - Plot along tract metrics at z-direction or fiber direction.
 
-<img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="600">
+<img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="400">
 
 ---
 
