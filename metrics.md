@@ -17,7 +17,7 @@
 
 ### Diffusion MRI models
 
-- [dMRI models](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
+- [Diffusion Models](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
   - Model-based methods (DTI, [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT)'s BSM, DKI, NODDI)
   - Model-free methods ([DSI Studio](https://dsi-studio.labsolver.org/)'s GQI)
   - Spherical deconvolution methods ([MRtrix](https://www.mrtrix.org/)'s CSD, MSMT-CSD)
@@ -26,26 +26,42 @@
 | ------------|---------------------|-------------------|------------------------|---------|-------|
 | DTI         | B0, >= 1 b-value(s) |  No (except for DTI-FWE) |  No | (except for Multi-Tensor) | fa, ad, rd, md |
 | DKI         | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Tensor) | kurtosis | 
-| NODDI       | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Fiber NODDI ) | fwf, odi, ndi | 
+| NODDI       | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Fiber NODDI ) | iso, odi, ndi (icvf) | 
 | GQI         | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
 | CSD         | 1 b-value | No | No | Yes | afd |
 | CSD-MSMT    | >= 2 b-values | Yes | Yes | Yes | afd |
 
+- Metrics
+  - Voxel-based metrics
+  - Fiber-based metrics
+  - Tractography-based metrics: SIFT connectivity, network measures, [(shape metrics)](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
+
+![image](https://user-images.githubusercontent.com/275569/169354232-f490be50-627f-4bc1-9aab-97ab86f9eadc.png)
+
+![image](https://user-images.githubusercontent.com/275569/169354388-6fa435d8-5885-47ab-9107-c90d23f48592.png)
+
+  - [Interpretation](https://dsi-studio.labsolver.org/doc/how_to_interpret_dmri.html)
+    - Fiber integrtity: fa, qa, afd, odi, kurtosis, rd, ad, SIFT connectivity
+    - Cellularity: rdi, ndi, kurtosis, md, kurtosis
+    - Free water: iso, fw
+ 
+
+
 
 ### Hands-on: Region-based analysis 
 
-- [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
+- Download [FIB files from the SCA2 Diffusion Tensor Imaging study](https://github.com/frankyeh/DSI-Studio-Cloud/releases/download/ds001378/ds001378_fib.zip)
 
-- Demonstrate using corticospinal tract (CST) ROI to get diffusion metrics.
-
-<img src="https://user-images.githubusercontent.com/275569/153015590-a367f769-8694-4dd9-8680-03716c6d5830.png" width="400">
+- Use [Region][Statistics] to get diffusion metrics from atlases ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)).
 
 
 ### Hands-on: Tract-based analysis 
 
-- [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
+- Map corticospinal tracts
 
-- Demonstrate CST fiber tracking to get diffusion metrics at CST.
+- Get diffusion metrics at CST using [Tracts][Statistics]
+
+<img src="https://user-images.githubusercontent.com/275569/153015590-a367f769-8694-4dd9-8680-03716c6d5830.png" width="400">
 
 - Use tract cutting (with selection & separate deleted tract) to segment CST into segments above internal capsule (IC), IC, and below IC sections.
 
@@ -53,9 +69,7 @@
 
 ### Hands-on: Tract profile
 
-- [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
-
-- Plot along tract metrics at z-direction or fiber direction.
+- Plot along CST metrics at z-direction or fiber direction. ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html))
 
 <img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="400">
 
@@ -64,7 +78,7 @@
 ## Practicum assignment: ROI-based and Track-based analysis comparing ALS with controls
 
 
-1. Download subject FIB files at [SCA2 Diffusion Tensor Imaging](https://github.com/frankyeh/DSI-Studio-Cloud/releases/tag/ds001378)
+1. Download [FIB files from the SCA2 Diffusion Tensor Imaging study](https://github.com/frankyeh/DSI-Studio-Cloud/releases/download/ds001378/ds001378_fib.zip)
 
 2. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
 
