@@ -13,10 +13,26 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e_xFMpjeZuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
 ## During practicum on Friday:
 
-#### Region-based analysis 
+### Diffusion MRI models
+
+- [dMRI models](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
+  - Model-based methods (DTI, [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT)'s BSM, DKI, NODDI)
+  - Model-free methods ([DSI Studio](https://dsi-studio.labsolver.org/)'s GQI)
+  - Spherical deconvolution methods ([MRtrix](https://www.mrtrix.org/)'s CSD, MSMT-CSD)
+
+| Model/Method| B-table requirements| Handle Free Water | Quantify Restricted Diffusion | Resolve Multiple Fibers | Metrics |
+| ------------|---------------------|-------------------|------------------------|---------|-------|
+| DTI         | B0, >= 1 b-value(s) |  No (except for DTI-FWE) |  No | (except for Multi-Tensor) | fa, ad, rd, md |
+| DKI         | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Tensor) | kurtosis | 
+| NODDI       | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Fiber NODDI ) | fwf, odi, ndi | 
+| GQI         | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
+| CSD         | 1 b-value | No | No | Yes | afd |
+| CSD-MSMT    | >= 2 b-values | Yes | Yes | Yes | afd |
+
+
+### Hands-on: Region-based analysis 
 
 - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
@@ -25,7 +41,7 @@
 <img src="https://user-images.githubusercontent.com/275569/153015590-a367f769-8694-4dd9-8680-03716c6d5830.png" width="400">
 
 
-#### Tract-based analysis 
+### Hands-on: Tract-based analysis 
 
 - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
@@ -35,7 +51,7 @@
 
 <img src="https://user-images.githubusercontent.com/275569/153015773-27d4d62c-8126-49b2-b125-a7532688c47e.png" width="200">
 
-#### Tract profile
+### Hands-on: Tract profile
 
 - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html).
 
@@ -45,10 +61,10 @@
 
 ---
 
-### Practicum task: ROI-based and Track-based analysis comparing ALS with controls
+## Practicum assignment: ROI-based and Track-based analysis comparing ALS with controls
 
 
-1. Download subject FIB files at [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
+1. Download subject FIB files at [SCA2 Diffusion Tensor Imaging](https://github.com/frankyeh/DSI-Studio-Cloud/releases/tag/ds001378)
 
 2. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
 
