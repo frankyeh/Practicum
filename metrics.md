@@ -24,8 +24,8 @@
 
 | Model/Method| B-table requirements| Handle Free Water | Quantify Restricted Diffusion | Resolve Multiple Fibers | Metrics |
 | ------------|---------------------|-------------------|------------------------|---------|-------|
-| DTI         | B0, >= 1 b-value(s) |  No (except for DTI-FWE) |  No | (except for Multi-Tensor) | fa, ad, rd, md |
-| DKI         | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Tensor) | kurtosis | 
+| DTI         | B0, >= 1 b-value(s) |  No (except for DTI-FWE) |  No | No (except for Multi-Tensor) | fa, ad, rd, md |
+| DKI         | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Tensor) | ak, rk, mk | 
 | NODDI       | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Fiber NODDI ) | iso, odi, ndi (icvf) | 
 | GQI         | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
 | CSD         | 1 b-value | No | No | Yes | afd |
@@ -41,12 +41,11 @@
 ![image](https://user-images.githubusercontent.com/275569/169354388-6fa435d8-5885-47ab-9107-c90d23f48592.png)
 
   - [Interpretation](https://dsi-studio.labsolver.org/doc/how_to_interpret_dmri.html)
-    - Fiber integrtity: fa, qa, afd, odi, kurtosis, rd, ad, SIFT connectivity
-    - Cellularity: rdi, ndi, kurtosis, md, kurtosis
+    - Fiber integrtity: 
+      - axonal density: fa, qa, afd, odi, ad, SIFT connectivity
+      - myelination: fa, rd, qa
+    - Cellularity: rdi, ndi, md,
     - Free water: iso, fw
- 
-
-
 
 ### Hands-on: Region-based analysis 
 
