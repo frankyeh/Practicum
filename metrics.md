@@ -48,10 +48,19 @@
     - Cellularity: rdi, ndi, md,
     - Free water: iso, fw
 
+### Hands-on: GQI and DTI Reconstruction
+
+- Download control subject 1 session 1 data from [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
+  - [BVAL](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.bval)
+  - [BVEC](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.bvec)
+  - [NIFTI](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.nii.gz)
+
+- Reconstruction using GQI and DTI
+- Check and compare FIB files
+
 ### Hands-on: Region-based analysis 
 
 - Download [FIB files from the SCA2 Diffusion Tensor Imaging study](https://github.com/frankyeh/DSI-Studio-Cloud/releases/download/ds001378/ds001378_fib.zip)
-
 - Use [Region][Statistics] to get diffusion metrics from atlases ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)).
 
 
