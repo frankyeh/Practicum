@@ -34,7 +34,8 @@
 - Metrics
   - Voxel-based metrics
   - Fiber-based metrics
-  - Tractography-based metrics: SIFT connectivity, network measures, [(shape metrics)](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
+  - Tractography-based metrics: connectivity, [(shape metrics)](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
+  - Graph-based metrics: network measures
 
 ![image](https://user-images.githubusercontent.com/275569/169354232-f490be50-627f-4bc1-9aab-97ab86f9eadc.png)
 
