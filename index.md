@@ -40,12 +40,12 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.
 
 In this practicum course, participants will 
+
   - learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver)
   - receive hands-on experiences for analyzing dMRI data.
-  - conduct a tractography project after training (optional, unless taking the CMU Practicum credit).
+
 
 - Laboratory Exposure
-
 Participants will learn the neuroanatomy of the target fiber bundle and use “DSI Studio” to map its connection trajectories on a population averaged template. The learned skills in this course can be applied to any brain studies that investigate the structural trajectories of fiber connections.
 
 - Practicum publications
