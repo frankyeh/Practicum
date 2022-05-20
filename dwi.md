@@ -111,11 +111,6 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
     - [sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
     - Correct susceptibility artifact and distortion using [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)   
 
-- Inconsistent parameters (TE, TR, b-table, resolution...etc.)     
-  - Quality check on SRC files
-
-- [Batch processing](https://dsi-studio.labsolver.org/doc/gui_bx.html)
-
 ## Assignment :
 
 ### Process dMRI data on real-world studies
