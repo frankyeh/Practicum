@@ -12,13 +12,10 @@ We regularly host DSI Studio training throughout the year. Future workshops will
   - email frank.yeh@pitt.edu to get zoom link.
 
 - Future workshop (Fall 2022)
-  - 10am - 11am (EST) Friday
-  - [sign-up link](https://forms.gle/8X9RynCwohwCSmWa7)
+  - 10am-11am (EST) Friday
   - 8/2, 8/9, 8/16, 8/23, 8/30, 9/7, 9/14
-
-- Participating Labs: 
-
-  - [Fiber Tractography Laboratory](https://hdft.labsolver.org/)
+  - [sign-up link](https://forms.gle/8X9RynCwohwCSmWa7)
+  - Participants will receive comfirmation email in July with zoom link to join the practicum.
 
 - Activities
   - Reading materials before course (est 1 hr)
@@ -32,25 +29,24 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 
 - Project Instructors:
 
-  - Linggang Luo
   - Fang-Cheng (Frank) Yeh
 
 - Prerequisites:
 
   - Background in general neuroscience (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)
 
-
 - Research Description:
 
 Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.
 
 In this practicum course, participants will 
-  - first 7 weeks: learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver) for mapping brain connection trajectories
+  - learn a tractography software tool called [DSI Studio](http://dsi-studio.labsolver)
+  - receive hands-on experiences for analyzing dMRI data.
   - conduct a tractography project after training (optional, unless taking the CMU Practicum credit).
 
 - Laboratory Exposure
 
-Participants will learn the neuroanatomy of the target fiber bundle and use “DSI Studio” to map its connection trajectories on a population averaged template. In 2021, there are [250 journal publications using DSI Studio](http://dsi-studio.labsolver.org/citation.html) to carry out their studies. The learned skills in thie course can be applied to any brain studies that investigate the structural trajectories of fiber connections.
+Participants will learn the neuroanatomy of the target fiber bundle and use “DSI Studio” to map its connection trajectories on a population averaged template. The learned skills in this course can be applied to any brain studies that investigate the structural trajectories of fiber connections.
 
 - Practicum publications
 
