@@ -58,29 +58,25 @@
 - Reconstruction using GQI and DTI
 - Check and compare FIB files
 
-### Hands-on: Region-based analysis 
+### Hands-on: dMRI analysis 
 
-- Download [FIB files from the SCA2 Diffusion Tensor Imaging study](https://github.com/frankyeh/DSI-Studio-Cloud/releases/download/ds001378/ds001378_fib.zip)
-- Use [Region][Statistics] to get diffusion metrics from atlases ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)).
+- Region-based analysis
+  - Use [Region][Statistics] to get diffusion metrics from atlases ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)).
+- Tract-based analysis 
+  - Map corticospinal tracts
+  - Get diffusion metrics at CST using [Tracts][Statistics]
+  
+  <img src="https://user-images.githubusercontent.com/275569/153015590-a367f769-8694-4dd9-8680-03716c6d5830.png" width="400">
+  
+  - Use tract cutting (with selection & separate deleted tract) to segment CST into segments above internal capsule (IC), IC, and below IC sections.
+  
+  <img src="https://user-images.githubusercontent.com/275569/153015773-27d4d62c-8126-49b2-b125-a7532688c47e.png" width="200">
 
+  - Plot along CST metrics at z-direction or fiber direction. ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html))
 
-### Hands-on: Tract-based analysis 
+  <img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="400">
 
-- Map corticospinal tracts
-
-- Get diffusion metrics at CST using [Tracts][Statistics]
-
-<img src="https://user-images.githubusercontent.com/275569/153015590-a367f769-8694-4dd9-8680-03716c6d5830.png" width="400">
-
-- Use tract cutting (with selection & separate deleted tract) to segment CST into segments above internal capsule (IC), IC, and below IC sections.
-
-<img src="https://user-images.githubusercontent.com/275569/153015773-27d4d62c-8126-49b2-b125-a7532688c47e.png" width="200">
-
-### Hands-on: Tract profile
-
-- Plot along CST metrics at z-direction or fiber direction. ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html))
-
-<img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="400">
+- Region-based and Tract-based analysis using connectometry database
 
 ---
 
@@ -88,10 +84,10 @@
 
 
 1. Download [FIB files from the SCA2 Diffusion Tensor Imaging study](https://github.com/frankyeh/DSI-Studio-Cloud/releases/download/ds001378/ds001378_fib.zip)
-
-2. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
-
-3. Use tract-based analysis to get metrics (nqa, fa) from patients and controls and compare.
+2. Reconstruct data using QSDR
+3. Create a connectometry database
+4. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
+5. Use tract-based analysis to get metrics (nqa, fa) from patients and controls and compare.
  
 3. Segment CST into segmentation to get metrics (nqa, fa) and compare them between patients and controls.
 
