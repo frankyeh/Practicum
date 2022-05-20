@@ -55,8 +55,9 @@
   - [BVEC](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.bvec)
   - [NIFTI](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.nii.gz)
 
-- Reconstruction using GQI and DTI
+- Reconstruction using DRI, GQI, QSDR
 - Check and compare FIB files
+- Batch SRC reconstruction
 
 ### Hands-on: dMRI analysis 
 
