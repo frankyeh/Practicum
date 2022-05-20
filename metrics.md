@@ -48,7 +48,7 @@
     - Cellularity: rdi, ndi, md,
     - Free water: iso, fw
 
-### Hands-on: GQI and DTI Reconstruction
+### Hands-on: DTI, GQI, and QSDR Reconstruction
 
 - Download control subject 1 session 1 data from [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
   - [BVAL](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.bval)
@@ -78,19 +78,19 @@
   <img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="400">
 
 - Region-based and Tract-based analysis using connectometry database
+  - Create connectometry DB
+  - [Connectometry DB samples](https://brain.labsolver.org/hcp_template.html)
+  - Region-based analysis
+  - Tract-based analysis
 
 ---
 
-## Practicum assignment: ROI-based and Track-based analysis comparing ALS with controls
-
+## Practicum assignment: ROI-based and Track-based analysis comparing SCA2 with controls
 
 1. Download [FIB files from the SCA2 Diffusion Tensor Imaging study](https://github.com/frankyeh/DSI-Studio-Cloud/releases/download/ds001378/ds001378_fib.zip)
 2. Reconstruct data using QSDR
 3. Create a connectometry database
 4. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
 5. Use tract-based analysis to get metrics (nqa, fa) from patients and controls and compare.
- 
-3. Segment CST into segmentation to get metrics (nqa, fa) and compare them between patients and controls.
-
-4. Get tract profile of metrics (nqa, fa) and average within patients and controls groups, respectively. Comparison.
+6. Segment CST into segmentation to get metrics (nqa, fa) and compare them between patients and controls.
 
