@@ -1,10 +1,10 @@
-# Week 5 Differential Tractography
+# Differential Tractography
 
 ## Before practicum on Friday, please complete following:
 
 ### Review Paper
 
-- Read through [Differential Tractography](Materials/paper/differential_tractography.pdf).
+- Read through [Differential Tractography](https://github.com/frankyeh/Practicum/blob/gh-pages/Materials/paper/dT.pdf).
 
 ### Differential tractography tutorial
 
