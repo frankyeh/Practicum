@@ -41,11 +41,11 @@
 
 **Longitudinal comparison**
 
-1 Download two scan session data of sub-SCA202 at [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
-2 Create two SRC files
-3 Construct FIB files
-4 Export NQA from the follow-up scan
-5 Differential fiber tracking to show the change
+1. Download two scan session data of sub-SCA202 at [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
+2. Create two SRC files
+3. Construct FIB files
+4. Export NQA from the follow-up scan
+5. Differential fiber tracking to show the change
 
 **Cross-sectional comparison**
 
