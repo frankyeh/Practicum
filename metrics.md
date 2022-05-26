@@ -87,7 +87,7 @@
 
 ## Practicum assignment: ROI-based and Track-based analysis comparing SCA2 with controls
 
-1. Download [FIB files from the SCA2 Diffusion Tensor Imaging study](https://github.com/frankyeh/DSI-Studio-Cloud/releases/download/ds001378/ds001378_fib.zip)
+1. Download [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
 2. Reconstruct data using QSDR
 3. Create a connectometry database
 4. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
