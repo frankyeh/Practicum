@@ -32,11 +32,6 @@
 
 <img src="https://user-images.githubusercontent.com/275569/170546907-eb6763b7-d36c-4b00-9d20-49571dcd874b.png" width=600>
 
-
-### Testing the Results
-
-<img src="https://user-images.githubusercontent.com/275569/170547010-76a8ab42-0463-42eb-acab-4424b150beac.png" width=600>
-
 ### Hands-On: Patients with spinocerebellar ataxia
 
 **Longitudinal comparison**
@@ -45,20 +40,18 @@
 2. Create two SRC files
 3. Construct FIB files
 4. Export NQA from the follow-up scan
-5. Differential fiber tracking to show the change
+5. Open the FIB file of the baseline and load the NQA with registration.
+6. Differential fiber tracking to show the change.
 
-**Cross-sectional comparison**
+### Testing the Results
 
-
+<img src="https://user-images.githubusercontent.com/275569/170547010-76a8ab42-0463-42eb-acab-4424b150beac.png" width=600>
 ---
 
-### Practicum task 1: Differential tractography comparing subject data to a template: 
+### Practicum assignment: Cross-sectional comparison using Differential tractography
 
-1. Download als05.gqi.1.25.fib.gz, from [ALS](https://drive.google.com/drive/folders/1q7YdmjaR-8w-pBUYe0nENnm3fiGnP1Md?usp=sharing).
-
-2. Healthy subjects averaged [NQA map](https://zenodo.org/record/6324701/files/Grid258_nqa.nii.gz?download=1) and [FA map](https://zenodo.org/record/6324701/files/Grid258_dti_fa.nii.gz?download=1)
-
-3. Follow the instruction video to get differential tractography. 
-
-4. Adjust minimum length and differential tracking threshold to observe how they change the results.
+1. Create a connectometry database using control data at [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
+2. Generate a subject-matched NQA map using [Step C2a: Modify a Connectometry Database]
+3. Open the baseline FIB file of the patient #2 and load the subject-matched NQA using [Slice][Insert MNI image]
+4. Differential fiber tracking to show the change.
 
