@@ -37,6 +37,18 @@
 
 <img src="https://user-images.githubusercontent.com/275569/170547010-76a8ab42-0463-42eb-acab-4424b150beac.png" width=600>
 
+### Hands-On: Patients with spinocerebellar ataxia
+
+**Longitudinal comparison**
+
+1 Download two scan session data of sub-SCA202 at [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
+2 Create two SRC files
+3 Construct FIB files
+4 Export NQA from the follow-up scan
+5 Differential fiber tracking to show the change
+
+**Cross-sectional comparison**
+
 
 ---
 
@@ -50,12 +62,3 @@
 
 4. Adjust minimum length and differential tracking threshold to observe how they change the results.
 
-### Practicum task 2: Differential tractography on longitudinal data: 
-
-1. Download subject files at [TBI](https://drive.google.com/drive/folders/1Dj59qTblO96Q2xDKaEjtsghMuT8FYE54).
-
-2. Convert and reconstruct base.nii.gz and follow.nii.gz to fib files (using QSDR to register baseline and follow-up scan in the same MNI space).
-
-3. Follow the instruction video to get differential tractography. 
-
-4. Adjust minimum length and differential tracking threshold to observe how they change the results.
