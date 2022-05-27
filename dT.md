@@ -51,7 +51,9 @@
 ### Practicum assignment: Cross-sectional comparison using Differential tractography
 
 1. Create a connectometry database using control data at [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
-2. Generate a subject-matched NQA map using [Step C2a: Modify a Connectometry Database]
+2. Generate a subject-matched NQA map at [Step C2a: Modify a Connectometry Database]
+  - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_dt.html)
+  - Subjects demographics:  participants.tsv (need to be modified to keep only values)
 3. Open the baseline FIB file of the patient #2 and load the subject-matched NQA using [Slice][Insert MNI image]
 4. Differential fiber tracking to show the change.
 
