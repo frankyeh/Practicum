@@ -89,7 +89,7 @@
 
 1. Download [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
 2. Reconstruct data at [Step T2 Reconstruction] using QSDR
-3. Create a connectometry database using [Step C2: Create a connectometry Database]
+3. Create connectometry databases using [Step C2: Create a connectometry Database], one for `nqa`, and one for `fa`.
 4. Open the database at [Step T3: Fiber Tracking]
 5. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
 6. Use tract-based analysis to get metrics (nqa, fa) from patients and controls and compare.
