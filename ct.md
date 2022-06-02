@@ -18,6 +18,15 @@
 
 ## During practicum on Friday:
 
+### Correlation tractography
+<img src="https://user-images.githubusercontent.com/275569/171685414-3d6fb0d1-9c06-4fda-b9af-89684d29f2bf.png" width=700>
+
+### Nonparametric tests
+
+<img src="https://user-images.githubusercontent.com/275569/171685527-a5682d43-23ac-459a-97a4-b2006071f34f.png" width=500>
+
+
+<img src="https://user-images.githubusercontent.com/275569/171685626-3df0097a-b19f-4180-851b-853e40e67d57.png" width=300>
 
 
 ### Hands-on: white matter tract correlated with BMI
