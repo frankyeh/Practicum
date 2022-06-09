@@ -6,15 +6,17 @@
 
 We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.
 
-# Future workshop (Fall 2022)
+# Future workshop
 
+## Fall 2022
+**[Signup Link](https://forms.gle/8X9RynCwohwCSmWa7)**
 - 10am-11am (EST) Friday
 - 8/2, 8/9, 8/16, 8/23, 8/30, 9/7, 9/14
-- [sign-up link](https://forms.gle/8X9RynCwohwCSmWa7)
 - Participants will receive comfirmation email in July with zoom link to join the practicum.
 
 # Past workshop
 
+## Spring 2022
 - 4-5 pm (EST) Friday 
 - wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)
 - email frank.yeh@pitt.edu to get zoom link.
