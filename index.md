@@ -6,46 +6,50 @@
 
 We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.
 
-- Current workshop
-  - 4-5 pm (EST) Friday 
-  - wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)
-  - email frank.yeh@pitt.edu to get zoom link.
+# Future workshop (Fall 2022)
 
-- Future workshop (Fall 2022)
-  - 10am-11am (EST) Friday
-  - 8/2, 8/9, 8/16, 8/23, 8/30, 9/7, 9/14
-  - [sign-up link](https://forms.gle/8X9RynCwohwCSmWa7)
-  - Participants will receive comfirmation email in July with zoom link to join the practicum.
+- 10am-11am (EST) Friday
+- 8/2, 8/9, 8/16, 8/23, 8/30, 9/7, 9/14
+- [sign-up link](https://forms.gle/8X9RynCwohwCSmWa7)
+- Participants will receive comfirmation email in July with zoom link to join the practicum.
 
-- Activities
-  - Reading materials before course (est 1 hr)
-  - Friday zoom meeting (1 hr)
+# Past workshop
+
+- 4-5 pm (EST) Friday 
+- wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)
+- email frank.yeh@pitt.edu to get zoom link.
+
+
+# Activities
+
+- Reading materials before course (est 1 hr)
+- Friday zoom meeting (1 hr)
   
-    - 20 min discuss tasks assignment from the last week + Q&A
-    - 20 min instruction + Q&A
-    - 20 min DSI Studio hands-on demo
+  - 20 min discuss tasks assignment from the last week + Q&A
+  - 20 min instruction + Q&A
+  - 20 min DSI Studio hands-on demo
   
-  - After-course assignments/tasks (est 1 hr)
+- After-course assignments/tasks (est 1 hr)
 
-- Project Instructors:
+# Project Instructors:
 
-  - Fang-Cheng (Frank) Yeh
+- Fang-Cheng (Frank) Yeh
 
-- Prerequisites:
+# Prerequisites:
 
-  - Background in general neuroscience (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)
+- Background in general neuroscience (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)
 
-- Description:
+# Description:
 
 Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.
 
-- Goal
+# Goal
 
-  - understand diffusion MRI methods
-  - learn how to use a tractography software tool
-  - receive hands-on experiences in analyzing dMRI data.
+- understand diffusion MRI methods
+- learn how to use a tractography software tool
+- receive hands-on experiences in analyzing dMRI data.
 
 
-- Practicum publications
+# Practicum publications
 
 **Ghulam‐Jelani Z, Barrios‐Martinez J, Eguiluz‐Melendez A, Gomez R, Anania Y, Yeh FC. Redundancy circuits of the commissural pathways in human and rhesus macaque brains. Human brain mapping. 2021 May;42(7):2250-61.**
