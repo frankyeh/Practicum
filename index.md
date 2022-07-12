@@ -11,7 +11,7 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 ## Fall 2022
 **[Signup Link](https://forms.gle/8X9RynCwohwCSmWa7)**
 - 10am-11am (EST) Friday
-- 8/2, 8/9, 8/16, 8/23, 8/30, 9/7, 9/14
+- 9/2, 9/9, 9/16, 9/23, 9/30, 10/7, 10/14
 - Participants will receive comfirmation email in July with zoom link to join the practicum.
 
 # Past workshop
