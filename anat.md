@@ -14,12 +14,16 @@
   - Documentations
   - Discussion forum
   - Github 
+
 ### (10 min) Accessory Tools
   - Image viewer/editor
   - Registration tools
   - Console
+
 ### (10 min) Batch and Commandline
   - GUI-based batch system
+
+
 ### (20 min) Fiber Tracking Interface
   - Open [Step T3 Fiber Tracking][HCP1065.1mm.fib.gz]
   - Interface
