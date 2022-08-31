@@ -1,4 +1,4 @@
-# Brain Anatomy Basics & Region Drawing
+# DSI Studio Basics & Region Drawing
 
 ## Before practicum on Friday, please complete following:
 
