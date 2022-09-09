@@ -38,7 +38,7 @@
   
 ### (10 min) Accessory Tools
   - Image viewer/editor
-  - Registration tools
+  - Registration tools (example file: [100206_qa.nii.gz](/Materials/100206_qa.nii.gz))
 
 ### (10 min) 3D Interface
   - Open [Step T3 Fiber Tracking][Open ICBM152_adult template]
