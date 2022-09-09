@@ -7,7 +7,7 @@
 ## During practicum on Friday:
 
 ### (5 min) DSI Studio 
-  - Software Environment and hardware requirements
+  - Software environment and hardware requirements
   - [Source code](https://github.com/frankyeh/DSI-Studio)
   - Versions
 
