@@ -1,30 +1,45 @@
-# DSI Studio Basics & Region Drawing
+# DSI Studio Basics & Configurations
 
 ## Before practicum on Friday, please complete following:
 
 - Download [DSI-Studio](http://dsi-studio.labsolver.org/) even if your version is very recent.
-- [Optional] Basic neuroanatomy: 
-  - Read through [Intro to Neuroanatomy slides](https://drive.google.com/file/d/1HPWgLRGzq_l_V7UDE8PC2hVZSaLnawOr/view?usp=sharing) along with Nieuwenhuys 2008 chapters [3](https://drive.google.com/file/d/1r-MC1X7mnUOC2H4Or91BR6y2AQlZs-Dt/view?usp=sharing) and [5](https://drive.google.com/file/d/1-36-KH6Ejxe8s4m9isibjJ2HAGSkEeK2/view?usp=sharing).
-  - Videos: [UBC Neuroanatomy Season 1](https://www.youtube.com/watch?v=xB7rXw_3gVY&t=104s), [Brain Anatomy for Health Professionals Series](https://www.youtube.com/watch?v=_aCCsRCw78g&list=PLp9HSlEm97VXyQ32Uwjfz3dpmQ8nl63zJ&index=1&t=539s)
-
 
 ## During practicum on Friday:
 
-### (10 min) DSI Studio Websites and Github
+### (5 min) DSI Studio 
+  - Software Environment and hardware requirements
+  - [Source code](https://github.com/frankyeh/DSI-Studio)
+  - Versions
+
+### (5 min) DSI Studio Websites 
+  - [dMRI Data website](http://brain.labsolver.org)
   - Documentations
   - Discussion forum
-  - Github 
 
+### (5 min) DSI Studio Interface
+  - Graphic user Interface
+  - GUI-based batch system
+  - Command line interface
+  - Console
+  - Report System
+
+### (10 min) DSI Studio Atlases
+  - [https://github.com/frankyeh/DSI-Studio-atlas](https://github.com/frankyeh/DSI-Studio-atlas)
+  - Location within the DSI Studio package
+
+**Windows versions:**
+
+<img src="https://user-images.githubusercontent.com/275569/189263325-7ee5d31d-8756-4ab5-b6e1-30d80b7ed636.png" width=600>
+
+**Mac versions:**
+
+<img src="https://user-images.githubusercontent.com/275569/189263413-4cde310d-94f4-40b5-a9c5-d88020a8a321.png" width=600> 
+  
 ### (10 min) Accessory Tools
   - Image viewer/editor
   - Registration tools
-  - Console
 
-### (10 min) Batch and Commandline
-  - GUI-based batch system
-
-
-### (20 min) Fiber Tracking Interface
+### (10 min) 3D Interface
   - Open [Step T3 Fiber Tracking][HCP1065.1mm.fib.gz]
   - Interface
 
@@ -40,16 +55,14 @@
 source: Gray's anatomy 727, 726
 
   - Region drawing and editing tools
-  - Visualization
+  - Surface rendering
     - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz)
 
 ## Assignment:
 
-### Identify structure in DSI Studio
+### Upgrade low resolution MNI parcellation to 1-mm ICBM152 space
 
-1. Load [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz) onto DSI-Studio.
-2. Load 100206_T1w.nii.gz by clicking on ***"Insert Other Images"*** under ***Slices*** menu.
-3. According to the video of ***["quick 3D manual segmentation of a brain tumor"](https://www.youtube.com/watch?v=ZkWBU_qnaKg&t=1s)***, draw an ROI of **left thalamus**.
-4. Open atlases, choose FreeSurferDKT subcortical atlas, and load **left thalamus**.
-5. Compare your thalamus ROI to that of FreeSurferDKT subcortical atlas.
+- [Steps](https://twitter.com/FangChengYeh/status/1549549617699868677)
+- [Source data]
+
 
