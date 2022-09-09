@@ -24,6 +24,7 @@
   - Report System
 
 ### (10 min) DSI Studio Atlases
+  - [About the MNI space](https://www.lead-dbs.org/about-the-mni-spaces/)
   - [https://github.com/frankyeh/DSI-Studio-atlas](https://github.com/frankyeh/DSI-Studio-atlas)
   - Location within the DSI Studio package
 
@@ -40,7 +41,7 @@
   - Registration tools
 
 ### (10 min) 3D Interface
-  - Open [Step T3 Fiber Tracking][HCP1065.1mm.fib.gz]
+  - Open [Step T3 Fiber Tracking][Open ICBM152_adult template]
   - Interface
 
 <img src="https://user-images.githubusercontent.com/275569/149856392-53f31245-4c58-47f0-8347-57960a2a6b04.png" width="600">
