@@ -60,9 +60,11 @@ source: Gray's anatomy 727, 726
 
 ## Assignment:
 
-### Upgrade low resolution MNI parcellation to 1-mm ICBM152 space
+### Upgrade low resolution random parcellation to 1-mm ICBM152 space
+
+![image](https://user-images.githubusercontent.com/275569/189269701-af40a377-12e8-461e-b091-71cbcb49236a.png)
 
 - [Steps](https://twitter.com/FangChengYeh/status/1549549617699868677)
-- [Source data]
+- [Source data](/Materials/random_33.nii.gz)
 
 
