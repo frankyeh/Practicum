@@ -16,19 +16,18 @@
     
     - Association pathways: arcuate fasciculus, cingulum (frontal parahippocampal, frontal parietal, parahippocampal parietal, parahippocampal, and parolfactory), extreme capsule, frontal aslant, inferior fronto-occipital fasciculus, inferior longitudinal fasciculus, middle longitudinal fasciculus, parietal aslant tract, superior longitudinal fasciculus (I, II and III), uncinate fasciculus, and vertical occipital fasciculus
 
-
 ---
 
 ## During practicum on Friday:
 
 - Introduction to white matter pathways
 
-  - Hands-on (Frank)
+  - Hands-on
     - HCP1065 Group-average template 1mm [[download]](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) [(details)](https://brain.labsolver.org/hcp_template.html)
     - Tractography atlas [[download]](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) [(details)](https://brain.labsolver.org/hcp_trk_atlas.html)
     - Add isosurface from T1W [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_visualization.html)
     
-  - White matter tract anatomy (Linggang)  
+  - White matter tract anatomy
   
 - Virtual dissection
 
@@ -40,7 +39,7 @@
 
 - Automatic Fiber Tracking
 
-  - Hands-on (Linggang)
+  - Hands-on
     - open HCP1065 Group-average template 1mm in [Step T3]
     - Automatic fiber tracking [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_atk.html)
    
