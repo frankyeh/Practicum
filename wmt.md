@@ -26,15 +26,23 @@
     - anterior commissure
     - corpus callosum
   - **Association pathways**: pathways connecting cortical regions to cortical regions
-    - arcuate fasciculus, frontal aslant, superior longitudinal fasciculus II, III
-    - cingulum (frontal parahippocampal, frontal parietal, parahippocampal parietal, parahippocampal, and parolfactory), superior longitudinal fasciculus I
-    - inferior fronto-occipital fasciculus, uncinate fasciculus
-    - inferior longitudinal fasciculus, middle longitudinal fasciculus, parietal aslant tract, vertical occipital fasciculus, extreme capsule.
+    - arcuate fasciculus (AF), frontal aslant (FAT), superior longitudinal fasciculus (SLF) II, III
+    - cingulum (frontal parahippocampal, frontal parietal, parahippocampal parietal, parahippocampal, and parolfactory), superior longitudinal fasciculus (SLF) I
+    - inferior fronto-occipital fasciculus (IFOF), uncinate fasciculus (UF)
+    - inferior longitudinal fasciculus (ILF), middle longitudinal fasciculus (MdLF), vertical occipital fasciculus (VOF), temporo-parietal aslant tract, extreme capsule.
+
+<img src="https://user-images.githubusercontent.com/275569/190517156-b6da60eb-e7fd-47e9-872f-a73b08c3d1e2.png" width=500>
+
   - **Projection pathways**: pathways connecting cortical regions to the basal ganglia or brain stem nuclei
-    - thalamus: thalamic radiation (anterior, posterior and superior), acoustic radiation, optic radiation, dentatorubrothalamic tract, medial lemniscus    
-    - striatum: corticostriatal tract (anterior, superior and posterior), fornix
+    - thalamus: thalamic radiation (anterior, posterior and superior), acoustic radiation, optic radiation, dentatorubrothalamic tract (DRTT), medial lemniscus    
+    - striatum: corticostriatal tract (anterior, superior, and posterior), fornix
     - brain stem nuclei: corticospinal tract,  reticulospinal tract, corticobulbar tract, corticopontine tract (frontal, parietal, and occipital),  
   - Cerebellum pathways, brainstem pathways, cranial nerves  
+      
+  - White matter regions (not pathways)
+    - internal capsule
+    - corona radiata  
+    - centrum semiovale  
       
 ### Virtual dissection (20 min)
 
