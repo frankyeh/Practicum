@@ -1,47 +1,56 @@
 # White Matter Tracts
 
-## Before practicum on Friday, please complete following:
+## Before practicum on Friday, please complete the following:
 
 ### White Matter Anatomy 
 
-- Reading: a review on recent known and unknown about white matter pathways: [Bullock DN, Hayday EA, Grier MD, Tang W, Pestilli F, Heilbronner S. A taxonomy of the brain’s white matter: Twenty-one major tracts for the twenty-first century.](https://psyarxiv.com/fvk5r/)
+- Reading: a review on recent known and unknown white matter pathways: [Bullock DN, Hayday EA, Grier MD, Tang W, Pestilli F, Heilbronner S. A taxonomy of the brain’s white matter: Twenty-one major tracts for the twenty-first century.](https://psyarxiv.com/fvk5r/)
 
 - Video: [Computational Neuroanatomy at DIPY Workshop](https://www.youtube.com/watch?v=0gffgCBDOfk)
 
-- White matter pathways can be catogorized into commissural, association, and prjection pathways.
-
-    - Commissural pathways: anterior commissure and corpus callosum
-
-    - Projection pathways: acoustic radiation, corticobulbar tract, corticopontine tract (frontal, parietal, and occipital), corticostriatal tract(anterior, superior and posterior), corticospinal tract, dentatorubrothalamic tract, **fornix**, medial lemniscus, optic radiation, reticulospinal tract, and thalamic radiation (anterior, posterior and superior)
-    
-    - Association pathways: arcuate fasciculus, cingulum (frontal parahippocampal, frontal parietal, parahippocampal parietal, parahippocampal, and parolfactory), extreme capsule, frontal aslant, inferior fronto-occipital fasciculus, inferior longitudinal fasciculus, middle longitudinal fasciculus, parietal aslant tract, superior longitudinal fasciculus (I, II and III), uncinate fasciculus, and vertical occipital fasciculus
-
----
 
 ## During practicum on Friday:
 
-- Introduction to white matter pathways
+### Review of the assignment 1 (10 min)
 
-  - Hands-on
-    - HCP1065 Group-average template 1mm [[download]](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) [(details)](https://brain.labsolver.org/hcp_template.html)
-    - Tractography atlas [[download]](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) [(details)](https://brain.labsolver.org/hcp_trk_atlas.html)
-    - Add isosurface from T1W [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_visualization.html)
-    
-  - White matter tract anatomy
-  
-- Virtual dissection
 
-  - Hands-on (Frank)
-    - open HCP1065 Group-average template 1mm in [Step T3]
-    - Whole brain fiber tracking & Track dissection [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
+### Introduction to white matter pathways (20 min)
+
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811921009241-gr1_lrg.jpg" width=700>
+
+- Download and open HCP1065 Group-average template 1mm [[download]](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) [(details)](https://brain.labsolver.org/hcp_template.html) in Step T3
+- Download and open tractography atlas [[download]](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) [(details)](https://brain.labsolver.org/hcp_trk_atlas.html)
+
+- White matter pathways can be catogorized into commissural, association, and prjection pathways.
+  - **Commissural pathways**: pathways connecting left and right hemisphere
+    - anterior commissure
+    - corpus callosum
+  - **Association pathways**: pathways connecting cortical regions to cortical regions
+    - arcuate fasciculus, frontal aslant, superior longitudinal fasciculus II, III
+    - cingulum (frontal parahippocampal, frontal parietal, parahippocampal parietal, parahippocampal, and parolfactory), superior longitudinal fasciculus I
+    - inferior fronto-occipital fasciculus, uncinate fasciculus
+    - inferior longitudinal fasciculus, middle longitudinal fasciculus, parietal aslant tract, vertical occipital fasciculus, extreme capsule.
+  - **Projection pathways**: pathways connecting cortical regions to the basal ganglia or brain stem nuclei
+    - thalamus: thalamic radiation (anterior, posterior and superior), acoustic radiation, optic radiation, dentatorubrothalamic tract, medial lemniscus    
+    - striatum: corticostriatal tract (anterior, superior and posterior), fornix
+    - brain stem nuclei: corticospinal tract,  reticulospinal tract, corticobulbar tract, corticopontine tract (frontal, parietal, and occipital),  
+  - Cerebellum pathways, brainstem pathways, cranial nerves  
+      
+### Virtual dissection (20 min)
+
+- Tract menu
+  - Tract editing and shortcuts 
+  - Virtual dissection [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
+    - Difficulty level (easy): commissural pathways
+    - Difficulty level (medium): association pathways
+    - Difficulty level (medium): projection pathways
+  - Region-based filtering
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/1xfhaFQhCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Automatic Fiber Tracking
+### Automatic Fiber Tracking (10 min)
 
-  - Hands-on
-    - open HCP1065 Group-average template 1mm in [Step T3]
-    - Automatic fiber tracking [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_atk.html)
+- Automatic fiber tracking [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_atk.html)
    
 <iframe width="896" height="504" src="https://www.youtube.com/embed/Hzeb_q6ux-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
