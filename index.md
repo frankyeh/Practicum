@@ -9,7 +9,7 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 # Future workshop
 
 ## Fall 2022 (Zoom)
-- Date: 9/9, 9/16, 9/23, 9/30, 10/7, 10/14, 10/21
+- Date: 9/9, [9/16](https://pitt.zoom.us/rec/share/cbcTEIWPu8pVSF-MDMEksXU6iK72St7Awfqk61g2OAb9MWLXdKC7oXk7paI0bfYt.1bGXcalByFSTCziN?startTime=1663336787000), 9/23, 9/30, 10/7, 10/14, 10/21
 - Time: 10am-11am (EST) Friday
 - Registration ended.
 
