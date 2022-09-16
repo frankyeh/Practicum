@@ -18,6 +18,8 @@
 
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811921009241-gr1_lrg.jpg" width=700>
 
+source: [Neuroimage. 2021 Dec 15;245:118651.](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
+
 - Download and open HCP1065 Group-average template 1mm [[download]](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) [(details)](https://brain.labsolver.org/hcp_template.html) in Step T3
 - Download and open tractography atlas [[download]](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) [(details)](https://brain.labsolver.org/hcp_trk_atlas.html)
 
