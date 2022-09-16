@@ -36,6 +36,11 @@ source: [Neuroimage. 2021 Dec 15;245:118651.](https://www.sciencedirect.com/scie
 
 <img src="https://user-images.githubusercontent.com/275569/190517156-b6da60eb-e7fd-47e9-872f-a73b08c3d1e2.png" width=500>
 
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-022-32595-4/MediaObjects/41467_2022_32595_Fig3_HTML.png?as=webp" width=700>
+
+source: [Nature communications. 2022 Aug 22;13(1):1-3.](https://www.nature.com/articles/s41467-022-32595-4)
+
+
   - **Projection pathways**: pathways connecting cortical regions to the basal ganglia or brain stem nuclei
     - thalamus: thalamic radiation (anterior, posterior and superior), acoustic radiation, optic radiation, dentatorubrothalamic tract (DRTT), medial lemniscus    
     - striatum: corticostriatal tract (anterior, superior, and posterior), fornix
