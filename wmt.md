@@ -50,11 +50,11 @@ source: [Neuroimage. 2021 Dec 15;245:118651.](https://www.sciencedirect.com/scie
 ### Virtual dissection (20 min)
 
 - Tract menu
-  - Tract editing and shortcuts 
+  - Tract editing and [shortcuts](https://dsi-studio.labsolver.org/doc/gui_t3_visualization.html#shortcuts-and-graphic-control)
   - Virtual dissection [[document]](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
     - Difficulty level (easy): commissural pathways
     - Difficulty level (medium): association pathways
-    - Difficulty level (medium): projection pathways
+    - Difficulty level (hard): projection pathways
   - Region-based filtering
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/1xfhaFQhCtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
