@@ -12,10 +12,22 @@
 
 ## During practicum on Friday:
 
-### 1.Introduction to tractography
+### 0.Review of last weeks materials (5 min) 
+- Commissural pathway (X-axis): pathways connecting left-right cortical regions
+- Association pathway (Y-axis): pathways connecting cortical regions within the same hemisphere
+  - dorsal: AF, SLF, FAT
+  - ventral: IFOF, UF, ILF, MdLF, VOF
+  - medial: cingulum
+- Projection pathway (Z-axis) pathways connecting cortical regions to basal ganglia (caudate, putamen, globus pallidus), thalamus, brainstem nuclei
 
+
+### 1.Introduction to tractography (15 min)
+
+- First tractography by Basser ISMRM 1998, Poupon et al MICCAI 1998, Mori et al Ann Neuro 1999, Conturo et al PNAS 1999.
+- Hands-on: [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
+  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
 - [Fiber tracking method](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0025)
-  - Input: local fiber orientations (a.k.a. fixel)
+  - Input: local fiber orientations at each voxel (a.k.a. fixel)
   - Output: sequences of 3D coordinates
   - Deterministic vs probablistic
 
@@ -27,17 +39,20 @@ Local fiber orientations derived from dMRI
 
 source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
 
-- Hands-on: [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
-  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
-  - Parameters
+- Hands-on: 
+  - [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
     - Anisotropy threshold
     - Angular threshold
     - Step size
     - Minimum and maximum length
 
-### 2.Limitations 
+### 2.Erros in tractography (10 min)
 
-  - **false routing and premature termination**:
+- DWI quality issues: eddy current and suscetibility distortion
+
+<img src="https://user-images.githubusercontent.com/275569/191538844-d03d29a0-fda5-4a56-ac08-ae06d5fa8a70.png" width=600>
+
+- false routing and premature termination
 
 <img src="https://user-images.githubusercontent.com/275569/166743312-c200c685-c7b7-4510-bb6a-48253ef44c7a.png" width=800>
 
@@ -47,7 +62,7 @@ source: Yeh, Fang-Cheng, et al. "Tractography methods and findings in brain tumo
 
 source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 
-  - **gyral bias**
+- gyral bias
 
 <img src="https://user-images.githubusercontent.com/275569/166742047-192c4a92-96b0-412a-9907-f7ddabf6b90c.png" width=800>
 
