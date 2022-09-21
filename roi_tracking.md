@@ -40,13 +40,17 @@ Local fiber orientations derived from dMRI
 source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
 
 - Hands-on: 
-  - [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
-    - Anisotropy threshold
-    - Angular threshold
-    - Step size
-    - Minimum and maximum length
+  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+  - [fiber tracking using GUI](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
+    - anisotropy threshold
+    - angular threshold
+    - step size
+    - minimum and maximum length
+  - [fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
+    - dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec > log.txt
 
-### 2.Erros in tractography (10 min)
+
+### 2.Erros in tractography (15 min)
 
 - DWI quality issues: eddy current and suscetibility distortion
 
@@ -69,7 +73,7 @@ source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
 source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymmetric fiber orientation distributions." Medical image analysis 59 (2020): 101543.  
 
 
-### 3.Region types used in fiber tracking
+### 3.Region types used in fiber tracking (15 min)
 
 - Hands-on: [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
   - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
@@ -80,23 +84,21 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
     - END: a filtering region that filters IN tracks ending in the region
     - Not-END: a filtering region that filters OUT tracks ending in the region
     - Terminative: cut tracks that enters the region
+  - Recommended steps to find a pathway between left and right V1
+    - Assign HCP_MMP:L_V1 and HCP_MMP:L_V2 as ROIs
+    - Adding seed regions to speed up
+    - Adding ROA/END to refine
+
+  - [fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
+    - 2 ROIs: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:L_V2
+    - 2 ROIs + seed: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:L_V2 --seed=tract.nii.gz
 
 ### 4.Fiber tracking protocols
 
 - [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
 - [TractEM](https://my.vanderbilt.edu/tractem/)
 - Hands-on: mapping left arcuate fasciculus
-  - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) by clicking "StepT3: Fiber Tracking & Visualization".
-  - According to page 17 of the Region Manual, in order to generate raw left arcuate fasciculus, we need:
-    - ROIs: ArcuateCoronal_left, ArcuateAxial_left
-    - ROAs: SagittalROA, ExternalCapsule_left
-  - To draw region ArcuateCoronal_left, for example, steps include:
-
-    1. Look up ***Table of Contents*** in page 2, find ***Regions*** - ***ArcuateCoronal_SIDE (AC)*** - ***page 63***.
-    2. Turn to page 63, follow the instructions of how to draw ArcuateCoronal_SIDE to identify the region looked for.
-    3. Remember to define the type of the region drawn, either ROI or ROA in the GUI. In the region window, click ***Type*** and then select ***ROI/ROA***.
-    4. After creating all the ROIs and ROAs, hit ***Fiber Tracking*** in the ***Tracts*** window.
-   
+  - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) by clicking "StepT3: Fiber Tracking & Visualization".   
   - Save regions using [Regions][Save Checked Regions in Multiple Files]
   - Repeat the mapping on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) by loading the saved regions from [Regions Misc][Open MNI Regions]
 
@@ -107,7 +109,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
 
 ### 1. Combine automatic fiber tracking and region-based fiber tracking
 
-1. Use [AutoTract] to map **left corticospinal tracts** on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1)
+1. Use automatic fiber tracking to map **left corticospinal tracts** on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1)
 
 2. Identify false results and use ROI-based fiber tracking to improve the results.
 
