@@ -76,18 +76,19 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
 ### 3.Region types used in fiber tracking (15 min)
 
 - Hands-on: [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
-  - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1)
+  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
   - Demonstrate Region types: seed, ROI, ROA, END, terminative
-    - Seed: the starting location of fiber tracking
     - ROI: a filtering region that filters IN tracks
     - ROA: a filtering region that filters OUT tracks
+    - Seed: the starting location of fiber tracking
     - END: a filtering region that filters IN tracks ending in the region
     - Not-END: a filtering region that filters OUT tracks ending in the region
     - Terminative: cut tracks that enters the region
   - Recommended steps to find a pathway between left and right V1
     - Assign HCP_MMP:L_V1 and HCP_MMP:L_V2 as ROIs
     - Adding seed regions to speed up
-    - Adding ROA/END to refine
+    - Adding negated-dilated NOA
+    - Adding ROA/END/NOT END to refine
 
   - [fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
     - 2 ROIs: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1
