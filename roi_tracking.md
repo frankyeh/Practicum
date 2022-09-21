@@ -90,8 +90,8 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
     - Adding ROA/END to refine
 
   - [fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
-    - 2 ROIs: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:L_V2
-    - 2 ROIs + seed: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:L_V2 --seed=tract.nii.gz
+    - 2 ROIs: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1
+    - 2 ROIs + seed: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract.nii.gz
 
 ### 4.Fiber tracking protocols
 
