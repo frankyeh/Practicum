@@ -47,8 +47,10 @@ source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method
     - step size
     - minimum and maximum length
   - [fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
-    - dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec > log.txt
 
+```
+dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec > log.txt
+```
 
 ### 2.Erros in tractography (15 min)
 
@@ -76,7 +78,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
 ### 3.Region types used in fiber tracking (15 min)
 
 - Hands-on: [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
-  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+  - Use template-space FIB file: [ICBM152_2mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1)
   - Demonstrate Region types: seed, ROI, ROA, END, terminative
     - ROI: a filtering region that filters IN tracks
     - ROA: a filtering region that filters OUT tracks
@@ -90,20 +92,24 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
     - Adding negated-dilated NOA
     - Adding ROA/END/NOT END to refine
 
-  - [fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
-    - 2 ROIs: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1
-    - 2 ROIs + seed: dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract.nii.gz
+  - [Fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
 
-### 4.Fiber tracking protocols
+2 ROIs
+```
+dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1
+```
 
-- [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
-- [TractEM](https://my.vanderbilt.edu/tractem/)
-- Hands-on: mapping left arcuate fasciculus
-  - Load [HCP1065.1mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) by clicking "StepT3: Fiber Tracking & Visualization".   
-  - Save regions using [Regions][Save Checked Regions in Multiple Files]
-  - Repeat the mapping on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) by loading the saved regions from [Regions Misc][Open MNI Regions]
+2 ROIs + seed
+```
+dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract.nii.gz
+```
 
-
+  - Repeat the same on subject-space FIB file [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+    - rename the regions files to include "mni" in the file name, and DSI Studio will load it as an MNI regions
+  - [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
+  - [TractEM](https://my.vanderbilt.edu/tractem/)
+  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+  
 ---
 
 ## Assignment: 
@@ -111,11 +117,8 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
 ### 1. Combine automatic fiber tracking and region-based fiber tracking
 
 1. Use automatic fiber tracking to map **left corticospinal tracts** on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1)
-
-2. Identify false results and use ROI-based fiber tracking to improve the results.
-
-3. [Optional] write a script to map CST in [multiple FIB files](https://zenodo.org/record/6307812)(Download 3~5 FIB files)
-  - rename the regions files to include "mni" in the file name, and DSI Studio will load it as MNI regions
+2. Identify false results and use MNI-space ROI or ROA regions to improve the tractogram.
+3. Use command line to repeat the same on [subject-space FIB file](https://zenodo.org/record/6307812)(Download 3~5 FIB files)
   - [examples](https://dsi-studio.labsolver.org/doc/cli_t3.html) 
 
 ### 2. Mapping difficult pathways using region-based fiber tracking
@@ -123,10 +126,7 @@ source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymm
 ![image](https://user-images.githubusercontent.com/275569/151996479-7ef66e70-68c6-4f54-812e-98b01249830d.png)
 
 1. Download [HCP1065 1-mm FIB file](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) 
-
 2. Use region-based fiber tracking, map the orbital connections in nuclei 5.
-
 3. Use region-based fiber tracking, map the temporal connections in nuclei 5.
-
 4. Use region-based fiber tracking, map the occipital connections in nuclei 5.
 
