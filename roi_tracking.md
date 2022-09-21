@@ -106,9 +106,9 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
 
   - Repeat the same on subject-space FIB file [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
     - rename the regions files to include "mni" in the file name, and DSI Studio will load it as an MNI regions
-  - [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
-  - [TractEM](https://my.vanderbilt.edu/tractem/)
-  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
+  - Examples (Optional)
+    - [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
+    - [TractEM](https://my.vanderbilt.edu/tractem/)
   
 ---
 
