@@ -12,7 +12,7 @@
 
 ## During practicum on Friday:
 
-### 0.Review of last weeks materials (5 min) 
+### Review of last weeks materials (5 min) 
 - Commissural pathway (X-axis): pathways connecting left-right cortical regions
 - Association pathway (Y-axis): pathways connecting cortical regions within the same hemisphere
   - dorsal: AF, SLF, FAT
@@ -21,13 +21,13 @@
 - Projection pathway (Z-axis) pathways connecting cortical regions to basal ganglia (caudate, putamen, globus pallidus), thalamus, brainstem nuclei
 
 
-### 1.Introduction to tractography (15 min)
+### Introduction to tractography (15 min)
 
 - First tractography by Basser ISMRM 1998, Poupon et al MICCAI 1998, Mori et al Ann Neuro 1999, Conturo et al PNAS 1999.
 - Hands-on: [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
   - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
 - [Fiber tracking method](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0025)
-  - Input: local fiber orientations at each voxel (a.k.a. fixel)
+  - Input: (1) local fiber orientation(s), a.k.a. fixel (2) termination metrics, e.g., anisotropy
   - Output: sequences of 3D coordinates
   - Deterministic vs probablistic
 
@@ -52,30 +52,33 @@ source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method
 dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec > log.txt
 ```
 
-### 2.Erros in tractography (15 min)
+### Errors in tractography (15 min)
 
-- DWI quality issues: eddy current and suscetibility distortion
+- What is good/bad tractography?
 
 <img src="https://user-images.githubusercontent.com/275569/191538844-d03d29a0-fda5-4a56-ac08-ae06d5fa8a70.png" width=600>
 
+<img src="https://user-images.githubusercontent.com/275569/191649922-d1c0918f-2e7d-4189-81c9-f6336b94a4db.png" width=600> 
+
+*reference: Fernandez-Miranda JC,Neurosurgery. 2012 Aug 1;71(2):430-53.*
+
+- DWI quality issues
+  - diffusion models
+  - eddy current or susceptibility distortion
 - false routing and premature termination
+  - crossing/branching
 
 <img src="https://user-images.githubusercontent.com/275569/166743312-c200c685-c7b7-4510-bb6a-48253ef44c7a.png" width=800>
 
-source: Yeh, Fang-Cheng, et al. "Tractography methods and findings in brain tumors and traumatic brain injury." NeuroImage 245 (2021): 118651.
-
-<img src="https://user-images.githubusercontent.com/275569/166164844-cbc4b071-4ef1-44e1-b407-70921f6b2727.png" width=800>
-
-source: https://www.nature.com/articles/s41467-017-01285-x/figures/7
+*reference: Yeh, Fang-Cheng, et al. "Tractography methods and findings in brain tumors and traumatic brain injury." NeuroImage 245 (2021): 118651.*
 
 - gyral bias
 
 <img src="https://user-images.githubusercontent.com/275569/166742047-192c4a92-96b0-412a-9907-f7ddabf6b90c.png" width=800>
 
-source: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymmetric fiber orientation distributions." Medical image analysis 59 (2020): 101543.  
+*reference: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymmetric fiber orientation distributions." Medical image analysis 59 (2020): 101543.* 
 
-
-### 3.Region types used in fiber tracking (15 min)
+### Region-based fiber tracking (15 min)
 
 - Hands-on: [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
   - Use template-space FIB file: [ICBM152_2mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1)
@@ -118,8 +121,7 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
 
 1. Use automatic fiber tracking to map **left corticospinal tracts** on [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1)
 2. Identify false results and use MNI-space ROI or ROA regions to improve the tractogram.
-3. Use command line to repeat the same on [subject-space FIB file](https://zenodo.org/record/6307812)(Download 3~5 FIB files)
-  - [examples](https://dsi-studio.labsolver.org/doc/cli_t3.html) 
+3. Use [command line](https://dsi-studio.labsolver.org/doc/cli_t3.html) to repeat the same on [subject-space FIB file](https://zenodo.org/record/6307812)(Download 3~5 FIB files)
 
 ### 2. Mapping difficult pathways using region-based fiber tracking
 
