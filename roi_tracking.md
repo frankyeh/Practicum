@@ -62,17 +62,20 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
 
 *reference: Fernandez-Miranda JC,Neurosurgery. 2012 Aug 1;71(2):430-53.*
 
-- DWI quality issues
-  - diffusion models
-  - eddy current or susceptibility distortion
-- false routing and premature termination
-  - crossing/branching
+- Error near the brain surface
+  - Mostly due to DWI processing and modeling
+    - eddy current or susceptibility distortion
+    - diffusion models
+  - Solutions: (1) better acquisition (2) better modeling
+- Error in deeper white matter
+  - Mostly due to limitations in fiber tracking algorithms
+    - false routing (a.k.a crossing/branching problem)
+    - gyral bias
+  - Solutions: (1) better spatial resolution (2) atlas-guided false fiber eliminations
 
 <img src="https://user-images.githubusercontent.com/275569/166743312-c200c685-c7b7-4510-bb6a-48253ef44c7a.png" width=800>
 
 *reference: Yeh, Fang-Cheng, et al. "Tractography methods and findings in brain tumors and traumatic brain injury." NeuroImage 245 (2021): 118651.*
-
-- gyral bias
 
 <img src="https://user-images.githubusercontent.com/275569/166742047-192c4a92-96b0-412a-9907-f7ddabf6b90c.png" width=800>
 
@@ -80,22 +83,22 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
 
 ### Region-based fiber tracking (15 min)
 
-- Hands-on: [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
-  - Use template-space FIB file: [ICBM152_2mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1)
-  - Demonstrate Region types: seed, ROI, ROA, END, terminative
-    - ROI: a filtering region that filters IN tracks
-    - ROA: a filtering region that filters OUT tracks
-    - Seed: the starting location of fiber tracking
-    - END: a filtering region that filters IN tracks ending in the region
-    - Not-END: a filtering region that filters OUT tracks ending in the region
-    - Terminative: cut tracks that enters the region
-  - Recommended steps to find a pathway between left and right V1
-    - Assign HCP_MMP:L_V1 and HCP_MMP:L_V2 as ROIs
-    - Adding seed regions to speed up
-    - Adding negated-dilated NOA
-    - Adding ROA/END/NOT END to refine
+- [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
+- Use template-space FIB file: [ICBM152_2mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1)
+- Demonstrate Region types: seed, ROI, ROA, END, terminative
+  - ROI: a filtering region that filters IN tracks
+  - ROA: a filtering region that filters OUT tracks
+  - Seed: the starting location of fiber tracking
+  - END: a filtering region that filters IN tracks ending in the region
+  - Not-END: a filtering region that filters OUT tracks ending in the region
+  - Terminative: cut tracks that enters the region
+- Recommended steps to find a pathway between left and right V1
+  1. Assign HCP_MMP:L_V1 and HCP_MMP:L_V2 as ROIs
+  2. Adding seed regions to speed up
+  3. Adding negated-dilated NOA
+  4. Adding ROA/END/NOT END to refine
 
-  - [Fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
+- [Fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
 
 2 ROIs
 ```
