@@ -37,7 +37,7 @@ Local fiber orientations derived from dMRI
 
 ![image](http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/images/euler_ani.gif)
 
-source: source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
+source: http://jmahaffy.sdsu.edu/courses/f00/math122/lectures/num_method_diff_equations/nummethod_diffeq.html
 
 - Hands-on: 
   - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
@@ -60,7 +60,7 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
 
 <img src="https://user-images.githubusercontent.com/275569/191649922-d1c0918f-2e7d-4189-81c9-f6336b94a4db.png" width=600> 
 
-*reference: Fernandez-Miranda JC,Neurosurgery. 2012 Aug 1;71(2):430-53.*
+*reference: [Fernandez-Miranda JC,Neurosurgery. 2012 Aug 1;71(2):430-53.](https://sci-hub.se/10.1227/NEU.0b013e3182592faa)*
 
 - Error near the brain surface
   - Mostly due to DWI processing and modeling
