@@ -24,8 +24,6 @@
 ### Introduction to tractography (15 min)
 
 - First tractography by Basser ISMRM 1998, Poupon et al MICCAI 1998, Mori et al Ann Neuro 1999, Conturo et al PNAS 1999.
-- Hands-on: [tracking parameters](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
-  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
 - [Fiber tracking method](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0025)
   - Input: (1) local fiber orientation(s), a.k.a. fixel (2) termination metrics, e.g., anisotropy
   - Output: sequences of 3D coordinates
@@ -81,10 +79,11 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
 
 *reference: Wu, Ye, et al. "Mitigating gyral bias in cortical tractography via asymmetric fiber orientation distributions." Medical image analysis 59 (2020): 101543.* 
 
-### Region-based fiber tracking (15 min)
+### [Region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html) (15 min)
 
-- [region-based fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)
-- Use template-space FIB file: [ICBM152_2mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1)
+- Hands-on: 
+  - [the template-space FIB file ICBM152_2mm.fib.gz](https://zenodo.org/record/6324701/files/HCP1065.2mm.fib.gz?download=1)
+  - [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
 - Demonstrate Region types: seed, ROI, ROA, END, terminative
   - ROI: a filtering region that filters IN tracks
   - ROA: a filtering region that filters OUT tracks
@@ -99,7 +98,8 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
   4. Adding ROA/END/NOT END to refine
 
 - [Fiber tracking using CLI](https://dsi-studio.labsolver.org/doc/cli_t3.html)
-
+  - Rename the regions files to include "mni" in the file name, and DSI Studio will load it as an MNI regions
+  
 2 ROIs
 ```
 dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1
@@ -107,11 +107,19 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
 
 2 ROIs + seed
 ```
-dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract.nii.gz
+dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract_mni.nii.gz
 ```
 
-  - Repeat the same on subject-space FIB file [100206.src.gz.gqi.1.7.fib.gz](https://zenodo.org/record/6307812/files/100206.src.gz.gqi.1.7.fib.gz?download=1) 
-    - rename the regions files to include "mni" in the file name, and DSI Studio will load it as an MNI regions
+3 ROIs + seed + NOA
+```
+dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract_mni.nii.gz --roa=tract_mni.nii.gz,dilation,dilation,dilation,dilation,dilation,dilation,negate
+```
+
+3 ROIs + seed + NOA + pruning
+```
+dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract_mni.nii.gz --roa=tract_mni.nii.gz,dilation,dilation,dilation,dilation,dilation,dilation,negate --tip_iteration=4
+```
+
   - Examples (Optional)
     - [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
     - [TractEM](https://my.vanderbilt.edu/tractem/)
