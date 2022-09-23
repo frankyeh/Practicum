@@ -115,11 +115,6 @@ dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96
 dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract_mni.nii.gz --roa=tract_mni.nii.gz,dilation,dilation,dilation,dilation,dilation,dilation,negate
 ```
 
-3 ROIs + seed + NOA + pruning
-```
-dsi_studio --action=trk --source=*.fib.gz --parameter_id=c9A99193Fb803FdbF041b96438813cb01cbaCDCC4C3Ec --roi=HCP-MMP:L_V1 --roi2=HCP-MMP:R_V1 --seed=tract_mni.nii.gz --roa=tract_mni.nii.gz,dilation,dilation,dilation,dilation,dilation,dilation,negate --tip_iteration=4
-```
-
   - Examples (Optional)
     - [Region Manual](/Materials/Region%20Manual%20v2_0_1_1.pdf)(source: [Schneider lab](https://www.lrdc.pitt.edu/schneiderlab/))
     - [TractEM](https://my.vanderbilt.edu/tractem/)
