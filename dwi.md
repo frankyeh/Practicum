@@ -27,34 +27,38 @@
 
 ## During practicum on Friday:
 
-### Diffusion MRI Basics
+### Diffusion MRI sequence diagram
 
 <img src="https://user-images.githubusercontent.com/275569/168139630-595e86c8-440e-4e3e-8ba4-bf4a608201c5.png" width=500>
 
 source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
-- B-value: Diffusion sensitization
-  - Diffusion time (Δ)
-  - Diffusion gradient strength (g)
-  - Diffusion gradient duration (δ)
+**diffusion MRI = MRI acquisition (mostly spin-echo) + additional diffusion sensitization**
+
+### Diffusion sensitization
+
+- B-value: a product of variables affecting the sensitivity to diffusion
+  - Diffusion time (Δ): the "explosure time"
+  - Diffusion gradient strength (g) and duration (δ): the "ISO"
     
   ![image](https://user-images.githubusercontent.com/275569/168140200-5ffde8c7-18b3-477a-a527-36da7fe3c332.png)
     
   (γ: gyromagnetic ratio)
        
 - B-vector: Diffusion encoding directions
-- Apparent diffusion coefficient
+
+### Diffusion MRI signals 
 
 <img src="https://user-images.githubusercontent.com/275569/168139693-32751d64-985b-4651-9040-8da96541552a.png" width=500>
 
 source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
-  - Hands-on: create SRC files from NIFTI data
-    - [sub-01_run-1_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
-    - [sub-01_run-1_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
-    - [sub-01_run-1_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
-    - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
-    - Create an SRC file
+- Hands-on: create SRC files from NIFTI data
+  - [sub-01_run-1_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.nii.gz)
+  - [sub-01_run-1_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bval)
+  - [sub-01_run-1_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-1_dwi.bvec)
+  - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
+  - Create an SRC file
 
 ### Sampling schemes of the b-table
 
@@ -69,47 +73,47 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - [Multi-Shell](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EYW7Ym4EOXNKhV7a_SthyHAB6u1e71zGIwOjb67mUyNT0w?e=2BeFFJ)
   - [Grid](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ESBC8VHWJNVBpwp6rn68Pu8ByIiwQ8KYPLS0E8wbIZkz8w?e=4YczQ7)
 
-
 ### Quality Checks on dMRI data
     
-- Motion artifacts and eddy distortion 
-  - Hands-on
-    - [sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
-    - [sub-01_run-2_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
-    - [sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
-    - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
-    - Identify motion induced signals issues
-
-  - Motion artifacts
-    - often has slice signal dropout
+- Hands-on
+  - [sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
+  - [sub-01_run-2_dwi.bval](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bval)
+  - [sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
+  - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
+  - Identify motion induced signals issues
+    
+- Motion artifacts
+  - Check sagittal slices
+  - Check slice signal dropout
       
-    <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
+- Eddy distortion       
 
-    (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+  - Linear distortion
+  - Larger at higher b-value
 
-    - Correction using [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+<img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
+
+(source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+
+  - Correction using [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+  - Bipolar-pulse to cancel eddy currents
         
-  - Eddy current distortion
+<img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=250>
 
-    - Larger with higher b-value
-    - Can be corrected in the MRI sequence to cancel eddy currents
-        
-    <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=250>
-
-    (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+(source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
     
 - Susceptibility distortion and artifact     
   
-  <img src="https://user-images.githubusercontent.com/275569/167231465-26a3d2b7-d3ad-42d6-abb7-7720330aac14.png" width=500>
+<img src="https://user-images.githubusercontent.com/275569/167231465-26a3d2b7-d3ad-42d6-abb7-7720330aac14.png" width=500>
       
-  (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup/TopupUsersGuide)
+(source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup/TopupUsersGuide)
   
-  - Hands-on
-    - [sub-01_acq-multiband_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
-    - [sub-01_acq-multiband_dir-PA_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
-    - [sub-01_acq-multiband_dwi.bval](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
-    - [sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
-    - Correct susceptibility artifact and distortion using [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)   
+- Hands-on
+  - [sub-01_acq-multiband_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
+  - [sub-01_acq-multiband_dir-PA_dwi.nii.gz](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
+  - [sub-01_acq-multiband_dwi.bval](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
+  - [sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
+  - Correct susceptibility artifact and distortion using [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)   
 
 ## Assignment :
 
