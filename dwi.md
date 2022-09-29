@@ -27,6 +27,11 @@
 
 ## During practicum on Friday:
 
+### Review
+
+<img src="https://user-images.githubusercontent.com/275569/193148000-5b8a239d-255e-40ff-9a89-c7607f59b47e.png" width=500>
+
+
 ### Diffusion MRI sequence diagram
 
 <img src="https://user-images.githubusercontent.com/275569/168139630-595e86c8-440e-4e3e-8ba4-bf4a608201c5.png" width=500>
