@@ -29,7 +29,7 @@
 
 ### Review
 
-<img src="https://user-images.githubusercontent.com/275569/193154846-4a610eaa-ac9e-4f78-9e0e-c2cc94de3eff.png" width=500>
+<img src="https://user-images.githubusercontent.com/275569/193154846-4a610eaa-ac9e-4f78-9e0e-c2cc94de3eff.png" width=1000>
 
 
 ### Diffusion MRI sequence diagram
