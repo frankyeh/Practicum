@@ -38,6 +38,7 @@
   - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
   - Create an SRC file
 
+**CLI for creating SRC**
 ```
 dsi_studio --action=src --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz --bval=sub-01_dwi_sub-01_run-1_dwi.bval --bvec=sub-01_dwi_sub-01_run-1_dwi.bvec --output=sub-01_dwi_sub-01_run-1_dwi.src.gz
 ```
@@ -54,8 +55,6 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
 
 - diffusion MRI = MRI acquisition (mostly spin-echo) + additional diffusion sensitization
 - diffusion contrast created by signal attenuation
-
-
 
 ### Diffusion sensitization
 
@@ -102,10 +101,14 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - Correction using [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
   - Bipolar-pulse to cancel eddy currents
 
+**CLI for EDDY**
+```
+dsi_studio --action=rec --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz.src.gz --cmd="[Step T2][Corrections][EDDY]" --save_src=preproc.src.gz
+```
+
 <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
 
 (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
-
         
 <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=250>
 
@@ -124,10 +127,24 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - [sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
   - Correct susceptibility artifact and distortion using [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)   
 
-
+**CLI for TOPUP+EDDY**
 ```
 dsi_studio --action=rec --source=sub-01_dwi_sub-01_acq-multiband_dwi.nii.gz.src.gz --rev_pe=sub-01_fmap_sub-01_acq-multiband_dir-PA_dwi.nii.gz --save_src=preproc.src.gz
 ```
+
+- Preprocessing steps
+  - DWI without reverse PE
+    - create SRC from DWI
+    - apply eddy: [Step T2][Correction][EDDY]
+  - DWI with reverse PE(b0)
+    - create SRC from DWI
+    - create NIFTI from reversed PE b0
+    - apply topup + eddy: [Step T2][Correction][TOPUP/EDDY] or specify --rev_pe=rev_b0.nii.gz
+  - DWI with reverse-PE(full DWI)
+    - create SRC from DWI
+    - create SRC from reversed-PE DWI
+    - apply topup + eddy: [Step T2][Correction][TOPUP/EDDY] or specify --rev_pe=rev_dwi.rsrc.gz
+
 
 ## Assignment :
 
