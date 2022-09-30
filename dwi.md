@@ -94,6 +94,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
 - Motion artifacts (5 min)
   - Check sagittal slices
   - Check slice signal dropout
+  - Correction using [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
       
 - Eddy distortion (10 min)     
 
@@ -135,7 +136,7 @@ dsi_studio --action=rec --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz.src.gz --cmd
 dsi_studio --action=rec --source=sub-01_dwi_sub-01_acq-multiband_dwi.nii.gz.src.gz --rev_pe=sub-01_fmap_sub-01_acq-multiband_dir-PA_dwi.nii.gz --save_src=preproc.src.gz
 ```
 
-- Preprocessing steps (5 min)
+- Recommended steps: TOPUP (handles suscetibility) +EDDY (handles eddy distortion and motion displacement)
   - DWI without reverse PE
     - create SRC from DWI
     - apply eddy: [Step T2][Correction][EDDY]
