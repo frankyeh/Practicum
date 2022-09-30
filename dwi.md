@@ -27,7 +27,7 @@
 
 ## During practicum on Friday:
 
-### Overview
+### Overview (10 min)
 
 <img src="https://user-images.githubusercontent.com/275569/193154846-4a610eaa-ac9e-4f78-9e0e-c2cc94de3eff.png" width=1000>
 
@@ -43,7 +43,7 @@
 dsi_studio --action=src --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz --bval=sub-01_dwi_sub-01_run-1_dwi.bval --bvec=sub-01_dwi_sub-01_run-1_dwi.bvec --output=sub-01_dwi_sub-01_run-1_dwi.src.gz
 ```
 
-### Diffusion MRI sequence diagram
+### Diffusion MRI sequence diagram (10 min)
 
 <img src="https://user-images.githubusercontent.com/275569/168139630-595e86c8-440e-4e3e-8ba4-bf4a608201c5.png" width=500>
 
@@ -56,7 +56,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
 - diffusion MRI = MRI acquisition (mostly spin-echo) + additional diffusion sensitization
 - diffusion contrast created by signal attenuation
 
-### Diffusion sensitization
+### Diffusion sensitization (5 min)
 
 - B-value: a product of variables affecting the sensitivity to diffusion
   - Diffusion time (Δ): the "explosure time"
@@ -68,8 +68,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
        
 - B-vector: Diffusion encoding directions
 
-
-### Sampling schemes of the b-table
+### Sampling schemes of the b-table (5 min)
 
 - Single-shell: one b-value at 30 directions (e.g. DTI, high angular resolution diffusion imaging, a.k.a. HARDI)
 - Multi-shell: 2 or 3 b-values with 90 directions acquired at each b-value
@@ -82,7 +81,7 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - [Multi-Shell](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EYW7Ym4EOXNKhV7a_SthyHAB6u1e71zGIwOjb67mUyNT0w?e=2BeFFJ)
   - [Grid](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ESBC8VHWJNVBpwp6rn68Pu8ByIiwQ8KYPLS0E8wbIZkz8w?e=4YczQ7)
 
-### Quality Checks on dMRI data
+### Quality Checks on dMRI data 
     
 - Hands-on
   - [sub-01_run-2_dwi.nii.gz](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.nii.gz)
@@ -90,12 +89,13 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - [sub-01_run-2_dwi.bvec](https://openneuro.org/crn/datasets/ds002087/snapshots/1.0.0/files/sub-01:dwi:sub-01_run-2_dwi.bvec)
   - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
   - Identify motion induced signals issues
-    
-- Motion artifacts
+  - QC in DSI Studio
+  
+- Motion artifacts (5 min)
   - Check sagittal slices
   - Check slice signal dropout
       
-- Eddy distortion     
+- Eddy distortion (10 min)     
 
 
 <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
@@ -117,7 +117,7 @@ dsi_studio --action=rec --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz.src.gz --cmd
 ```
 
     
-- Susceptibility distortion and artifact     
+- Susceptibility distortion and artifact (10 min)    
   
 <img src="https://user-images.githubusercontent.com/275569/167231465-26a3d2b7-d3ad-42d6-abb7-7720330aac14.png" width=500>
       
@@ -135,7 +135,7 @@ dsi_studio --action=rec --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz.src.gz --cmd
 dsi_studio --action=rec --source=sub-01_dwi_sub-01_acq-multiband_dwi.nii.gz.src.gz --rev_pe=sub-01_fmap_sub-01_acq-multiband_dir-PA_dwi.nii.gz --save_src=preproc.src.gz
 ```
 
-- Preprocessing steps
+- Preprocessing steps (5 min)
   - DWI without reverse PE
     - create SRC from DWI
     - apply eddy: [Step T2][Correction][EDDY]
