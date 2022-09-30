@@ -38,6 +38,10 @@
   - source: [Datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI](https://openneuro.org/datasets/ds002087/)
   - Create an SRC file
 
+```
+dsi_studio --action=src --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz --bval=sub-01_dwi_sub-01_run-1_dwi.bval --bvec=sub-01_dwi_sub-01_run-1_dwi.bvec --output=sub-01_dwi_sub-01_run-1_dwi.src.gz
+```
+
 ### Diffusion MRI sequence diagram
 
 <img src="https://user-images.githubusercontent.com/275569/168139630-595e86c8-440e-4e3e-8ba4-bf4a608201c5.png" width=500>
@@ -119,6 +123,11 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - [sub-01_acq-multiband_dwi.bval](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
   - [sub-01_acq-multiband_dwi.bvec](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)
   - Correct susceptibility artifact and distortion using [FSL's topup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/topup)   
+
+
+```
+dsi_studio --action=rec --source=sub-01_dwi_sub-01_acq-multiband_dwi.nii.gz.src.gz --rev_pe=sub-01_fmap_sub-01_acq-multiband_dir-PA_dwi.nii.gz --save_src=preproc.src.gz
+```
 
 ## Assignment :
 
