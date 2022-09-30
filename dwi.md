@@ -95,7 +95,17 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - Check sagittal slices
   - Check slice signal dropout
       
-- Eddy distortion       
+- Eddy distortion     
+
+
+<img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
+
+(source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+        
+<img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=250>
+
+(source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+
   - Linear distortion
   - Larger at higher b-value
   - Correction using [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
@@ -106,13 +116,6 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
 dsi_studio --action=rec --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz.src.gz --cmd="[Step T2][Corrections][EDDY]" --save_src=preproc.src.gz
 ```
 
-<img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
-
-(source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
-        
-<img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=250>
-
-(source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
     
 - Susceptibility distortion and artifact     
   
