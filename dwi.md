@@ -38,7 +38,8 @@
 
 source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
-**diffusion MRI = MRI acquisition (mostly spin-echo) + additional diffusion sensitization**
+- diffusion MRI = MRI acquisition (mostly spin-echo) + additional diffusion sensitization
+- diffusion contrast created by signal attenuation
 
 ### Diffusion sensitization
 
@@ -92,16 +93,15 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
   - Check slice signal dropout
       
 - Eddy distortion       
-
   - Linear distortion
   - Larger at higher b-value
+  - Correction using [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
+  - Bipolar-pulse to cancel eddy currents
 
 <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_s2v.gif" width=500>
 
 (source: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
 
-  - Correction using [FSL's eddy](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy)
-  - Bipolar-pulse to cancel eddy currents
         
 <img src="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/eddy?action=AttachFile&do=get&target=before_after_hcp_v4.gif" width=250>
 
