@@ -44,8 +44,14 @@
 
 source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
+<img src="https://user-images.githubusercontent.com/275569/168139693-32751d64-985b-4651-9040-8da96541552a.png" width=500>
+
+source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
+
 - diffusion MRI = MRI acquisition (mostly spin-echo) + additional diffusion sensitization
 - diffusion contrast created by signal attenuation
+
+
 
 ### Diffusion sensitization
 
@@ -59,11 +65,6 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
        
 - B-vector: Diffusion encoding directions
 
-### Diffusion MRI signals 
-
-<img src="https://user-images.githubusercontent.com/275569/168139693-32751d64-985b-4651-9040-8da96541552a.png" width=500>
-
-source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic resonance imaging." Insights into Imaging 11.1 (2020): 1-9.](https://insightsimaging.springeropen.com/articles/10.1186/s13244-020-00863-w)
 
 ### Sampling schemes of the b-table
 
