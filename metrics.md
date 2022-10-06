@@ -15,6 +15,12 @@
 
 ## During practicum on Friday:
 
+### Overview (5 min)
+
+<img src="https://user-images.githubusercontent.com/275569/193154846-4a610eaa-ac9e-4f78-9e0e-c2cc94de3eff.png" width=1000>
+
+### Review Assignment (10 min)
+
 ### Diffusion MRI models
 
 - [Diffusion Models](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
@@ -32,9 +38,8 @@
 | CSD-MSMT    | >= 2 b-values | Yes | Yes | Yes | afd |
 
 - Metrics
-  - Voxel-based metrics
-  - Fiber-based metrics
-  - Tractography-based metrics: connectivity, [(shape metrics)](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
+  - Microscopic: anisotropy, diffusivities, and other voxel-based metrics
+  - Macroscopic: [(Shape metrics)](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
   - Graph-based metrics: network measures
 
 ![image](https://user-images.githubusercontent.com/275569/169354232-f490be50-627f-4bc1-9aab-97ab86f9eadc.png)
@@ -55,7 +60,7 @@
   - [BVEC](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.bvec)
   - [NIFTI](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.nii.gz)
 
-- Reconstruction using DRI, GQI, QSDR
+- Reconstruction using DTI, GQI, QSDR
 - Check and compare FIB files
 - Batch SRC reconstruction
 
