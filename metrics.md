@@ -28,14 +28,21 @@
   - Model-free methods ([DSI Studio](https://dsi-studio.labsolver.org/)'s GQI)
   - Spherical deconvolution methods ([MRtrix](https://www.mrtrix.org/)'s CSD, MSMT-CSD)
 
-| Model/Method| B-table requirements| Handle Free Water | Quantify Restricted Diffusion | Resolve Multiple Fibers | Metrics |
-| ------------|---------------------|-------------------|------------------------|---------|-------|
-| DTI         | B0, >= 1 b-value(s) |  No (except for DTI-FWE) |  No | No (except for Multi-Tensor) | fa, ad, rd, md |
-| DKI         | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Tensor) | ak, rk, mk | 
-| NODDI       | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Fiber NODDI ) | iso, odi, ndi (icvf) | 
-| GQI         | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
-| CSD         | 1 b-value | No | No | Yes | afd |
-| CSD-MSMT    | >= 2 b-values | Yes | Yes | Yes | afd |
+| Model/Method | Full Name | Publications | B-table requirements| Handle Free Water | Quantify Restricted Diffusion | Resolve Multiple Fibers | Metrics |
+|-------------|-----|--------|------------|-------------------|------------------------|---------|-------|
+| **Model-Based**| | | | | | | |
+| [DTI](https://pubmed.ncbi.nlm.nih.gov/8130344/) | Diffusion tensor imaging | [632,000](https://scholar.google.com/scholar?hl=en&q=%22diffusion+tensor+imaging%22) | B0, >= 1 b-value(s) |  No (except for DTI-FWE) |  No | No (except for Multi-Tensor) | fa, ad, rd, md |
+| [DKI](https://pubmed.ncbi.nlm.nih.gov/15906300/) | Diffusion kurtosis imaging | 7,750 | B0, >= 2 b-values   |  No | Yes | No (except for Multi-Tensor) | ak, rk, mk | 
+| [NODDI](https://www.sciencedirect.com/science/article/abs/pii/S1053811912003539) | neurite orientation dispersion and density imaging | 4,680 | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Fiber NODDI ) | iso, odi, ndi (icvf) | 
+| [BSM](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT) | ball & stick model | 1,600 | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
+| **Model-Free**| | | | | | | |
+| [DSI](https://pubmed.ncbi.nlm.nih.gov/18495497/) | Diffusion Spectrum Imaging | [5,330](https://scholar.google.com/scholar?hl=en&q=%22diffusion+spectrum+imaging%22) | B0, >10 b-values on grid | No | No | Yes | - |
+| [QBI](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.20279) | Q-ball Imaging | [3,910](https://scholar.google.com/scholar?hl=en&q=%22q-ball+imaging%22) | B0, 1 b-value | No | No | Yes | gfa |
+| [GQI](https://pubmed.ncbi.nlm.nih.gov/20304721/),[QSDR](https://pubmed.ncbi.nlm.nih.gov/21704171/)  | Generalized q-sampling imaging, q-space diffeomorphic reconstruction | [860](https://scholar.google.com/scholar?hl=en&q=%22generalized+q-sampling+imaging%22), [452](https://scholar.google.com/scholar?hl=en&q=%22q-space+diffeomorphic%22) | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
+| **Spherical Deconvolution**| | | | | | | |
+| [CSD](https://pubmed.ncbi.nlm.nih.gov/17379540/) | Constrained Spherical Deconvolution | [4,010](https://scholar.google.com/scholar?hl=en&q=%22constrained+spherical+deconvolution%22) | 1 b-value | No | No  | Yes | afd |
+| [CSD-MSMT](https://pubmed.ncbi.nlm.nih.gov/25109526/) | multi-shell, multi-tissue CSD | [459](https://scholar.google.com/scholar?hl=en&q=CSD+MSMT) | >= 2 b-values | Yes | Yes | Yes | afd |
+
 
 - Metrics
   - Microscopic: anisotropy, diffusivities, and other voxel-based metrics
