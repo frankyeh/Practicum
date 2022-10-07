@@ -92,7 +92,7 @@
 
 ## Practicum assignment: ROI-based and Track-based analysis comparing SCA2 with controls
 
-1. Download [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
+1. [Download SCA2 post-processed SRC Files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=YF1RlO)
 2. Reconstruct data at [Step T2 Reconstruction] using QSDR
 3. Create connectometry databases using [Step C2: Create a connectometry Database], one for `qa`, and one for `fa`.
 4. Open the database at [Step T3: Fiber Tracking]
