@@ -15,13 +15,13 @@
 
 ## During practicum on Friday:
 
-### Overview (5 min)
+### Overview
 
 <img src="https://user-images.githubusercontent.com/275569/193154846-4a610eaa-ac9e-4f78-9e0e-c2cc94de3eff.png" width=700>
 
-### Review Assignment (10 min)
+### Review: Diffusion MRI Preprocessing (10 min)
 
-### Diffusion MRI models
+### Diffusion MRI models (10 min)
 
 - [Diffusion Models](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0020) 
   - Model-based methods (DTI, [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT)'s BSM, DKI, NODDI)
@@ -43,14 +43,14 @@
 | [CSD (Tournier,2007)](https://pubmed.ncbi.nlm.nih.gov/17379540/) | Constrained Spherical Deconvolution | [MRtrix3](https://www.mrtrix.org/), [DIPY](https://dipy.org/) | [4,010](https://scholar.google.com/scholar?hl=en&q=%22constrained+spherical+deconvolution%22) | 1 b-value | No | No  | Yes | afd |
 | [MSMT-CSD (Jeurissen,2014)](https://pubmed.ncbi.nlm.nih.gov/25109526/) | Multi-Shell, Multi-Tissue CSD | [MRtrix3](https://www.mrtrix.org/), [DIPY](https://dipy.org/) |  [229](https://scholar.google.com/scholar?hl=en&q=%22MSMT-CSD%22) | >= 2 b-values | Yes | Yes | Yes | afd |
 
-### Hands-on: DTI, GQI, and QSDR Reconstruction
+### Hands-on: DTI, GQI, and QSDR Reconstruction (10 min)
 
 - Download [control subject 1 session 1 data](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXjaCfVLTaRPgwLZ5t7kxecBnQ2ZY2hmQfHYQbJJ6gYrpA?e=qZUt0G) from [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
 - Reconstruction using DTI, GQI, QSDR
 - Check and compare FIB files
 - Batch SRC reconstruction
 
-### Metrics
+### Metrics (10 min)
 
 <img src="https://user-images.githubusercontent.com/275569/194568269-06a0a704-af29-488e-9723-4139afc1ad4e.png" width=700>
 
@@ -68,7 +68,7 @@ P. Mukherjee, J.I. Berman, S.W. Chung, C.P. Hess and R.G. Henry American Journal
 
 - Graph-based metrics: network measures
   
-### Hands-on: dMRI analysis 
+### Hands-on: dMRI analysis  (15 min)
 
 - Region-based analysis
   - Open a FIB file at Step T3
