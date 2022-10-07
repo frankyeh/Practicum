@@ -44,22 +44,21 @@
 | [MSMT-CSD](https://pubmed.ncbi.nlm.nih.gov/25109526/)<br>(MRtrix3, Dipy) | Multi-Shell, Multi-Tissue CSD | [229](https://scholar.google.com/scholar?hl=en&q=%22MSMT-CSD%22) | >= 2 b-values | Yes | Yes | Yes | afd |
 
 
-- Metrics
-  - Microscopic: anisotropy, diffusivities, and other voxel-based metrics
-  - Macroscopic: [shape metrics](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
-  - Graph-based metrics: network measures
+
+- Microscopic metrics: anisotropy, diffusivities, and other voxel-based metrics
+  - [Interpretation](https://dsi-studio.labsolver.org/doc/how_to_interpret_dmri.html)
+  - Axonal density: fa, qa, afd, odi, ad, SIFT connectivity
+  - Myelination: fa, rd, qa
+  - Cellularity: rdi, ndi, md,
+  - Free water: iso, fw
+- Macroscopic metrics: [shape metrics](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
 
 ![image](https://user-images.githubusercontent.com/275569/169354232-f490be50-627f-4bc1-9aab-97ab86f9eadc.png)
 
 ![image](https://user-images.githubusercontent.com/275569/169354388-6fa435d8-5885-47ab-9107-c90d23f48592.png)
 
-  - [Interpretation](https://dsi-studio.labsolver.org/doc/how_to_interpret_dmri.html)
-    - Fiber integrtity: 
-      - axonal density: fa, qa, afd, odi, ad, SIFT connectivity
-      - myelination: fa, rd, qa
-    - Cellularity: rdi, ndi, md,
-    - Free water: iso, fw
-
+- Graph-based metrics: network measures
+  
 ### Hands-on: DTI, GQI, and QSDR Reconstruction
 
 - Download control subject 1 session 1 data from [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
