@@ -96,7 +96,7 @@
 2. Reconstruct data at [Step T2 Reconstruction] using QSDR
 3. Create connectometry databases using [Step C2: Create a connectometry Database], one for `qa`, and one for `fa`.
 4. Open the database at [Step T3: Fiber Tracking]
-5. Use region-based analysis to get metrics (nqa, fa) from patients and controls and compare.
-6. Use tract-based analysis to get metrics (nqa, fa) from patients and controls and compare.
-7. Segment CST into segmentation to get metrics (nqa, fa) and compare them between patients and controls.
+5. Use region-based analysis to get metrics (nqa, fa) at pons and compare between patients and controls.
+6. Use tract-based analysis to get metrics (nqa, fa) at CST and compare between patients and controls.
+7. Cut CST into multiple segments to get metrics (nqa, fa) and compare them between patients and controls.
 
