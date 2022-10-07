@@ -79,6 +79,7 @@
   - Open a FIB file at Step T3 and map a white matter pathway (e.g. use autotrack)
   - Get diffusion and shape metrics at CST using [Tracts][Statistics]   
   - Plot along CST metrics at z-direction or fiber direction. ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html))
+- Insert other modalities
 
 <img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="400">
   
