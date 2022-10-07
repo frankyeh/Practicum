@@ -136,7 +136,7 @@ dsi_studio --action=rec --source=sub-01_dwi_sub-01_run-1_dwi.nii.gz.src.gz --cmd
 dsi_studio --action=rec --source=sub-01_dwi_sub-01_acq-multiband_dwi.nii.gz.src.gz --rev_pe=sub-01_fmap_sub-01_acq-multiband_dir-PA_dwi.nii.gz --save_src=preproc.src.gz
 ```
 
-- Recommended steps: TOPUP (handles suscetibility) +EDDY (handles eddy distortion and motion displacement)
+- Recommended steps: TOPUP (handles susceptibility) + EDDY (handles eddy distortion and motion displacement)
   - DWI without reverse PE
     - create SRC from DWI
     - apply eddy: [Step T2][Correction][EDDY]
