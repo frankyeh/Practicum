@@ -28,20 +28,20 @@
   - Model-free methods ([DSI Studio](https://dsi-studio.labsolver.org/)'s GQI)
   - Spherical deconvolution methods ([MRtrix](https://www.mrtrix.org/)'s CSD, MSMT-CSD)
 
-| Model/Method | Full Name | Publications | B-table requirements| Handle Free Water | Quantify Restricted Diffusion | Resolve Multiple Fibers | Metrics |
-|-------------|-----|--------|------------|-------------------|------------------------|---------|-------|
+| Model/Method | Full Name | Tool |Publications | B-table requirements| Handle Free Water | Quantify Restricted Diffusion | Resolve Multiple Fibers | Metrics |
+|-------------|-----|----|----|------------|-------------------|------------------------|---------|-------|
 | **Model-Based**| | | | | | | |
-| [DTI (Basser, 1994)](https://pubmed.ncbi.nlm.nih.gov/8130344/) | Diffusion tensor imaging | [353,000](https://scholar.google.com/scholar?hl=en&q=%22diffusion+tensor+imaging%22) | B0, >= 1 b-value(s) |  No (except for DTI-FWE) |  No | No (except for Multi-Tensor) | fa, ad, rd, md |
-| [DKI (Jensen, 2005)](https://pubmed.ncbi.nlm.nih.gov/15906300/) | Diffusion kurtosis imaging | [6,400](https://scholar.google.com/scholar?hl=en&q=%22diffusion+kurtosis+imaging%22) | B0, >= 2 b-values   |  No | Yes | No (except for Multi-Tensor) | ak, rk, mk | 
-| [NODDI (Zhang, 2012)](https://www.sciencedirect.com/science/article/abs/pii/S1053811912003539) | Neurite Orientation Dispersion and Density Imaging | [4,680](https://scholar.google.com/scholar?hl=en&q=noddi) | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Fiber NODDI ) | iso, odi, ndi (icvf) | 
-| [BSM (Behrens,2003)](http://www.ncbi.nlm.nih.gov/pubmed/14587019)<br>(FSL) | Ball & Stick Model | [1,830](https://scholar.google.com/scholar?hl=en&q=ball+stick+fsl) | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
+| [DTI (Basser, 1994)](https://pubmed.ncbi.nlm.nih.gov/8130344/) | Diffusion tensor imaging | | [353,000](https://scholar.google.com/scholar?hl=en&q=%22diffusion+tensor+imaging%22) | B0, >= 1 b-value(s) |  No (except for DTI-FWE) |  No | No (except for Multi-Tensor) | fa, ad, rd, md |
+| [DKI (Jensen, 2005)](https://pubmed.ncbi.nlm.nih.gov/15906300/)| Diffusion kurtosis imaging | [DKE](https://medicine.musc.edu/departments/centers/cbi/dki) | [6,400](https://scholar.google.com/scholar?hl=en&q=%22diffusion+kurtosis+imaging%22) | B0, >= 2 b-values   |  No | Yes | No (except for Multi-Tensor) | ak, rk, mk | 
+| [NODDI (Zhang, 2012)](https://www.sciencedirect.com/science/article/abs/pii/S1053811912003539) | Neurite Orientation Dispersion and Density Imaging | [NODDI Matlab Toolbox](http://mig.cs.ucl.ac.uk/index.php?n=Tutorial.NODDImatlab) | [4,680](https://scholar.google.com/scholar?hl=en&q=noddi) | B0, >= 2 b-values   |  Yes | Yes | No (except for Multi-Fiber NODDI ) | iso, odi, ndi (icvf) | 
+| [BSM (Behrens,2003)](http://www.ncbi.nlm.nih.gov/pubmed/14587019)| Ball & Stick Model | [BEDPOSTX,FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT/UserGuide)  | [1,830](https://scholar.google.com/scholar?hl=en&q=ball+stick+fsl) | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
 | **Model-Free (Q-Space Imaging)**| | | | | | | |
-| [DSI (Wedeen, 2005)](https://pubmed.ncbi.nlm.nih.gov/16247738/) | Diffusion Spectrum Imaging | [5,480](https://scholar.google.com/scholar?hl=en&q=%22diffusion+spectrum+imaging%22) | B0, >10 b-values on grid | No | No | Yes | - |
-| [QBI (Tuch,2004)](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.20279) | Q-ball Imaging | [3,460](https://scholar.google.com/scholar?hl=en&q=%22q-ball+imaging%22) | B0, 1 b-value | No | No | Yes | gfa |
-| [GQI (Yeh, 2010)](https://pubmed.ncbi.nlm.nih.gov/20304721/),[QSDR (Yeh,2011)](https://pubmed.ncbi.nlm.nih.gov/21704171/)<br>(DSI Studio) | Generalized Q-sampling Imaging,<br>Q-Space Diffeomorphic Reconstruction | [860](https://scholar.google.com/scholar?hl=en&q=%22generalized+q-sampling+imaging%22),<br>[452](https://scholar.google.com/scholar?hl=en&q=%22q-space+diffeomorphic%22) | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
+| [DSI (Wedeen, 2005)](https://pubmed.ncbi.nlm.nih.gov/16247738/) | Diffusion Spectrum Imaging | [TrackVis](https://www.trackvis.org/) | [5,480](https://scholar.google.com/scholar?hl=en&q=%22diffusion+spectrum+imaging%22) | B0, >10 b-values on grid | No | No | Yes | - |
+| [QBI (Tuch,2004)](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.20279) | Q-ball Imaging | [TrackVis](https://www.trackvis.org/) | [3,460](https://scholar.google.com/scholar?hl=en&q=%22q-ball+imaging%22) | B0, 1 b-value | No | No | Yes | gfa |
+| [GQI (Yeh, 2010)](https://pubmed.ncbi.nlm.nih.gov/20304721/),[QSDR (Yeh,2011)](https://pubmed.ncbi.nlm.nih.gov/21704171/) | Generalized Q-sampling Imaging,<br>Q-Space Diffeomorphic Reconstruction | DSI Studio | [860](https://scholar.google.com/scholar?hl=en&q=%22generalized+q-sampling+imaging%22),<br>[452](https://scholar.google.com/scholar?hl=en&q=%22q-space+diffeomorphic%22) | B0, >= 1 b-value(s)   |  Yes | Yes | Yes | qa, iso, rdi | 
 | **Spherical Deconvolution**| | | | | | | |
-| [CSD (Tournier,2007)](https://pubmed.ncbi.nlm.nih.gov/17379540/)<br>(MRtrix3, Dipy) | Constrained Spherical Deconvolution | [4,010](https://scholar.google.com/scholar?hl=en&q=%22constrained+spherical+deconvolution%22) | 1 b-value | No | No  | Yes | afd |
-| [MSMT-CSD (Jeurissen,2014)](https://pubmed.ncbi.nlm.nih.gov/25109526/)<br>(MRtrix3, Dipy) | Multi-Shell, Multi-Tissue CSD | [229](https://scholar.google.com/scholar?hl=en&q=%22MSMT-CSD%22) | >= 2 b-values | Yes | Yes | Yes | afd |
+| [CSD (Tournier,2007)](https://pubmed.ncbi.nlm.nih.gov/17379540/) | Constrained Spherical Deconvolution | [MRtrix3](https://www.mrtrix.org/), [DIPY](https://dipy.org/) | [4,010](https://scholar.google.com/scholar?hl=en&q=%22constrained+spherical+deconvolution%22) | 1 b-value | No | No  | Yes | afd |
+| [MSMT-CSD (Jeurissen,2014)](https://pubmed.ncbi.nlm.nih.gov/25109526/) | Multi-Shell, Multi-Tissue CSD | [MRtrix3](https://www.mrtrix.org/), [DIPY](https://dipy.org/) |  [229](https://scholar.google.com/scholar?hl=en&q=%22MSMT-CSD%22) | >= 2 b-values | Yes | Yes | Yes | afd |
 
 
 
