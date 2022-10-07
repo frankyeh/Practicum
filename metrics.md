@@ -61,11 +61,7 @@
   
 ### Hands-on: DTI, GQI, and QSDR Reconstruction
 
-- Download control subject 1 session 1 data from [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
-  - [BVAL](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.bval)
-  - [BVEC](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.bvec)
-  - [NIFTI](https://openneuro.org/crn/datasets/ds001378/snapshots/00003/files/sub-control01:ses-01:dwi:sub-control01_ses-01_dwi.nii.gz)
-
+- Download [control subject 1 session 1 data](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXjaCfVLTaRPgwLZ5t7kxecBnQ2ZY2hmQfHYQbJJ6gYrpA?e=qZUt0G) from [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
 - Reconstruction using DTI, GQI, QSDR
 - Check and compare FIB files
 - Batch SRC reconstruction
