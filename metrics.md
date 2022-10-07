@@ -76,20 +76,12 @@
   - Open a FIB file at Step T3
   - Use [Region][Statistics] to get diffusion metrics from atlases ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html)).
 - Tract-based analysis 
-  - Open a FIB file at Step T3
-  - Map a white matter pathway (e.g. use autotrack)
-  - Get diffusion and shape metrics at CST using [Tracts][Statistics]
-  
-  <img src="https://user-images.githubusercontent.com/275569/153015590-a367f769-8694-4dd9-8680-03716c6d5830.png" width="400">
-  
-  - Use tract cutting (with selection & separate deleted tract) to segment pathways into segments above internal capsule (IC), IC, and below IC sections.
-  
-  <img src="https://user-images.githubusercontent.com/275569/153015773-27d4d62c-8126-49b2-b125-a7532688c47e.png" width="200">
-
+  - Open a FIB file at Step T3 and map a white matter pathway (e.g. use autotrack)
+  - Get diffusion and shape metrics at CST using [Tracts][Statistics]   
   - Plot along CST metrics at z-direction or fiber direction. ([Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_roi_tracking.html))
 
-  <img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="400">
-
+<img src="https://user-images.githubusercontent.com/275569/153015872-38da0327-ac4c-4bc5-bc08-4a46ae2c04d5.png" width="400">
+  
 - Group-wise region/tract analysis using connectometry database
   - Reconstruct all SRC files using QSDR
   - Construct a database: [samples](https://brain.labsolver.org/hcp_template.html)
