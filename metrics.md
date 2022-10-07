@@ -17,7 +17,7 @@
 
 ### Overview (5 min)
 
-<img src="https://user-images.githubusercontent.com/275569/193154846-4a610eaa-ac9e-4f78-9e0e-c2cc94de3eff.png" width=1000>
+<img src="https://user-images.githubusercontent.com/275569/193154846-4a610eaa-ac9e-4f78-9e0e-c2cc94de3eff.png" width=700>
 
 ### Review Assignment (10 min)
 
@@ -43,22 +43,6 @@
 | [CSD (Tournier,2007)](https://pubmed.ncbi.nlm.nih.gov/17379540/) | Constrained Spherical Deconvolution | [MRtrix3](https://www.mrtrix.org/), [DIPY](https://dipy.org/) | [4,010](https://scholar.google.com/scholar?hl=en&q=%22constrained+spherical+deconvolution%22) | 1 b-value | No | No  | Yes | afd |
 | [MSMT-CSD (Jeurissen,2014)](https://pubmed.ncbi.nlm.nih.gov/25109526/) | Multi-Shell, Multi-Tissue CSD | [MRtrix3](https://www.mrtrix.org/), [DIPY](https://dipy.org/) |  [229](https://scholar.google.com/scholar?hl=en&q=%22MSMT-CSD%22) | >= 2 b-values | Yes | Yes | Yes | afd |
 
-
-
-- Microscopic metrics: anisotropy, diffusivities, and other voxel-based metrics
-  - [Interpretation](https://dsi-studio.labsolver.org/doc/how_to_interpret_dmri.html)
-  - Axonal density: fa, qa, afd, odi, ad, SIFT connectivity
-  - Myelination: fa, rd, qa
-  - Cellularity: rdi, ndi, md,
-  - Free water: iso, fw
-- Macroscopic metrics: [shape metrics](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
-
-![image](https://user-images.githubusercontent.com/275569/169354232-f490be50-627f-4bc1-9aab-97ab86f9eadc.png)
-
-![image](https://user-images.githubusercontent.com/275569/169354388-6fa435d8-5885-47ab-9107-c90d23f48592.png)
-
-- Graph-based metrics: network measures
-  
 ### Hands-on: DTI, GQI, and QSDR Reconstruction
 
 - Download [control subject 1 session 1 data](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXjaCfVLTaRPgwLZ5t7kxecBnQ2ZY2hmQfHYQbJJ6gYrpA?e=qZUt0G) from [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
@@ -66,6 +50,25 @@
 - Check and compare FIB files
 - Batch SRC reconstruction
 
+### Metrics
+
+<img src="https://user-images.githubusercontent.com/275569/194568269-06a0a704-af29-488e-9723-4139afc1ad4e.png" width=700>
+
+P. Mukherjee, J.I. Berman, S.W. Chung, C.P. Hess and R.G. Henry American Journal of Neuroradiology April 2008, 29 (4) 632-641; DOI: https://doi.org/10.3174/ajnr.A1051
+
+- Microscopic metrics: anisotropy, diffusivities, and other voxel-based metrics
+  - [Interpretation](https://dsi-studio.labsolver.org/doc/how_to_interpret_dmri.html)
+  - Anisotropy: axonal density, myelination
+  - Isotropy: free water, cellularity
+
+- Macroscopic metrics: [shape metrics](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
+
+![image](https://user-images.githubusercontent.com/275569/169354232-f490be50-627f-4bc1-9aab-97ab86f9eadc.png)
+
+<img src="https://user-images.githubusercontent.com/275569/169354388-6fa435d8-5885-47ab-9107-c90d23f48592.png" width=700>
+
+- Graph-based metrics: network measures
+  
 ### Hands-on: dMRI analysis 
 
 - Region-based analysis
