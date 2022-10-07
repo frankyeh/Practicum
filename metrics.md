@@ -57,10 +57,9 @@
 P. Mukherjee, J.I. Berman, S.W. Chung, C.P. Hess and R.G. Henry American Journal of Neuroradiology April 2008, 29 (4) 632-641; DOI: https://doi.org/10.3174/ajnr.A1051
 
 - Microscopic metrics: anisotropy, diffusivities, and other voxel-based metrics
+  - Anisotropy: axonal density & myelination
+  - Isotropy: free water (not restricted) , cellularity (restricted)
   - [Interpretation](https://dsi-studio.labsolver.org/doc/how_to_interpret_dmri.html)
-  - Anisotropy: axonal density, myelination
-  - Isotropy: free water, cellularity
-
 - Macroscopic metrics: [shape metrics](https://www.sciencedirect.com/science/article/pii/S1053811920308156)
 
 ![image](https://user-images.githubusercontent.com/275569/169354232-f490be50-627f-4bc1-9aab-97ab86f9eadc.png)
