@@ -60,7 +60,7 @@ Compare patients' scans with their **age-sex-matched** scan regressed from the c
   3. Run differential fiber tracking.
 
 ```
-dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=dti_fa --subject_demo=patient_age_sex.txt --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=*.cross_sectional.tt.gz
+dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=dti_fa --subject_demo=patient_age_sex.txt --dt_threshold=0.4 --seed_count=10000000 --min_length=30 --output=*.cross_sectional.tt.gz
 ```
 
 
