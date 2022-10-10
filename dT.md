@@ -34,6 +34,8 @@
 
 ### Longitudinal comparison
 
+Compare patients' baseline scans with their own follow-up scans.
+
 1. Download SCA patient's [preprocess SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=gLaShw), including the baseline scans and the follow up scans.
 2. For each patient, run the following:
   1. Run GQI reconstructions on all SRC files. 
@@ -49,10 +51,18 @@ dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_sli
 
 ### Cross-sectional comparison
 
+Compare patients' scans with their **age-sex-matched** scan regressed from the control subjects.
+
 1. Download [SCA control subject's connectometry database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXhpDe7CdYxGsXySp3OgFI0BoQw5nAFl2wy14VgbuIQ6-w?e=ueMUOs) (dti_fa).
 2. For each patient, run the following:
   1. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=sub-control_only.dti_fa.db.fib.gz
-  2. Run differential fiber tracking.
+  2. Input [subject's age and sex](https://pitt-my.sharepoint.com/:t:/g/personal/yehfc_pitt_edu/ERmqnTRGs11LhxeloKHUWnoBhtMPQ-YpWB-h4LVeNyKRqg?e=2cha4i) for generating age-sex-matched data. 
+  3. Run differential fiber tracking.
+
+```
+dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=dti_fa --subject_demo=patient_age_sex.txt --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=*.cross_sectional.tt.gz
+```
+
 
 ### Testing the Results
 
