@@ -32,28 +32,43 @@
 
 <img src="https://user-images.githubusercontent.com/275569/170546907-eb6763b7-d36c-4b00-9d20-49571dcd874b.png" width=600>
 
-### Hands-On: Patients with spinocerebellar ataxia
+### Longitudinal comparison
 
-**Longitudinal comparison**
+1. Download SCA patient's preprocess SRC files, including the baseline scans and the follow up scans.
+2. For each patient, run the following:
+  1. Run GQI reconstructions on all SRC files. 
+  2. Export FA maps from the follow-up scans.
+  3. Open the FIB file of the baseline scan and insert the exported FA maps of the second scan.
+  4. Run differential fiber tracking.
 
-1. Download two scan session data of sub-SCA202 at [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
-2. Create two SRC files
-3. Construct FIB files
-4. Export NQA from the follow-up scan
-5. Open the FIB file of the baseline and load the NQA with registration.
-6. Differential fiber tracking to show the change.
+```
+dsi_studio --action=rec --source=*.src.gz
+dsi_studio --action=exp --source=*02_dwi*.fib.gz --export=dti_fa
+dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=*_ses-02_dwi.src.gz.gqi.1.25.fib.gz.dti_fa.nii.gz --dt_metric1=*_ses-02_dwi --dt_metric2=dti_fa --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=*.tt.gz
+```
+
+### Cross-sectional comparison
+
 
 ### Testing the Results
 
 <img src="https://user-images.githubusercontent.com/275569/170547010-76a8ab42-0463-42eb-acab-4424b150beac.png" width=600>
 ---
 
-### Practicum assignment: Cross-sectional comparison using Differential tractography
+### Practicum assignment: false discovery rate (FDR) estimation for differential tractography
 
-1. Create a connectometry database using control data at [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
-2. Generate a subject-matched NQA map at [Step C2a: Modify a Connectometry Database]
-  - [Documentation](https://dsi-studio.labsolver.org/doc/gui_t3_dt.html)
-  - Subjects demographics:  participants.tsv (need to be modified to keep only values)
-3. Open the baseline FIB file of the patient #2 and load the subject-matched NQA using [Slice][Insert MNI image]
-4. Differential fiber tracking to show the change.
+**longitudinal study**
+1. run longitudinal differential tractography on all subjects, including controls and patients
+2. calculate the averaged volume of findings in the cerebellum from controls --> expected volume of false positives
+3. calculate the averaged volume of findings in the cerebellum from patients --> expected volume of true positives+false positives
+4. FDR = false positive/(true positive+false positives) = (volume from controls)/(volume from patients)
+
+**cross-sectional study**
+1. run cross-sectional differential tractography on SCA2 controls, including controls and patients
+2. same as above
+3. same as above
+4. same as above
+
+
+
 
