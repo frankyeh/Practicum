@@ -34,11 +34,11 @@
 
 ### Longitudinal comparison
 
-1. Download SCA patient's preprocess SRC files, including the baseline scans and the follow up scans.
+1. Download SCA patient's [preprocess SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=gLaShw), including the baseline scans and the follow up scans.
 2. For each patient, run the following:
   1. Run GQI reconstructions on all SRC files. 
   2. Export FA maps from the follow-up scans.
-  3. Open the FIB file of the baseline scan and insert the exported FA maps of the second scan.
+  3. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=the exported FA maps of the second scan.
   4. Run differential fiber tracking.
 
 ```
@@ -49,6 +49,10 @@ dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_sli
 
 ### Cross-sectional comparison
 
+1. Download [SCA control subject's connectometry database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXhpDe7CdYxGsXySp3OgFI0BoQw5nAFl2wy14VgbuIQ6-w?e=ueMUOs) (dti_fa).
+2. For each patient, run the following:
+  1. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=sub-control_only.dti_fa.db.fib.gz
+  2. Run differential fiber tracking.
 
 ### Testing the Results
 
