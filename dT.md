@@ -23,12 +23,16 @@
 
 ![image](https://user-images.githubusercontent.com/275569/170546285-d395bf1c-2eaf-4840-81b7-bd81c4aa53bb.png)
 
+### Conventional versus Differential Tractography
 
-### Differential tractography demonstration
+
+|          | Conventional fiber tracking | Differential fiber traacking |
+|----------|-----------------------------|------------------------------| 
+|seed point| start at any white matter location | start at any white matter location |
+| propagation | propagate along fiber orientation |  propagate along fiber orientation |
+| termination criteria | anisotropy threshold, angular threshold | anisotropy threshold, angular threshold, ***threshold for the anisotropy decrease*** | 
 
 <img src="https://user-images.githubusercontent.com/275569/170547111-2def629f-c5b2-4127-93b8-303dfbcf2ae3.png" width=600>
-
-### Flowchart
 
 <img src="https://user-images.githubusercontent.com/275569/170546907-eb6763b7-d36c-4b00-9d20-49571dcd874b.png" width=600>
 
