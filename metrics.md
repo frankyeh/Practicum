@@ -93,9 +93,9 @@ P. Mukherjee, J.I. Berman, S.W. Chung, C.P. Hess and R.G. Henry American Journal
 
 1. [Download SCA2 post-processed SRC Files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=YF1RlO). Ignore those in the follow-up folder.
 2. Reconstruct data at [Step T2 Reconstruction] using QSDR
-3. Create connectometry databases using [Step C2: Create a connectometry Database], one for `qa`, and one for `fa`.
+3. Create connectometry databases using [Step C2: Create a connectometry Database] and select `dti_fa` as the metric.
 4. Open the database at [Step T3: Fiber Tracking]
-5. Use region-based analysis to get metrics (nqa, fa) at pons and compare between patients and controls.
-6. Use tract-based analysis to get metrics (nqa, fa) at CST and compare between patients and controls.
+5. Use region-based analysis to get fa at pons and compare between patients and controls.
+6. Use tract-based analysis to get fa at CST and compare between patients and controls.
 7. Cut CST into multiple segments to get metrics (nqa, fa) and compare them between patients and controls.
 
