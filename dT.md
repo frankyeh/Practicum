@@ -66,7 +66,7 @@ For each patient, run the following:
 4. Run differential fiber tracking.
 
 ```
-dsi_studio --action=rec --source=*.src.gz --method=7
+dsi_studio --action=rec --source=*.src.gz --method=7 --output=*.qsdr.fib.gz
 dsi_studio --action=exp --source=*.fib.gz --export=dti_fa
 dsi_studio --action=trk --source=0 --other_slices=sub-SCA201*.dti_fa.nii.gz --dt_metric1=sub-SCA201_ses-01_dwi --dt_metric2=sub-SCA201_ses-02_dwi --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=sub-SCA201.tt.gz
 ```
