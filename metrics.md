@@ -43,6 +43,18 @@
 | [CSD (Tournier,2007)](https://pubmed.ncbi.nlm.nih.gov/17379540/) | Constrained Spherical Deconvolution | [MRtrix3](https://www.mrtrix.org/), [DIPY](https://dipy.org/) | [4,010](https://scholar.google.com/scholar?hl=en&q=%22constrained+spherical+deconvolution%22) | 1 b-value | No | No  | Yes | afd |
 | [MSMT-CSD (Jeurissen,2014)](https://pubmed.ncbi.nlm.nih.gov/25109526/) | Multi-Shell, Multi-Tissue CSD | [MRtrix3](https://www.mrtrix.org/), [DIPY](https://dipy.org/) |  [229](https://scholar.google.com/scholar?hl=en&q=%22MSMT-CSD%22) | >= 2 b-values | Yes | Yes | Yes | afd |
 
+Personal recommendation:
+
+**for deriving voxel-wise metrics**
+- always include DTI metrics: (1) nearly all acquisition can fit a tensor model. (2) ITS metrics and related biophysics well known. (3) if a simpler method works, no need for more complicated one, unless the the purpose is getting better sensitivity/specificity.
+- DKI, NODDI, GQI, and CSD provide more advanced metrics. BSM, DSI, QBI are usually used for fiber tracking.
+- avoid using streamline counts as the metrics unless it is "regulated".
+
+**for mapping white matter tracts**
+- Both MSMT-CSD and CSD provides fiber orientation distribution (FOD). MSMT-CSD is more reliable than CSD.
+- Both GQI, QBI, and DSI provides diffusion orientation distribution function (dODF). GQI can use all DWI acquisitions, whereas QBI and DSI have their specific acquisition requirements.
+- GQI provides more conservative results, whereas CSD provides better sensitivity to crossing/branching fibers.
+
 ### Hands-on: DTI, GQI, and QSDR Reconstruction (10 min)
 
 - Download [control subject 1 session 1 data](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXjaCfVLTaRPgwLZ5t7kxecBnQ2ZY2hmQfHYQbJJ6gYrpA?e=qZUt0G) from [the SCA2 Diffusion Tensor Imaging study](https://openneuro.org/datasets/ds001378/versions/00003)
