@@ -91,7 +91,7 @@ P. Mukherjee, J.I. Berman, S.W. Chung, C.P. Hess and R.G. Henry American Journal
 
 ## Practicum assignment: ROI-based and Track-based analysis comparing SCA2 with controls
 
-1. [Download SCA2 post-processed SRC Files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=YF1RlO). Ignore those in the follow-up folder.
+1. [Download SCA2 eddy-processed SRC Files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=YF1RlO). Ignore those in the follow-up folder.
 2. Reconstruct data at [Step T2 Reconstruction] using QSDR
 3. Create connectometry databases using [Step C2: Create a connectometry Database] and select `dti_fa` as the metric.
 4. Open the database at [Step T3: Fiber Tracking]
