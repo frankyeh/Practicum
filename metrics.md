@@ -48,7 +48,7 @@ Personal recommendation:
 **for deriving voxel-wise metrics**
 - always include DTI metrics: (1) nearly all acquisition can fit a tensor model. (2) ITS metrics and related biophysics well known. (3) if a simpler method works, no need for more complicated one, unless the the purpose is getting better sensitivity/specificity.
 - DKI, NODDI, GQI, and CSD provide more advanced metrics. BSM, DSI, QBI are usually used for fiber tracking.
-- avoid using streamline counts as the metrics unless it is "regulated".
+- avoid using streamline counts as the metrics.
 
 **for mapping white matter tracts**
 - Both MSMT-CSD and CSD provides fiber orientation distribution (FOD). MSMT-CSD is more reliable than CSD.
