@@ -104,7 +104,7 @@ for each patient, run the following:
 5. Specify metrics at [Step T3c: Options][Tracking Parameters][Differential Tracking] and run differential fiber tracking.
 
 ```
-dsi_studio --action=trk --loop=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --source=0 --other_slices=*_ses-01_dwi.qsdr.fib.gz.dti_fa.nii.gz,sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=*_ses-01_dwi --subject_demo=patient_age_sex.txt --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --tip_iteration=16 --output=*.cross_sectional.tt.gz
+dsi_studio --action=trk --loop=*_ses-01_dwi.qsdr.fib.gz.dti_fa.nii.gz --source=0 --other_slices=*_ses-01_dwi.qsdr.fib.gz.dti_fa.nii.gz,sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=*_ses-01_dwi --subject_demo=patient_age_sex.txt --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --tip_iteration=16 --output=*.cross_sectional.tt.gz
 ```
 
 
