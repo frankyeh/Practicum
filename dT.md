@@ -71,7 +71,9 @@ For each patient, run the following:
 ```
 dsi_studio --action=rec --source=*.src.gz --method=7 --output=*.qsdr.fib.gz
 dsi_studio --action=exp --source=*.fib.gz --export=dti_fa
-dsi_studio --action=trk --source=0 --other_slices=sub-SCA201*.dti_fa.nii.gz --dt_metric1=sub-SCA201_ses-01_dwi --dt_metric2=sub-SCA201_ses-02_dwi --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=sub-SCA201.tt.gz
+dsi_studio --action=trk --source=0 --other_slices=sub-SCA201_ses-01_dwi.qsdr.fib.gz.dti_fa.nii.gz,sub-SCA201_ses-02_dwi.qsdr.fib.gz.dti_fa.nii.gz --dt_metric1=sub-SCA201_ses-01_dwi --dt_metric2=sub-SCA201_ses-02_dwi --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=sub-SCA201.tt.gz
+
+dsi_studio --action=trk --loop=*_ses-01_dwi.qsdr.fib.gz --source=0 --other_slices=*_ses-01_dwi.qsdr.fib.gz.dti_fa.nii.gz,*_ses-02_dwi.qsdr.fib.gz.dti_fa.nii.gz --dt_metric1=*_ses-01_dwi --dt_metric2=*_ses-02_dwi --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=*.tt.gz
 ```
 
 ### Type 3: cross-sectional comparison in the native space
