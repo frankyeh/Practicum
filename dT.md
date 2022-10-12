@@ -21,7 +21,6 @@
 
 ### Conventional versus Differential Tractography
 
-
 |          | Conventional fiber tracking | Differential fiber traacking |
 |----------|-----------------------------|------------------------------| 
 |seed point| start at any white matter location | start at any white matter location |
@@ -32,32 +31,55 @@
 
 <img src="https://user-images.githubusercontent.com/275569/170546907-eb6763b7-d36c-4b00-9d20-49571dcd874b.png" width=600>
 
-### Longitudinal comparison
+### Differential Tractography
 
-Compare patients' baseline scans with their own follow-up scans.
+Variants
+1. Longitudinal versus cross-sectional analysis
+2. native space versus template space
 
-1. Download SCA patient's [preprocess SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=gLaShw), including the baseline scans and the follow up scans.
-2. For each patient, run the following:
-  1. Run GQI reconstructions on all SRC files. 
-  2. Export FA maps from the follow-up scans.
-  3. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=the exported FA maps of the second scan.
-  4. Run differential fiber tracking.
+### Type 1: Longitudinal comparison in the native space
 
+summary: comparing patients' baseline scans with follow-up scans in the native space.
+data: SCA patient's [preprocess SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=gLaShw), including the baseline scans and the follow up scans.
+
+For each patient, run the following:
+1. Run GQI reconstructions on all SRC files. 
+2. Export FA maps from the follow-up scans.
+3. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=the exported FA maps of the second scan.
+4. Run differential fiber tracking.
+  
 ```
 dsi_studio --action=rec --source=*.src.gz
 dsi_studio --action=exp --source=*02_dwi*.fib.gz --export=dti_fa
 dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=*_ses-02_dwi.src.gz.gqi.1.25.fib.gz.dti_fa.nii.gz --dt_metric1=dti_fa --dt_metric2=*_ses-02_dwi --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=*.tt.gz
 ```
 
-### Cross-sectional comparison
+### Type 2: Longitudinal comparison in the template space
 
-Compare patients' scans with their **age-sex-matched** scan regressed from the control subjects.
+summary: comparing patients' baseline scans with follow-up scans in the template space.
+template space: (1) normalization partly handles deformation (2) use template as the tracking framework.
 
-1. Download [SCA control subject's connectometry database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXhpDe7CdYxGsXySp3OgFI0BoQw5nAFl2wy14VgbuIQ6-w?e=ueMUOs) (dti_fa).
-2. For each patient, run the following:
-  1. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=sub-control_only.dti_fa.db.fib.gz
-  2. Input [subject's age and sex](https://pitt-my.sharepoint.com/:t:/g/personal/yehfc_pitt_edu/ERmqnTRGs11LhxeloKHUWnoBhtMPQ-YpWB-h4LVeNyKRqg?e=2cha4i) for generating age-sex-matched data. 
-  3. Run differential fiber tracking.
+For each patient, run the following:
+1. Run QSDR reconstructions on all SRC files. 
+2. Export FA maps from all scans.
+3. Open the template FIB file and [Slices][Inser Other Images]=the exported FA maps of the first and second scan.
+4. Run differential fiber tracking.
+
+```
+dsi_studio --action=rec --source=*.src.gz --method=7
+dsi_studio --action=exp --source=*.fib.gz --export=dti_fa
+dsi_studio --action=trk --source=0 --other_slices=sub-SCA201*.dti_fa.nii.gz --dt_metric1=sub-SCA201_ses-01_dwi --dt_metric2=sub-SCA201_ses-02_dwi --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=sub-SCA201.tt.gz
+```
+
+### Type 3: cross-sectional comparison in the native space
+
+summary: compare patients' scans with their **age-sex-matched** scan regressed from the control subjects.
+data: [SCA control subject's connectometry database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXhpDe7CdYxGsXySp3OgFI0BoQw5nAFl2wy14VgbuIQ6-w?e=ueMUOs) (dti_fa).
+
+for each patient, run the following:
+1. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=sub-control_only.dti_fa.db.fib.gz
+2. Input [subject's age and sex](https://pitt-my.sharepoint.com/:t:/g/personal/yehfc_pitt_edu/ERmqnTRGs11LhxeloKHUWnoBhtMPQ-YpWB-h4LVeNyKRqg?e=2cha4i) for generating age-sex-matched data. 
+3. Run differential fiber tracking.
 
 ```
 dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=dti_fa --subject_demo=patient_age_sex.txt --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --tip_iteration=16 --output=*.cross_sectional.tt.gz
