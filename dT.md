@@ -40,6 +40,7 @@ Variants
 ### Type 1: Longitudinal comparison in the native space
 
 summary: comparing patients' baseline scans with follow-up scans in the native space.
+
 data: SCA patient's [preprocess SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=gLaShw), including the baseline scans and the follow up scans.
 
 For each patient, run the following:
@@ -57,7 +58,9 @@ dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_sli
 ### Type 2: Longitudinal comparison in the template space
 
 summary: comparing patients' baseline scans with follow-up scans in the template space.
-template space: (1) normalization partly handles deformation (2) use template as the tracking framework.
+
+- normalization partly handles deformation
+- use template as the tracking framework.
 
 For each patient, run the following:
 1. Run QSDR reconstructions on all SRC files. 
@@ -74,6 +77,7 @@ dsi_studio --action=trk --source=0 --other_slices=sub-SCA201*.dti_fa.nii.gz --dt
 ### Type 3: cross-sectional comparison in the native space
 
 summary: compare patients' scans with their **age-sex-matched** scan regressed from the control subjects.
+
 data: [SCA control subject's connectometry database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXhpDe7CdYxGsXySp3OgFI0BoQw5nAFl2wy14VgbuIQ6-w?e=ueMUOs) (dti_fa).
 
 for each patient, run the following:
