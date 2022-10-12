@@ -50,7 +50,7 @@ Compare patients' baseline scans with their own follow-up scans.
 ```
 dsi_studio --action=rec --source=*.src.gz
 dsi_studio --action=exp --source=*02_dwi*.fib.gz --export=dti_fa
-dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=*_ses-02_dwi.src.gz.gqi.1.25.fib.gz.dti_fa.nii.gz --dt_metric1=*_ses-02_dwi --dt_metric2=dti_fa --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=*.tt.gz
+dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=*_ses-02_dwi.src.gz.gqi.1.25.fib.gz.dti_fa.nii.gz --dt_metric1=dti_fa --dt_metric2=*_ses-02_dwi --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --output=*.tt.gz
 ```
 
 ### Cross-sectional comparison
@@ -66,7 +66,6 @@ Compare patients' scans with their **age-sex-matched** scan regressed from the c
 ```
 dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=dti_fa --subject_demo=patient_age_sex.txt --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --tip_iteration=16 --output=*.cross_sectional.tt.gz
 ```
-
 
 ### Testing the Results
 
