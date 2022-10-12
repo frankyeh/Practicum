@@ -47,7 +47,7 @@ For each patient, run the following:
 1. Run GQI reconstructions on all SRC files. 
 2. Export FA maps from the follow-up scans.
 3. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=the exported FA maps of the second scan.
-4. Run differential fiber tracking.
+4. Specify metrics at [Step T3c: Options][Tracking Parameters][Differential Tracking] and run differential fiber tracking.
   
 ```
 dsi_studio --action=rec --source=*.src.gz
@@ -66,7 +66,7 @@ For each patient, run the following:
 1. Run QSDR reconstructions on all SRC files. 
 2. Export FA maps from all scans.
 3. Open the template FIB file and [Slices][Inser Other Images]=the exported FA maps of the first and second scan.
-4. Run differential fiber tracking.
+4. Specify metrics at [Step T3c: Options][Tracking Parameters][Differential Tracking] and run differential fiber tracking.
 
 ```
 dsi_studio --action=rec --source=*.src.gz --method=7 --output=*.qsdr.fib.gz
@@ -85,11 +85,28 @@ data: [SCA control subject's connectometry database](https://pitt-my.sharepoint.
 for each patient, run the following:
 1. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=sub-control_only.dti_fa.db.fib.gz
 2. Input [subject's age and sex](https://pitt-my.sharepoint.com/:t:/g/personal/yehfc_pitt_edu/ERmqnTRGs11LhxeloKHUWnoBhtMPQ-YpWB-h4LVeNyKRqg?e=2cha4i) for generating age-sex-matched data. 
-3. Run differential fiber tracking.
+3. Specify metrics at [Step T3c: Options][Tracking Parameters][Differential Tracking] and run differential fiber tracking.
 
 ```
 dsi_studio --action=trk --source=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --other_slices=sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=dti_fa --subject_demo=patient_age_sex.txt --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --tip_iteration=16 --output=*.cross_sectional.tt.gz
 ```
+
+
+### Type 4: cross-sectional comparison in the template space
+
+summary: compare patients' scans with their **age-sex-matched** scan regressed from the control subjects.
+
+for each patient, run the following:
+1. Open the QSDR-FIB file of the baseline scan and [Export] dti_fa
+2. Open the template FIB file
+3. [Slices][Inser Other Images]=the exported FA maps of the baseline scan.
+4. [Slices][Inser Other Images]=sub-control_only.dti_fa.db.fib.gz and input [subject's age and sex](https://pitt-my.sharepoint.com/:t:/g/personal/yehfc_pitt_edu/ERmqnTRGs11LhxeloKHUWnoBhtMPQ-YpWB-h4LVeNyKRqg?e=2cha4i) for generating age-sex-matched data. 
+5. Specify metrics at [Step T3c: Options][Tracking Parameters][Differential Tracking] and run differential fiber tracking.
+
+```
+dsi_studio --action=trk --loop=*_ses-01_dwi.src.gz.gqi.1.25.fib.gz --source=0 --other_slices=*_ses-01_dwi.qsdr.fib.gz.dti_fa.nii.gz,sub-control_only.dti_fa.db.fib.gz --dt_metric1=sub-control_only --dt_metric2=*_ses-01_dwi --subject_demo=patient_age_sex.txt --dt_threshold=0.2 --seed_count=10000000 --min_length=30 --tip_iteration=16 --output=*.cross_sectional.tt.gz
+```
+
 
 ### Testing the Results
 
