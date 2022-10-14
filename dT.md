@@ -83,7 +83,7 @@ summary: compare patients' scans with their **age-sex-matched** scan regressed f
 data: [SCA control subject's connectometry database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EXhpDe7CdYxGsXySp3OgFI0BoQw5nAFl2wy14VgbuIQ6-w?e=ueMUOs) (dti_fa).
 
 for each patient, run the following:
-1. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=sub-control_only.dti_fa.db.fib.gz
+1. Open the GQI-FIB file of the baseline scan and [Slices][Inser Other Images]=sub-control_only.dti_fa.db.fib.gz
 2. Input [subject's age and sex](https://pitt-my.sharepoint.com/:t:/g/personal/yehfc_pitt_edu/ERmqnTRGs11LhxeloKHUWnoBhtMPQ-YpWB-h4LVeNyKRqg?e=2cha4i) for generating age-sex-matched data. 
 3. Specify metrics at [Step T3c: Options][Tracking Parameters][Differential Tracking] and run differential fiber tracking.
 
