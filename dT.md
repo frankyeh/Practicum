@@ -44,7 +44,7 @@ summary: comparing patients' baseline scans with follow-up scans in the native s
 data: SCA patient's [preprocess SRC files](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EkJeJpW9gkdDsw225T6wcw8Bdfpvr1RBXNPJLWF2yafl8A?e=gLaShw), including the baseline scans and the follow up scans.
 
 For each patient, run the following:
-1. Run GQI reconstructions on all SRC files. 
+1. Run GQI reconstructions on baseline and follow-up SRC files. 
 2. Export FA maps from the follow-up scans.
 3. Open the FIB file of the baseline scan and [Slices][Inser Other Images]=the exported FA maps of the second scan.
 4. Specify metrics at [Step T3c: Options][Tracking Parameters][Differential Tracking] and run differential fiber tracking.
@@ -63,7 +63,7 @@ summary: comparing patients' baseline scans with follow-up scans in the template
 - use template as the tracking framework.
 
 For each patient, run the following:
-1. Run QSDR reconstructions on all SRC files. 
+1. Run QSDR reconstructions on baseline and followup SRC files. 
 2. Export FA maps from all scans.
 3. Open the template FIB file and [Slices][Inser Other Images]=the exported FA maps of the first and second scan.
 4. Specify metrics at [Step T3c: Options][Tracking Parameters][Differential Tracking] and run differential fiber tracking.
