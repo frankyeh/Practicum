@@ -109,5 +109,5 @@ P. Mukherjee, J.I. Berman, S.W. Chung, C.P. Hess and R.G. Henry American Journal
 4. Open the [database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ETlDr7d6pzFDrSMjX_qGZosBw1i8IGT0E7QqPidQDRuihg?e=OVWr69) at [Step T3: Fiber Tracking]
 5. Use region-based analysis to get fa at pons and compare between patients and controls.
 6. Use tract-based analysis to get fa at CST and compare between patients and controls.
-7. Cut CST into multiple segments to get metrics (nqa, fa) and compare them between patients and controls.
+7. Cut CST into multiple segments and compare them between patients and controls.
 
