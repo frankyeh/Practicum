@@ -17,7 +17,7 @@
 
 ### Diffusion MRI analysis methods
 
-![image](https://user-images.githubusercontent.com/275569/170546285-d395bf1c-2eaf-4840-81b7-bd81c4aa53bb.png)
+![image](https://user-images.githubusercontent.com/275569/195859557-5a9e0b1e-5116-433f-bc4b-3671a5f37bd7.png)
 
 ### Conventional versus Differential Tractography
 
