@@ -19,35 +19,76 @@
 ## During practicum on Friday:
 
 ### Correlation tractography
-<img src="https://user-images.githubusercontent.com/275569/171685414-3d6fb0d1-9c06-4fda-b9af-89684d29f2bf.png" width=700>
-
-### Nonparametric tests
-
-<img src="https://user-images.githubusercontent.com/275569/171685527-a5682d43-23ac-459a-97a4-b2006071f34f.png" width=500>
 
 
-<img src="https://user-images.githubusercontent.com/275569/171685626-3df0097a-b19f-4180-851b-853e40e67d57.png" width=300>
+|          | Conventional fiber tracking | Differential fiber traacking | Correlational Tractography |
+|----------|-----------------------------|------------------------------|----------------------------| 
+|seed point| start at any white matter location | start at any white matter location | start at any white matter location |
+| propagation | propagate along fiber orientation |  propagate along fiber orientation |  propagate along fiber orientation |
+| termination criteria | anisotropy threshold, angular threshold | anisotropy threshold, angular threshold, ***threshold for the anisotropy decrease*** |  anisotropy threshold, angular threshold, ***threshold for the t-statistics*** | 
 
 
-### Hands-on: white matter tract correlated with BMI
 
-1. Download [cmu60.db.fib.gz](https://zenodo.org/record/6324701/files/CMU60.db.fib.gz?download=1) and [cmu60.csv](https://zenodo.org/record/6324701/files/CMU60.demo.csv?download=1).
-2. Set permutation count to 500.
-3. uncheck [FDR control] and run analysis using different T threshold (2 and 3).
-4. check [FDR control] (< 0.05) and run analysis use different T threshold (2 and 3)to see how it affects results.
+### Connectometry
 
-### Hands-on: group stratified analysis 
+<img src="https://user-images.githubusercontent.com/275569/197086945-5eb4bbc9-8a01-4bc6-a59d-84bcbe1f3735.png" width=700>
 
-1. Download cmu60.db.fib.gz and cmu60.csv.
-2. Repeat 1 on male group.
-3. Repeat 2 on female group.
+Connectometry: a statistical method using permutation test and bootstrap resampling to test the significance of correlational tractography.
 
-### Hands-on: post-hoc analysis
+### Steps
+- Calculate t-statistics using Spearman rank-based correlation
+  - permuted versus non-permuted, respectively, both after bootstrap resampling
+- Fiber tracking based on t-statistics
+  - Each fiber tracking from a seed is a statistical test.
+  - The test statisticsis the length of track.
+  - positive findings: length > L, negative finding: length < L
+- FDR calculation at length L
+  - #tracts with length > L after permutation   => #false positive
+  - #tracts with length > L without permutation => #false positive + #true positive
+  - FDR = (#false positive)/(#false positive + #true positive)
+- Results
+  - Fixed L → report FDR
+  - FDR threshold → estimate L* → showing findings satisfying FDR threshold
 
-1. Use tractography results from task 1 to extract QA values from the connectometry DB file.
-2. Plot scatter plot (BMI vs QA).
+### Types
 
----
+- cross-sectional versus longitudinal study
+- correlation with a categorical variable (e.g. control v.s. patient) or continuous variable (e.g. age)
 
-## Assignment
+| study type | correlation type   | examples of null hypothesis |
+|------------|--------------------|-----------------|
+| cross-sectional | correlation with a categorical variable | the tractography with decreased metrics in group 1 is the same as those after group permutation. |
+| cross-sectional | correlation with a continuous variable | the tractography with decreased metrics correlated with age is the same as those after age permutation. |
+| longitudinal | increased of decreased  | the tractography with decreased metrics is the same as those after random-permuting the sign of change. |
+| longitudinal | associated with a categorical variable  | the tractography with decreased metrics in group 1 is the same as those after group permutation. |
+| longitudinal | associated with a continuous variable  | the tractography with decreased metrics correlated with age is the same as those after age permutation. |
+
+### Hands-on: cross-sectional analysis
+
+data: [SCA2 cross sectional database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ETlDr7d6pzFDrSMjX_qGZosBw1i8IGT0E7QqPidQDRuihg?e=9JZddF) and [demographics](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ETCY96W54wxMvTGjRh0i2iYB5rcuo38NJd1zK3KbKGOLkw?e=qYt5Xj)
+
+- correlational tractography correlated with group 
+  - report FDR given a length threshold
+  - assign FDR threshold and report findings
+  - high t-threshold (more localized) versus low t-threshold (less localized) 
+- correlational tractography correlated with group under partial correlation considering age/sex. 
+- stratified analysis using cohort selection (e.g. male and female).
+- combined ROI/ROA/terminative (wk 3 course)
+- post-hoc analysis
+  - identifying pathways using manual virtual dissection and recognition (wk 2 course)
+  - tract-metric scatter plot using tract-based analysis (week 5 hw).
+
+### Hands-on: longitudinal analysis
+
+data: [SCA2 longitudinal database](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ET5mwohX9jVPrqsdEkrWOpUBh6cIqElebkLG8wKOTMhyzQ?e=EcoJhf)
+
+- compute longitudinal change using [Step C2][Tools][Longitudinal Scans]
+- use connectometry to answer the following question
+  - are there significant decrease of FA in the patient group?
+  - are there significant decrease of FA in the control group?
+  - are decreased FA in the control group significantly correlated with age?
+  - are decreased FA in the patient group significantly correlated with age?
+  - are there significantly more changes in the patient group than control group?
+  - are there significantly more changes in the patient group than control group in the brainstem?
+
 
