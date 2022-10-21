@@ -25,7 +25,7 @@ source: [Neuroimage. 2021 Dec 15;245:118651.](https://www.sciencedirect.com/scie
 - [simplified atlas](https://github.com/frankyeh/DSI-Studio-atlas/blob/main/ICBM152_adult/ICBM152_adult.tt.gz) and [labels](https://github.com/frankyeh/DSI-Studio-atlas/blob/main/ICBM152_adult/ICBM152_adult.tt.gz.txt)
 - [abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=gW8L7I)
 
-- White matter pathways can be catogorized into commissural, association, and prjection pathways.
+- White matter pathways can be categorized into commissural, association, and projection pathways.
   - **Commissural pathways**: pathways connecting left and right hemisphere
     - anterior commissure
     - corpus callosum
