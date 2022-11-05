@@ -77,9 +77,9 @@ source: [Morozov, Sergey, et al. "Diffusion processes modeling in magnetic reson
 ![image](https://user-images.githubusercontent.com/275569/168138897-e96f3fd6-e690-4b2d-a72f-5036437a6612.png)
  
 - Hands-on: identify sampling schemes
-  - [Single-shell](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EQQ5M77hJWpJlE8w4Byd5-sBIJikasowtgAerUTmQHbL9Q?e=UXLlh3) 
-  - [Multi-Shell](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/EYW7Ym4EOXNKhV7a_SthyHAB6u1e71zGIwOjb67mUyNT0w?e=2BeFFJ)
-  - [Grid](https://pitt-my.sharepoint.com/:u:/g/personal/yehfc_pitt_edu/ESBC8VHWJNVBpwp6rn68Pu8ByIiwQ8KYPLS0E8wbIZkz8w?e=4YczQ7)
+  - [Single-shell](https://zenodo.org/record/6320992/files/20081006_M025Y_HARDI.src.gz?download=1) 
+  - [Multi-Shell](https://zenodo.org/record/6315871/files/mgh_1001.src.gz?download=1)
+  - [Grid](https://zenodo.org/record/6320992/files/20081006_M025Y_DSI_203.src.gz?download=1)
 
 ### Quality Checks on dMRI data 
     
