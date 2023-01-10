@@ -25,7 +25,9 @@ Diffusion MRI is a non-invasive, safe, and widely used technique in the field of
   - [reconstruct DWI data](https://dsi-studio.labsolver.org/doc/gui_t2.html)
   - [fiber tracking](https://dsi-studio.labsolver.org/doc/gui_t3_whole_brain.html)
 
-- Diffusion MRI quality control:
+### Diffusion MRI quality control:
+
+Diffusion MRI quality control refers to the steps taken to ensure that the diffusion MRI data is of sufficient quality for the intended analysis. Quality control is an important step in the diffusion MRI process, as poor quality data can affect the accuracy and reliability of the results.
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/stL4GMeTC1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -42,15 +44,29 @@ Diffusion MRI is a non-invasive, safe, and widely used technique in the field of
   - Identify suscetibility artifact and motion artifact.
   - Compare tractography before/after correction
 
-- dMRI Preprossing
+### Artifacts in diffusion MRI
 
-  - Eddy current distortion and artifacts correction
-  - Sucetibility artifacts correction
+Artifacts in diffusion MRI includes distorted images and deviated signals that are not representative of the true underlying tissue structure. They can be caused by a variety of factors, including technical issues with the MRI scanner or the data acquisition process, subject movement during the scan, and other sources of noise or interference.
+
+Some common types of artifacts that can occur in diffusion MRI include:
+
+  - **Motion artifacts**: These occur when the subject moves during the scan, which can cause blurring or distortion in the images.
+  - **Eddy current artifacts**: These are caused by currents induced in the subject by the MRI's magnetic field gradients. They can cause distortion and signal loss in the images.
+  - **Susceptibility artifacts**: These are caused by differences in the magnetic properties of different tissues, which can cause signal loss or distortion in the images.
+
+Artifacts in diffusion MRI can affect the quality and accuracy of the resulting data and should be carefully corrected or accounted for in the data analysis process.
+
+### Diffusion MRI Preprossing
+
+Preprocessing of diffusion MRI data refers to the steps taken to prepare the data for analysis. Preprocessing typically includes a combination of correction for technical issues and noise reduction techniques.
+
+- Eddy current distortion and artifacts correction
+- Sucetibility artifacts correction
   
-    - [DWI](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
-    - [DWI_PA](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
-    - [BVAL](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
-    - [BVEC](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)   
+  - [DWI](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
+  - [DWI_PA](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
+  - [BVAL](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
+  - [BVEC](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)   
 
 ## Assignment :
 
