@@ -1,10 +1,20 @@
-# Diffusion MRI Processing
+# Diffusion MRI Preprocessing
 
-Diffusion MRI is a type of magnetic resonance imaging (MRI) that is used to visualize and quantify the movement of water molecules in the body. It is particularly useful for studying the white matter tracts in the brain, which are made up of axons (long, thin fibers) that connect different areas of the brain and facilitate communication between neurons.
+Preprocessing of diffusion MRI data refers to the steps taken to prepare the data for analysis. Preprocessing typically includes a combination of correction for technical issues and noise reduction techniques.
 
-In a diffusion MRI scan, the movement of water molecules is measured by applying a magnetic field gradient to the tissue being imaged. The resulting data can be used to calculate various diffusion-related parameters, such as the fractional anisotropy (FA) and mean diffusivity (MD), which can provide information about the structure and function of the brain.
+Some common steps in the preprocessing of diffusion MRI data include:
 
-Diffusion MRI is a non-invasive, safe, and widely used technique in the field of neuroscience and has many applications in research and clinical practice. It can be used to study the structural organization of the brain, to identify abnormalities or changes in the white matter tracts that may be associated with various neurological conditions, and to monitor the progression of diseases.
+- Motion correction: This involves aligning the images acquired at different time points to correct for subject movement during the scan
+- Eddy current correction: This involves correcting for distortions caused by currents induced in the subject by the MRI's magnetic field gradients.
+- Distortion correction: This involves correcting for geometric distortions in the images caused by the MRI's magnetic field.
+
+Other optional preprocessing include:
+
+- Denoising: This involves applying techniques such as spatial smoothing or noise reduction filters to reduce the amount of noise in the data.
+- Bias field correction: This involves correcting for intensity inhomogeneities in the images caused by the MRI's magnetic field.
+
+Preprocessing is an important step in the analysis of diffusion MRI data, as it can help to improve the quality and accuracy of the resulting data and facilitate more accurate and reliable analysis.
+
 
 ## Before practicum on Friday, please complete following:
 
