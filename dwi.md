@@ -1,8 +1,21 @@
 # Diffusion MRI Basics
 
+Diffusion MRI is a type of magnetic resonance imaging (MRI) that is used to visualize and quantify the movement of water molecules in the body. It is particularly useful for studying the white matter tracts in the brain, which are made up of axons (long, thin fibers) that connect different areas of the brain and facilitate communication between neurons.
+
+In a diffusion MRI scan, the movement of water molecules is measured by applying a magnetic field gradient to the tissue being imaged. The resulting data can be used to calculate various diffusion-related parameters, such as the fractional anisotropy (FA) and mean diffusivity (MD), which can provide information about the structure and function of the brain.
+
+Diffusion MRI is a non-invasive, safe, and widely used technique in the field of neuroscience and has many applications in research and clinical practice. It can be used to study the structural organization of the brain, to identify abnormalities or changes in the white matter tracts that may be associated with various neurological conditions, and to monitor the progression of diseases.
+
 ## Before practicum on Friday, please complete following:
 
 ### Diffusion MRI basics
+
+Diffusion-weighted images (DWI) are a type of magnetic resonance imaging (MRI) that are sensitive to the movement of water molecules within a sample. They are created by applying a magnetic field gradient to the sample and measuring the resulting diffusion of water molecules. The resulting images are called diffusion-weighted because they are weighted according to the amount of diffusion that has occurred.
+
+The b-value is an important parameter in diffusion MRI, as it determines the sensitivity of the resulting images to the diffusion of water molecules in the tissue. Higher b-values correspond to stronger diffusion weighting and more sensitive images, while lower b-values correspond to weaker diffusion weighting and less sensitive images.
+
+The sammpling scheme of diffusion MRI refers to the specific set of b-value and gradient table used to acquire diffusion weighted images. Commonly-used schemes include single-shell, which acquires one b-value at multiple directions, multishell, which acquires two or three b-values at multiple directions, grid, which acquires multiple b-values at multiple directions.
+
 
 - Read [[4. Diffusion MRI acquisitions]](https://www.sciencedirect.com/science/article/pii/S1053811921009241#sec0007)
   - 4.1. Scanning time
