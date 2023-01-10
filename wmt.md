@@ -1,5 +1,14 @@
 # White Matter Tracts
 
+The white matter tracts of cerebrum can be categorized into three major groups, including commissural pathways, association pathways, and projection pathwas.
+
+Commissural pathways are white matter tracts that connect corresponding regions of the brain across the midline. They are an important component of the brain's structural connectivity, allowing for communication and coordination between the two hemispheres of the brain. The major commissural pathways include the corpus callosum, the anterior commissure, and the posterior commissure.
+
+Association pathways are white matter tracts that connect different areas within the same hemisphere of the brain. They are an important component of the brain's structural connectivity, allowing for communication and coordination between different regions of the brain. Association pathways can be divided into two main types: long association pathways, which connect distant regions of the brain, and short association pathways, which connect adjacent areas.
+
+Projection pathways are white matter tracts that connect the brain cortex to the spinal cord or subcortical regions. They are an important component of the brain's structural connectivity, allowing for communication between the brain cortex and the rest of the nervous system. Projection pathways can be divided into two main types: sensory projection pathways, which transmit sensory information from the body to the brain, and motor projection pathways, which transmit motor commands from the brain to the body.
+
+
 ## Before practicum on Friday, please complete the following:
 
 ### White Matter Anatomy 
