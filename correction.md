@@ -1,5 +1,11 @@
 # Diffusion MRI Processing
 
+Diffusion MRI is a type of magnetic resonance imaging (MRI) that is used to visualize and quantify the movement of water molecules in the body. It is particularly useful for studying the white matter tracts in the brain, which are made up of axons (long, thin fibers) that connect different areas of the brain and facilitate communication between neurons.
+
+In a diffusion MRI scan, the movement of water molecules is measured by applying a magnetic field gradient to the tissue being imaged. The resulting data can be used to calculate various diffusion-related parameters, such as the fractional anisotropy (FA) and mean diffusivity (MD), which can provide information about the structure and function of the brain.
+
+Diffusion MRI is a non-invasive, safe, and widely used technique in the field of neuroscience and has many applications in research and clinical practice. It can be used to study the structural organization of the brain, to identify abnormalities or changes in the white matter tracts that may be associated with various neurological conditions, and to monitor the progression of diseases.
+
 ## Before practicum on Friday, please complete following:
 
 ### Diffusion MRI basics
