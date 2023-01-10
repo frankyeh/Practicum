@@ -1,5 +1,11 @@
 # DSI Studio Basics & Configurations
 
+DSI Studio is a software tool for analyzing diffusion MRI data. It is specifically designed for studying white matter tracts in the brain, and it can be used to perform a variety of different analyses, including diffusion tensor imaging (DTI), region-based fiber tracking, and a varities of tractography.
+
+One of the main features of DSI Studio is its ability to visualize and quantify white matter tracts in the brain. It allows users to define specific regions of interest (ROIs) and track the connections between these ROIs to understand the structural organization of the brain. DSI Studio also includes a variety of advanced visualization tools, such as 3D rendering and coloring options, that can be used to explore and analyze the data in more detail.
+
+DSI Studio is a widely used software tool in the field of neuroscience and is commonly used for research and clinical applications. It is available for free download from the DSI Studio website.
+
 ## Before practicum on Friday, please complete following:
 
 - Download [DSI-Studio](http://dsi-studio.labsolver.org/) even if your version is very recent.
