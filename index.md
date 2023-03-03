@@ -9,7 +9,7 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 # Past workshops
 
 ## Fall 2022 (Zoom)
-- Date: 9/9, [9/16](https://pitt.zoom.us/rec/share/cbcTEIWPu8pVSF-MDMEksXU6iK72St7Awfqk61g2OAb9MWLXdKC7oXk7paI0bfYt.1bGXcalByFSTCziN?startTime=1663336787000), [9/23](https://pitt.zoom.us/rec/share/N6bcBSvD9LA42gg88cfPxggywLIszWoYWnAzyVHe3_xP1qKsJi_sQZns1rP5ciTS.AjtlVo3nyxzboQpl?startTime=1663941480000), [9/30](https://pitt.zoom.us/rec/share/oLKkGKobAIVKt74gZf3NskWDrgUtexddzEPK-gmut55tADwehjMYK02MoSlZav6k.fT_YF7eC7pU_EZLN?startTime=1664546351000), [10/7](https://pitt.zoom.us/rec/share/KuI5o1Da_4TNmh0yAie0DZItFSrlQwnTslzqwlzcL-3v1uzh-Wh5tJ7PDgNB_jzl.6FSm6tZjNHrOl0Gv?startTime=1665150982000), [10/14](https://pitt.zoom.us/rec/share/GmY9WoGx-L8n4STtIKHlSnRcSxB0xRCH1RTMjSGxe1eHpVHZ7YtbKWi1s3KE-ZQr.c1CYO4xfWkDM_Aj2), [10/21](https://pitt.zoom.us/rec/share/IQzf1ChH703f1HxoUgkFtQ_dEWzaIc3VH2GDiOnwtuQuIhMp8AmYrOe-60iJpVKh.igunoL-D8f_zbfXq)
+- Date: 9/9, [9/16](https://www.youtube.com/watch?v=V2pxI2tooPs), [9/23](https://www.youtube.com/watch?v=oJK8jwTHVhc), [9/30](https://www.youtube.com/watch?v=9bnZeJ-M5Is), [10/7](https://www.youtube.com/watch?v=wbrMJHD5mKs), [10/14](https://www.youtube.com/watch?v=I9VHepdZhiA), [10/21](https://www.youtube.com/watch?v=ol5R7cCJp1I)
 - Time: 10am-11am (EST) Friday
 - Registration ended.
 
