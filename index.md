@@ -6,15 +6,20 @@
 
 We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.
 
+# Tutorial Videos
+
+**2022 DSI Studio Workshop**
+
+- Week2: White Matter Tract [(youtube)](https://www.youtube.com/watch?v=V2pxI2tooPs) [(bilibili)](https://www.bilibili.com/video/BV1i64y1J75L/)
+- Week3: Fiber Tracking [(youtube)](https://www.youtube.com/watch?v=oJK8jwTHVhc) [(bilibili)](https://www.bilibili.com/video/BV17a4y1z7jM/)
+- Week4: Diffusion MRI Basics [(youtube)](https://www.youtube.com/watch?v=9bnZeJ-M5Is) [(bilibili)](https://www.bilibili.com/video/BV1pC4y1B7Tz/)
+- Week5: Diffusion Models and Metrics [(youtube)](https://www.youtube.com/watch?v=wbrMJHD5mKs) [(bilibili)](https://www.bilibili.com/video/BV1wN4y1x7HS/)
+- Week6: Differential Tractography [(youtube)](https://www.youtube.com/watch?v=I9VHepdZhiA) [(bilibili)](https://www.bilibili.com/video/BV1PQ4y1J71t/)
+- Week7: Correlational Tractography [(youtube)](https://www.youtube.com/watch?v=ol5R7cCJp1I) [(bilibili)](https://www.bilibili.com/video/BV15e411q7LH/)
+
 # Past workshops
 
-## Fall 2022 (Zoom)
-- Date: 9/9, [9/16](https://www.youtube.com/watch?v=V2pxI2tooPs), [9/23](https://www.youtube.com/watch?v=oJK8jwTHVhc), [9/30](https://www.youtube.com/watch?v=9bnZeJ-M5Is), [10/7](https://www.youtube.com/watch?v=wbrMJHD5mKs), [10/14](https://www.youtube.com/watch?v=I9VHepdZhiA), [10/21](https://www.youtube.com/watch?v=ol5R7cCJp1I)
-- Time: 10am-11am (EST) Friday
-- Registration ended.
-
-# Past workshop
-
+- Fall 2022 Date: 9/9, 9/16, 9/23, 9/30, 10/7, 10/14, 10/21. - Time: 10am-11am (EST) Friday
 - Spring 2022, 4-5 pm (EST) Friday - wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)
 
 # Activities
