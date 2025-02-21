@@ -29,9 +29,9 @@ Projection pathways are white matter tracts that connect the brain cortex to the
 
 source: [Neuroimage. 2021 Dec 15;245:118651.](https://www.sciencedirect.com/science/article/pii/S1053811921009241)
 
-- Download and open HCP1065 Group-average template 1mm [[download]](https://zenodo.org/record/6324701/files/HCP1065.1mm.fib.gz?download=1) [(details)](https://brain.labsolver.org/hcp_template.html) in Step T3
+- Download and open HCP1065 Group-average template 1mm [[download]](https://github.com/frankyeh/data-atlas/raw/main/human/human.fz) [(details)](https://brain.labsolver.org/hcp_template.html) in Step T3
 - Download and open tractography atlas [[download]](https://pitt-my.sharepoint.com/:f:/g/personal/yehfc_pitt_edu/EjD1HZDMSnVGuuXm_B5vczQBuvY8WFjtHQR-AnXQc6izvQ?e=JIOLDz) [(details)](https://brain.labsolver.org/hcp_trk_atlas.html)
-- [simplified atlas](https://github.com/frankyeh/data-atlas/blob/main/human/human.tt.gz) and [labels](https://github.com/frankyeh/DSI-Studio-atlas/blob/main/human/human.tt.gz.txt)
+- [simplified atlas](https://github.com/frankyeh/data-atlas/raw/main/human/human.tt.gz) and [labels](https://github.com/frankyeh/data-atlas/raw/main/human/human.tt.gz.txt)
 - [abbreviations](https://pitt-my.sharepoint.com/:x:/g/personal/yehfc_pitt_edu/EQcjg3Ignv5CpOlwRu-dc-sBFy790zDaA2zW0qtR19VbJA?e=gW8L7I)
 
 - White matter pathways can be categorized into commissural, association, and projection pathways.
