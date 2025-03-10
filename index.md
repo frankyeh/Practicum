@@ -1,3 +1,4 @@
+
 # Fiber Tractography Lab Practicum
 
 ![image](https://user-images.githubusercontent.com/275569/149856247-7315a680-fda4-417e-9028-6f6552a56ed6.png)
@@ -6,7 +7,14 @@
 
 We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.
 
-# Tutorial Videos
+## 2025 DSI Studio Workshop Registration Opened
+
+**Registration link: [https://forms.gle/bDAeCEXjBLQZkGDUA](https://forms.gle/bDAeCEXjBLQZkGDUA)**
+
+- Format: Weekly one-hour zoom meeting divided into 3 or 4 sessions (15 min each) followed by Q&A
+- Time: April (Exact days to be determined) Friday 10 am - 11 am EST
+- Website: https://practicum.labsolver.org
+- Main Topic: Introduction to DSI Studio "Hou" version
 
 **2022 DSI Studio Workshop**
 
