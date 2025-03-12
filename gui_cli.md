@@ -1,6 +1,8 @@
-# DSI Studio "Hou" version
 
-# Design paradigm
+# Session 1: Introducing DSI Studio "Hou" "侯" version (15 min)
+![image](https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461)
+
+## Design paradigm
 
 The Design Paradigm of DSI Studio:
 
@@ -18,28 +20,40 @@ The Design Paradigm of DSI Studio:
   - Differential tractography – A technique for detecting neurological changes due to disease or injury.
   - Correlational tractography – A method for studying the relationship between brain structure and external variables.
 
+## Major Update from "Chen"
 
-# Resources
+  - Fiber Data Hub
+    ![image](https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5)
 
-## Documentation
+  - Fiber tracking algorithms: tract-to-voxel ratio, seed-to-voxel ratio
+  - Tract-to-region connectome:
+    [Yeh, Fang-Cheng. "Population-based tract-to-region connectome of the human brain and its hierarchical topology." Nature communications 13.1 (2022): 4933.](https://www.nature.com/articles/s41467-022-32595-4)
+    ![image](https://github.com/user-attachments/assets/6b263d74-3d54-4194-9f32-8af0acd32966)
 
-## Discussion group
+  - Tractography atlas in T1w/T2w images
+  - Revised templates
 
-## Fiber data hub
+## DSI Studio Community Support
 
-
-# Graphic-user interface
-
-## Console 
-
-## Tractography
-
-## Image viewer/editor
-
-## Image registration and normalization
+- Documentations: dsi-studio.labsolver.org
+- Discussion group:
+- Fiber data hub:
 
 
-# Command-line interface
+# Session 2 Graphic-user interface (15 minutes)
+
+- Tractography Flow:
+
+- Image viewer/editor
+
+- Image registration and normalization
+
+
+# Session 3 Command-line interface (15 minutes)
+
+- Console:
+
+  ![image](https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910)
 
 
 
