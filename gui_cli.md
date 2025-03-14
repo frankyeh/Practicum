@@ -1,7 +1,7 @@
 
 # Session 1: Introducing DSI Studio "Hou" "侯" version (15 min)
 
-## Design paradigm
+## Design Paradigm
 
 The Design Paradigm of DSI Studio:
 
@@ -51,7 +51,7 @@ The Design Paradigm of DSI Studio:
 
 
 
-# Session 2 Graphic-user interface (15 minutes)
+# Session 2 Graphic-user Interface (15 minutes)
 
 - Tractography Flow:
 
@@ -68,7 +68,7 @@ The Design Paradigm of DSI Studio:
   ![image](https://github.com/user-attachments/assets/363d318f-67a4-47b9-8e5b-5d4d568905a4)
 
 
-# Session 3 Command-line interface (15 minutes)
+# Session 3 Command-line Interface (15 minutes)
 
 - Console:
 
