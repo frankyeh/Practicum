@@ -19,6 +19,13 @@ The Design Paradigm of DSI Studio:
   - Differential tractography – A technique for detecting neurological changes due to disease or injury.
   - Correlational tractography – A method for studying the relationship between brain structure and external variables.
 
+## DSI Studio Community Support
+
+- Documentations: https://dsi-studio.labsolver.org
+- Discussion group: https://groups.google.com/g/dsi-studio (2200 threads) for bug report, suggestions, questions.
+- Workshop: https://practicum.labsolver.org
+- Data: https://brain.labsolver.org
+
 ## Major Update from "Chen"
 
   - Fiber Data Hub
@@ -42,10 +49,7 @@ The Design Paradigm of DSI Studio:
     
   - New population-averaged templates
 
-## DSI Studio Community Support
 
-- Documentations: https://dsi-studio.labsolver.org
-- Discussion group: https://groups.google.com/g/dsi-studio
 
 # Session 2 Graphic-user interface (15 minutes)
 
