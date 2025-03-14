@@ -22,18 +22,24 @@ The Design Paradigm of DSI Studio:
 ## Major Update from "Chen"
 
   - Fiber Data Hub
+
     [Link to the portal](https://brain.labsolver.org)
+    
     The Fiber Data Hub is a cloud-based resource providing immediate access to over 37,000 preprocessed brain fiber datasets derived from diffusion MRI studies. Designed to support and accelerate tractography research, the hub hosts data from major neuroimaging projects, including the Human Connectome Project, Adolescent Brain Cognitive Development (ABCD) study, and all OpenNeuro repositories.
     ![image](https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5)
 
   - Fiber tracking algorithms: tract-to-voxel ratio, seed-to-voxel ratio
 
   - Tract-to-region connectome:
-    region-to-region connectomes depict connections between distinct brain areas, often without detailing the specific white matter pathways involved. In contrast, tract-to-region connectomes map the precise white matter tracts connecting to particular brain regions, offering a more detailed understanding of the structural pathways underlying these connections
-    [Yeh, Fang-Cheng. "Population-based tract-to-region connectome of the human brain and its hierarchical topology." Nature communications 13.1 (2022): 4933.](https://www.nature.com/articles/s41467-022-32595-4)
+
     ![image](https://github.com/user-attachments/assets/6b263d74-3d54-4194-9f32-8af0acd32966)
 
-  - Tractography atlas in T1w/T2w images
+    [Yeh, Fang-Cheng. "Population-based tract-to-region connectome of the human brain and its hierarchical topology." Nature communications 13.1 (2022): 4933.](https://www.nature.com/articles/s41467-022-32595-4)
+
+    region-to-region connectomes depict connections between distinct brain areas, often without detailing the specific white matter pathways involved. In contrast, tract-to-region connectomes map the precise white matter tracts connecting to particular brain regions, offering a more detailed understanding of the structural pathways underlying these connections
+
+  - Tractography in T1w/T2w/CT images
+    
   - New population-averaged templates
 
 ## DSI Studio Community Support
