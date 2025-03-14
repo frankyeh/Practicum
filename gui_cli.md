@@ -1,5 +1,5 @@
 
-# Session 1: Introducing DSI Studio "Hou" "侯" version (15 min)
+# Session 1: Introducing DSI Studio
 
 ## Design Paradigm
 
@@ -11,7 +11,8 @@ The Design Paradigm of DSI Studio:
 
 - Simple Modeling – DSI Studio prioritizes simple and reliable models, including DTI, GQI, and QSDR, ensuring robust results without excessive complexity.
 
-- Adaptive to Research Needs – DSI Studio undergoes frequent updates to integrate user feedback, address emerging research challenges, and enhance functionality. This commitment ensures the tool remains relevant, responsive, and effective for the research community.
+- Adaptive to Research Needs
+  DSI Studio undergoes frequent updates to integrate user feedback, address emerging research challenges, and enhance functionality.
 
 - Conceptual Approach Over Complexity – Rather than refining existing methodologies with more sophisticated techniques, DSI Studio focuses on developing new yet simple analysis concepts to advance brain research. Examples include:
 
@@ -26,7 +27,23 @@ The Design Paradigm of DSI Studio:
 - Workshop: https://practicum.labsolver.org
 - Data: https://brain.labsolver.org
 
-## Major Update from "Chen"
+## DSI Studio Versions
+
+- Pre-"Chen" (pre-historic): 2008-2022
+- "Chen" (antique): 2022-2024 
+- "Hou" (to be expired): 2025-current
+ 
+## Setup & Installation
+
+- Windows: download and run. portable program.
+- MacOS(13+): download the app package, enable permission, bypass gatekeeper (15+)
+- Ubuntu (20.04+): download and run
+- Docker, singularity: download and run
+  
+- Recommended hardware: a desktop with multi-core CPU and a NVIDIA-GPU
+- Keep a working copy with your data (DSI Studio updates on a daily basis!).
+
+## Major Update from "Chen" Versions
 
   - Fiber Data Hub
 
@@ -48,7 +65,6 @@ The Design Paradigm of DSI Studio:
   - Tractography in T1w/T2w/CT images
     
   - New population-averaged templates
-
 
 
 # Session 2 Graphic-user Interface (15 minutes)
