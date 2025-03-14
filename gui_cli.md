@@ -22,7 +22,7 @@ The Design Paradigm of DSI Studio:
 ## DSI Studio Community Support
 
 - Documentations: https://dsi-studio.labsolver.org
-- Discussion group: https://groups.google.com/g/dsi-studio (2200 threads) for bug report, suggestions, questions.
+- Discussion group: https://groups.google.com/g/dsi-studio for bug report, suggestions, questions.
 - Workshop: https://practicum.labsolver.org
 - Data: https://brain.labsolver.org
 
