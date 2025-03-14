@@ -9,13 +9,16 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 
 ## 2025 DSI Studio Workshop Registration Opened
 
-**Registration link: [https://forms.gle/bDAeCEXjBLQZkGDUA](https://forms.gle/bDAeCEXjBLQZkGDUA)**
+🔗 **Register here:** [https://forms.gle/bDAeCEXjBLQZkGDUA](https://forms.gle/bDAeCEXjBLQZkGDUA)  
 
-- Instructors: Fang-Cheng (Frank) Yeh
-- Format: Weekly one-hour zoom meeting divided into 3 or 4 sessions (15 min each) followed by Q&A
-- Time: April (Exact days to be determined) Friday 10 am - 11 am EST
-- Website: https://practicum.labsolver.org
-- Main Topic: Introduction to DSI Studio "Hou" version
+📌 **Workshop Details:**  
+- **Instructor:** Fang-Cheng (Frank) Yeh  
+- **Format:** Weekly **one-hour Zoom sessions**, divided into **3–4 segments (15 min each)** followed by **Q&A**. The Zoom link will be sent to registrants.  
+- **Schedule:** Fridays, **April 4, 11, 18, 25** | **10:00 AM – 11:00 AM EST**  
+- **Website:** [https://practicum.labsolver.org](https://practicum.labsolver.org)  
+- **Main Topic:** Introduction to **DSI Studio "Hou" version**  
+
+🎥 No worries if you can’t attend live! The recordings will be freely available on YouTube, so you can watch them anytime. Spots are not limited—just visit back later!
 
 ## 2022 DSI Studio Workshop
 
