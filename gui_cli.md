@@ -1,11 +1,9 @@
 
-# Session 1: Introducing DSI Studio
+# Session 1: Introducing DSI Studio (15 minutes)
 
-## Design Paradigm
+## Design Paradigm - Razor Rule
 
-The Design Paradigm of DSI Studio:
-
-- Razor Rule – DSI Studio provides a straightforward approach to tractography, making it accessible to researchers and clinicians. If a simple method works, the result is usually more robust.
+DSI Studio provides a straightforward approach to tractography, making it an accessible to researchers and clinicians.
 
 - Minimal Preprocessing – DSI Studio follows a minimalist preprocessing philosophy, leveraging FSL’s TOPUP and eddy for essential corrections. The core idea is simple: if results require extensive preprocessing to be valid, they are unlikely to be strong or reproducible. (Even better if the results remain consistent without preprocessing!)
 
@@ -52,6 +50,8 @@ The Design Paradigm of DSI Studio:
     The Fiber Data Hub is a cloud-based resource providing immediate access to over 37,000 preprocessed brain fiber datasets derived from diffusion MRI studies. Designed to support and accelerate tractography research, the hub hosts data from major neuroimaging projects, including the Human Connectome Project, Adolescent Brain Cognitive Development (ABCD) study, and all OpenNeuro repositories.
     ![image](https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5)
 
+  - GUI-based batch system: command history
+  
   - Fiber tracking algorithms: tract-to-voxel ratio, seed-to-voxel ratio
 
   - Tract-to-region connectome:
@@ -67,13 +67,17 @@ The Design Paradigm of DSI Studio:
   - New population-averaged templates
 
 
-# Session 2 Graphic-user Interface (15 minutes)
+# Session 2 Interface (15 minutes)
+
+## Graphic-user Interface 
 
 - Tractography Flow:
 
   Raw images (DICOM, NIFTI, etc.) 📂 ➝ .sz file (DWI signals + bval/bvec) 📊 ➝ .fz files ( fiber orientations + anisotropy) 🖼️ ➝ .tt.gz ( tractography) 🧠
 
   ![image](https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461)
+
+  Command history for batch processing
 
 - Image viewer/editor
 
@@ -83,13 +87,12 @@ The Design Paradigm of DSI Studio:
 
   ![image](https://github.com/user-attachments/assets/363d318f-67a4-47b9-8e5b-5d4d568905a4)
 
-
-# Session 3 Command-line Interface (15 minutes)
+## Command-line Interface
 
 - Console:
 
   ![image](https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910)
 
 
-
+ 
 
