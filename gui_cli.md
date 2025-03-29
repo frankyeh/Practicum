@@ -1,22 +1,24 @@
 
 # Session 1: Introducing DSI Studio (15 minutes)
 
-## Design Paradigm - Razor Rule
+## 🧭 DSI Studio Design Philosophy
 
-DSI Studio provides a straightforward approach to tractography, making it an accessible to researchers and clinicians.
+DSI Studio is built for simplicity, transparency, and accessibility—providing researchers and clinicians with an intuitive platform for diffusion MRI tractography and connectome analysis.
 
-- Minimal Preprocessing – DSI Studio follows a minimalist preprocessing philosophy, leveraging FSL’s TOPUP and eddy for essential corrections. The core idea is simple: if results require extensive preprocessing to be valid, they are unlikely to be strong or reproducible. (Even better if the results remain consistent without preprocessing!)
+### 🔧 Minimal Preprocessing  
+DSI Studio follows a minimalist preprocessing philosophy, using only essential steps like FSL’s **TOPUP** and **eddy**. 
 
-- Simple Modeling – DSI Studio prioritizes simple and reliable models, including DTI, GQI, and QSDR, ensuring robust results without excessive complexity.
+### 📈 Simple, Reliable Models  
+The software supports established models like **DTI**, **GQI**, and **QSDR** to deliver dependable results without excessive complexity.
 
-- Adaptive to Research Needs
-  DSI Studio undergoes frequent updates to integrate user feedback, address emerging research challenges, and enhance functionality.
+### 🔁 Actively Maintained and User-Driven  
+Frequent updates reflect direct user feedback through the public forum. Most new features are developed in response to real research needs.
 
-- Conceptual Approach Over Complexity – Rather than refining existing methodologies with more sophisticated techniques, DSI Studio focuses on developing new yet simple analysis concepts to advance brain research. Examples include:
-
-  - Tract-to-region connectome – A method for analyzing brain connectivity at the tract level.
-  - Differential tractography – A technique for detecting neurological changes due to disease or injury.
-  - Correlational tractography – A method for studying the relationship between brain structure and external variables.
+### 💡 Innovation Through Simplicity  
+DSI Studio introduces clear, concept-driven methods that open new avenues for analysis:
+- **Tract-to-Region Connectome** – tract-level connectivity mapping  
+- **Differential Tractography** – detecting changes in white matter integrity  
+- **Correlational Tractography** – linking fiber structure with behavioral or clinical variables  
 
 ## DSI Studio Community Support
 
@@ -25,12 +27,15 @@ DSI Studio provides a straightforward approach to tractography, making it an acc
 - Workshop: https://practicum.labsolver.org
 - Data: https://brain.labsolver.org
 
-## DSI Studio Versions
+## 🔄 DSI Studio Version History
 
-- Pre-"Chen" (pre-historic): 2008-2022
-- "Chen" (antique): 2022-2024 
-- "Hou" (to be expired): 2025-current
- 
+DSI Studio began as a research-focused tool—and it continues to evolve with that mission in mind. The software is actively maintained and updated, typically on a **weekly basis**.
+
+### Version Timeline
+- **Pre-"Chen" (2008–2022)**
+- **"Chen" Era (2022–2024)**
+- **"Hou" Era (2025–Present)**
+
 ## Setup & Installation
 
 - Windows: download and run. portable program.
@@ -43,31 +48,32 @@ DSI Studio provides a straightforward approach to tractography, making it an acc
 
 ## Major Update from "Chen" Versions
 
-  - Fiber Data Hub
+- Fiber Data Hub
 
-    [Link to the portal](https://brain.labsolver.org)
-    
-    The Fiber Data Hub is a cloud-based resource providing immediate access to over 37,000 preprocessed brain fiber datasets derived from diffusion MRI studies. Designed to support and accelerate tractography research, the hub hosts data from major neuroimaging projects, including the Human Connectome Project, Adolescent Brain Cognitive Development (ABCD) study, and all OpenNeuro repositories.
+![image](https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9)
+
+[Fiber Data Hub](https://brain.labsolver.org) is a cloud-based resource providing immediate access to over 37,000 preprocessed brain fiber datasets derived from diffusion MRI studies. Designed to support and accelerate tractography research, the hub hosts data from major neuroimaging projects, including the Human Connectome Project, Adolescent Brain Cognitive Development (ABCD) study, and all OpenNeuro repositories.
+
     ![image](https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5)
 
-  - GUI-based batch system: command history
+- Command history: command history
   
-  - Fiber tracking algorithms: tract-to-voxel ratio, seed-to-voxel ratio
+- Fiber tracking algorithms: introduce tract-to-voxel ratio, seed-to-voxel ratio
 
-  - Tract-to-region connectome:
+- Tract-to-region connectome:
 
-    ![image](https://github.com/user-attachments/assets/6b263d74-3d54-4194-9f32-8af0acd32966)
+region-to-region connectomes depict connections between distinct brain areas, often without detailing the specific white matter pathways involved. In contrast, tract-to-region connectomes map the precise white matter tracts connecting to particular brain regions, offering a more detailed understanding of the structural pathways underlying these connections
 
-    [Yeh, Fang-Cheng. "Population-based tract-to-region connectome of the human brain and its hierarchical topology." Nature communications 13.1 (2022): 4933.](https://www.nature.com/articles/s41467-022-32595-4)
+![image](https://github.com/user-attachments/assets/6b263d74-3d54-4194-9f32-8af0acd32966)
 
-    region-to-region connectomes depict connections between distinct brain areas, often without detailing the specific white matter pathways involved. In contrast, tract-to-region connectomes map the precise white matter tracts connecting to particular brain regions, offering a more detailed understanding of the structural pathways underlying these connections
+[Yeh, Fang-Cheng. "Population-based tract-to-region connectome of the human brain and its hierarchical topology." Nature communications 13.1 (2022): 4933.](https://www.nature.com/articles/s41467-022-32595-4)
 
-  - Tractography in T1w/T2w/CT images
+- Tractography in T1w/T2w/CT images
     
-  - New population-averaged templates
+- New population-averaged templates
 
 
-# Session 2 Interface (15 minutes)
+# Session 2 Interfaces (15 minutes)
 
 ## Graphic-user Interface 
 
@@ -77,22 +83,79 @@ DSI Studio provides a straightforward approach to tractography, making it an acc
 
   ![image](https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461)
 
-  Command history for batch processing
+## Command-line Interface
 
-- Image viewer/editor
+- Console Window:
+
+![image](https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910)
+
+- Loop functions:
+ 
+reduce the need for writing bash scripts
+
+## Command history
+
+
+## Image viewer/editor
 
   ![image](https://github.com/user-attachments/assets/925facea-61b3-4fa9-b350-b5df25b99d47)
 
-- Image linear and nonlinear registration
+## Image linear and nonlinear registration
 
   ![image](https://github.com/user-attachments/assets/363d318f-67a4-47b9-8e5b-5d4d568905a4)
 
-## Command-line Interface
-
-- Console:
-
-  ![image](https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910)
 
 
- 
+
+
+# Assignments
+
+
+Assignment 1. Screen capture whole brain tractography from 10 subjects using command history
+
+
+## 🧪 Assignment 2: Batch Processing NIfTI Files to Reduce File Size
+
+### Objective:  
+Reduce the size of T1-weighted images by adjusting intensity, data type, and spatial resolution.
+
+---
+
+### **Step-by-Step Instructions:**
+
+1. **Download the Dataset**  
+   - Visit: [https://openneuro.org/datasets/ds001378](https://openneuro.org/datasets/ds001378)  
+   - Click **[Download]**, then click the **[Download]** button again.  
+   - Choose an output folder to save the files.
+
+2. **Collect T1-Weighted Images**  
+   - Navigate to the downloaded dataset’s `SCA2` folder.  
+   - Search for all files named `*T1w.nii.gz` and copy them into a new working folder.
+
+3. **Open Images in DSI Studio**  
+   - Launch DSI Studio.  
+   - Go to **[Tools] → [Step O1: View Images]**  
+   - Select all `T1w.nii.gz` files in the folder.  
+   - Note: DSI Studio will preview only the **first image**, but the actions will later apply to all.
+
+4. **Adjust Image Contrast**  
+   - In the top menu, go to:  
+     - **[Views] → [Normalize Otsu Median]**  
+     - **[Views] → [Upper Threshold]**, enter `1`
+
+5. **Reduce Data Precision**  
+   - In the top-right dropdown menu, change the image type from **32-bit floating point** to **8-bit integer**
+
+6. **Downsample Image Volume**  
+   - Go to **[Volume] → [Resize]**  
+   - Enter new dimensions: `200 256 160`
+
+7. **Save the Processed Images**  
+   - Go to **[File] → [Save as...]**  
+   - Use a new filename with a suffix, e.g., `*_T1w_reduced.nii.gz`
+
+8. **Apply Settings to All Files**  
+   - When prompted, click **[Yes]** to apply the same changes to all selected images.
+
+
 
