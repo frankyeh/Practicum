@@ -157,5 +157,17 @@ Reduce the size of T1-weighted images by adjusting intensity, data type, and spa
 8. **Apply Settings to All Files**  
    - When prompted, click **[Yes]** to apply the same changes to all selected images.
 
+9. **(Optional) Use Console to Automate the Task**  
+   - Open the **console window** in DSI Studio to view the command log for each processing step.  
+   - Use the generated command to apply the same operations via command line.
+
+   #### Example command:
+   ```bash
+   dsi_studio --action=img --source=*.nii.gz --cmd="normalize_otsu_median+upper_threshold:1+change_type:0+resize:200 256 160" --output=../*_reduced.nii.gz
+   ```
+
+   This command batch-processes all `.nii.gz` images in the current folder and saves the reduced versions with a `_reduced` suffix in the parent directory.
+
+---
 
 
