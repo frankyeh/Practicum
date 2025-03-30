@@ -1,7 +1,7 @@
 
 # Session 1: Introducing DSI Studio (15 minutes)
 
-## 🧭 DSI Studio Design Philosophy
+## 1.1 DSI Studio Design Philosophy
 
 DSI Studio is built for simplicity, transparency, and accessibility—providing researchers and clinicians with an intuitive platform for diffusion MRI tractography and connectome analysis.
 
@@ -20,14 +20,14 @@ DSI Studio introduces clear, concept-driven methods that open new avenues for an
 - **Differential Tractography** – detecting changes in white matter integrity  
 - **Correlational Tractography** – linking fiber structure with behavioral or clinical variables  
 
-## DSI Studio Community Support
+## 1.2 DSI Studio Community Support
 
 - Documentations: https://dsi-studio.labsolver.org
 - Discussion group: https://groups.google.com/g/dsi-studio for bug report, suggestions, questions.
 - Workshop: https://practicum.labsolver.org
 - Data: https://brain.labsolver.org
 
-## 🔄 DSI Studio Version History
+## 1.3 DSI Studio Version History
 
 DSI Studio began as a research-focused tool—and it continues to evolve with that mission in mind. The software is actively maintained and updated, typically on a **weekly basis**.
 
@@ -36,7 +36,7 @@ DSI Studio began as a research-focused tool—and it continues to evolve with th
 - **"Chen" Era (2022–2024)**
 - **"Hou" Era (2025–Present)**
 
-## Setup & Installation
+## 1.4 Setup & Installation
 
 - Windows: download and run. portable program.
 - MacOS(13+): download the app package, enable permission, bypass gatekeeper (15+)
@@ -46,7 +46,7 @@ DSI Studio began as a research-focused tool—and it continues to evolve with th
 - Recommended hardware: a desktop with multi-core CPU and a NVIDIA-GPU
 - Keep a working copy with your data (DSI Studio updates on a daily basis!).
 
-## Major Update from "Chen" Versions
+## 1.5 Major Update from "Chen" Versions
 
 - Fiber Data Hub
 
@@ -64,7 +64,7 @@ DSI Studio began as a research-focused tool—and it continues to evolve with th
 
 region-to-region connectomes depict connections between distinct brain areas, often without detailing the specific white matter pathways involved. In contrast, tract-to-region connectomes map the precise white matter tracts connecting to particular brain regions, offering a more detailed understanding of the structural pathways underlying these connections
 
-![image](https://github.com/user-attachments/assets/6b263d74-3d54-4194-9f32-8af0acd32966)
+<img src="https://github.com/user-attachments/assets/6b263d74-3d54-4194-9f32-8af0acd32966" width="800"/>
 
 [Yeh, Fang-Cheng. "Population-based tract-to-region connectome of the human brain and its hierarchical topology." Nature communications 13.1 (2022): 4933.](https://www.nature.com/articles/s41467-022-32595-4)
 
@@ -75,38 +75,36 @@ region-to-region connectomes depict connections between distinct brain areas, of
 
 # Session 2 Interfaces (15 minutes)
 
-## Graphic-user Interface 
+## 2.1 Graphic-user Interface 
 
 - Tractography Flow:
 
   Raw images (DICOM, NIFTI, etc.) 📂 ➝ .sz file (DWI signals + bval/bvec) 📊 ➝ .fz files ( fiber orientations + anisotropy) 🖼️ ➝ .tt.gz ( tractography) 🧠
 
-  ![image](https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461)
+<img src="https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461" width="600"/>
 
-## Command-line Interface
+## 2.2 Command-line Interface
 
 - Console Window:
 
-![image](https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910)
+<img src="https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910" width="600"/>
 
 - Loop functions:
  
 reduce the need for writing bash scripts
 
-## Command history
+## 2.3 Image viewer/editor
+
+<img src="https://github.com/user-attachments/assets/925facea-61b3-4fa9-b350-b5df25b99d47" width="600"/>
 
 
-## Image viewer/editor
+# Session 3 Tractography Interfaces (15 minutes)
 
-  ![image](https://github.com/user-attachments/assets/925facea-61b3-4fa9-b350-b5df25b99d47)
+## 3.1 Tractography editing
 
-## Image linear and nonlinear registration
+## 3.2 Tractography editing
 
-  ![image](https://github.com/user-attachments/assets/363d318f-67a4-47b9-8e5b-5d4d568905a4)
-
-
-
-
+## 3.3 Tractography editing
 
 # Assignments
 
