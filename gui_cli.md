@@ -1,33 +1,28 @@
 
 # Session 1: Introducing DSI Studio (15 minutes)
 
-## 1.1 DSI Studio Design Philosophy
-
 DSI Studio is built for simplicity, transparency, and accessibility—providing researchers and clinicians with an intuitive platform for diffusion MRI tractography and connectome analysis.
 
-### 🔧 Minimal Preprocessing  
+• 🔧 Minimal Preprocessing  
 DSI Studio follows a minimalist preprocessing philosophy, using only essential steps like FSL’s **TOPUP** and **eddy**. 
 
-### 📈 Simple, Reliable Models  
+• 📈 Simple, Reliable Models  
 The software supports established models like **DTI**, **GQI**, and **QSDR** to deliver dependable results without excessive complexity.
 
-### 🔁 Actively Maintained and User-Driven  
+• 🔁 Actively Maintained and User-Driven  
 Frequent updates reflect direct user feedback through the public forum. Most new features are developed in response to real research needs.
 
-### 💡 Innovation Through Simplicity  
-DSI Studio introduces clear, concept-driven methods that open new avenues for analysis:
-- **Tract-to-Region Connectome** – tract-level connectivity mapping  
-- **Differential Tractography** – detecting changes in white matter integrity  
-- **Correlational Tractography** – linking fiber structure with behavioral or clinical variables  
+• 💡 Innovation Through Simplicity  
+DSI Studio introduces clear, concept-driven methods such as tract-to-region connectome, differential tractography, and correlational tractography.  
 
-## 1.2 DSI Studio Community Support
+## 1.1 DSI Studio Community Support
 
 - Documentations: https://dsi-studio.labsolver.org
 - Discussion group: https://groups.google.com/g/dsi-studio for bug report, suggestions, questions.
 - Workshop: https://practicum.labsolver.org
 - Data: https://brain.labsolver.org
 
-## 1.3 DSI Studio Version History
+## 1.2 DSI Studio Version History
 
 DSI Studio began as a research-focused tool—and it continues to evolve with that mission in mind. The software is actively maintained and updated, typically on a **weekly basis**.
 
@@ -35,45 +30,65 @@ DSI Studio began as a research-focused tool—and it continues to evolve with th
 - **Pre-"Chen" (2008–2022)**
 - **"Chen" Era (2022–2024)**
 - **"Hou" Era (2025–Present)**
+- **Tip:**  
+Keep a working copy of DSI Studio alongside your data, as the software is updated frequently (often daily!).
 
-## 1.4 Setup & Installation
+---
 
-- Windows: download and run. portable program.
-- MacOS(13+): download the app package, enable permission, bypass gatekeeper (15+)
-- Ubuntu (20.04+): download and run
-- Docker, singularity: download and run
-  
-- Recommended hardware: a desktop with multi-core CPU and a NVIDIA-GPU
-- Keep a working copy with your data (DSI Studio updates on a daily basis!).
+## 1.3 Setup & Installation
 
-## 1.5 Major Update from "Chen" Versions
+- **Windows:**  
+Download and run directly—DSI Studio is a portable program and doesn’t require installation.
 
-- Fiber Data Hub
+- **macOS (13+):**  
+Download the app package, enable permissions, and bypass Gatekeeper (required for macOS 15+).
 
-![image](https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9)
+- **Ubuntu (20.04+):**  
+Download the executable and run it directly—no installation needed.
 
-[Fiber Data Hub](https://brain.labsolver.org) is a cloud-based resource providing immediate access to over 37,000 preprocessed brain fiber datasets derived from diffusion MRI studies. Designed to support and accelerate tractography research, the hub hosts data from major neuroimaging projects, including the Human Connectome Project, Adolescent Brain Cognitive Development (ABCD) study, and all OpenNeuro repositories.
+- **Docker / Singularity:**  
+Prebuilt containers are available. Just download and run for consistent and portable environments.
 
-    ![image](https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5)
+- **Recommended Hardware:**  
+A desktop with a **multi-core CPU** and an **NVIDIA GPU** is recommended for faster processing and smoother rendering.
 
-- Command history: command history
-  
-- Fiber tracking algorithms: introduce tract-to-voxel ratio, seed-to-voxel ratio
+---
 
-- Tract-to-region connectome:
+# Workshop Outline
 
-region-to-region connectomes depict connections between distinct brain areas, often without detailing the specific white matter pathways involved. In contrast, tract-to-region connectomes map the precise white matter tracts connecting to particular brain regions, offering a more detailed understanding of the structural pathways underlying these connections
+### • Fiber Data Hub (WK1)  
+The Fiber Data Hub is a cloud platform providing instant access to over 37,000 preprocessed brain fiber datasets. It includes data from major studies like HCP, ABCD, and OpenNeuro, allowing researchers to explore brain connectivity without handling preprocessing.
 
-<img src="https://github.com/user-attachments/assets/6b263d74-3d54-4194-9f32-8af0acd32966" width="800"/>
+### • Command History (WK1)  
+This feature records GUI operations and turns them into reusable command scripts. It helps automate workflows and ensures reproducible processing.
 
-[Yeh, Fang-Cheng. "Population-based tract-to-region connectome of the human brain and its hierarchical topology." Nature communications 13.1 (2022): 4933.](https://www.nature.com/articles/s41467-022-32595-4)
+---
 
-- Tractography in T1w/T2w/CT images
-    
-- New population-averaged templates
+### • Minimal Preprocessing Pipeline (WK2)  
+Covers the recommended preprocessing steps for diffusion MRI data to prepare it for tractography, focusing on simplicity and compatibility with DSI Studio.
 
+### • Fiber Tracking Basics (WK2)  
+Introduces new metrics like **tract-to-voxel ratio** and **seed-to-voxel ratio**, which improve how tracts are counted and interpreted during fiber tracking.
 
-# Session 2 Interfaces (15 minutes)
+---
+
+### • Tractography on T1w/T2w/CT Images (WK3)  
+Tractography can now be applied to structural images by registering them to diffusion space. This feature helps integrate clinical imaging with tractography analysis.
+
+### • New Population-Averaged Templates (WK3)  
+Newly generated average brain templates offer better spatial normalization and group comparisons across subjects.
+
+### • Tract-to-Region Connectome (WK3)  
+This method maps specific white matter tracts to brain regions, providing more anatomical detail than traditional region-to-region connectomes.
+
+---
+
+### • Differential and Correlational Tractography (WK4)  
+These tools detect changes or correlations in white matter tracts across different groups or conditions, supporting studies in neurology, psychiatry, and brain development.
+
+---
+
+# Session 2: DSI Studio Interfaces (15 minutes)
 
 ## 2.1 Graphic-user Interface 
 
@@ -83,11 +98,11 @@ region-to-region connectomes depict connections between distinct brain areas, of
 
 <img src="https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461" width="600"/>
 
-## 2.2 Command-line Interface
-
 - Console Window:
 
 <img src="https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910" width="600"/>
+
+## 2.2 Command-line Interface
 
 - Loop functions:
  
@@ -97,22 +112,24 @@ reduce the need for writing bash scripts
 
 <img src="https://github.com/user-attachments/assets/925facea-61b3-4fa9-b350-b5df25b99d47" width="600"/>
 
+# Session 3: Fiber Data Hub (15 minutes)
 
-# Session 3 Tractography Interfaces (15 minutes)
+![image](https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9)
 
-## 3.1 Tractography editing
+![image](https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5)
 
-## 3.2 Tractography editing
 
-## 3.3 Tractography editing
+# Session 4: Tractography Interfaces and Command History (15 minutes)
+
+
 
 # Assignments
 
 
-Assignment 1. Screen capture whole brain tractography from 10 subjects using command history
+## Assignment 1. Screen capture whole brain tractography from 10 subjects using command history function
 
 
-## 🧪 Assignment 2: Batch Processing NIfTI Files to Reduce File Size
+## Assignment 2: Batch Processing NIfTI Files to Reduce File Size
 
 ### Objective:  
 Reduce the size of T1-weighted images by adjusting intensity, data type, and spatial resolution.
