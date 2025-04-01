@@ -7,7 +7,7 @@ DSI Studio is built for simplicity, transparency, and accessibility—providing 
 DSI Studio follows a minimalist preprocessing philosophy, using only essential steps like FSL’s **TOPUP** and **eddy**. 
 
 • 📈 Simple, Reliable Models  
-The software supports established models like **DTI**, **GQI**, and **QSDR** to deliver dependable results without excessive complexity.
+The software supports models including **DTI**, **GQI**, and **QSDR**.
 
 • 🔁 Actively Maintained and User-Driven  
 Frequent updates reflect direct user feedback through the public forum. Most new features are developed in response to real research needs.
@@ -17,10 +17,10 @@ DSI Studio introduces clear, concept-driven methods such as tract-to-region conn
 
 ## 1.1 DSI Studio Community Support
 
-- Documentations: https://dsi-studio.labsolver.org
-- Discussion group: https://groups.google.com/g/dsi-studio for bug report, suggestions, questions.
-- Workshop: https://practicum.labsolver.org
-- Data: https://brain.labsolver.org
+- Documentations: [https://dsi-studio.labsolver.org](https://dsi-studio.labsolver.org)
+- Discussion group: [https://groups.google.com/g/dsi-studio](https://groups.google.com/g/dsi-studio) for bug report, suggestions, questions.
+- Workshop: [https://practicum.labsolver.org](https://practicum.labsolver.org)
+- Data: [https://brain.labsolver.org](https://brain.labsolver.org)
 
 ## 1.2 DSI Studio Version History
 
@@ -46,7 +46,7 @@ Download the app package, enable permissions, and bypass Gatekeeper (required fo
 - **Ubuntu (20.04+):**  
 Download the executable and run it directly—no installation needed.
 
-- **Docker / Singularity:**  
+- **Docker/Singularity:**  
 Prebuilt containers are available. Just download and run for consistent and portable environments.
 
 - **Recommended Hardware:**  
@@ -56,11 +56,11 @@ A desktop with a **multi-core CPU** and an **NVIDIA GPU** is recommended for fas
 
 # Workshop Outline
 
+### • Interface and Command History (WK1)  
+The command history function records GUI operations and turns them into reusable command scripts. It helps automate workflows and ensures reproducible processing.
+
 ### • Fiber Data Hub (WK1)  
 The Fiber Data Hub is a cloud platform providing instant access to over 37,000 preprocessed brain fiber datasets. It includes data from major studies like HCP, ABCD, and OpenNeuro, allowing researchers to explore brain connectivity without handling preprocessing.
-
-### • Command History (WK1)  
-This feature records GUI operations and turns them into reusable command scripts. It helps automate workflows and ensures reproducible processing.
 
 ---
 
@@ -112,12 +112,11 @@ reduce the need for writing bash scripts
 
 <img src="https://github.com/user-attachments/assets/925facea-61b3-4fa9-b350-b5df25b99d47" width="600"/>
 
-# Session 3: Fiber Data Hub (15 minutes)
+# Session 3: Fiber Data Hub (10 minutes)
 
 ![image](https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9)
 
 ![image](https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5)
-
 
 # Session 4: Tractography Interfaces and Command History (15 minutes)
 
