@@ -1,12 +1,15 @@
 # DSI Studio 2025 Workshop Outline
 
-🧭 Workshop Format
+- 🧭 Workshop Format
+
 Each workshop will run for 1 hour, divided into four 15-minute sections. During each section, feel free to drop your questions in the Zoom chat at any time. I’ll go through them one by one during the short breaks between sections.
 
-🎥 Recordings
+- 🎥 Recordings
+
 The sessions will be recorded and posted on YouTube afterward. If you prefer, you’re welcome to just watch the recordings instead of attending live—live participation is mainly for real-time interaction.
 
-🙋‍♂️ Post-Workshop Q&A (Unrecorded)
+- 🙋‍♂️ Post-Workshop Q&A (Unrecorded)
+
 After each session, we’ll have an informal, off-the-record Q&A. You can ask about your own research, bring up ideas, or suggest features you'd like to see in DSI Studio. It’s an open forum to chat and brainstorm together.
 
 ---
@@ -191,18 +194,29 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 ## Assignment 1. Screen capture whole brain tractography from 10 subjects using command history function
 
-1. ** Download all subjects
+1. ** Download all subjects's first session gqi.fz files from OpenNeuro ds000244 (Individual Brain Charting)
+  - Open [Fiber Data Hub] → Repository: [OpenNeuro] → [ds000244]
+  - Click on [Select Matching] button → gqi.fz (After entering the filter, move the scroll bar a bit to see the selected data)
+  - Specify the Save Directory and Click on [Download 12 File(s)]
+
+2. Screen capture whole brain tractography on downloaded files
+  - At main window's [Tractography] tab, click on [Step T3: Fiber Tracking] and select the downloaded file `sub-01_ses-00_dwi.gqi.fz`
+  - Click on the [Fiber Tracking] button on the right to get whole brain tractography
+  - Adjust zoom value in the 3D window to get a good view
+  - On the top menu, save whole brain tractography using [Screen][Save 3D Screen]  →  save screen shot as `sub-01_ses-00_dwi_whole_brain_screen.jpg`
+  - On the top menu, select [Records][Command History]  →  Select all steps from `open_fib` to `save_screen`  →  Click [Apply to Others...] → Select other .fz files
+  - On the top menu, select [File][Open FIB Directory] to see if the screenshots are generated.
+
+---
 
 ## Assignment 2: Batch Processing NIfTI Files to Reduce File Size
 
 ### Objective:  
 Reduce the size of T1-weighted images by adjusting intensity, data type, and spatial resolution.
 
----
-
 ### **Step-by-Step Instructions:**
 
-1. **Download the Dataset**  
+1. **Download the Original OpenNeuro ds001378 Dataset**  
    - Visit: [https://openneuro.org/datasets/ds001378](https://openneuro.org/datasets/ds001378)  
    - Click **[Download]**, then click the **[Download]** button again.  
    - Choose an output folder to save the files.
