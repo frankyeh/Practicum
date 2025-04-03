@@ -17,6 +17,13 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 - **Schedule:** Fridays, **April 4, 11, 18, 25** | **10:00 AM – 11:00 AM EST**  
 - **Website:** [https://practicum.labsolver.org](https://practicum.labsolver.org)  
 - **Main Topic:** Introduction to **DSI Studio "Hou" version**  
+- **Participant Demographics**
+  - Faculty Count	27
+  - Post-doctoral Researcher	25
+  - Research Scientist	22
+  - Research Assistant	20
+  - Student	58
+
 
 🎥 No worries if you can’t attend live! The recordings will be freely available on YouTube, so you can watch them anytime. Spots are not limited—just visit back later!
 
