@@ -18,6 +18,9 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 - **Website:** [https://practicum.labsolver.org](https://practicum.labsolver.org)  
 - **Main Topic:** Introduction to **DSI Studio "Hou" version**  
 - **Participant Demographics**
+
+![image](https://github.com/user-attachments/assets/976249ba-5190-43d0-8ce0-fad3d9cab29a)
+
   - Faculty Count	27
   - Post-doctoral Researcher	25
   - Research Scientist	22
