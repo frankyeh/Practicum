@@ -1,20 +1,27 @@
 # DSI Studio 2025 Workshop Outline
 
+🧭 Workshop Format
+Each workshop will run for 1 hour, divided into four 15-minute sections. During each section, feel free to drop your questions in the Zoom chat at any time. I’ll go through them one by one during the short breaks between sections.
+
+🎥 Recordings
+The sessions will be recorded and posted on YouTube afterward. If you prefer, you’re welcome to just watch the recordings instead of attending live—live participation is mainly for real-time interaction.
+
+🙋‍♂️ Post-Workshop Q&A (Unrecorded)
+After each session, we’ll have an informal, off-the-record Q&A. You can ask about your own research, bring up ideas, or suggest features you'd like to see in DSI Studio. It’s an open forum to chat and brainstorm together.
+
+---
+
 ### • Interface and Command History (WK1)  
 The command history function records GUI operations and turns them into reusable command scripts. It helps automate workflows and ensures reproducible processing.
 
 ### • Fiber Data Hub (WK1)  
 The Fiber Data Hub is a cloud platform providing instant access to over 37,000 preprocessed brain fiber datasets. It includes data from major studies like HCP, ABCD, and OpenNeuro, allowing researchers to explore brain connectivity without handling preprocessing.
 
----
-
 ### • Minimal Preprocessing Pipeline (WK2)  
 Covers the recommended preprocessing steps for diffusion MRI data to prepare it for tractography, focusing on simplicity and compatibility with DSI Studio.
 
 ### • Fiber Tracking Basics (WK2)  
 Introduces new metrics like **tract-to-voxel ratio** and **seed-to-voxel ratio**, which improve how tracts are counted and interpreted during fiber tracking.
-
----
 
 ### • Tractography on T1w/T2w/CT Images (WK3)  
 Tractography can now be applied to structural images by registering them to diffusion space. This feature helps integrate clinical imaging with tractography analysis.
@@ -24,8 +31,6 @@ Newly generated average brain templates offer better spatial normalization and g
 
 ### • Tract-to-Region Connectome (WK3)  
 This method maps specific white matter tracts to brain regions, providing more anatomical detail than traditional region-to-region connectomes.
-
----
 
 ### • Differential and Correlational Tractography (WK4)  
 These tools detect changes or correlations in white matter tracts across different groups or conditions, supporting studies in neurology, psychiatry, and brain development.
