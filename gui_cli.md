@@ -108,20 +108,27 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 ## 2.1 Graphic-user Interface 
 
-- Console Window:
+### Console Window:
 
 <img src="https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910" width="600"/>
 
-- Tractography Tabs:
+ - Displays internal messages and system logs
+ - Allows users to run command-line instructions directly within the GUI
 
-  Raw images (DICOM, NIFTI, etc.) 📂 ➝ .sz file (DWI signals + bval/bvec) 📊 ➝ .fz files ( fiber orientations + anisotropy) 🖼️ ➝ .tt.gz ( tractography) 🧠
+### Tractography Tabs:
 
 <img src="https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461" width="600"/>
 
+  Raw images (DICOM, NIFTI, etc.) 📂 ➝ .sz file (DWI signals + bval/bvec) 📊 ➝ .fz files ( fiber orientations + anisotropy) 🖼️ ➝ .tt.gz ( tractography) 🧠
 
-## 2.3 Image viewer/editor
+File Formats:
 
-<img src="https://github.com/user-attachments/assets/925facea-61b3-4fa9-b350-b5df25b99d47" width="600"/>
+  - NIFTI: .nii.gz
+  - SRC: .sz (or .src.gz in older versions)
+  - FIB: .fz (or .fib.gz in older versions)
+  - Tractography: .tt.gz (DSI Studio), .trk.gz (TrackVis)
+
+### Other Tabs:
 
 ---
 
@@ -131,6 +138,22 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 <img src="https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5" width="600"/>
 
+**Overview:**  
+The Fiber Data Hub is a growing repository of preprocessed diffusion MRI data designed for ease of access and integration with DSI Studio.
+
+**Key Features:**  
+- Includes data from major projects: **HCP, ABCD, OpenNeuro**, and others  
+- Covers both **human and animal brain scans**  
+- **Continuously expanding** with community contributions  
+- **Hosted independently** of DSI Studio on GitHub  
+- Accessible via the **GitHub API**  
+- Supports sharing of:  
+  - **FIB files (.fz)** for tractography and fiber visualization  
+  - **SRC files (.sz)** (when licensing permits)
+
+---
+
+Let me know if you want to add a link to the data hub or a quick demo script!
 ---
 
 # Session 4: Tractography Interfaces (20 minutes)
@@ -250,16 +273,26 @@ Reduce the size of T1-weighted images by adjusting intensity, data type, and spa
 8. **Apply Settings to All Files**  
    - When prompted, click **[Yes]** to apply the same changes to all selected images.
 
-9. **(Optional) Use Console to Automate the Task**  
-   - Open the **console window** in DSI Studio to view the command log for each processing step.  
-   - Use the generated command to apply the same operations via command line.
 
-   #### Example command:
+---
+
+## Assignment 3: Command Line Batch Processing NIfTI Files to Reduce File Size
+
+1. Open the **console window** in DSI Studio
+  
+2. Repeat the steps in Assignment 2 to identify the commands and parameter used in NIFTI tool.
+   - The command usually has this format `name of the command`:`parameters`
+   - For example, if regrid at 1 1 1, the name of the command is `regrid` and the parameters are `1 1 1`
+    
+3. Use command line to repeat the task of the assignment 2 
+
+   Example command:
+   
    ```bash
-   dsi_studio --action=img --source=*.nii.gz --cmd="normalize_otsu_median+upper_threshold:1+change_type:0+resize:200 256 160" --output=../*_reduced.nii.gz
+   dsi_studio --action=img --source=*.nii.gz --cmd="flip_x+upper_threshold:1+change_type:1" --output=../*_modified.nii.gz
    ```
 
-   This command batch-processes all `.nii.gz` images in the current folder and saves the reduced versions with a `_reduced` suffix in the parent directory.
+   This command batch-processes all `.nii.gz` images in the current folder by flip the image at x direction, thresholded values beflow 1, and change the pixel type to 16-bit integer before sacing the results with a `_modified` suffix in the parent directory.
 
 ---
 
