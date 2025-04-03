@@ -119,22 +119,74 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 # Session 3: Fiber Data Hub (10 minutes)
 
-![image](https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9)
+<img src="https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9" width="600"/>
 
-![image](https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5)
-
+<img src="https://github.com/user-attachments/assets/189aab8b-d7af-4992-af4b-22647ac2efc5" width="600"/>
 
 ---
 
-# Session 4: Tractography Interfaces and Command History (15 minutes)
+# Session 4: Tractography Interfaces (20 minutes)
 
+<img src="https://github.com/user-attachments/assets/f3dd7fcc-3871-44d4-88af-3e7b6feb2ae3" width="600"/>
 
+- Sample Data: [OpenNeuro][ds004299][sub-103]
+- 3D Window & Shortcuts
+  **views**
+  - left button	to rotate view
+  - right button to zoom in/out view
+  - middle button or arrow keys	to move view
+  - wheel	to zoom in/out view
+  - Alt+1, Alt+2,…etc	remember the current viewport and slice position to memory slot 1
+  - “1”, “2”,…etc.	return to the viewport and slice position recorded in memory slot 1
+  
+  **slices**    
+  - Any	“Q” and “A”	move sagittal slide
+  - Any	“W” and “S”	move coronal slide
+  - Any	“E” and “D”	move axial slide
+  - Any	“Z”	switch to sagittal view
+  - Any	“X”	switch to coronal view
+  - Any	“C”	switch to axial view
+
+  **regions**
+  - double left-clicks on a region to select it in the region list
+  - Ctrl+A to drag a slice or a region in the 3D window.
+
+- ROI Window & Shortcuts
+  - right double click	 move slices to the pointed location.
+  - middle button	drag a slice or a region in the ROI window.
+  - wheel	zoom in or zoom out
+
+- Method Window
+- Tract Window
+  - Tracking button
+  - Autotrack
+  - Tract Menu
+  
+- Region and ROI Window
+  - ROI tools
+  - Atlas function
+  - Region Menu
+
+- Settings & Rendering
+  - Slice, Region, Tract, Device renderings
+
+- Top Menu Functions
+  - Workspace
+  - Tract Editing
+  - Region Editing
+  - Tract Coloring & Recognition
+  - Slices & Segmentation
+  - Device
+  - Screen Saving
+  - Command History
+
+---
 
 # Assignments
 
-
 ## Assignment 1. Screen capture whole brain tractography from 10 subjects using command history function
 
+1. ** Download all subjects
 
 ## Assignment 2: Batch Processing NIfTI Files to Reduce File Size
 
