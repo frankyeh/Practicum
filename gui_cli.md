@@ -143,7 +143,7 @@ Example code to run at [Google Colab](https://colab.research.google.com/?hl=en) 
 !wget https://github.com/data-openneuro/brain/releases/download/ds004299/sub-103_ses-1_dwi.sz
 !wget https://github.com/data-openneuro/brain/releases/download/ds004299/sub-104_ses-1_dwi.sz
 !dsi-studio/dsi_studio --action=rec --source=*.sz 
-!dsi-studio/dsi_studio --action=ana --source=*.fz --regions=HCP-MMP
+!dsi-studio/dsi_studio --action=ana --source=*.fz --region=HCP-MMP:L_V1
 ```
 
 - Download DSI Studio binary and data from fiber data hub
