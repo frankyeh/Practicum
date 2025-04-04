@@ -92,16 +92,8 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 ---
 
-# Session 2: Main Interfaces (10 minutes)
+# Session 2: Interfaces (10 minutes)
 
-## 2.1 Graphic-user Interface 
-
-### Console Window:
-
-<img src="https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910" width="600"/>
-
- - Displays internal messages and system logs
- - Allows users to run command-line instructions directly within the GUI
 
 ### Tractography Tabs:
 
@@ -115,6 +107,26 @@ File Formats:
   - SRC: .sz (or .src.gz in older versions)
   - FIB: .fz (or .fib.gz in older versions)
   - Tractography: .tt.gz (DSI Studio), .trk.gz (TrackVis)
+
+### Console Window:
+
+<img src="https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910" width="600"/>
+
+ - Displays internal messages and system logs
+ - Allows users to run command-line instructions directly within the GUI
+
+### Command Line Interface:
+
+Example code to run at [Google Colab](https://colab.research.google.com/?hl=en) (Ubuntu 2204)
+```
+!wget https://github.com/frankyeh/DSI-Studio/releases/download/2024.06.12/dsi_studio_ubuntu2204_cpu.zip && unzip -o -q dsi_studio_ubuntu2204_cpu.zip
+!wget https://github.com/data-openneuro/brain/releases/download/ds004299/sub-103_ses-1_dwi.sz
+!wget https://github.com/data-openneuro/brain/releases/download/ds004299/sub-104_ses-1_dwi.sz
+!dsi-studio/dsi_studio --source=*.sz --action=rec
+```
+
+ - Download DSI Studio binary and data from fiber data hub
+ - Run GQI reconstruction
 
 ### Other Tabs:
 
