@@ -5,11 +5,10 @@ Preprocessing of diffusion MRI data refers to the steps taken to prepare the dat
 ## Outline
 
 1. MRI Data Acquisitions
-2. From NIFTI/DICOM to SRC files
-3. Preprocessing DWI data in SRC files
-4. Reconstruct SRC into FIB files
+2. Preprocessing DWI data in SRC files
+3. Reconstruct SRC into FIB files
 
-## Session 1: Diffusion MRI Acquisitions
+## Session 1: Diffusion MRI Acquisitions (15 minutes)
 
 - Recommendation 1: get enough diffusion contrast 
   - b-value > 1,000 mm2/s for human studies
@@ -31,19 +30,34 @@ Preprocessing of diffusion MRI data refers to the steps taken to prepare the dat
 
 ---
 
-## From NIFTI/DICOM to SRC files
+## Session 2: Diffusion MRI Preprocessing (15 minutes)
 
 Download [OpenNeuro ds002087 dataset](https://openneuro.org/datasets/ds002087) `datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI`
 
-
-
 ## Identify quality problems due to
 
-- **Motion artifacts**: These occur when the subject moves during the scan, which can cause blurring or distortion in the images.
-- **Eddy current artifacts**: These are caused by currents induced in the subject by the MRI's magnetic field gradients. They can cause distortion and signal loss in the images.
-- **Susceptibility artifacts**: These are caused by differences in the magnetic properties of different tissues, which can cause signal loss or distortion in the images.
+Starting from largest quality affecting problems
 
-## Options
+- **Motion artifacts**: These occur when the subject moves during the scan, which can cause blurring or distortion in the images.
+  - use QC to drop outlier scans instead of correcting it.
+    
+- **Eddy current artifacts**: These are caused by currents induced in the subject by the MRI's magnetic field gradients. They can cause distortion and signal loss in the images.
+  - sequence-based solution available (bipolar pulse)
+  - increamental improvement nowadays because of sequence improvement
+   
+- **Susceptibility artifacts**: These are caused by differences in the magnetic properties of different tissues, which can cause signal loss or distortion in the images.
+  - sequence-based solution available (readout segmentation)
+  - very limited improvement
+  - cannot get the missing region back
+
+- **noise reduction**
+  - not really needed for DTI and GQI/QSDR
+  - impossible to keep all meaningful information 
+
+- **Gibbs ringing**
+  - SNR too low at DWI to see them. 
+
+## Tools
 
 - FSL's topup:
   - need reversed phase encoding b0
@@ -55,6 +69,12 @@ Download [OpenNeuro ds002087 dataset](https://openneuro.org/datasets/ds002087) `
 
 - DSI Studio's motion correction 
 
+- Hands-on
+  - Download .sz files from Fiber Data Hub's [OpenNeuro][ds002087]
+  - Compare .sz with/without corrections
+  - Compare .fz with/without corrections
+  - Compare arcuate fasciculus with/without corrections
+  
 ## Recommended Pipelines
 
 Choices in priority
