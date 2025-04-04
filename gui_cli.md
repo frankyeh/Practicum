@@ -94,7 +94,7 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 # Session 2: Main Interfaces
 
-### Tractography Tabs:
+## Tractography Tabs:
 
 <img src="https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461" width="600"/>
 
@@ -107,7 +107,7 @@ File Formats:
   - FIB: .fz (or .fib.gz in older versions)
   - Tractography: .tt.gz (DSI Studio), .trk.gz (TrackVis)
 
-### Fiber Data Hub
+## Fiber Data Hub
 
 <img src="https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9" width="600"/>
 
@@ -128,14 +128,14 @@ Web portal: [https://brain.labsolver.org](https://brain.labsolver.org)
   - **FIB files (.fz)** for tractography and fiber visualization  
   - **SRC files (.sz)** (when licensing permits)
 
-### Console Window:
+## Console Window:
 
 <img src="https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910" width="600"/>
 
  - Displays internal messages and system logs
  - Allows users to run command-line instructions directly within the GUI
 
-### Command Line Interface:
+## Command Line Interface:
 
 Example code to run at [Google Colab](https://colab.research.google.com/?hl=en) (Ubuntu 2204)
 ```
@@ -148,6 +148,7 @@ Example code to run at [Google Colab](https://colab.research.google.com/?hl=en) 
 
 - Download DSI Studio binary and data from fiber data hub
 - Run GQI reconstruction
+- Use built-in HCP-MMP region L_V1 to sample diffusion values
 
 ---
 
