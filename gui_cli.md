@@ -2,7 +2,7 @@
 
 - 🧭 Workshop Format
 
-Each workshop will run for 1 hour, divided into four 15-minute sections. During each section, feel free to drop your questions in the Zoom chat at any time. I’ll go through them one by one during the short breaks between sections.
+Each workshop will run for 1 hour, divided into four 15-minute sections. During each section, feel free to **drop your questions in the Zoom chat at any time**. I’ll go through them one by one during the short breaks between sections.
 
 - 🎥 Recordings
 
@@ -10,7 +10,7 @@ The sessions will be recorded and posted on YouTube afterward. If you prefer, yo
 
 - 🙋‍♂️ Post-Workshop Q&A (Unrecorded)
 
-After each session, we’ll have an informal, off-the-record Q&A. You can ask about your own research, bring up ideas, or suggest features you'd like to see in DSI Studio. It’s an open forum to chat and brainstorm together.
+**At the end of each day's workshop, we’ll have an informal, off-the-record Q&A**. You can ask about your own research, bring up ideas, or suggest features you'd like to see in DSI Studio. It’s an open forum to chat and brainstorm together.
 
 ---
 
@@ -21,7 +21,7 @@ The new **Command History** feature records GUI actions and converts them into r
 This session introduces key diffusion MRI acquisition settings, and how they influence reconstruction and analysis. We’ll then walk through a minimal preprocessing pipeline that converts raw data (DICOM or NIfTI) into analysis-ready **.sz files** using either the **GUI batch processor** or **command-line tools**. The pipeline emphasizes simplicity and compatibility, making it suitable for a wide range of datasets, including both human and animal studies.
 
 ### • Fiber Tracking (WK3)  
-This session presents updated tracking metrics, including tract-to-voxel and seed-to-voxel ratios, which improve interpretation of tract counts. We'll introduce the Tract-to-Region Connectome, which links tracts to specific anatomical regions, offering finer resolution than region-to-region matrices. The session also covers how to use different region types—volume ROIs, surface-based regions, and atlas-defined labels—for fiber tracking and filtering. New features enable tractography on structural images aligned to diffusion space, and updated average templates support improved spatial normalization in group studies.
+This session presents updated tracking metrics, including tract-to-voxel and seed-to-voxel ratios, which improve interpretation of tract counts. We'll introduce the **tract-to-region Connectome**, which links tracts to specific anatomical regions, offering finer resolution than region-to-region matrices. The session also covers how to use different region types—volume ROIs, surface-based regions, and atlas-defined labels—for fiber tracking and filtering. New features enable tractography on structural images aligned to diffusion space, and updated average templates support improved spatial normalization in group studies.
 
 ### • Differential and Correlational Tractography (WK4)  
 This session covers statistical tools for detecting group differences and correlations in white matter tracts. **Differential tractography** identifies regions with significant changes, while **correlational tractography** maps associations with variables like age, symptoms, or cognitive scores. These methods support applications in neurology, psychiatry, and developmental neuroscience by linking tract-level findings to clinical or behavioral measures.
