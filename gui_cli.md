@@ -157,12 +157,13 @@ Example code to run at [Google Colab](https://colab.research.google.com/?hl=en) 
 <img src="https://github.com/user-attachments/assets/f3dd7fcc-3871-44d4-88af-3e7b6feb2ae3" width="600"/>
 
 - Sample Data: [OpenNeuro][ds004299][sub-103_ses-1_dwi.gqi.fz]
-- 3D Window & Shortcuts
+- 3D Window (Middle)
+
   **views**
-  - left button	to rotate view
-  - right button to zoom in/out view
-  - middle button or arrow keys	to move view
-  - wheel	to zoom in/out view
+  - Left button	to rotate view
+  - Right button to zoom in/out view
+  - Middle button or arrow keys	to move view
+  - Wheel	to zoom in/out view
   - Alt+1, Alt+2,…etc	remember the current viewport and slice position to memory slot 1
   - “1”, “2”,…etc.	return to the viewport and slice position recorded in memory slot 1
   
@@ -173,31 +174,28 @@ Example code to run at [Google Colab](https://colab.research.google.com/?hl=en) 
   - Any	“Z”	switch to sagittal view
   - Any	“X”	switch to coronal view
   - Any	“C”	switch to axial view
-
-  **regions**
-  - double left-clicks on a region to select it in the region list
-  - Ctrl+A to drag a slice or a region in the 3D window.
-
-- ROI Window & Shortcuts
-  - right double click	 move slices to the pointed location.
-  - middle button	drag a slice or a region in the ROI window.
-  - wheel	zoom in or zoom out
-
-- Method Window
-- Tract Window
+  
+- Method Window (Lower Right)
+- Tract Window (Right)
   - Tracking button
   - Autotrack
   - Tract Menu
-  
-- Region and ROI Window
+
+- ROI Window (Lower Left)
   - ROI tools
+  - Right double click to move slices to the pointed location.
+  - Wheel	zoom in or zoom out
+  
+- Region (Upper Left)
   - Atlas function
   - Region Menu
+  - Double left-clicks on a 3D region to select it in the region list
+  - Ctrl+A to drag a slice or a region in the 3D window.
 
-- Settings & Rendering
+- Settings & Rendering (Upper Right)
   - Slice, Region, Tract, Device renderings
 
-- Top Menu Functions
+- Top Menu Functions (Top)
   - Workspace
   - Tract Editing
   - Region Editing
