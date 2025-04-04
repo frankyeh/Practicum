@@ -141,9 +141,6 @@ The Fiber Data Hub is a growing repository of preprocessed diffusion MRI data de
 
 ---
 
-Let me know if you want to add a link to the data hub or a quick demo script!
----
-
 # Session 4: Tractography Interfaces (20 minutes)
 
 <img src="https://github.com/user-attachments/assets/f3dd7fcc-3871-44d4-88af-3e7b6feb2ae3" width="600"/>
