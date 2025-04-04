@@ -58,7 +58,7 @@ DSI Studio introduces concept-driven methods such as tract-to-region connectome,
   - Questions
 - Workshop: [https://practicum.labsolver.org](https://practicum.labsolver.org)
   - Tutorial videos
-- Data: [https://brain.labsolver.org](https://brain.labsolver.org)
+- Data (Fiber Data Hub): [https://brain.labsolver.org](https://brain.labsolver.org)
   - Tractography atlases
   - Templates
   - Individual scan data
@@ -115,6 +115,8 @@ File Formats:
 
 **Overview:**  
 The Fiber Data Hub is a growing repository of preprocessed diffusion MRI data designed for ease of access and integration with DSI Studio.
+
+Web portal: [https://brain.labsolver.org](https://brain.labsolver.org)
 
 **Key Features:**  
 - Includes data from major projects: **HCP, ABCD, OpenNeuro**, and others  
