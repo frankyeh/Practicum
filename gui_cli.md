@@ -28,7 +28,7 @@ This session covers statistical tools for detecting group differences and correl
 
 ---
 
-# Session 1: Introducing DSI Studio (10 minutes)
+# Session 1: Introducing DSI Studio
 
 DSI Studio is built for simplicity, transparency, and accessibility—providing researchers and clinicians with an intuitive platform for diffusion MRI tractography and connectome analysis.
 
@@ -92,8 +92,7 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 ---
 
-# Session 2: Interfaces (10 minutes)
-
+# Session 2: Main Interfaces
 
 ### Tractography Tabs:
 
@@ -108,31 +107,7 @@ File Formats:
   - FIB: .fz (or .fib.gz in older versions)
   - Tractography: .tt.gz (DSI Studio), .trk.gz (TrackVis)
 
-### Console Window:
-
-<img src="https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910" width="600"/>
-
- - Displays internal messages and system logs
- - Allows users to run command-line instructions directly within the GUI
-
-### Command Line Interface:
-
-Example code to run at [Google Colab](https://colab.research.google.com/?hl=en) (Ubuntu 2204)
-```
-!wget https://github.com/frankyeh/DSI-Studio/releases/download/2024.06.12/dsi_studio_ubuntu2204_cpu.zip && unzip -o -q dsi_studio_ubuntu2204_cpu.zip
-!wget https://github.com/data-openneuro/brain/releases/download/ds004299/sub-103_ses-1_dwi.sz
-!wget https://github.com/data-openneuro/brain/releases/download/ds004299/sub-104_ses-1_dwi.sz
-!dsi-studio/dsi_studio --source=*.sz --action=rec
-```
-
- - Download DSI Studio binary and data from fiber data hub
- - Run GQI reconstruction
-
-### Other Tabs:
-
----
-
-# Session 3: Fiber Data Hub (10 minutes)
+### Fiber Data Hub
 
 <img src="https://github.com/user-attachments/assets/455a71b7-dc1b-4960-b2ba-401b6f70c1a9" width="600"/>
 
@@ -151,9 +126,30 @@ The Fiber Data Hub is a growing repository of preprocessed diffusion MRI data de
   - **FIB files (.fz)** for tractography and fiber visualization  
   - **SRC files (.sz)** (when licensing permits)
 
+### Console Window:
+
+<img src="https://github.com/user-attachments/assets/9ef85f98-afad-44dd-a2ff-65ef66d52910" width="600"/>
+
+ - Displays internal messages and system logs
+ - Allows users to run command-line instructions directly within the GUI
+
+### Command Line Interface:
+
+Example code to run at [Google Colab](https://colab.research.google.com/?hl=en) (Ubuntu 2204)
+```
+!wget https://github.com/frankyeh/DSI-Studio/releases/download/2024.06.12/dsi_studio_ubuntu2204_cpu.zip && unzip -o -q dsi_studio_ubuntu2204_cpu.zip
+!wget https://github.com/data-openneuro/brain/releases/download/ds004299/sub-103_ses-1_dwi.sz
+!wget https://github.com/data-openneuro/brain/releases/download/ds004299/sub-104_ses-1_dwi.sz
+!dsi-studio/dsi_studio --action=rec --source=*.sz 
+!dsi-studio/dsi_studio --action=ana --source=*.fz --regions=HCP-MMP
+```
+
+- Download DSI Studio binary and data from fiber data hub
+- Run GQI reconstruction
+
 ---
 
-# Session 4: Tractography Interfaces (20 minutes)
+# Session 3: Tractography Interfaces
 
 <img src="https://github.com/user-attachments/assets/f3dd7fcc-3871-44d4-88af-3e7b6feb2ae3" width="600"/>
 
