@@ -49,14 +49,14 @@ DSI Studio is built for simplicity, transparency, and accessibility—providing 
 • 🔧 Minimal Preprocessing  
 DSI Studio follows a minimalist preprocessing philosophy, using only essential steps like FSL’s **TOPUP** and **eddy**. 
 
-• 📈 Simple, Reliable Models  
+• 📈 Diffusion Models  
 The software supports models including **DTI**, **GQI**, and **QSDR**.
 
 • 🔁 Actively Maintained and User-Driven  
 Frequent updates reflect direct user feedback through the public forum. Most new features are developed in response to real research needs.
 
-• 💡 Innovation Through Simplicity  
-DSI Studio introduces clear, concept-driven methods such as tract-to-region connectome, differential tractography, and correlational tractography.  
+• 💡 Concept-driven Methods  
+DSI Studio introduces concept-driven methods such as tract-to-region connectome, differential tractography, and correlational tractography.  
 
 ## 1.2 Community Support
 
