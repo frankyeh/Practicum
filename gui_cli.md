@@ -28,7 +28,7 @@ This session covers statistical tools for detecting group differences and correl
 
 ---
 
-# Session 1: Introducing DSI Studio (15 minutes)
+# Session 1: Introducing DSI Studio (10 minutes)
 
 DSI Studio is built for simplicity, transparency, and accessibility—providing researchers and clinicians with an intuitive platform for diffusion MRI tractography and connectome analysis.
 
@@ -92,7 +92,7 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 ---
 
-# Session 2: DSI Studio Interfaces (15 minutes)
+# Session 2: Main Interfaces (10 minutes)
 
 ## 2.1 Graphic-user Interface 
 
@@ -148,7 +148,7 @@ Let me know if you want to add a link to the data hub or a quick demo script!
 
 <img src="https://github.com/user-attachments/assets/f3dd7fcc-3871-44d4-88af-3e7b6feb2ae3" width="600"/>
 
-- Sample Data: [OpenNeuro][ds004299][sub-103]
+- Sample Data: [OpenNeuro][ds004299][sub-103_ses-1_dwi.gqi.fz]
 - 3D Window & Shortcuts
   **views**
   - left button	to rotate view
