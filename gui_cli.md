@@ -14,29 +14,17 @@ After each session, we’ll have an informal, off-the-record Q&A. You can ask ab
 
 ---
 
-### • Interface and Command History (WK1)  
-The command history function records GUI operations and turns them into reusable command scripts. It helps automate workflows and ensures reproducible processing.
-
-### • Fiber Data Hub (WK1)  
-The Fiber Data Hub is a cloud platform providing instant access to over 37,000 preprocessed brain fiber datasets. It includes data from major studies like HCP, ABCD, and OpenNeuro, allowing researchers to explore brain connectivity without handling preprocessing.
+### • Interface and Fiber Data Hub (WK1)  
+The new **Command History** feature records GUI actions and converts them into reusable command-line scripts, making it easy to reproduce and automate workflows. The **Fiber Data Hub** provides instant access to over **37,000 preprocessed brain fiber datasets**, including HCP, ABCD, and OpenNeuro. The hub is hosted independently on GitHub and accessible via API, allowing users to explore brain connectivity without manual preprocessing.
 
 ### • Minimal Preprocessing Pipeline (WK2)  
-Covers the recommended preprocessing steps for diffusion MRI data to prepare it for tractography, focusing on simplicity and compatibility with DSI Studio.
+This session introduces key diffusion MRI acquisition settings, and how they influence reconstruction and analysis. We’ll then walk through a minimal preprocessing pipeline that converts raw data (DICOM or NIfTI) into analysis-ready **.sz files** using either the **GUI batch processor** or **command-line tools**. The pipeline emphasizes simplicity and compatibility, making it suitable for a wide range of datasets, including both human and animal studies.
 
-### • Fiber Tracking Basics (WK2)  
-Introduces new metrics like **tract-to-voxel ratio** and **seed-to-voxel ratio**, which improve how tracts are counted and interpreted during fiber tracking.
-
-### • Tractography on T1w/T2w/CT Images (WK3)  
-Tractography can now be applied to structural images by registering them to diffusion space. This feature helps integrate clinical imaging with tractography analysis.
-
-### • New Population-Averaged Templates (WK3)  
-Newly generated average brain templates offer better spatial normalization and group comparisons across subjects.
-
-### • Tract-to-Region Connectome (WK3)  
-This method maps specific white matter tracts to brain regions, providing more anatomical detail than traditional region-to-region connectomes.
+### • Fiber Tracking (WK3)  
+This session presents updated tracking metrics, including tract-to-voxel and seed-to-voxel ratios, which improve interpretation of tract counts. We'll introduce the Tract-to-Region Connectome, which links tracts to specific anatomical regions, offering finer resolution than region-to-region matrices. The session also covers how to use different region types—volume ROIs, surface-based regions, and atlas-defined labels—for fiber tracking and filtering. New features enable tractography on structural images aligned to diffusion space, and updated average templates support improved spatial normalization in group studies.
 
 ### • Differential and Correlational Tractography (WK4)  
-These tools detect changes or correlations in white matter tracts across different groups or conditions, supporting studies in neurology, psychiatry, and brain development.
+This session covers statistical tools for detecting group differences and correlations in white matter tracts. **Differential tractography** identifies regions with significant changes, while **correlational tractography** maps associations with variables like age, symptoms, or cognitive scores. These methods support applications in neurology, psychiatry, and developmental neuroscience by linking tract-level findings to clinical or behavioral measures.
 
 ---
 
