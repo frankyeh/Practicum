@@ -21,14 +21,18 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 
 ![image](https://github.com/user-attachments/assets/976249ba-5190-43d0-8ce0-fad3d9cab29a)
 
-  - Faculty 27
-  - Post-doctoral Researcher	25
-  - Research Scientist	22
-  - Research Assistant	20
-  - Student	58
+- Faculty 27
+- Post-doctoral Researcher	25
+- Research Scientist	22
+- Research Assistant	20
+- Student	58
 
-
+**Recordings**
 🎥 No worries if you can’t attend live! The recordings will be freely available on YouTube, so you can watch them anytime. Spots are not limited—just visit back later!
+
+- Week1: Tools & Data Hub [(youtube)](https://youtu.be/BHsJ2hqqNic) [(bilibili)](https://www.bilibili.com/video/BV1eKRDYVEEk/)
+
+
 
 ## 2022 DSI Studio Workshop
 
