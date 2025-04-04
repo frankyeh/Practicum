@@ -14,9 +14,9 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 📌 **Workshop Details:**  
 - **Instructor:** Fang-Cheng (Frank) Yeh  
 - **Format:** Weekly **one-hour Zoom sessions**, divided into **3–4 segments (15 min each)** followed by **Q&A**. The Zoom link will be sent to registrants.  
-- **Schedule:** Fridays, **April 4, 11, 18, 25** | **10:00 AM – 11:00 AM EST**  
+- **Schedule:** Fridays, April 4, 11, 18, 25 10:00 AM – 11:00 AM EST**  
 - **Website:** [https://practicum.labsolver.org](https://practicum.labsolver.org)  
-- **Main Topic:** Introduction to **DSI Studio "Hou" version**  
+- **Main Topic:** Introduction to DSI Studio "Hou" version
 - **Participant Demographics**
 
 ![image](https://github.com/user-attachments/assets/976249ba-5190-43d0-8ce0-fad3d9cab29a)
