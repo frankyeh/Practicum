@@ -5,8 +5,15 @@ Preprocessing of diffusion MRI data refers to the steps taken to prepare the dat
 ## Outline
 
 1. MRI Data Acquisitions
-2. Preprocessing DWI data in SRC files
-3. Reconstruct SRC into FIB files
+  - Recommendations
+  
+3. Preprocessing DWI data in SRC files
+  - motion correction & eddy current distortion correction
+  - suscetibility artifact correction
+
+3. Diffusion Models: resolving fibers and quantifying anisotropy
+   - DTI/GQI/QSDR
+
 
 ## Session 1: Diffusion MRI Acquisitions (15 minutes)
 
@@ -86,4 +93,24 @@ Choices in priority
 - [DWI_PA](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
 - [BVAL](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
 - [BVEC](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)  
+
+---
+
+## Session 3: Diffusion Modeling Methods  (15 minutes)
+
+- my two cents: the angular resolution issue is overrated
+  FACT 1: angular resolution does not help resolving crossing from kissing pattern: we never get groundtruth pattern just from the DWI data
+  FACT 2: higher **spatial** resolution handles most of the problem: at higher resolution we CAN distinguish crossing from kissing.
+  FACT 3: we only have ~180 mostly low-SNR data points. overfitting happens very quickly.
+  Strategy 1: instead of aiming for angular resolution, opt for spatial resolution.
+  Strategy 2: choose a method robust to noise and stable against noise.
+
+- DTI
+  - my two cents: the limitation of single tensor is exaggerated at low spatial resolution.
+  - The poor reliability of fractional anisotropy at low SNR is neglected.
+  
+- GQI/QSDR
+  - limited cross fiber resolving power.
+  - mathematically, the largest peak at GQI's ODF converges with tensor principle direction.
+  - The major strength is providing a robust anisotropy measurement to guide fiber tracking
 
