@@ -41,9 +41,9 @@ OpenNeuro ds005849 (in-plane = 1.75 mm  slice-thickness = 2.7 mm)
 
 ### Recommendation 3: additional reverse-phase b0 
 
-- for correcting suscetibility distortion
-- Some tools allows using T1w for correction
-- Sequence solution available
+- for correcting distortion at frontal and temporal lobe due to susceptibility artifact
+- some tools allows using T1w for correction
+- sequence solution available
 
 (source: [FSL Website](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup(2f)TopupUsersGuide.html): )
 
@@ -94,25 +94,28 @@ Starting from largest quality affecting problems
 ## Tools
 
 - [FSL's topup](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup.html):
+  - correct for nonlinear distortion due to susceptibility
   - need reversed phase encoding b0
-  - Sucetibility distortion correction: This involves correcting for geometric distortions in the images caused by the MRI's magnetic field.
   
 - [FSL's eddy](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/eddy(2f)UsersGuide.html):
+  - correct for linear distortion due to eddy current and motion
   - need enough DWI for each b-value
-  - Eddy current + motion correction: This involves correcting for distortions caused by currents induced in the subject by the MRI's magnetic field gradients.
 
-- DSI Studio's motion correction 
+- DSI Studio's motion correction
+  - correct for linear distortion due to eddy current and motion
 
 - Preprocessing Options:
-  1. FSL's topup/eddy
+  1. FSL's topup+eddy
   2. FSL's eddy
   3. DSI Studio's motion correction
-  
+
+- Future Trend: the importance of preprocessing is decreasing (my two cents)
+  - eddy current and susceptibility artifact can be handled by the sequence (Reese MRM 2003, Jun 2024, https://arxiv.org/abs/2409.07375).
+  - more shared preprocessing data
 
 - Hands-on 1
   1. Download .sz files from Fiber Data Hub's [OpenNeuro][ds002087]
-  2. Compare .sz with/without corrections
-  3. Compare .fz with/without corrections
+  2. Compare .sz and .fz with/without corrections
   4. Compare arcuate fasciculus with/without corrections
   
 - Hands-on 2
@@ -124,13 +127,19 @@ Starting from largest quality affecting problems
 
 ## Session 3: Additional Preprocessing Steps (15 minutes)
 
-- B-table correction (animal studies)
-- Flip/Swap image axis (animal studies)
-- Regrid to isotropic resolution
+- b-table correction (animal studies)
+- flip/Swap image axis (animal studies)
+- regrid to isotropic resolution
+
+- Hands-on:
+  - OpenNeuro (disease) ds005849
+  - 
+
 
 ## Session 3: Diffusion Modeling Methods  (15 minutes)
 
 - my two cents: the angular resolution issue is overrated
+
   FACT 1: angular resolution does not help resolving crossing from kissing pattern: we never get groundtruth pattern just from the DWI data
   FACT 2: higher **spatial** resolution handles most of the problem: at higher resolution we CAN distinguish crossing from kissing.
   FACT 3: we only have ~180 mostly low-SNR data points. overfitting happens very quickly.
