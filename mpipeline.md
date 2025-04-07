@@ -16,26 +16,43 @@ Preprocessing of diffusion MRI data refers to the steps taken to prepare the dat
 3. Diffusion Models: resolving fibers and quantifying anisotropy
    - DTI/GQI/QSDR
 
+---
 
 ## Session 1: Diffusion MRI Acquisitions (15 minutes)
 
-- Recommendation 1: get enough diffusion contrast 
-  - b-value > 1,000 mm2/s for human studies
-  - No post-acquisition solution
+### Recommendation 1: get enough diffusion contrast 
+  - b-value > 1,000 s/mm^2 for human studies
+  - no post-acquisition solution
+
+HCP-YA data (b-value=0,1000,2000,3000 s/mm^2, b-vector=0,0,1)
+
+![image](https://github.com/user-attachments/assets/2a47fe2b-7a38-42d3-84c4-b69baae046bc)
+
   
-- Recommendation 2: acquire isotropic resolutions
+### Recommendation 2: acquire isotropic resolutions
   - slice thickness = inplane resolution
   - regrid data to isotropic resolution 
 
-- Recommendation 3: additional reverse-phase b0 
+![image](https://github.com/user-attachments/assets/df8847c7-a585-4aa1-88e6-32e8d0e1ba70)
+
+### Recommendation 3: additional reverse-phase b0 
   - for correcting suscetibility distortion
   - Some tools allows using T1w for correction
   - Sequence solution available
 
-- Recommendation 4: multiple b-values
+(source: [FSL Website](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup(2f)TopupUsersGuide.html): )
+
+Before correction (phase encoding: AP,AP,PA,PA)
+<img src="https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/attachments/topup(2f)TopupUsersGuide/original_images.png"/>
+
+After correction
+<img src="https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/attachments/topup(2f)TopupUsersGuide/hifi_images.png"/>
+
+
+### Recommendation 4: multiple b-values
 
   - HCP-like: three b-values at 1000 (20 dir),2000 (40 dir),3000 (60 dir)
-  - DSI-like: b-values = 0 to 3000 at 256 directions
+  - DSI-like: b-values = 0 to 3000 s/mm^2 at 256 directions
 
 ---
 
