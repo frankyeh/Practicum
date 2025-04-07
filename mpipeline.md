@@ -1,5 +1,7 @@
 # DSI Studio Minimal Preprocessing Pipeline
 
+![image](https://github.com/user-attachments/assets/5102fc0a-ba86-4c61-b165-9c79498e684a)
+
 Preprocessing of diffusion MRI data refers to the steps taken to prepare the data for analysis. Preprocessing typically includes a combination of correction for technical issues and noise reduction techniques.
 
 ## Outline
@@ -39,7 +41,8 @@ Preprocessing of diffusion MRI data refers to the steps taken to prepare the dat
 
 ## Session 2: Diffusion MRI Preprocessing (15 minutes)
 
-Download [OpenNeuro ds002087 dataset](https://openneuro.org/datasets/ds002087) `datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI`
+- Download [OpenNeuro ds002087 dataset](https://openneuro.org/datasets/ds002087) `datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI`
+- Convert NIFTI to SRC files
 
 ## Identify quality problems due to
 
@@ -66,35 +69,39 @@ Starting from largest quality affecting problems
 
 ## Tools
 
-- FSL's topup:
+- [FSL's topup](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup.html):
   - need reversed phase encoding b0
   - Sucetibility distortion correction: This involves correcting for geometric distortions in the images caused by the MRI's magnetic field.
   
-- FSL's eddy:
+- [FSL's eddy](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/eddy(2f)UsersGuide.html):
   - need enough DWI for each b-value
   - Eddy current + motion correction: This involves correcting for distortions caused by currents induced in the subject by the MRI's magnetic field gradients.
 
 - DSI Studio's motion correction 
 
-- Hands-on
-  - Download .sz files from Fiber Data Hub's [OpenNeuro][ds002087]
-  - Compare .sz with/without corrections
-  - Compare .fz with/without corrections
-  - Compare arcuate fasciculus with/without corrections
+- Preprocessing Options:
+  1. FSL's topup/eddy
+  2. FSL's eddy
+  3. DSI Studio's motion correction
+
+- Hands-on 1
+  1. Download .sz files from Fiber Data Hub's [OpenNeuro][ds002087]
+  2. Compare .sz with/without corrections
+  3. Compare .fz with/without corrections
+  4. Compare arcuate fasciculus with/without corrections
   
-## Recommended Pipelines
-
-Choices in priority
-- FSL's TOPUP/EDDY
-- FSL's EDDY
-- DSI Studio's motion correction
-
-- [DWI](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.nii.gz)
-- [DWI_PA](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:fmap:sub-01_acq-multiband_dir-PA_dwi.nii.gz)
-- [BVAL](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bval)
-- [BVEC](https://openneuro.org/crn/datasets/ds003974/snapshots/3.0.0/files/sub-01:dwi:sub-01_acq-multiband_dwi.bvec)  
+- Hands-on 2
+  1. Download: [dwi](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz), [b0-pa](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/fmap/sub-01_acq-multiband_dir-PA_dwi.nii.gz), [bval](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bval), [bvec](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bvec)  
+  2. Identify reversed phase encoding b0
+  3. Run FSL's topup/eddy
 
 ---
+
+## Session 3: Additional Preprocessing Steps (15 minutes)
+
+- B-table correction (animal studies)
+- Flip/Swap image axis (animal studies)
+- Regrid to isotropic resolution
 
 ## Session 3: Diffusion Modeling Methods  (15 minutes)
 
@@ -113,4 +120,7 @@ Choices in priority
   - limited cross fiber resolving power.
   - mathematically, the largest peak at GQI's ODF converges with tensor principle direction.
   - The major strength is providing a robust anisotropy measurement to guide fiber tracking
+
+---
+## Session 4: GUI-based Batch Processing (15 minutes)
 
