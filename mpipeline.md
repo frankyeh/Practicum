@@ -21,8 +21,9 @@ Preprocessing of diffusion MRI data refers to the steps taken to prepare the dat
 ## Session 1: Diffusion MRI Acquisitions (15 minutes)
 
 ### Recommendation 1: get enough diffusion contrast 
-  - b-value > 1,000 s/mm^2 for human studies
-  - no post-acquisition solution
+
+- b-value > 1,000 s/mm^2 for human studies
+- no post-acquisition solution
 
 HCP-YA data (b-value=0,1000,2000,3000 s/mm^2, b-vector=0,0,1)
 
@@ -30,35 +31,41 @@ HCP-YA data (b-value=0,1000,2000,3000 s/mm^2, b-vector=0,0,1)
 
   
 ### Recommendation 2: acquire isotropic resolutions
-  - slice thickness = inplane resolution
-  - regrid data to isotropic resolution 
+
+- slice thickness = inplane resolution
+- regrid data to isotropic resolution 
+
+OpenNeuro ds005849 (in-plane = 1.75 mm  slice-thickness = 2.7 mm)
 
 ![image](https://github.com/user-attachments/assets/df8847c7-a585-4aa1-88e6-32e8d0e1ba70)
 
 ### Recommendation 3: additional reverse-phase b0 
-  - for correcting suscetibility distortion
-  - Some tools allows using T1w for correction
-  - Sequence solution available
+
+- for correcting suscetibility distortion
+- Some tools allows using T1w for correction
+- Sequence solution available
 
 (source: [FSL Website](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup(2f)TopupUsersGuide.html): )
 
 Before correction (phase encoding: AP,AP,PA,PA)
+
 <img src="https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/attachments/topup(2f)TopupUsersGuide/original_images.png"/>
 
 After correction
+
 <img src="https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/attachments/topup(2f)TopupUsersGuide/hifi_images.png"/>
 
 
 ### Recommendation 4: multiple b-values
 
-  - HCP-like: three b-values at 1000 (20 dir),2000 (40 dir),3000 (60 dir)
-  - DSI-like: b-values = 0 to 3000 s/mm^2 at 256 directions
+- multi-shell (HCP-like): three b-values at 1000 (20 dir),2000 (40 dir),3000 (60 dir)
+- grid (DSI-like): 23 b-values from 0 to 4,000 s/mm^2 at 258 directions
 
 ---
 
 ## Session 2: Diffusion MRI Preprocessing (15 minutes)
 
-- Download [OpenNeuro ds002087 dataset](https://openneuro.org/datasets/ds002087) `datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI`
+- Download [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
 - Convert NIFTI to SRC files
 
 ## Identify quality problems due to
@@ -100,6 +107,7 @@ Starting from largest quality affecting problems
   1. FSL's topup/eddy
   2. FSL's eddy
   3. DSI Studio's motion correction
+  
 
 - Hands-on 1
   1. Download .sz files from Fiber Data Hub's [OpenNeuro][ds002087]
