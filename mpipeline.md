@@ -49,7 +49,7 @@ b-vector: **(0, 0, 1)**
 In-plane: **1.75 mm**  
 Slice thickness: **2.7 mm** → ⚠️ Not isotropic
 
-<img src="https://github.com/user-attachments/assets/df8847c7-a585-4aa1-88e6-32e8d0e1ba70" width="800"/>
+<img src="https://github.com/user-attachments/assets/df8847c7-a585-4aa1-88e6-32e8d0e1ba70" width="400"/>
 
 ---
 
@@ -195,16 +195,38 @@ Primarily for **animal studies** or **datasets with acquisition inconsistencies*
 
 ---
 
-
 Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Methods**, with your "two cents" clearly framed, key facts emphasized, and content organized for a 15-minute talk:
 
 ---
 
 ## 🧭 Session 3: Diffusion Modeling Methods (15 minutes)
 
+---
+
+<img src="https://github.com/user-attachments/assets/6f182387-1275-4070-b003-83828212894f" width="400" />
+
+<img src="https://github.com/user-attachments/assets/4603498e-a769-432b-87fc-7d5145397105" width="400" />
+
+
+### 🧰 DTI: 
+
+- 🤔 *The limitation of the single tensor model is often exaggerated—especially at low resolution*  
+- ⚠️ FA maps are unreliable at **low SNR**, yet often used uncritically  
+- ✅ Still effective when paired with sufficient spatial resolution and smoothing
+
+---
+
+### 🧰 GQI / QSDR: 
+
+- ⚠️ *Limited power for resolving complex crossing fibers*  
+- 🧭 Mathematically, the **largest peak in GQI’s ODF** often matches the **tensor principal direction**  
+- ✅ Main advantage: Provides a **robust anisotropy index** (QA) to guide fiber tracking
+
+---
+
 ### 💡 My Two Cents: Angular Resolution Is Overrated
 
-<img src="https://github.com/user-attachments/assets/8be66885-248f-42d6-ac73-47db336119b7" width="800" />
+<img src="https://github.com/user-attachments/assets/8be66885-248f-42d6-ac73-47db336119b7" width="400" />
 
 **FACT 1:**  
 🧠 *High angular resolution cannot distinguish “kissing” vs. “crossing” fibers*  
@@ -224,29 +246,6 @@ Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Meth
 
 - ✅ **Strategy 1:** Prioritize **spatial resolution** over angular resolution  
 - ✅ **Strategy 2:** Use models that are **robust to noise** and **stable under low SNR**
-
----
-
-<img src="https://github.com/user-attachments/assets/6f182387-1275-4070-b003-83828212894f" width="800" />
-
-<img src="https://github.com/user-attachments/assets/4603498e-a769-432b-87fc-7d5145397105" width="800" />
-
-
-### 🧰 DTI: 
-
-- 🤔 *The limitation of the single tensor model is often exaggerated—especially at low resolution*  
-- ⚠️ FA maps are unreliable at **low SNR**, yet often used uncritically  
-- ✅ Still effective when paired with sufficient spatial resolution and smoothing
-
----
-
-### 🧰 GQI / QSDR: 
-
-- ⚠️ *Limited power for resolving complex crossing fibers*  
-- 🧭 Mathematically, the **largest peak in GQI’s ODF** often matches the **tensor principal direction**  
-- ✅ Main advantage: Provides a **robust anisotropy index** (QA) to guide fiber tracking
-
----
 
 ## Session 4: GUI-based Batch Processing (15 minutes)
 
