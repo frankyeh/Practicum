@@ -207,6 +207,7 @@ Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Meth
 
 <img src="https://github.com/user-attachments/assets/4603498e-a769-432b-87fc-7d5145397105" width="400" />
 
+---
 
 ### 🧰 DTI: 
 
@@ -239,6 +240,18 @@ Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Meth
 **FACT 3:**  
 📉 *Most datasets contain ~180 diffusion measurements with low SNR*  
 → Complex models tend to overfit quickly under these conditions.
+
+---
+
+### Trade-off between sensitivity and sepcificity
+
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811921009241-gr3_lrg.jpg" width="400" />
+
+source: Yeh, Fang-Cheng, et al. "Tractography methods and findings in brain tumors and traumatic brain injury." Neuroimage 245 (2021): 118651.
+
+<img src="https://github.com/user-attachments/assets/21e7476f-c6d0-4465-a737-d88ac7e0c4fd" width="400" />
+
+source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of white matter pathways across anatomical length scales and species." Elife 13 (2025): RP94917.
 
 ---
 
