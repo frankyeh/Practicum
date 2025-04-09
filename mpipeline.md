@@ -1,6 +1,6 @@
 # 🧪 DSI Studio Preprocessing Pipeline
 
-![image](https://github.com/user-attachments/assets/5102fc0a-ba86-4c61-b165-9c79498e684a)
+<img src="https://github.com/user-attachments/assets/5102fc0a-ba86-4c61-b165-9c79498e684a" width="800"/>
 
 **Preprocessing** in diffusion MRI involves preparing the raw data to ensure accurate analysis. It focuses on correcting technical artifacts and reducing noise, including:
 
@@ -36,7 +36,7 @@
 b-values: **0, 1000, 2000, 3000 s/mm²**  
 b-vector: **(0, 0, 1)**
 
-![image](https://github.com/user-attachments/assets/2a47fe2b-7a38-42d3-84c4-b69baae046bc)
+<img src="https://github.com/user-attachments/assets/2a47fe2b-7a38-42d3-84c4-b69baae046bc" width="800"/>
 
 ---
 
@@ -49,7 +49,7 @@ b-vector: **(0, 0, 1)**
 In-plane: **1.75 mm**  
 Slice thickness: **2.7 mm** → ⚠️ Not isotropic
 
-![image](https://github.com/user-attachments/assets/df8847c7-a585-4aa1-88e6-32e8d0e1ba70)
+<img src="https://github.com/user-attachments/assets/df8847c7-a585-4aa1-88e6-32e8d0e1ba70" width="800"/>
 
 ---
 
@@ -63,10 +63,10 @@ Slice thickness: **2.7 mm** → ⚠️ Not isotropic
 
 **Before Correction**  
 (Phase encoding: AP, AP, PA, PA)  
-![image](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/attachments/topup(2f)TopupUsersGuide/original_images.png)
+<img src="https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/attachments/topup(2f)TopupUsersGuide/original_images.png" width="800"/>
 
 **After Correction**  
-![image](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/attachments/topup(2f)TopupUsersGuide/hifi_images.png)
+<img src="https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/attachments/topup(2f)TopupUsersGuide/hifi_images.png" width="800"/>
 
 ---
 
@@ -202,11 +202,9 @@ Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Meth
 
 ## 🧭 Session 3: Diffusion Modeling Methods (15 minutes)
 
----
-
 ### 💡 My Two Cents: Angular Resolution Is Overrated
 
-![image](https://github.com/user-attachments/assets/8be66885-248f-42d6-ac73-47db336119b7)
+<img src="https://github.com/user-attachments/assets/8be66885-248f-42d6-ac73-47db336119b7" width="800" />
 
 **FACT 1:**  
 🧠 *High angular resolution cannot distinguish “kissing” vs. “crossing” fibers*  
@@ -229,8 +227,9 @@ Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Meth
 
 ---
 
-![image](https://github.com/user-attachments/assets/6f182387-1275-4070-b003-83828212894f)
-![image](https://github.com/user-attachments/assets/4603498e-a769-432b-87fc-7d5145397105)
+<img src="https://github.com/user-attachments/assets/6f182387-1275-4070-b003-83828212894f" width="800" />
+
+<img src="https://github.com/user-attachments/assets/4603498e-a769-432b-87fc-7d5145397105" width="800" />
 
 
 ### 🧰 DTI: 
