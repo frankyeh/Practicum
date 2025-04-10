@@ -20,8 +20,8 @@
 
 ## 🧭 Session 1: Diffusion MRI Data (15 minutes)
 
-- [NIFTI/bids] [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
-  
+Example data: [NIFTI/bids] [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
+     
 ### ✅ Checklist 1: Sufficient Diffusion Sensitivity
 
 - Use **b-value > 1,000 s/mm²** for human studies
@@ -81,6 +81,18 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 
 ---
 
+## 🧪 Hands-On Practice
+
+- DICOM: [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
+   1. Rename & Sort DICOM files
+   2. Convert DICOM to NIFTI and SRC
+   3. [Batch] dcm2niix
+ 
+- NIFTI/bids: [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
+   1. NIFTI to SRC     
+
+---
+
 ## Session 2: Diffusion MRI Preprocessing (15 minutes)
 
 ### 🧠 Common Artifacts in Diffusion MRI Affecting the Quality, Starting from Largest
@@ -98,12 +110,7 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 
 ## 🛠️ Tools for Preprocessing
 
-**Popular Tools:**  
-✅ FSL • ✅ MRtrix3 • ✅ QSIPrep • ✅ DIPY • ✅ DSI Studio
-
----
-
-### 🔧 Tool Highlights
+**Popular Tools:**  ✅ FSL • ✅ MRtrix3 • ✅ QSIPrep • ✅ DIPY • ✅ DSI Studio
 
 #### [FSL's topup](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup.html)
 - Corrects **nonlinear distortion** caused by susceptibility  
@@ -125,39 +132,36 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 2. **FSL's `eddy` only** → for datasets lacking reverse-phase b0  
 3. **DSI Studio motion correction** → quick fix when others are unavailable  
 
----
+### Quality Control
 
-### 🔮 Future Trend
-
-🧠 *“Preprocessing is becoming less critical”* (my two cents)  
-- Modern sequences reduce artifacts (Reese et al., MRM 2003; Jun 2024 [arXiv](https://arxiv.org/abs/2409.07375))  
-- More **preprocessed open datasets** (e.g., HCP at the Fiber Data Hub) now available  
+1. Diffusion contrast > 1.0
+2. Neighboring DWI correlation
 
 ---
 
 ## 🧪 Hands-On Practice
 
-### 🖐️ Hands-on 1: Explore Correction Effects
-1. Download `.sz` files from [Fiber Data Hub – ds002087][ds002087]  
-2. Compare `.sz` and `.fz` with/without correction  
-3. Visualize **arcuate fasciculus** with vs. without corrections  
+### 🖐️ Hands-on 1: Eddy or motion correction and QC
 
-### 🖐️ Hands-on 2: Try FSL's Preprocessing Tools  
-1. Download:  
+1. Preprocess SRC files from NIFTI/bids: [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
+
+### 🖐️ Hands-on 2: Explore Correction Effects
+
+1. Download `.sz` files from [Fiber Data Hub – ds002087][ds002087]  
+2. Use QC routine to compare `.sz` and `.fz` with/without correction
+
+
+### 🖐️ Hands-on 2: Identify reversed phase encoding b0 for TOPUP
+
+1. Download data:  
    - [dwi](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz)  
    - [pa b0](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/fmap/sub-01_acq-multiband_dir-PA_dwi.nii.gz)  
    - [bval](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bval), [bvec](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bvec)  
 2. Identify reversed-phase b0  
-3. Run FSL’s **`topup` and `eddy`**
 
 ---
 
-## 🧭 Session 3: Additional Preprocessing Steps (15 minutes)
-
-### 🧬 When to Apply These Steps
-Primarily for **animal studies** or **datasets with acquisition inconsistencies**.
-
----
+## Additional Preprocessing Steps
 
 ### 🔧 Common Additional Steps
 
@@ -173,14 +177,25 @@ Primarily for **animal studies** or **datasets with acquisition inconsistencies*
   - Standardizes voxel dimensions (e.g., from 0.5×0.5×1 mm → 0.5 mm³)  
   - Improves downstream processing accuracy
 
+## 🔮 Future Trend
+
+🧠 *“Preprocessing is becoming less critical”* (my two cents)  
+- Modern sequences reduce artifacts (Reese et al., MRM 2003; Jun 2024 [arXiv](https://arxiv.org/abs/2409.07375))  
+- More **preprocessed open datasets** (e.g., HCP at the Fiber Data Hub) now available  
+
+
 ---
 
-### 🖐️ Hands-On Practice
+## 🧪 Hands-On Practice
 
-📂 Dataset: [OpenNeuro ds005849](https://openneuro.org/datasets/ds005849)  
-- Compare pre- and post-processed images  
-- Test regridding and verify axis alignment  
-- Explore effect on tractography (optional)
+### 🖐️ Hands-on 1: Thick slice acquisitions
+
+📂 Dataset: OpenNeuro (disease) ds005849, sub-DBS01_ses-preop_dwi.sz
+   - regridding to 2mm and check tractography
+
+### 🖐️ Hands-on 2: Animal Preprocessing 
+
+📂 Dataset: OpenNeuro (animal)
 
 ---
 
@@ -247,15 +262,23 @@ source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of w
 
 ---
 
-## Session 4: GUI-based Batch Processing (15 minutes)
-
-1. DICOM [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
-   1. Rename & Sort DICOM files
-   2. Convert DICOM to NIFTI and SRC
-2. NIFTI/bids [OpenNeuro ds001378 (SCA2)](https://openneuro.org/datasets/ds001378/)
+## Session 4: GUI-based Batch Processing (15 minutes)   
+   
+- NIFTI/bids [OpenNeuro ds001378 (SCA2)](https://openneuro.org/datasets/ds001378/)
 
    1. NIFTI file QC
    2. NIFTI to SRC
    3. SRC QC
    4. SRC to FIB
    5. FIB to tractography
+
+-- command line batch processing
+
+---
+
+## Assignment 1: Explore Correction Effects on Tractography
+
+1. Download `.sz` files from [Fiber Data Hub][Open Neuro][ds002087]  
+2. Visualize **arcuate fasciculus** with/without corrections and with/without head motion
+
+
