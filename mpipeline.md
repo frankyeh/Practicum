@@ -1,20 +1,7 @@
-# 🧪 DSI Studio Preprocessing Pipeline
-
-<img src="https://github.com/user-attachments/assets/9afac513-ccbd-419c-9d79-4b7dd9458294" width="800"/>
-
-**Preprocessing** in diffusion MRI involves preparing the raw data to ensure accurate analysis. It focuses on correcting technical artifacts and reducing noise, including:
-
-- Motion and eddy current distortion correction  
-- Susceptibility-induced distortion correction  
-
-👉 In DSI Studio, these steps are integrated into the pipeline, offering a lightweight yet effective preprocessing approach.
-
----
-
-## 🧭 Workshop Outline
+## 🧭 Workshop Week 2 Outline
 
 1. **MRI Data Acquisition**
-   - Best practices and recommendations for diffusion MRI scanning  
+   - Best practices and recommendations for diffusion MRI protocol
    
 2. **Preprocessing DWI Data (SRC Files)**
    - Motion correction & eddy current distortion correction  
@@ -25,18 +12,20 @@
 
 ---
 
+## 🧪 DSI Studio Preprocessing Pipeline
+
+<img src="https://github.com/user-attachments/assets/9afac513-ccbd-419c-9d79-4b7dd9458294" width="800"/>
+
+---
 
 ## 🧭 Session 1: Diffusion MRI Data (15 minutes)
 
 - [NIFTI/bids] [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
-- [DICOM] [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
-   - Rename & Sort DICOM files
-   - Convert DICOM to NIFTI and SRC
   
-### ✅ Checklist 1: Sufficient Diffusion Contrast
+### ✅ Checklist 1: Sufficient Diffusion Sensitivity
 
-- Use **b-value > 1,000 s/mm²** for human studies  
-- ⚠️ No post-processing can recover missing diffusion contrast  
+- Use **b-value > 1,000 s/mm²** for human studies
+- ⚠️ No post-processing can recover low diffusion sensitivity  
 
 📌 *Example: HCP-YA dataset*  
 b-values: **0, 1000, 2000, 3000 s/mm²**  
@@ -260,10 +249,13 @@ source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of w
 
 ## Session 4: GUI-based Batch Processing (15 minutes)
 
-Download [OpenNeuro ds001378 (SCA2)](https://openneuro.org/datasets/ds001378/)
+1. DICOM [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
+   1. Rename & Sort DICOM files
+   2. Convert DICOM to NIFTI and SRC
+2. NIFTI/bids [OpenNeuro ds001378 (SCA2)](https://openneuro.org/datasets/ds001378/)
 
-1. NIFTI file QC
-2. NIFTI to SRC
-3. SRC QC
-4. SRC to FIB
-5. FIB to tractography
+   1. NIFTI file QC
+   2. NIFTI to SRC
+   3. SRC QC
+   4. SRC to FIB
+   5. FIB to tractography
