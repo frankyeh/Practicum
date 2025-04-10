@@ -247,6 +247,9 @@ Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Meth
 
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811921009241-gr3_lrg.jpg" width="400" />
 
+<img src="https://github.com/user-attachments/assets/56de9cf1-dfcb-439f-9609-ef11bd623d20" width="400" />
+
+
 source: Yeh, Fang-Cheng, et al. "Tractography methods and findings in brain tumors and traumatic brain injury." Neuroimage 245 (2021): 118651.
 
 <img src="https://github.com/user-attachments/assets/21e7476f-c6d0-4465-a737-d88ac7e0c4fd" width="400" />
