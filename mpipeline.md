@@ -1,6 +1,6 @@
 # 🧪 DSI Studio Preprocessing Pipeline
 
-<img src="https://github.com/user-attachments/assets/5102fc0a-ba86-4c61-b165-9c79498e684a" width="800"/>
+<img src="https://github.com/user-attachments/assets/e612743e-df41-4bb9-bb68-f3deea444b18" width="800"/>
 
 **Preprocessing** in diffusion MRI involves preparing the raw data to ensure accurate analysis. It focuses on correcting technical artifacts and reducing noise, including:
 
