@@ -245,7 +245,7 @@ Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Meth
 
 ### Trade-off between sensitivity and sepcificity
 
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811921009241-gr3_lrg.jpg" width="400" />
+<img src="https://github.com/user-attachments/assets/f496b44e-75d7-4edc-8dd1-a4fa1b6e17cd" width="400" />
 
 <img src="https://github.com/user-attachments/assets/56de9cf1-dfcb-439f-9609-ef11bd623d20" width="400" />
 
