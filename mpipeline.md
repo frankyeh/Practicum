@@ -155,8 +155,8 @@ Hands-on
 
 ### 🖐️ Hands-on 2: Try FSL's Preprocessing Tools  
 1. Download:  
-   - [DWI NIfTI](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz)  
-   - [PA b0 image](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/fmap/sub-01_acq-multiband_dir-PA_dwi.nii.gz)  
+   - [dwi](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz)  
+   - [pa b0](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/fmap/sub-01_acq-multiband_dir-PA_dwi.nii.gz)  
    - [bval](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bval), [bvec](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bvec)  
 2. Identify reversed-phase b0  
 3. Run FSL’s **`topup` and `eddy`**
@@ -211,27 +211,27 @@ Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Meth
 
 ### 🧰 DTI: 
 
-- 🤔 *The limitation of the single tensor model is often exaggerated—especially at low resolution*  
-- ⚠️ FA maps are unreliable at **low SNR**, yet often used uncritically  
-- ✅ Still effective when paired with sufficient spatial resolution and smoothing
+- ⚠️ *single tensor model cannot handle crossing fibers*  
+- ⚠️ FA maps are unreliable at **low SNR**, yet often used in fiber tracking.  
+- ✅ still effective when paired with sufficient spatial resolution and smoothing
 
 ---
 
 ### 🧰 GQI / QSDR: 
 
-- ⚠️ *Limited power for resolving complex crossing fibers*  
-- 🧭 Mathematically, the **largest peak in GQI’s ODF** often matches the **tensor principal direction**  
-- ✅ Main advantage: Provides a **robust anisotropy index** (QA) to guide fiber tracking
+- ⚠️ *Limited power for resolving complex crossing fibers*
+- ⚠️ sensitive to *b1 inhomogniety*  
+- ✅ main advantage: Provides a **robust anisotropy index** (QA) to guide fiber tracking
 
 ---
 
-### 💡 My Two Cents: Angular Resolution Is Overrated
+### 💡 My Two Cents: Angular Resolution Issue
 
 <img src="https://github.com/user-attachments/assets/8be66885-248f-42d6-ac73-47db336119b7" width="400" />
 
 **FACT 1:**  
-🧠 *High angular resolution cannot distinguish “kissing” vs. “crossing” fibers*  
-→ Even with perfect data, DWI still cannot resolve this ambiguity.
+🧠 *It is impossible to distinguish “kissing” vs. “crossing” fibers*  
+→ Even with perfect angular resolution, DWI still cannot resolve this ambiguity.
 
 **FACT 2:**  
 🔬 *Higher **spatial** resolution can help differentiate “kissing” from “crossing” fibers*  
