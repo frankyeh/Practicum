@@ -25,8 +25,14 @@
 
 ---
 
-## 🧭 Session 1: Diffusion MRI Acquisitions (15 minutes)
 
+## 🧭 Session 1: Diffusion MRI Data (15 minutes)
+
+- [NIFTI/bids] [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
+- [DICOM] [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
+   - Rename & Sort DICOM files
+   - Convert DICOM to NIFTI and SRC
+  
 ### ✅ Checklist 1: Sufficient Diffusion Contrast
 
 - Use **b-value > 1,000 s/mm²** for human studies  
@@ -98,12 +104,6 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 | **Noise** | Low signal-to-noise ratio (SNR) in DWI | Advanced models (e.g., multi-tensor) are sensitive to noise; DTI and GQI/QSDR are more robust | Apply denoising or image smoothing techniques |
 | **B1 inhomogeneity** | Uneven RF coil sensitivity across the field of view | Bias in metrics sensitive to spin density (e.g., S0, QA); diffusion tensor metrics are unaffected | Apply bias field correction |
 | **Gibbs ringing** | Band-limited k-space sampling | Ringing artifacts at sharp intensity transitions; usually not visible in low-SNR DWI | Use sub-voxel smoothing or total variation filtering |
-
-Hands-on
- 
-  - Download [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
-  - Convert NIFTI to SRC files
-
 
 ---
 
@@ -258,10 +258,12 @@ source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of w
 
 ---
 
-### 🧭 Suggested Strategy for Modeling
-
-- ✅ **Strategy 1:** Prioritize **spatial resolution** over angular resolution  
-- ✅ **Strategy 2:** Use models that are **robust to noise** and **stable under low SNR**
-
 ## Session 4: GUI-based Batch Processing (15 minutes)
 
+Download [OpenNeuro ds001378 (SCA2)](https://openneuro.org/datasets/ds001378/)
+
+1. NIFTI file QC
+2. NIFTI to SRC
+3. SRC QC
+4. SRC to FIB
+5. FIB to tractography
