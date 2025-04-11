@@ -107,9 +107,9 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 **Popular Tools:**  ✅ FSL • ✅ MRtrix3 • ✅ QSIPrep • ✅ DIPY • ✅ DSI Studio
 
-- [FSL's topup](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup.html): Corrects **nonlinear distortion** caused by susceptibility  
-- [FSL's eddy](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/eddy(2f)UsersGuide.html): Corrects **linear distortion** from eddy currents & subject motion  
-- DSI Studio's Motion Correction: corrects for **eddy current and motion artifacts**  
+- [FSL's topup](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup.html): corrects **nonlinear distortion** caused by susceptibility  
+- [FSL's eddy](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/eddy(2f)UsersGuide.html): corrects **linear distortion** from eddy currents & subject motion  
+- DSI Studio's motion correction: corrects for **eddy current and motion artifacts**  
 
 ---
 
