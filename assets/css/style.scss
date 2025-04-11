@@ -56,3 +56,13 @@ button { padding: 0px;}
   transition: max-height 0.2s ease-out;
 }
 
+
+/* Adjust header layout for small screens */
+@media only screen and (max-width: 600px) {
+  .page-header {
+    position: relative; // change from absolute if used
+    width: 100%;        // let it fill the available width
+    left: 0;            // reset any left offset
+    padding: 10px;      // add some padding for better spacing
+  }
+}
