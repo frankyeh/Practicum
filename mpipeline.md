@@ -93,25 +93,18 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 
 ## 🧭 Session 3: Diffusion MRI Preprocessing (15 minutes)
 
-### 🧠 Artifacts in Diffusion MRI Affecting the Quality, Starting from Largest
+### Quality Issues in Diffusion MRI
 
 | Artifact | Cause | Consequence | Solution |
 |----------|-------|-------------|----------|
 | **motion artifacts** | subject moves during the scan | signal dropout and between-dwi misalignment  → hairball-like tractography | (1) discard the scan if motion is severe<br>(2) apply motion correction to realign images |
 | **eddy current artifacts** | gradient-induced eddy currents distort the readout | between-dwi misalignment → hairball-like tractography  | (1) use current-canceling gradient designs (e.g., bipolar, twice-refocused)<br>(2) apply affine image registration |
 | **susceptibility artifacts** | magnetic field distortion near air-tissue interfaces | signal dropout and geometric distortion along the phase-encoding direction | (1) use sequence-based corrections (e.g., segmented EPI)<br>(2) combine reversed-phase b0 images to correct distortion |
-| **noise** | low signal-to-noise ratio (SNR) in DWI | some models (e.g., multi-tensor) are sensitive to noise; DTI and GQI/QSDR are more robust | apply denoising or image smoothing techniques |
-| **B1 inhomogeneity** | uneven RF coil sensitivity across the field of view | bias in metrics sensitive to spin density (e.g., S0, QA); diffusion tensor metrics are unaffected | apply bias field correction |
-| **gibbs ringing** | band-limited k-space sampling | ringing artifacts at sharp intensity transitions; usually not visible in low-SNR DWI | use sub-voxel smoothing or total variation filtering |
+| **flipped b-table** |  common in animal scans | urchin-like tractography | automatic b-table checking | 
+| **rotated/flipped image volume**  | common in animal scans | cannot use atlas or autotract functions | flip or swap axis in pair |
+| **thick slices**  | old DWI sequence | poor fiber tracking result | regrid images |
 
-### 🧠 Other Data Quality Issues
-
-| Issues | Consequence | Solution |
-|----------|--------------------|----------|
-| **flipped b-table** |  urchin-like tractography | automatic b-table checking | 
-| **rotated/flipped image volume**  | cannot use atlas or autotract functions | flip or swap axis in pair |
-| **thick slices**  | poor fiber tracking result | regrid images |
-
+other corrections (less important): noise reduction, bias field correction, gibbs ringing correction
 ---
 
 ## 🖐️ Hands-On Practice
