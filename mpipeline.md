@@ -24,10 +24,6 @@
    1. Convert NIFTI to SRC
    2. SRC to FIB
       
-### DICOM: [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
-   1. Rename & Sort DICOM files
-   2. Convert DICOM to NIFTI
-
 ---
 
 ## 🧭 Session 2: Diffusion MRI Protocol (10 minutes)
@@ -214,7 +210,9 @@ source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of w
    4. SRC to FIB 
    5. FIB to tractography
 
----
+- DICOM: [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
+   1. Rename & Sort DICOM files
+   2. Convert DICOM to NIFTI
 
 ## Assignment 1: Explore Correction Effects on Tractography
 
