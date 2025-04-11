@@ -56,6 +56,9 @@ button { padding: 0px;}
   transition: max-height 0.2s ease-out;
 }
 
+.menu-toggle {
+  display: none;
+}
 
 /* Media query for small screens */
 @media only screen and (max-width: 1024px) {
@@ -87,11 +90,6 @@ button { padding: 0px;}
   /* Add styling for a toggle button that will let users show/hide the header */
   .menu-toggle {
     display: block;
-    font-size: 1.5em;
-    background: #fff;
-    border: 1px solid #ccc;
     cursor: pointer;
-    margin: 10px;
-    padding: 0.5em;
   }
 }
