@@ -57,12 +57,41 @@ button { padding: 0px;}
 }
 
 
-/* Adjust header layout for small screens */
-@media only screen and (max-width: 600px) {
-  .page-header {
-    position: relative; // change from absolute if used
-    width: 100%;        // let it fill the available width
-    left: 0;            // reset any left offset
-    padding: 10px;      // add some padding for better spacing
+/* Media query for small screens */
+@media only screen and (max-width: 1024px) {
+  /* Hide the header by default */
+  header {
+    display: none;         /* Collapse header */
+    width: 100%;
+    position: relative;    /* Reset any positioning that might push content */
+    left: 0;
+    padding: 10px;
+    margin: 0;
+  }
+  /* If you want the header to be shown when toggled, add a class "show" */
+  header.show {
+    display: block;
+  }
+
+  /* Adjust the main content styling */
+  main {
+    width: 100%;
+    padding: 10px;
+    padding-top: 50px;      /* Keep some top padding if needed */
+    padding-left: 10px;     /* Remove the large left padding */
+  }
+  .main-content {
+    width: 100%;
+  }
+
+  /* Add styling for a toggle button that will let users show/hide the header */
+  .menu-toggle {
+    display: block;
+    font-size: 1.5em;
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 10px;
+    padding: 0.5em;
   }
 }
