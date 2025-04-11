@@ -110,13 +110,14 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ## 🖐️ Hands-On Practice
 
+### Identify issues on [OpenNeuro ds002087] and correct it
+
 ### Identify reversed phase encoding b0 for TOPUP
 
 - [dwi](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz)  
 - [pa b0](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/fmap/sub-01_acq-multiband_dir-PA_dwi.nii.gz)  
 - [bval](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bval), [bvec](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bvec)  
 
-### Identify issues on [OpenNeuro ds002087] and correct it
 
 ---
 
