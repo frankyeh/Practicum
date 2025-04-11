@@ -102,6 +102,15 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 | **thick slices**  | old DWI sequence | poor fiber tracking result | regrid images |
 
 other corrections (less important): noise reduction, bias field correction, gibbs ringing correction
+
+### 🛠️ Tools for Corrections
+
+**Popular Tools:**  ✅ FSL • ✅ MRtrix3 • ✅ QSIPrep • ✅ DIPY • ✅ DSI Studio
+
+- [FSL's topup](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup.html): Corrects **nonlinear distortion** caused by susceptibility  
+- [FSL's eddy](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/eddy(2f)UsersGuide.html): Corrects **linear distortion** from eddy currents & subject motion  
+- DSI Studio's Motion Correction: corrects for **eddy current and motion artifacts**  
+
 ---
 
 ## 🖐️ Hands-On Practice
@@ -113,25 +122,6 @@ other corrections (less important): noise reduction, bias field correction, gibb
 - [dwi](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz)  
 - [pa b0](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/fmap/sub-01_acq-multiband_dir-PA_dwi.nii.gz)  
 - [bval](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bval), [bvec](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bvec)  
-
-
----
-
-## 🛠️ Tools for Corrections
-
-**Popular Tools:**  ✅ FSL • ✅ MRtrix3 • ✅ QSIPrep • ✅ DIPY • ✅ DSI Studio
-
-#### [FSL's topup](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup.html)
-- Corrects **nonlinear distortion** caused by susceptibility  
-- Requires **reversed phase-encoding b0 images**
-
-#### [FSL's eddy](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/eddy(2f)UsersGuide.html)
-- Corrects **linear distortion** from eddy currents & subject motion  
-- Works best with **multiple DWIs per b-value**
-
-#### DSI Studio: Motion Correction
-- Corrects for **eddy current and motion artifacts**  
-- Lightweight and integrated into `.src` workflow
 
 ---
 
