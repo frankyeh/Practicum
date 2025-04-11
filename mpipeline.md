@@ -12,17 +12,27 @@
 
 ---
 
-## 🧪 DSI Studio Preprocessing Pipeline
+## 🧭 Session 1: DSI Studio Pipeline (10 minutes)
 
 <img src="https://github.com/user-attachments/assets/9afac513-ccbd-419c-9d79-4b7dd9458294" width="800"/>
 
+
+## 🖐️ Hands-On Practice
+
+### NIFTI/bids [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
+   1. Convert NIFTI to SRC
+   2. SRC to FIB
+      
+### DICOM: [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
+   1. Rename & Sort DICOM files
+   2. Convert DICOM to NIFTI
+
 ---
 
-## 🧭 Session 1: Diffusion MRI Data (15 minutes)
+## 🧭 Session 2: Diffusion MRI Protocol (10 minutes)
 
-Example data: [NIFTI/bids] [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
-     
-### ✅ Checklist 1: Sufficient Diffusion Sensitivity
+
+### ✅ Protocol Checklist 1: Sufficient Diffusion Sensitivity
 
 - Use **b-value > 1,000 s/mm²** for human studies
 - ⚠️ No post-processing can recover low diffusion sensitivity  
@@ -35,7 +45,7 @@ b-vector: **(0, 0, 1)**
 
 ---
 
-### ✅ Checklist 2: Isotropic Resolution
+### ✅ Protocol Checklist 2: Isotropic Resolution
 
 - Ensure **slice thickness ≈ in-plane resolution**  
 - If anisotropic, consider **regridding to isotropic** before analysis  
@@ -48,7 +58,7 @@ Slice thickness: **2.7 mm** → ⚠️ Not isotropic
 
 ---
 
-### ✅ Checklist 3: Reverse-Phase b0 Image
+### ✅ Protocol Checklist 3: Reverse-Phase b0 Image
 
 - Used to **correct susceptibility distortions**, especially in frontal and temporal lobes  
 - Some tools allow T1w-based correction, but **b0 pairs are preferred**  
@@ -65,7 +75,7 @@ Slice thickness: **2.7 mm** → ⚠️ Not isotropic
 
 ---
 
-### ✅ Checklist 4: Multiple b-values
+### ✅ Protocol Checklist 4: Multiple b-values
 
 **Multi-shell scheme (HCP-like)**
 
@@ -81,34 +91,36 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 
 ---
 
-## 🧪 Hands-On Practice
+## 🧭 Session 3: Diffusion MRI Preprocessing (15 minutes)
 
-- DICOM: [An MRI DICOM data set of the head of a normal male human aged 52](https://zenodo.org/records/16956/files/DICOM.zip?download=1)
-   1. Rename & Sort DICOM files
-   2. Convert DICOM to NIFTI and SRC
-   3. [Batch] dcm2niix
- 
-- NIFTI/bids: [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
-   1. NIFTI to SRC     
-
----
-
-## Session 2: Diffusion MRI Preprocessing (15 minutes)
-
-### 🧠 Common Artifacts in Diffusion MRI Affecting the Quality, Starting from Largest
+### 🧠 Artifacts in Diffusion MRI Affecting the Quality, Starting from Largest
 
 | Artifact | Cause | Consequence | Solution |
 |----------|-------|-------------|----------|
-| **Motion artifacts** | Subject moves during the scan | Signal dropout and inter-slice misalignment, especially along motion directions → reduced anisotropy and tracking errors | (1) Discard the scan if motion is severe<br>(2) Apply motion correction to realign images |
-| **Eddy current artifacts** | Gradient-induced eddy currents distort the readout | Linear deformation within slices → spurious fibers near the brain surface, often aligned left-right in color maps | (1) Use current-canceling gradient designs (e.g., bipolar, twice-refocused)<br>(2) Apply affine image registration |
-| **Susceptibility artifacts** | Magnetic field distortion near air-tissue interfaces | Signal dropout and geometric distortion along the phase-encoding direction | (1) Use sequence-based corrections (e.g., segmented EPI)<br>(2) Combine reversed-phase b0 images to correct distortion |
-| **Noise** | Low signal-to-noise ratio (SNR) in DWI | Advanced models (e.g., multi-tensor) are sensitive to noise; DTI and GQI/QSDR are more robust | Apply denoising or image smoothing techniques |
-| **B1 inhomogeneity** | Uneven RF coil sensitivity across the field of view | Bias in metrics sensitive to spin density (e.g., S0, QA); diffusion tensor metrics are unaffected | Apply bias field correction |
-| **Gibbs ringing** | Band-limited k-space sampling | Ringing artifacts at sharp intensity transitions; usually not visible in low-SNR DWI | Use sub-voxel smoothing or total variation filtering |
+| **motion artifacts** | subject moves during the scan | signal dropout and between-dwi misalignment  → hairball-like tractography | (1) discard the scan if motion is severe<br>(2) apply motion correction to realign images |
+| **eddy current artifacts** | gradient-induced eddy currents distort the readout | between-dwi misalignment → hairball-like tractography  | (1) use current-canceling gradient designs (e.g., bipolar, twice-refocused)<br>(2) apply affine image registration |
+| **susceptibility artifacts** | magnetic field distortion near air-tissue interfaces | signal dropout and geometric distortion along the phase-encoding direction | (1) use sequence-based corrections (e.g., segmented EPI)<br>(2) combine reversed-phase b0 images to correct distortion |
+| **noise** | low signal-to-noise ratio (SNR) in DWI | some models (e.g., multi-tensor) are sensitive to noise; DTI and GQI/QSDR are more robust | apply denoising or image smoothing techniques |
+| **B1 inhomogeneity** | uneven RF coil sensitivity across the field of view | bias in metrics sensitive to spin density (e.g., S0, QA); diffusion tensor metrics are unaffected | apply bias field correction |
+| **gibbs ringing** | band-limited k-space sampling | ringing artifacts at sharp intensity transitions; usually not visible in low-SNR DWI | use sub-voxel smoothing or total variation filtering |
+
+### 🧠 Other Data Quality Issues
+
+| Issues | Consequence | Solution |
+|----------|--------------------|----------|
+| **flipped b-table** |  urchin-like tractography | automatic b-table checking | 
+| **rotated/flipped image volume**  | cannot use atlas or autotract functions | flip or swap axis in pair |
+| **thick slices**  | poor fiber tracking result | regrid images |
 
 ---
 
-## 🛠️ Tools for Preprocessing
+## 🖐️ Hands-On Practice
+
+### Identify issues on [OpenNeuro ds002087] and correct it
+
+---
+
+## 🛠️ Tools for Corrections
 
 **Popular Tools:**  ✅ FSL • ✅ MRtrix3 • ✅ QSIPrep • ✅ DIPY • ✅ DSI Studio
 
@@ -132,26 +144,17 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 2. **FSL's `eddy` only** → for datasets lacking reverse-phase b0  
 3. **DSI Studio motion correction** → quick fix when others are unavailable  
 
-### Quality Control
-
-1. Diffusion contrast > 1.0
-2. Neighboring DWI correlation
-
 ---
 
-## 🧪 Hands-On Practice
+## 🖐️ Hands-On Practice
 
-### 🖐️ Hands-on 1: Eddy or motion correction and QC
-
-1. Preprocess SRC files from NIFTI/bids: [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
-
-### 🖐️ Hands-on 2: Explore Correction Effects
+### Compare correction results using Quality Control
 
 1. Download `.sz` files from [Fiber Data Hub – ds002087][ds002087]  
 2. Use QC routine to compare `.sz` and `.fz` with/without correction
+3. Check "diffusion contrast" and "Neighboring DWI correlation"
 
-
-### 🖐️ Hands-on 2: Identify reversed phase encoding b0 for TOPUP
+### Identify reversed phase encoding b0 for TOPUP
 
 1. Download data:  
    - [dwi](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz)  
@@ -161,55 +164,27 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 
 ---
 
-## Additional Preprocessing Steps
-
-### 🔧 Common Additional Steps
-
-- ✅ **b-table correction**  
-  - Especially important in **animal studies** due to gradient misalignment  
-  - Ensures correct orientation of diffusion directions
-
-- 🔄 **Flip/Swap image axes**  
-  - Often needed for **non-human imaging** where scanner coordinate systems differ  
-  - Use anatomical references to verify correct orientation
-
-- 📏 **Regrid to isotropic resolution**  
-  - Standardizes voxel dimensions (e.g., from 0.5×0.5×1 mm → 0.5 mm³)  
-  - Improves downstream processing accuracy
-
 ## 🔮 Future Trend
 
 🧠 *“Preprocessing is becoming less critical”* (my two cents)  
 - Modern sequences reduce artifacts (Reese et al., MRM 2003; Jun 2024 [arXiv](https://arxiv.org/abs/2409.07375))  
 - More **preprocessed open datasets** (e.g., HCP at the Fiber Data Hub) now available  
 
-
 ---
 
-## 🧪 Hands-On Practice
-
-### 🖐️ Hands-on 1: Thick slice acquisitions
-
-📂 Dataset: OpenNeuro (disease) ds005849, sub-DBS01_ses-preop_dwi.sz
-   - regridding to 2mm and check tractography
-
-### 🖐️ Hands-on 2: Animal Preprocessing 
-
-📂 Dataset: OpenNeuro (animal)
-
----
-
-Here’s a clean and slide-ready version of **Session 3: Diffusion Modeling Methods**, with your "two cents" clearly framed, key facts emphasized, and content organized for a 15-minute talk:
-
----
-
-## 🧭 Session 3: Diffusion Modeling Methods (15 minutes)
+## 🧭 Session 4: Diffusion Modeling Methods (15 minutes)
 
 ---
 
 <img src="https://github.com/user-attachments/assets/6f182387-1275-4070-b003-83828212894f" width="400" />
 
 <img src="https://github.com/user-attachments/assets/4603498e-a769-432b-87fc-7d5145397105" width="400" />
+
+---
+
+## 🖐️ Hands-On Practice
+
+### Reconstruct DTI and GQI data and compare FA and QA
 
 ---
 
@@ -272,7 +247,6 @@ source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of w
    4. SRC to FIB
    5. FIB to tractography
 
--- command line batch processing
 
 ---
 
