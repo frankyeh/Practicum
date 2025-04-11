@@ -1,14 +1,15 @@
 ## 🧭 Workshop Week 2 Outline
 
-1. **MRI Data Acquisition**
+1. **Diffusion MRI Protocol**
    - Best practices and recommendations for diffusion MRI protocol
    
-2. **Preprocessing DWI Data (SRC Files)**
+2. **Preprocessing DWI Data**
    - Motion correction & eddy current distortion correction  
-   - Susceptibility artifact correction  
+   - Susceptibility artifact correction
+   - Other quality issues
 
-3. **Diffusion Modeling: Resolving Fibers and Measuring Anisotropy**
-   - Overview of DTI, GQI, and QSDR models  
+3. **Diffusion Models: Resolving Fibers and Measuring Anisotropy**
+   - Overview of DTI, GQI/QSDR
 
 ---
 
