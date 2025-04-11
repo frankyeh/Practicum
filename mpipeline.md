@@ -204,14 +204,14 @@ source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of w
 
 ---
 
-## Session 4: GUI-based Batch Processing (15 minutes)   
+## 🧭 Session 5: GUI-based Batch Processing (10 minutes)   
    
 - NIFTI/bids [OpenNeuro ds001378 (SCA2)](https://openneuro.org/datasets/ds001378/)
 
-   1. NIFTI file QC
-   2. NIFTI to SRC
-   3. SRC QC
-   4. SRC to FIB
+   1. run [NIFTI Quality Control]
+   2. run [Step B2a: NIFTI to SRC (BIDS)]
+   3. run [SRC Quality Control]
+   4. SRC to FIB 
    5. FIB to tractography
 
 ---
