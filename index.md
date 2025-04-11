@@ -27,12 +27,14 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 - Research Assistant	20
 - Student	58
 
-**Recordings**
 🎥 No worries if you can’t attend live! The recordings will be freely available on YouTube, so you can watch them anytime. Spots are not limited—just visit back later!
 
+## 2025 DSI Studio Workshop 
+
+**Recordings**
+
 - Week1: Tools & Data Hub [(youtube)](https://youtu.be/BHsJ2hqqNic) [(bilibili)](https://www.bilibili.com/video/BV1eKRDYVEEk/)
-
-
+- Week2: Acquisition & Pipeline [(youtube)](https://youtu.be/Sn2eH07axF4) [(bilibili)](https://www.bilibili.com/video/BV1z1dQYbEXF/)
 
 ## 2022 DSI Studio Workshop
 
