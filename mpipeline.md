@@ -110,6 +110,12 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ## 🖐️ Hands-On Practice
 
+### Identify reversed phase encoding b0 for TOPUP
+
+- [dwi](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz)  
+- [pa b0](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/fmap/sub-01_acq-multiband_dir-PA_dwi.nii.gz)  
+- [bval](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bval), [bvec](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bvec)  
+
 ### Identify issues on [OpenNeuro ds002087] and correct it
 
 ---
@@ -147,14 +153,6 @@ other corrections (less important): noise reduction, bias field correction, gibb
 1. Download `.sz` files from [Fiber Data Hub – ds002087][ds002087]  
 2. Use QC routine to compare `.sz` and `.fz` with/without correction
 3. Check "diffusion contrast" and "Neighboring DWI correlation"
-
-### Identify reversed phase encoding b0 for TOPUP
-
-1. Download data:  
-   - [dwi](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.nii.gz)  
-   - [pa b0](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/fmap/sub-01_acq-multiband_dir-PA_dwi.nii.gz)  
-   - [bval](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bval), [bvec](https://s3.amazonaws.com/openneuro.org/ds003974/sub-01/dwi/sub-01_acq-multiband_dwi.bvec)  
-2. Identify reversed-phase b0  
 
 ---
 
