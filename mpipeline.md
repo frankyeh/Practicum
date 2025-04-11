@@ -157,14 +157,6 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ---
 
-## 🔮 Future Trend
-
-🧠 *“Preprocessing is becoming less critical”* (my two cents)  
-- Modern sequences reduce artifacts (Reese et al., MRM 2003; Jun 2024 [arXiv](https://arxiv.org/abs/2409.07375))  
-- More **preprocessed open datasets** (e.g., HCP at the Fiber Data Hub) now available  
-
----
-
 ## 🧭 Session 4: Diffusion Modeling Methods (15 minutes)
 
 ---
