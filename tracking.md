@@ -1,23 +1,6 @@
 
 ---
 
-## 💡 Crossing vs Kissing/Turning Configuration Issue
-
-If a voxel's diffusion signals shows two fiber orientations, there can be three possible conditions:
-  - Crossing fibers: two straight fiber populations crossing each other
-  - Kissing fibers: two turning fiber populations touch each other back-to-back.
-  - Turning fiber: one fiber making a large turn.
-  - Any combination of above
-
-<img src="https://user-images.githubusercontent.com/275569/167182297-129fb316-60a5-40b1-8c77-f3d0f3ed1122.png"/> → <img src="https://github.com/user-attachments/assets/8be66885-248f-42d6-ac73-47db336119b7" width="200" /> → Different Connectivity Matrices
-
-🧠 *It is impossible to distinguish “crossing” from “kissing” or "turning" fibers*  
-→ Even with perfect angular resolution, DWI still cannot resolve this ambiguity.
-
-Consequences on connectivity matrices
-
-The same fiber patterns can have different connectivity pattern
-
 ## 🧠 Fiber Tracking Algorithm
 
 ### 🔹 **Input Data**
@@ -27,35 +10,42 @@ The same fiber patterns can have different connectivity pattern
 ---
 
 ### 🔹 **Tracking Steps**
+
+<img src="https://github.com/user-attachments/assets/82b6a925-7334-4af3-8480-6625ea2f6fa5" width="600"/>
+
 1. Select a **starting point** in the seed region and an **initial direction**  
-2. Check **termination conditions** (e.g., low anisotropy, sharp turning angle)  
-   → If conditions are met, **stop tracking**  
-3. Determine a **new propagation direction** based on local orientations and prior path 
-4. Move **one step forward**  
-5. Repeat steps **2–4**  
-6. Return to the starting point, **reverse direction**, and repeat steps **2–4**
+2. Repeat the following steps:  
+ 2.1 Check **termination conditions** (e.g., low anisotropy, sharp turning angle)  
+ 2.2 If termination conditions are met, **go to Step 3**  
+ 2.3 Determine a **new propagation direction** based on local orientations and the previous path  
+ 2.4 Move **one step forward**  
+3. If only one direction has been tracked, **return to Step 1**, reverse the initial direction, and repeat tracking to complete the full trajectory.  
+ Otherwise, tracking ends.
 
----
 
-### 🔹 **Output**
-- A fiber is represented as a sequence of **3D coordinates** forming a streamline
+ 
 
-### 
 
-Strategy 1 Deterministic fiber tracking:
-  - Always select less turning at Step 3
-  - Determine 'kissing' or 'turning' in GQI due to their single local maximum in ODF -> resolve only one fiber orientation. 
-  - Resolve 'crossing' as separate fiber orientations in GQI due to multiple local maximums in ODF -> resolve each fiber orientation.
+### Strategy 1 Deterministic fiber tracking: 
+
+<img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df" width="400"/>
+
+  - Always select less turning angle at Step 3
+  - Use GQI ODF local maximum to differentiate kissing from crossing
   - At Step 3, always choose the less turning angle -> all resolved fiber orientations are implicitly treated as 'crossing'.
 
 Example:
   - GQI + deterministic fiber tracking 
 
 Cons: False negative results
-  - miss sharp crossings
+  - miss sharp crossings or abrupt turning
 
-Strategy 2 Probablistic fiber tracking:
-   - Resolve all possible orientations, including crossing, kissing, turning.
+
+### Strategy 2 Probablistic fiber tracking:
+
+<img src="https://github.com/user-attachments/assets/5b693fff-a581-42ed-9da3-10ca3ccdb930"/>
+
+   - Use ODF as a distribution to choose kissing or crossing
    - At Step 3, Use probablistic distribtuion to choose fiber continfugration 
    
 Example:
@@ -63,7 +53,8 @@ Example:
   - CSD + iFOD2
 
 Cons: False positive results
-  - may have false crossing patterns
+  - hard to distinguish “crossing” from “kissing” or "turning" fibers  
+  - may have false crossing or kissing patterns
 
 
 ## 🧩 Role of Regions in Fiber Tracking
