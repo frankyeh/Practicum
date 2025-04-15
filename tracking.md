@@ -7,6 +7,8 @@
 - **Local fiber orientations** (a.k.a. *fixels*)  
 - **Termination criteria** (e.g., anisotropy, angular threshold)
 
+Sample Data: [OpenNeuro][ds004299][sub-103_ses-1_dwi.gqi.fz]
+
 ---
 
 ### 🔹 **Tracking Steps**
@@ -27,7 +29,7 @@
 <img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df" width="400"/>
 
   - Use GQI ODF local maximum, and all resolved fiber orientations are assumed 'crossing'.
-  - At Step 3, always choose the less turning angle -> 
+  - At Step 3, always choose the less turning angle
 
 Example:
   - GQI + deterministic fiber tracking 
@@ -38,7 +40,7 @@ Cons: False negative results
 
 ### Strategy 2 Probablistic fiber tracking:
 
-<img src="https://github.com/user-attachments/assets/5b693fff-a581-42ed-9da3-10ca3ccdb930"/>
+<img src="https://github.com/user-attachments/assets/5d6a2ea6-116a-44a1-a839-99f030d1addb"/>
 
    - At Step 3, Use probablistic distribtuion to choose fiber continfugration 
    
