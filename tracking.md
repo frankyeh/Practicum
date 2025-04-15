@@ -22,17 +22,12 @@
 3. If only one direction has been tracked, **return to Step 1**, reverse the initial direction, and repeat tracking to complete the full trajectory.  
  Otherwise, tracking ends.
 
-
- 
-
-
 ### Strategy 1 Deterministic fiber tracking: 
 
 <img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df" width="400"/>
 
-  - Always select less turning angle at Step 3
-  - Use GQI ODF local maximum to differentiate kissing from crossing
-  - At Step 3, always choose the less turning angle -> all resolved fiber orientations are implicitly treated as 'crossing'.
+  - Use GQI ODF local maximum, and all resolved fiber orientations are assumed 'crossing'.
+  - At Step 3, always choose the less turning angle -> 
 
 Example:
   - GQI + deterministic fiber tracking 
@@ -45,7 +40,6 @@ Cons: False negative results
 
 <img src="https://github.com/user-attachments/assets/5b693fff-a581-42ed-9da3-10ca3ccdb930"/>
 
-   - Use ODF as a distribution to choose kissing or crossing
    - At Step 3, Use probablistic distribtuion to choose fiber continfugration 
    
 Example:
