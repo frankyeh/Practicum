@@ -22,12 +22,13 @@ Sample Data: [OpenNeuro][ds004299][sub-103_ses-1_dwi.gqi.fz]
 3. If only one direction has been tracked, **return to Step 1**, reverse the initial direction, and repeat tracking to complete the full trajectory.  
  Otherwise, tracking ends.
 
-### Strategy 1 Deterministic fiber tracking: 
+### Strategy 1: All resolved orientations are **crossing** 
 
 <img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df"/>
 
-  - Use GQI ODF local maximum, and all resolved fiber orientations are assumed 'crossing'.
   - At Step 3, always choose the less turning angle
+  - Use GQI ODF's local maximum, and all resolved fiber orientations are assumed 'crossing'.
+  - 
 
 Example:
   - GQI + deterministic fiber tracking 
@@ -36,7 +37,7 @@ Cons: False negative results
   - miss sharp crossings or abrupt turning
 
 
-### Strategy 2 Probablistic fiber tracking:
+### Strategy 2 Determinne fiber configurations by probability
 
 <img src="https://github.com/user-attachments/assets/5d6a2ea6-116a-44a1-a839-99f030d1addb"/>
 
