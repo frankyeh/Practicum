@@ -1,6 +1,4 @@
 
----
-
 ## 🧠 Fiber Tracking Algorithm
 
 ### 🔹 **Input Data**
@@ -26,7 +24,7 @@ Sample Data: [OpenNeuro][ds004299][sub-103_ses-1_dwi.gqi.fz]
 
 ### Strategy 1 Deterministic fiber tracking: 
 
-<img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df" width="400"/>
+<img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df"/>
 
   - Use GQI ODF local maximum, and all resolved fiber orientations are assumed 'crossing'.
   - At Step 3, always choose the less turning angle
@@ -73,11 +71,15 @@ Cons: False positive results
 - **One ROI + whole brain seeding**  
 - **One ROI + dilated tract coordinates** used as **Seed + Limiting**
 
-#### 🔗 To find connections between two regions:
+#### 📌 To find connections between two regions:
 - **Two ROIs + whole brain seeding**  
 - **Two ROIs + dilated tract coordinates** as **Seed + Limiting**  
 - **One ROI + One END + dilated tract coordinates** as **Seed + Limiting**  
 - **Two ROIs + dilated tract coordinates** as **Seed + Limiting**
+
+#### 📌 AutoTrack: To find a pathway given an possible coverage from atlas
+- **Seed and limiting region placed at coverage**  
+- **Seed and limiting region placed at coverage** + ROI and/or ROA 
 
 ---
 
@@ -86,4 +88,31 @@ Cons: False positive results
 - ✅ **Prefer whole brain seeding**, unless you're certain that the tract cannot pass through specific areas (in which case, exclude those from the seed mask)
 - ⚠️ **Do not use "END" regions too early** — always define it as an **ROI first** to ensure the tract reliably reaches the target without overshooting
 
+## Region-to-Region (R2R) Connectome (2cents: I don't recommend)
+ 
+Steps: 
+  - whole brain tractography (> 1mil tracts)
+  - choose brain parcellation
+  - compute tract count per region pair
+
+Issues:
+  - Tract count does not have biological meaning
+  - Impossible to get the ground truth due to tract crossing/kissing problems
+  - Not sensitive to most brain disease
+
+## Tract-to-Region (T2R) Connectome
+
+Steps: 
+  - Map a bundle using autoTrack (good test-retest reliability examined at Yeh, Neuroimage 2020)
+  - Choose brain parcellation
+  - Calculate end region size between at each tract-region pair 
+
+Pros over R2R:  
+  - Has well defined metrics with physical meaning
+  - Bypass kissing-crossing problem.
+
+
+## 🧠 Tractography in structural images (T1w/T2w/CT) 
+
+-
 
