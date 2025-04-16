@@ -89,8 +89,12 @@ Cons: False positive results
 - ✅ **Prefer whole brain seeding**, unless you're certain that the tract cannot pass through specific areas (in which case, exclude those from the seed mask)
 - ⚠️ **Do not use "END" regions too early** — always define it as an **ROI first** to ensure the tract reliably reaches the target without overshooting
 
-## Region-to-Region (R2R) Connectome (2cents: I don't recommend)
+## Region-to-Region (R2R) Connectome
  
+<img src="https://github.com/user-attachments/assets/8499ca9b-4ea8-4bd6-9e97-ea1bceae2f30" width=400/><img src="https://github.com/user-attachments/assets/8060a9bd-45af-4692-9b6b-a044eeddb0b6" width=400/>
+
+`Yeh, Fang-Cheng, et al. "Population-averaged atlas of the macroscale human structural connectome and its network topology." Neuroimage 178 (2018): 57-68.`
+
 Steps: 
   - whole brain tractography (> 1mil tracts)
   - choose brain parcellation
@@ -101,7 +105,12 @@ Issues:
   - Impossible to get the ground truth due to tract crossing/kissing problems
   - Not sensitive to most brain disease
 
+
 ## Tract-to-Region (T2R) Connectome
+
+<img src="https://github.com/user-attachments/assets/c05d0e70-2941-4c5e-ae25-f3bc65f22f77" width=800/><img src="https://github.com/user-attachments/assets/04bdc869-f3a1-4771-8a6b-5fec26e2aadb" width=400/>
+
+reference: 
 
 Steps: 
   - Map a bundle using autoTrack (good test-retest reliability examined at Yeh, Neuroimage 2020)
