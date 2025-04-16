@@ -39,7 +39,7 @@ Cons: False negative results
 
 ### Strategy 2 Determinne fiber configurations by probability
 
-<img src="https://github.com/user-attachments/assets/5d6a2ea6-116a-44a1-a839-99f030d1addb"/>
+<img src="https://github.com/user-attachments/assets/3ff6d865-a7f2-42b2-a28f-ee7fd44f0c4e"/>
 
    - At Step 3, Use probablistic distribtuion to choose fiber continfugration 
    
