@@ -1,5 +1,19 @@
+## 🧭 Workshop Week 3 Outline
 
-## 🧠 Fiber Tracking Algorithm
+1. **Fiber Tracking Algorithm**
+   - Best practices and recommendations for diffusion MRI protocol
+   
+2. **Track Filtering using Regions**
+   
+4. **Connectome**
+   - Region to region connectome
+   - Tract to region connectome
+    
+5. **Tractography in Structural Images**
+   - Tractography atlas in subject space
+
+---
+## 🧠 Session 1: Fiber Tracking Algorithm
 
 ### 🔹 **Input Data**
 - **Local fiber orientations** (a.k.a. *fixels*)  
@@ -22,11 +36,22 @@ Sample Data: [OpenNeuro][ds004299][sub-103_ses-1_dwi.gqi.fz]
 3. If only one direction has been tracked, **return to Step 1**, reverse the initial direction, and repeat tracking to complete the full trajectory.  
  Otherwise, tracking ends.
 
-### Strategy 1: treat all resolved orientations are **crossing** 
+### Parameters
+
+- Anisotropy threshold
+- Angular threshold
+- Step size
+- Minimum/Maximum length
+- Maximum seed/tract
+- Track-to-voxel ratio
+
+## Deterministic vs Probablistic Fiber Tracking
+
+### Deterministic:
 
 <img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df"/>
 
-  - At Step 2.3, always propagate at the less turning angle
+  - At Step 2.3, always propagate at the less turning angle -> treat all resolved orientations are **crossing** 
   - use GQI ODF's local maximum to resolve fiber orientations.
 
 Example:
@@ -36,13 +61,15 @@ Cons: False negative results
   - treat sharp crossings as turning
   - treat abrupt turning as crossing
 
+<img src="https://github.com/user-attachments/assets/d53a9b00-6169-4b4c-85f0-2b9d78090d39"/>
 
-### Strategy 2: determinne fiber configurations by probability
+
+### Probablistic: 
 
 <img src="https://github.com/user-attachments/assets/3ff6d865-a7f2-42b2-a28f-ee7fd44f0c4e"/>
 
    - At Step 2.3, Use probablistic distribtuion to choose propagation direction
-   - Resolve all possible orientations and let probability choose
+   - Resolve all possible orientations and let probability choose -> determinne fiber configurations by probability
    
 Example:
   - bedpostx + probtrackx
@@ -52,8 +79,9 @@ Cons: False positive results
   - hard to distinguish “crossing” from “kissing” or "turning" fibers  
   - may have false crossing or kissing patterns
 
+<img src="https://github.com/user-attachments/assets/2ff2ee39-1f0e-46a4-b680-c8378e6dc337"/>
 
-## 🧩 Role of Regions in Fiber Tracking
+## 🧩 Session 2: Track Filtering using Regions
 
 ### 🗂️ Region Types
 
@@ -64,6 +92,10 @@ Cons: False positive results
 5. **END Region** – Tracts that **do not terminate** within this region are discarded  
 6. **NotEND Region** – Tracts that **terminate** within this region are discarded  
 7. **Terminating Region** – Tracts are **forced to stop** upon entering this region  
+
+💡 Rule of Thumb
+- ✅ **Prefer whole brain seeding**, unless you're certain that the tract cannot pass through specific areas (in which case, exclude those from the seed mask)
+- ⚠️ **Do not use "END" regions too early** — always define it as an **ROI first** to ensure the tract reliably reaches the target without overshooting
 
 ---
 
@@ -84,13 +116,16 @@ Cons: False positive results
 - **Seed and limiting region placed at coverage** + ROI and/or ROA 
 
 ---
+## Session 3: AutoTrack
 
-### 💡 Rule of Thumb
 
-- ✅ **Prefer whole brain seeding**, unless you're certain that the tract cannot pass through specific areas (in which case, exclude those from the seed mask)
-- ⚠️ **Do not use "END" regions too early** — always define it as an **ROI first** to ensure the tract reliably reaches the target without overshooting
+![image](https://github.com/user-attachments/assets/d1d7f0fe-d4b5-41d1-b4a9-8afbbf53f75d)
 
-## Region-to-Region (R2R) Connectome
+
+
+## Session 3: Connectome
+
+### Region-to-Region (R2R) Connectome
  
 <img src="https://github.com/user-attachments/assets/8499ca9b-4ea8-4bd6-9e97-ea1bceae2f30" width=400/><img src="https://github.com/user-attachments/assets/8060a9bd-45af-4692-9b6b-a044eeddb0b6" width=400/>
 
@@ -107,7 +142,7 @@ Issues:
   - Not sensitive to most brain disease
 
 
-## Tract-to-Region (T2R) Connectome
+### Tract-to-Region (T2R) Connectome
 
 <img src="https://github.com/user-attachments/assets/c05d0e70-2941-4c5e-ae25-f3bc65f22f77" width=800/><img src="https://github.com/user-attachments/assets/04bdc869-f3a1-4771-8a6b-5fec26e2aadb" width=400/>
 
@@ -122,8 +157,6 @@ Pros over R2R:
   - Has well defined metrics with physical meaning
   - Bypass kissing-crossing problem.
 
-
-## 🧠 Tractography in structural images (T1w/T2w/CT) 
 
 -
 
