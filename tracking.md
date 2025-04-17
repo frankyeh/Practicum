@@ -120,10 +120,7 @@ histology reference: [allen brain](https://www.brainspan.org/ish/experiment/dual
 ---
 ## Session 3: AutoTrack
 
-
-![image](https://github.com/user-attachments/assets/d1d7f0fe-d4b5-41d1-b4a9-8afbbf53f75d)
-
-
+<img src="https://github.com/user-attachments/assets/d1d7f0fe-d4b5-41d1-b4a9-8afbbf53f75d" width=800/>
 
 ## Session 3: Connectome
 
@@ -159,6 +156,4 @@ Pros over R2R:
   - Has well defined metrics with physical meaning
   - Bypass kissing-crossing problem.
 
-
--
 
