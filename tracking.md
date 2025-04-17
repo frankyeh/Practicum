@@ -81,6 +81,8 @@ Cons: False positive results
 
 <img src="https://github.com/user-attachments/assets/2ff2ee39-1f0e-46a4-b680-c8378e6dc337"/>
 
+histology reference: [allen brain](https://www.brainspan.org/ish/experiment/dual_view?id=100147602&imageId=153511337&imageType=ihc:parvalbumin&initImage=ihc:parvalbumin&x=28544&y=39296&z=2)
+
 ## 🧩 Session 2: Track Filtering using Regions
 
 ### 🗂️ Region Types
