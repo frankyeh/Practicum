@@ -1,159 +1,179 @@
 ## 🧭 Workshop Week 3 Outline
 
-1. **Fiber Tracking Algorithm**
-   - Best practices and recommendations for diffusion MRI protocol
-   
-2. **Track Filtering using Regions**
-   
-4. **Connectome**
-   - Region to region connectome
-   - Tract to region connectome
-    
-5. **Tractography in Structural Images**
-   - Tractography atlas in subject space
+1. **Fiber Tracking Algorithm**  
+   - Principles and implementation of deterministic and probabilistic tracking  
+   - Tracking parameters and termination criteria  
+
+2. **Track Filtering with Regions**  
+   - Role of ROI, ROA, END, and other region types in shaping tractography results  
+
+3. **Connectomics**  
+   - Region-to-region connectome  
+   - Tract-to-region connectome as a workaround for crossing/kissing ambiguity  
+
+4. **Tractography in Structural Images**  
+   - Applying tractography in T1w or anatomical space  
+   - Using tractography atlases in subject space  
+
 
 ---
+
 ## 🧠 Session 1: Fiber Tracking Algorithm
 
-### 🔹 **Input Data**
-- **Local fiber orientations** (a.k.a. *fixels*)  
-- **Termination criteria** (e.g., anisotropy, angular threshold)
+### 🔹 **Input Requirements**
+- **Local fiber orientations** (also known as *fixels*)  
+- **Anisotropy** 
 
-Sample Data: [OpenNeuro][ds004299][sub-103_ses-1_dwi.gqi.fz]
+**Sample Dataset:** [OpenNeuro][ds004299][sub-103_ses-1_dwi.gqi.fz]
 
----
 
 ### 🔹 **Tracking Steps**
 
-<img src="https://github.com/user-attachments/assets/82b6a925-7334-4af3-8480-6625ea2f6fa5" width="600"/>
+<img src="https://github.com/user-attachments/assets/82b6a925-7334-4af3-8480-6625ea2f6fa5" width="800"/>
 
 1. Select a **starting point** in the seed region and an **initial direction**  
-2. Repeat the following steps:  
+2. Repeat the following loop:  
  2.1 Check **termination conditions** (e.g., low anisotropy, sharp turning angle)  
- 2.2 If termination conditions are met, **go to Step 3**  
- 2.3 Determine a **new propagation direction** based on local orientations and the previous path  
+ 2.2 If conditions are met, **proceed to Step 3**  
+ 2.3 Determine a **new propagation direction** based on local fiber orientation and prior path  
  2.4 Move **one step forward**  
-3. If only one direction has been tracked, **return to Step 1**, reverse the initial direction, and repeat tracking to complete the full trajectory.  
+3. If only one direction has been tracked, **return to Step 1**, reverse the initial direction, and repeat tracking to generate the full streamline.  
  Otherwise, tracking ends.
 
-### Parameters
+---
 
-- Anisotropy threshold
-- Angular threshold
-- Step size
-- Minimum/Maximum length
-- Maximum seed/tract
-- Track-to-voxel ratio
+### ⚙️ Tracking Parameters
 
-## Deterministic vs Probablistic Fiber Tracking
+- **Anisotropy threshold** – stops tracking in low-contrast regions  
+- **Angular threshold** – stop at sharp turns  
+- **Step size** – distance advanced per iteration  
+- **Minimum/Maximum length** – defines acceptable tract lengths  
+- **Maximum seeds/tracts** – limits total output  
+- **Track-to-voxel ratio**
 
-### Deterministic:
+---
 
-<img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df"/>
+## 🎯 Deterministic vs. Probabilistic Fiber Tracking
 
-  - At Step 2.3, always propagate at the less turning angle -> treat all resolved orientations are **crossing** 
-  - use GQI ODF's local maximum to resolve fiber orientations.
+### 🔵 **Deterministic Tracking**
 
-Example:
-  - GQI + deterministic fiber tracking 
+<img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df" width="800"/>
 
-Cons: False negative results
-  - treat sharp crossings as turning
-  - treat abrupt turning as crossing
+- At **Step 2.3**, always follows the direction with the **smallest turning angle**  
+- Assumes all resolved orientations represent **crossing fibers**  
+- Direction is chosen from **local maxima** of the GQI ODF  
 
-<img src="https://github.com/user-attachments/assets/d53a9b00-6169-4b4c-85f0-2b9d78090d39"/>
+📌 **Example:**  
+- GQI + deterministic tracking  
 
+⚠️ **Limitations (False Negatives):**  
+- May **misinterpret large turns as crossings** → early termination  
+- May **misinterpret sharp crossings as turns** → incorrect continuation  
 
-### Probablistic: 
+<img src="https://github.com/user-attachments/assets/d53a9b00-6169-4b4c-85f0-2b9d78090d39" width="800"/>
 
-<img src="https://github.com/user-attachments/assets/3ff6d865-a7f2-42b2-a28f-ee7fd44f0c4e"/>
+---
 
-   - At Step 2.3, Use probablistic distribtuion to choose propagation direction
-   - Resolve all possible orientations and let probability choose -> determinne fiber configurations by probability
-   
-Example:
-  - bedpostx + probtrackx
-  - CSD + iFOD2
+### 🔴 **Probabilistic Tracking**
 
-Cons: False positive results
-  - hard to distinguish “crossing” from “kissing” or "turning" fibers  
-  - may have false crossing or kissing patterns
+<img src="https://github.com/user-attachments/assets/3ff6d865-a7f2-42b2-a28f-ee7fd44f0c4e" width="800"/>
 
-<img src="https://github.com/user-attachments/assets/2ff2ee39-1f0e-46a4-b680-c8378e6dc337"/>
+- At **Step 2.3**, selects propagation direction based on a **probability distribution**  
+- Resolves **multiple orientations** due to crossing or turning
+- Fiber configuration is inferred from **accumulated probability over many iterations**
 
-histology reference: [allen brain](https://www.brainspan.org/ish/experiment/dual_view?id=100147602&imageId=153511337&imageType=ihc:parvalbumin&initImage=ihc:parvalbumin&x=28544&y=39296&z=2)
+📌 **Examples:**  
+- **bedpostx + probtrackx**  
+- **CSD + iFOD2**
 
-## 🧩 Session 2: Track Filtering using Regions
+⚠️ **Limitations (False Positives):**  
+- May produce **spurious pathways** due to false configurations
+
+<img src="https://github.com/user-attachments/assets/2ff2ee39-1f0e-46a4-b680-c8378e6dc337" width="800"/>
+
+🧬 **Histology Reference:**  
+[Allen Brain Atlas – Parvalbumin Stain](https://www.brainspan.org/ish/experiment/dual_view?id=100147602&imageId=153511337&imageType=ihc:parvalbumin&initImage=ihc:parvalbumin&x=28544&y=39296&z=2)
+
+---
+
+## 🧩 Session 2: Track Filtering Using Regions
 
 ### 🗂️ Region Types
 
-1. **Seed** – Starting region for initiating tracking  
+1. **Seed** – Region where tracking starts  
 2. **ROI (Region of Interest)** – Tracts **must** pass through; otherwise, they are discarded  
-3. **ROA (Region of Avoidance)** – Tracts that **enter** the region are discarded  
-4. **Limiting Region** – Tracts that **exit** this region are discarded  
-5. **END Region** – Tracts that **do not terminate** within this region are discarded  
-6. **NotEND Region** – Tracts that **terminate** within this region are discarded  
-7. **Terminating Region** – Tracts are **forced to stop** upon entering this region  
+3. **ROA (Region of Avoidance)** – Tracts that **enter** this region are discarded  
+4. **Limiting** – Tracts that **exit** this region are discarded  
+5. **END** – Tracts that **do not terminate** within this region are discarded  
+6. **NotEND** – Tracts that **terminate** within this region are discarded  
+7. **Terminating** – Tracts are **forced to stop** upon entering this region  
 
-💡 Rule of Thumb
-- ✅ **Prefer whole brain seeding**, unless you're certain that the tract cannot pass through specific areas (in which case, exclude those from the seed mask)
-- ⚠️ **Do not use "END" regions too early** — always define it as an **ROI first** to ensure the tract reliably reaches the target without overshooting
+---
+
+💡 **Rule of Thumb**
+- ✅ Prefer **whole brain seeding** unless you are confident certain regions should be excluded from the tract  
+- ⚠️ Avoid using **END** regions too early — test with **ROI** first to make sure the tract reaches the target without premature termination
 
 ---
 
 ### 🔍 Common Use Cases
 
-#### 📌 To find connections of a single region:
-- **One ROI + whole brain seeding**  
-- **One ROI + dilated tract coordinates** used as **Seed + Limiting**
+#### 📌 **To find connections of a single region:**
+- One **ROI** + whole brain seeding  
+- One **ROI** + **dilated tract coordinates** used as Seed + Limiting  
 
-#### 📌 To find connections between two regions:
-- **Two ROIs + whole brain seeding**  
-- **Two ROIs + dilated tract coordinates** as **Seed + Limiting**  
-- **One ROI + One END + dilated tract coordinates** as **Seed + Limiting**  
-- **Two ROIs + dilated tract coordinates** as **Seed + Limiting**
+#### 📌 **To find connections between two regions:**
+- Two **ROIs** + whole brain seeding  
+- Two **ROIs** + **dilated tract coordinates** as Seed + Limiting  
+- One **ROI** + one **END** + **dilated tract coordinates** as Seed + Limiting  
+- Two **ROIs** + **dilated tract coordinates** as Seed + Limiting  
 
-#### 📌 AutoTrack: To find a pathway given an possible coverage from atlas
-- **Seed and limiting region placed at coverage**  
-- **Seed and limiting region placed at coverage** + ROI and/or ROA 
+#### 📌 **AutoTrack: To find pathways using atlas coverage**
+- **Seed + Limiting regions** placed at tract coverage  
+- Add **ROI** and/or **ROA** to refine filtering
 
 ---
 ## Session 3: AutoTrack
 
+Sample Data: 
+
 <img src="https://github.com/user-attachments/assets/d1d7f0fe-d4b5-41d1-b4a9-8afbbf53f75d" width=800/>
 
-## Session 3: Connectome
+---
 
-### Region-to-Region (R2R) Connectome
- 
-<img src="https://github.com/user-attachments/assets/8499ca9b-4ea8-4bd6-9e97-ea1bceae2f30" width=400/><img src="https://github.com/user-attachments/assets/8060a9bd-45af-4692-9b6b-a044eeddb0b6" width=400/>
+## 🧠 Session 3: Connectome
 
-`Yeh, Fang-Cheng, et al. "Population-averaged atlas of the macroscale human structural connectome and its network topology." Neuroimage 178 (2018): 57-68.`
+### 🔗 Region-to-Region (R2R) Connectome
 
-Steps: 
-  - whole brain tractography (> 1mil tracts)
-  - choose brain parcellation
-  - compute tract count per region pair
+<img src="https://github.com/user-attachments/assets/8499ca9b-4ea8-4bd6-9e97-ea1bceae2f30" width="400"/> <img src="https://github.com/user-attachments/assets/8060a9bd-45af-4692-9b6b-a044eeddb0b6" width="400"/>
 
-Issues:
-  - Tract count does not have biological meaning
-  - Impossible to get the ground truth due to tract crossing/kissing problems
-  - Not sensitive to most brain disease
+📄 *Yeh, Fang-Cheng, et al. NeuroImage, 2018*
 
+**Workflow:**
+- Run **whole-brain tractography** (e.g., >1 million streamlines)  
+- Apply a **brain parcellation** scheme  
+- Count the number of tracts connecting each pair of regions
 
-### Tract-to-Region (T2R) Connectome
+**Limitations:**
+- Tract count lacks **biological specificity**  
+- Ground truth is unattainable due to **crossing/kissing ambiguities**  
+- Limited **sensitivity to brain disorders**
 
-<img src="https://github.com/user-attachments/assets/c05d0e70-2941-4c5e-ae25-f3bc65f22f77" width=800/><img src="https://github.com/user-attachments/assets/04bdc869-f3a1-4771-8a6b-5fec26e2aadb" width=400/>
+---
 
-reference: 
+### 🧬 Tract-to-Region (T2R) Connectome
 
-Steps: 
-  - Map a bundle using autoTrack (good test-retest reliability examined at Yeh, Neuroimage 2020)
-  - Choose brain parcellation
-  - Calculate end region size between at each tract-region pair 
+<img src="https://github.com/user-attachments/assets/c05d0e70-2941-4c5e-ae25-f3bc65f22f77" width="800"/>  
+<img src="https://github.com/user-attachments/assets/04bdc869-f3a1-4771-8a6b-5fec26e2aadb" width="400"/>
 
-Pros over R2R:  
-  - Has well defined metrics with physical meaning
-  - Bypass kissing-crossing problem.
+📄 *Yeh, NeuroImage, 2020*
 
+**Workflow:**
+- Use **autoTrack** to extract individual tract bundles (test-retest validated)  
+- Apply brain parcellation  
+- Compute **endpoint coverage**: number or size of regions each tract connects to
+
+**Advantages over R2R:**
+- Provides **physically interpretable metrics** (e.g., mm² coverage)  
+- Avoids the **crossing/kissing ambiguity** by evaluating each bundle individually  
 
