@@ -48,13 +48,17 @@
 - **Maximum seeds/tracts** – limits total output  
 - **Track-to-voxel ratio**
 
+## Key Challenge in Tractography: Crossing vs Kissing Configuration
+
+<img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df" width="800"/>
+
 ---
 
 ## 🎯 Deterministic vs. Probabilistic Fiber Tracking
 
 ### 🔵 **Deterministic Tracking**
 
-<img src="https://github.com/user-attachments/assets/5b81394d-6335-4982-bde7-20b3c338e6df" width="800"/>
+![image](https://github.com/user-attachments/assets/1d832a3f-24e4-4f87-b288-85a7ec0b3731)
 
 - At **Step 2.3**, always follows the direction with the **smallest turning angle**  
 - Assumes all resolved orientations represent **crossing fibers**  
