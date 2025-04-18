@@ -4,17 +4,14 @@
    - Principles and implementation of deterministic and probabilistic tracking  
    - Tracking parameters and termination criteria  
 
-2. **Track Filtering with Regions**  
+2. **Track Filtering Using Regions**  
    - Role of ROI, ROA, END, and other region types in shaping tractography results  
 
-3. **Connectomics**  
+3. **AutoTrack**
+
+4. **Connectomics**  
    - Region-to-region connectome  
    - Tract-to-region connectome as a workaround for crossing/kissing ambiguity  
-
-4. **Tractography in Structural Images**  
-   - Applying tractography in T1w or anatomical space  
-   - Using tractography atlases in subject space  
-
 
 ---
 
