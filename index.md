@@ -35,6 +35,7 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 
 - Week1: Tools & Data Hub [(youtube)](https://youtu.be/BHsJ2hqqNic) [(bilibili)](https://www.bilibili.com/video/BV1eKRDYVEEk/)
 - Week2: Acquisition & Pipeline [(youtube)](https://youtu.be/Sn2eH07axF4) [(bilibili)](https://www.bilibili.com/video/BV1z1dQYbEXF/)
+- Week3: Tractography & Connectome [(youtube)](https://youtu.be/xyFNXB9nJ90) [(bilibili)](https://www.bilibili.com/video/BV1r957zgE5p/)
 
 ## 2022 DSI Studio Workshop
 
