@@ -58,11 +58,12 @@
 
 ### 🔵 **Deterministic Tracking**
 
-![image](https://github.com/user-attachments/assets/1d832a3f-24e4-4f87-b288-85a7ec0b3731)
-
 - At **Step 2.3**, always follows the direction with the **smallest turning angle**  
 - Assumes all resolved orientations represent **crossing fibers**  
 - Direction is chosen from **local maxima** of the GQI ODF  
+
+<img src="https://github.com/user-attachments/assets/1d832a3f-24e4-4f87-b288-85a7ec0b3731" width="800"/>
+
 
 📌 **Example:**  
 - GQI + deterministic tracking  
@@ -77,11 +78,12 @@
 
 ### 🔴 **Probabilistic Tracking**
 
-<img src="https://github.com/user-attachments/assets/3ff6d865-a7f2-42b2-a28f-ee7fd44f0c4e" width="800"/>
-
 - At **Step 2.3**, selects propagation direction based on a **probability distribution**  
 - Resolves **multiple orientations** due to crossing or turning
 - Fiber configuration is inferred from **accumulated probability over many iterations**
+
+<img src="https://github.com/user-attachments/assets/3ff6d865-a7f2-42b2-a28f-ee7fd44f0c4e" width="800"/>
+
 
 📌 **Examples:**  
 - **bedpostx + probtrackx**  
