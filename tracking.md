@@ -135,13 +135,16 @@
 ---
 ## Session 3: AutoTrack
 
-Sample Data: 
+Sample Data: [Other major studies][penthera]
+   - [sub-PT001_ses-1_dwi.gqi.fz]
+   - [sub-PT001_ses-2_dwi.gqi.fz]
+   - [sub-PT001_ses-3_dwi.gqi.fz]
 
 <img src="https://github.com/user-attachments/assets/d1d7f0fe-d4b5-41d1-b4a9-8afbbf53f75d" width=800/>
 
 ---
 
-## 🧠 Session 3: Connectome
+## 🧠 Session 4: Connectome
 
 ### 🔗 Region-to-Region (R2R) Connectome
 
