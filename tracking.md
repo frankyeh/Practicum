@@ -129,11 +129,7 @@
 - Two **ROIs** + whole brain seeding  
 - Two **ROIs** + **dilated tract coordinates** as Seed + Limiting  
 - One **ROI** + one **END** + **dilated tract coordinates** as Seed + Limiting  
-- Two **ROIs** + **dilated tract coordinates** as Seed + Limiting  
-
-#### 📌 **AutoTrack: To find pathways using atlas coverage**
-- **Seed + Limiting regions** placed at tract coverage  
-- Add **ROI** and/or **ROA** to refine filtering
+- Two **ENDs** + **dilated tract coordinates** as Seed + Limiting  
 
 ---
 ## Session 3: AutoTrack
