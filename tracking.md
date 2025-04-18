@@ -179,10 +179,18 @@ Sample Data: [Other major studies][penthera]
 - Produces **physically interpretable metrics** (e.g., % of region volume)  
 - Reduces uncertainty from **crossing/kissing ambiguities** by evaluating bundles individually  
 
+**Example**
+
+<img src="https://github.com/user-attachments/assets/821563c6-442e-4289-8dd1-59f239df9291" width=800/>
+
 ---
 
 ### Assignment: Plot T2R connectome on HCP-MMP parcellation
 
- - select a baby in the BCP study (scanned at 3 months, 6 months, and 2 years), a child from OpenNeuro (ds003604; scanned at 5, 7, and 9 years), and a teenager from the ABCD study (scanned at 10, 12, and 14 years)
+ - At [Fiber Data Hub], select
+    -  a baby in the [HCP Lifespan][BCP] study (scanned at 3 months, 6 months, and 2 years)
+    -  a child from [OpenNeuro][ds003604] scanned at 5, 7, and 9 years)
+    -  a teenager from the [ABCD] study (scanned at 10, 12, and 14 years)
+
  - compute their t2r connectome of the arcuate fasciculus and HCP-MMP parcellation
  - visualize the t2r connectome using region rendering
