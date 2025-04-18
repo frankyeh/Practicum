@@ -172,11 +172,18 @@ Sample Data: [Other major studies][penthera]
 📄 *Yeh, NeuroImage, 2020*
 
 **Workflow:**
-- Use **autoTrack** to extract individual tract bundles (test-retest validated)  
-- Apply brain parcellation  
-- Compute **endpoint coverage**: number or size of regions each tract connects to
+- Use **autoTrack** to extract individual tract bundles (**test-retest validated**)  
+- Apply a **brain parcellation**  
+- Compute the **volume fraction of each region** that is traversed by the tract → defines T2R connectivity
 
 **Advantages over R2R:**
-- Provides **physically interpretable metrics** (e.g., mm² coverage)  
-- Avoids the **crossing/kissing ambiguity** by evaluating each bundle individually  
+- Produces **physically interpretable metrics** (e.g., % of region volume)  
+- Reduces uncertainty from **crossing/kissing ambiguities** by evaluating bundles individually  
 
+---
+
+### Assignment: Plot T2R connectome on HCP-MMP parcellation
+
+ - select a baby in the BCP study (scanned at 3 months, 6 months, and 2 years), a child from OpenNeuro (ds003604; scanned at 5, 7, and 9 years), and a teenager from the ABCD study (scanned at 10, 12, and 14 years)
+ - compute their t2r connectome of the arcuate fasciculus and HCP-MMP parcellation
+ - visualize the t2r connectome using region rendering
