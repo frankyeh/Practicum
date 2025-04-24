@@ -56,9 +56,9 @@ Aggregate metrics (e.g., FA, QA) from: QSDR reconstructed files (`*.qsdr.fz`)
 
 ---
 
-### 🧪 Analysis Types
-
 <img src="https://github.com/user-attachments/assets/fc4d71e9-09c3-471a-8b91-509607e31f1e" width="400"/>
+
+### 🧪 Analysis Types
 
 #### 📊 Cross-Sectional Analysis  
 - Correlate diffusion metrics with variables across subjects
