@@ -12,44 +12,45 @@
 
 ## 🧠 Session 1: Differential Tractography
 
+<img src="https://github.com/user-attachments/assets/c298a7f5-e8cc-4224-a1f5-d04a180233a7" width=800/>
+
 Adds an additional **termination criterion**:  
 → **Tracking stops when the signal difference exceeds a defined threshold**
 
-📂 **Example Dataset:**  
-- SCA2 study: QSDR `.fz` files
-
----
-
 ### 🧪 Hands-On Exercises
 
-#### 🔧 Create a Population-Average Template
+📂 **Example Dataset:**  
+- [OpenNeuro (disease)][ds001378] SCA2 study
 
-#### 📊 Cross-Sectional Analysis
-- Build a population average template  
-- Compare **patient vs. average** and **control vs. average**  
+#### 🧬 Longitudinal Analysis
+- Compare **follow-up vs. baseline** for patients
+- Compare **follow-up vs. baseline** for controls  
 - Compute **false discovery rate**:  
   *(Findings in controls) / (Findings in patients)*
 
-#### 🧬 Longitudinal Analysis
-- Compare **follow-up vs. baseline** for patients and controls  
-- Compute **false discovery rate** similarly  
+#### 📊 Cross-Sectional Analysis
+
+- Build a population average template
+  - Download control subject's qsdr.fz file: select matching → `*control*ses-01*qsdr.fz`
+  - [Tractography (Batch)] → [Create Population Average]
+- Compare **patient vs. average** and **control vs. average**  
+- Compute **false discovery rate**:  
+  *(Findings in controls) / (Findings in patients)*
 
 ---
 
 ## 🧠 Session 2: Correlational Tractography
 
+<img src="https://user-images.githubusercontent.com/275569/197086945-5eb4bbc9-8a01-4bc6-a59d-84bcbe1f3735.png" width=600/>
+
 Identifies fiber tracts that **correlate with a variable or condition**  
 → Based on **Spearman correlation** across subjects
-
-<img src="https://github.com/user-attachments/assets/fc4d71e9-09c3-471a-8b91-509607e31f1e" width="400"/>
 
 ---
 
 ### 📂 Prepare the Database
 
-Aggregate metrics (e.g., FA, QA) from:
-1. QSDR reconstructed files (`*.qsdr.fz`)  
-2. MNI-space NIfTI files (`*.nii.gz`)  
+Aggregate metrics (e.g., FA, QA) from: QSDR reconstructed files (`*.qsdr.fz`)  
 
 📌 **Example Dataset:** SCA2 study
 
@@ -57,7 +58,7 @@ Aggregate metrics (e.g., FA, QA) from:
 
 ### 🧪 Analysis Types
 
-<img src="https://user-images.githubusercontent.com/275569/197086945-5eb4bbc9-8a01-4bc6-a59d-84bcbe1f3735.png" width=600/>
+<img src="https://github.com/user-attachments/assets/fc4d71e9-09c3-471a-8b91-509607e31f1e" width="400"/>
 
 #### 📊 Cross-Sectional Analysis  
 - Correlate diffusion metrics with variables across subjects
@@ -69,3 +70,5 @@ Aggregate metrics (e.g., FA, QA) from:
 - Changes in healthy control
 - Changes correlated with disease using filtered changes
 
+#### 🧬 Post-hoc Analysis  
+- Segment tracts and compute associated values
