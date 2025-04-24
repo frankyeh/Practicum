@@ -50,7 +50,6 @@ Identifies fiber tracts that **correlate with a variable or condition**
 Aggregate metrics (e.g., FA, QA) from:
 1. QSDR reconstructed files (`*.qsdr.fz`)  
 2. MNI-space NIfTI files (`*.nii.gz`)  
-3. A 4D NIfTI image (`*.nii.gz`) for voxel-wise correlation  
 
 📌 **Example Dataset:** SCA2 study
 
@@ -58,8 +57,11 @@ Aggregate metrics (e.g., FA, QA) from:
 
 ### 🧪 Analysis Types
 
+<img src="https://user-images.githubusercontent.com/275569/197086945-5eb4bbc9-8a01-4bc6-a59d-84bcbe1f3735.png" width=600/>
+
 #### 📊 Cross-Sectional Analysis  
-- Correlate diffusion metrics with variables across subjects  
+- Correlate diffusion metrics with variables across subjects
+- Post-tracking analysis
 
 #### 🧬 Longitudinal Analysis  
 - Correlate within-subject changes across timepoints  
