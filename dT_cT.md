@@ -64,5 +64,8 @@ Aggregate metrics (e.g., FA, QA) from:
 - Post-tracking analysis
 
 #### 🧬 Longitudinal Analysis  
-- Correlate within-subject changes across timepoints  
+
+- Changes in patients
+- Changes in healthy control
+- Changes correlated with disease using filtered changes
 
