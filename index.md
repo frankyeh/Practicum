@@ -9,8 +9,6 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 
 ## 2025 DSI Studio Workshop Registration Opened
 
-🔗 **Register here:** [https://forms.gle/bDAeCEXjBLQZkGDUA](https://forms.gle/bDAeCEXjBLQZkGDUA)  
-
 📌 **Workshop Details:**  
 - **Instructor:** Fang-Cheng (Frank) Yeh  
 - **Format:** Weekly **one-hour Zoom sessions**, divided into **3–4 segments (15 min each)** followed by **Q&A**. The Zoom link will be sent to registrants.  
