@@ -62,13 +62,12 @@ Aggregate metrics (e.g., FA, QA) from: QSDR reconstructed files (`*.qsdr.fz`)
 
 #### 📊 Cross-Sectional Analysis  
 - Correlate diffusion metrics with variables across subjects
-- Post-tracking analysis
+- FDR v.s. tract length
 
 #### 🧬 Longitudinal Analysis  
 
-- Changes in patients
-- Changes in healthy control
-- Changes correlated with disease using filtered changes
+- Changes in patients using unfiltered changes
+- Changes in patients versus healthy control using filtered changes
 
 #### 🧬 Post-hoc Analysis  
 - Segment tracts and compute associated values
