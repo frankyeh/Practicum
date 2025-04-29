@@ -7,13 +7,20 @@
 
 We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.
 
-## 2025 DSI Studio Workshop Registration Opened
 
-📌 **Workshop Details:**  
+
+
+## 2025 DSI Studio Workshop 
+
+**Recordings**
+
+- Week1: Tools & Data Hub [(youtube)](https://youtu.be/BHsJ2hqqNic) [(bilibili)](https://www.bilibili.com/video/BV1eKRDYVEEk/)
+- Week2: Acquisition & Pipeline [(youtube)](https://youtu.be/Sn2eH07axF4) [(bilibili)](https://www.bilibili.com/video/BV1z1dQYbEXF/)
+- Week3: Tractography & Connectome [(youtube)](https://youtu.be/xyFNXB9nJ90) [(bilibili)](https://www.bilibili.com/video/BV1r957zgE5p/)
+- Week4: Differential & Correlational Tractography [(youtube)](youtu.be/Eeyq06TFNn8) [(bilibili)](https://www.bilibili.com/video/BV1udLpzMEkC/)
+
 - **Instructor:** Fang-Cheng (Frank) Yeh  
-- **Format:** Weekly **one-hour Zoom sessions**, divided into **3–4 segments (15 min each)** followed by **Q&A**. The Zoom link will be sent to registrants.  
 - **Schedule:** Fridays, April 4, 11, 18, 25 10:00 AM – 11:00 AM EST**  
-- **Website:** [https://practicum.labsolver.org](https://practicum.labsolver.org)  
 - **Main Topic:** Introduction to DSI Studio "Hou" version
 - **Participant Demographics**
 
@@ -25,16 +32,6 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 - Research Assistant	20
 - Student	58
 
-🎥 No worries if you can’t attend live! The recordings will be freely available on YouTube, so you can watch them anytime. Spots are not limited—just visit back later!
-
-## 2025 DSI Studio Workshop 
-
-**Recordings**
-
-- Week1: Tools & Data Hub [(youtube)](https://youtu.be/BHsJ2hqqNic) [(bilibili)](https://www.bilibili.com/video/BV1eKRDYVEEk/)
-- Week2: Acquisition & Pipeline [(youtube)](https://youtu.be/Sn2eH07axF4) [(bilibili)](https://www.bilibili.com/video/BV1z1dQYbEXF/)
-- Week3: Tractography & Connectome [(youtube)](https://youtu.be/xyFNXB9nJ90) [(bilibili)](https://www.bilibili.com/video/BV1r957zgE5p/)
-- Week4: Differential & Correlational Tractography [(youtube)](youtu.be/Eeyq06TFNn8) [(bilibili)](https://www.bilibili.com/video/BV1udLpzMEkC/)
 
 ## 2022 DSI Studio Workshop
 
