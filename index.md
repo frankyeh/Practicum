@@ -17,7 +17,7 @@ We regularly host DSI Studio training throughout the year. Future workshops will
 - Week1: Tools & Data Hub [(youtube)](https://youtu.be/BHsJ2hqqNic) [(bilibili)](https://www.bilibili.com/video/BV1eKRDYVEEk/)
 - Week2: Acquisition & Pipeline [(youtube)](https://youtu.be/Sn2eH07axF4) [(bilibili)](https://www.bilibili.com/video/BV1z1dQYbEXF/)
 - Week3: Tractography & Connectome [(youtube)](https://youtu.be/xyFNXB9nJ90) [(bilibili)](https://www.bilibili.com/video/BV1r957zgE5p/)
-- Week4: Differential & Correlational Tractography [(youtube)](youtu.be/Eeyq06TFNn8) [(bilibili)](https://www.bilibili.com/video/BV1udLpzMEkC/)
+- Week4: Differential & Correlational Tractography [(youtube)](https://youtu.be/Eeyq06TFNn8) [(bilibili)](https://www.bilibili.com/video/BV1udLpzMEkC/)
 
 - **Instructor:** Fang-Cheng (Frank) Yeh  
 - **Schedule:** Fridays, April 4, 11, 18, 25 10:00 AM – 11:00 AM EST**  
