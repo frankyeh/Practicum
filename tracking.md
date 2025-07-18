@@ -161,6 +161,9 @@ Sample Data: [Other major studies][penthera]
 - Ground truth is unattainable due to **crossing/kissing ambiguities**  
 - Limited **sensitivity to brain disorders**
 
+**Reference:**
+[Sotiropoulos, Stamatios N., and Andrew Zalesky. "Building connectomes using diffusion MRI: why, how and but." NMR in Biomedicine 32.4 (2019): e3752.](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/nbm.3752)
+
 ---
 
 ### 🧬 Tract-to-Region (T2R) Connectome
