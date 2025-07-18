@@ -7,7 +7,8 @@
 
 We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.
 
-
+**Recommended References**
+[NMR in Biomedicine: Volume 32, Issue 4, 2019, Special Issue:Diffusion MRI of the brain: The naked truth](https://analyticalsciencejournals.onlinelibrary.wiley.com/toc/10991492/2019/32/4)
 
 
 ## 2025 DSI Studio Workshop 
