@@ -7,8 +7,6 @@
     {% include google_network_domain.html %}
     {% endif %}
 {% seo %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -16,9 +14,8 @@
     {% include head-custom.html %}
   </head>
   <body>
-        <!-- Toggle button displayed on small screens -->
     <button class="menu-toggle" onclick="toggleHeader()">☰ Menu</button>
-    
+
     <header class="page-header" role="banner">
       <h2>2025 DSI Studio Workshop</h2>
       <h3><a href="gui_cli.html">WK1 Tools & Data Hub </a></h3>
@@ -36,17 +33,16 @@
       <br>
       <h2>Contact</h2>
       <p>Fang-Cheng (Frank) Yeh<br>E-mail: frank.yeh@pitt.edu</p>
-      <p><a href="https://github.com/frankyeh/Practicum/">.</a></p>  
+      <p><a href="https://github.com/frankyeh/Practicum/">.</a></p>
     </header>
 
-    <main id="content" class="main-content" role="main" >
+    <main id="content" class="main-content markdown-body" role="main">
       {{ content }}
       <footer class="site-footer">
       </footer>
     </main>
 
     <script>
-    // Simple toggle function to show/hide the header on small screens
     function toggleHeader(){
       document.querySelector('.page-header').classList.toggle('show');
     }
