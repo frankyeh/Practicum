@@ -1,64 +1,143 @@
 ---
 layout: home
+title: Fiber Tractography Lab Practicum
 ---
+<section class="hero" id="fiber-tractography-lab-practicum">
+  <div>
+    <a class="paper" href="#2025-workshop"><b>Free · recorded</b>DSI Studio workshops →</a>
+    <h1>Learn tractography by doing it.</h1>
+    <p class="lead">Hands-on DSI Studio workshops taught by Fang-Cheng (Frank) Yeh: tools and data, acquisition, tractography, connectomics, differential and correlational tractography. Every recorded week is on YouTube and bilibili.</p>
+    <div class="btns">
+      <a class="btn primary" href="/gui_cli.html">Start 2025 Week 1</a>
+      <a class="btn" href="#2025-workshop">All recordings</a>
+      <a class="btn" href="#cmu-practicum-course">CMU practicum</a>
+    </div>
+    <div class="release">2025: Fridays, April 4–25 · 10–11 AM EST · DSI Studio "Hou"</div>
+  </div>
+  <div class="panel">
+    <h6>2025 DSI Studio Workshop</h6>
+    <div class="row"><span>Week 1 · <b>Tools &amp; Data Hub</b></span><a href="https://youtu.be/BHsJ2hqqNic">▶ watch</a></div>
+    <div class="row"><span>Week 2 · <b>Acquisition &amp; Pipeline</b></span><a href="https://youtu.be/Sn2eH07axF4">▶ watch</a></div>
+    <div class="row"><span>Week 3 · <b>Tractography &amp; Connectomics</b></span><a href="https://youtu.be/xyFNXB9nJ90">▶ watch</a></div>
+    <div class="row"><span>Week 4 · <b>Differential &amp; Correlational</b></span><a href="https://youtu.be/Eeyq06TFNn8">▶ watch</a></div>
+    <div class="row"><span>152 participants: faculty, postdocs, scientists, RAs, students</span></div>
+  </div>
+</section>
 
-# Fiber Tractography Lab Practicum
+<section class="block" id="2025-dsi-studio-workshop">
+  <h2 class="sec" id="2025-workshop">2025 DSI Studio Workshop</h2>
+  <p class="sub">Introduction to DSI Studio "Hou" version · four Friday sessions</p>
+  <p class="facts"><b>Instructor:</b> Fang-Cheng (Frank) Yeh · <b>Schedule:</b> Fridays, April 4, 11, 18, 25 10:00 AM – 11:00 AM EST · <b>Main topic:</b> Introduction to DSI Studio "Hou" version</p>
+  <section class="weeks">
+    <div class="wk"><small>WEEK 1</small><h3><a href="/gui_cli.html" style="color:#16181d">Tools &amp; Data Hub</a></h3><div class="media"><a href="https://youtu.be/BHsJ2hqqNic">▶ YouTube</a><a href="https://www.bilibili.com/video/BV1eKRDYVEEk/">bilibili</a></div></div>
+    <div class="wk"><small>WEEK 2</small><h3><a href="/mpipeline.html" style="color:#16181d">Acquisition &amp; Pipeline</a></h3><div class="media"><a href="https://youtu.be/Sn2eH07axF4">▶ YouTube</a><a href="https://www.bilibili.com/video/BV1z1dQYbEXF/">bilibili</a></div></div>
+    <div class="wk"><small>WEEK 3</small><h3><a href="/tracking.html" style="color:#16181d">Tractography &amp; Connectomics</a></h3><div class="media"><a href="https://youtu.be/xyFNXB9nJ90">▶ YouTube</a><a href="https://www.bilibili.com/video/BV1r957zgE5p/">bilibili</a></div></div>
+    <div class="wk"><small>WEEK 4</small><h3><a href="/dT_cT.html" style="color:#16181d">Differential &amp; Correlational</a></h3><div class="media"><a href="https://youtu.be/Eeyq06TFNn8">▶ YouTube</a><a href="https://www.bilibili.com/video/BV1udLpzMEkC/">bilibili</a></div></div>
+  </section>
+</section>
 
-![image](https://user-images.githubusercontent.com/275569/149856247-7315a680-fda4-417e-9028-6f6552a56ed6.png)
-![image](https://user-images.githubusercontent.com/275569/149856299-a2277a1a-8d6b-41ad-a6e8-f81f4dba0344.png)
----
+<section class="block" id="2022-dsi-studio-workshop">
+  <h2 class="sec" id="2022-practicum">2022 Fiber Tractography Lab Practicum</h2>
+  <p class="sub">Seven weeks, from DSI Studio basics to correlational tractography</p>
+  <section class="weeks">
+    <div class="wk"><small>WEEK 1</small><h3><a href="/anat.html" style="color:#16181d">DSI Studio Basics</a></h3><div class="media"><span>not recorded</span></div></div>
+    <div class="wk"><small>WEEK 2</small><h3><a href="/wmt.html" style="color:#16181d">White Matter Tracts</a></h3><div class="media"><a href="https://www.youtube.com/watch?v=V2pxI2tooPs">▶ YouTube</a><a href="https://www.bilibili.com/video/BV1i64y1J75L/">bilibili</a></div></div>
+    <div class="wk"><small>WEEK 3</small><h3><a href="/roi_tracking.html" style="color:#16181d">Fiber Tracking</a></h3><div class="media"><a href="https://www.youtube.com/watch?v=oJK8jwTHVhc">▶ YouTube</a><a href="https://www.bilibili.com/video/BV17a4y1z7jM/">bilibili</a></div></div>
+    <div class="wk"><small>WEEK 4</small><h3><a href="/dwi.html" style="color:#16181d">Diffusion MRI Basics</a></h3><div class="media"><a href="https://www.youtube.com/watch?v=9bnZeJ-M5Is">▶ YouTube</a><a href="https://www.bilibili.com/video/BV1pC4y1B7Tz/">bilibili</a></div></div>
+    <div class="wk"><small>WEEK 5</small><h3><a href="/metrics.html" style="color:#16181d">Diffusion Models &amp; Metrics</a></h3><div class="media"><a href="https://www.youtube.com/watch?v=wbrMJHD5mKs">▶ YouTube</a><a href="https://www.bilibili.com/video/BV1wN4y1x7HS/">bilibili</a></div></div>
+    <div class="wk"><small>WEEK 6</small><h3><a href="/dT.html" style="color:#16181d">Differential Tractography</a></h3><div class="media"><a href="https://www.youtube.com/watch?v=I9VHepdZhiA">▶ YouTube</a><a href="https://www.bilibili.com/video/BV1PQ4y1J71t/">bilibili</a></div></div>
+    <div class="wk"><small>WEEK 7</small><h3><a href="/ct.html" style="color:#16181d">Correlational Tractography</a></h3><div class="media"><a href="https://www.youtube.com/watch?v=ol5R7cCJp1I">▶ YouTube</a><a href="https://www.bilibili.com/video/BV15e411q7LH/">bilibili</a></div></div>
+  </section>
+</section>
 
-We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.
+<section class="doors" id="materials">
+  <div class="door">
+    <h3>Materials</h3>
+    <p>Sample data and handouts used in the sessions.</p>
+    <ul>
+      <li><a href="/Materials/100206_qa.nii.gz">100206_qa.nii.gz</a></li>
+      <li><a href="/Materials/HM1.pdf">HM1.pdf</a></li>
+      <li><a href="/Materials/Region%20Manual%20v2_0_1_1.pdf">Region Manual v2.0</a></li>
+      <li><a href="/Materials/paper/review.pdf">Papers →</a></li>
+    </ul>
+  </div>
+  <div class="door">
+    <h3>CMU practicum course</h3>
+    <p>For CMU BME students: send a CV to Frank Yeh.</p>
+    <ul>
+      <li><a href="#cmu-practicum-course">Prerequisites</a></li>
+      <li><a href="#cmu-practicum-course">Goals</a></li>
+      <li><a href="#past-workshops">Past workshops</a></li>
+    </ul>
+  </div>
+  <div class="door">
+    <h3>Keep learning</h3>
+    <p>Documentation and data for after the workshop.</p>
+    <ul>
+      <li><a href="https://dsi-studio.labsolver.org/doc/how_to_acquire_dmri.html">DSI Studio documentation</a></li>
+      <li><a href="https://brain.labsolver.org">Fiber Data Hub</a></li>
+      <li><a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/toc/10991492/2019/32/4">Recommended reading (NMR Biomed 2019)</a></li>
+    </ul>
+  </div>
+</section>
 
-**Recommended References**
-[NMR in Biomedicine: Volume 32, Issue 4, 2019, Special Issue:Diffusion MRI of the brain: The naked truth](https://analyticalsciencejournals.onlinelibrary.wiley.com/toc/10991492/2019/32/4)
+<section class="split">
+  <div><img src="https://github.com/user-attachments/assets/976249ba-5190-43d0-8ce0-fad3d9cab29a" alt="2025 participant demographics"></div>
+  <div>
+    <h2>Participant Demographics</h2>
+    <p>2025 DSI Studio Workshop</p>
+    <ul>
+      <li>Faculty 27</li>
+      <li>Post-doctoral Researcher 25</li>
+      <li>Research Scientist 22</li>
+      <li>Research Assistant 20</li>
+      <li>Student 58</li>
+    </ul>
+  </div>
+</section>
 
+<section class="split" id="past">
+  <div>
+    <h2 id="past-workshops">Past workshops</h2>
+    <ul>
+      <li>Fall 2022 Date: 9/9, 9/16, 9/23, 9/30, 10/7, 10/14, 10/21. - Time: 10am-11am (EST) Friday</li>
+      <li>Spring 2022, 4-5 pm (EST) Friday - wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)</li>
+    </ul>
+    <div class="cite-card"><small>Recommended reference</small><a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/toc/10991492/2019/32/4">NMR in Biomedicine: Volume 32, Issue 4, 2019, Special Issue: Diffusion MRI of the brain: The naked truth</a></div>
+  </div>
+  <div class="pair">
+    <img src="https://user-images.githubusercontent.com/275569/149856247-7315a680-fda4-417e-9028-6f6552a56ed6.png" alt="Practicum example">
+    <img src="https://user-images.githubusercontent.com/275569/149856299-a2277a1a-8d6b-41ad-a6e8-f81f4dba0344.png" alt="Practicum example">
+  </div>
+</section>
 
-## 2025 DSI Studio Workshop 
+<section class="split">
+  <div>
+    <h2 id="cmu-practicum-course">CMU Practicum Course</h2>
+    <p><em>CMU BME Students interested in taking practicum course. Please send CV to Frank Yeh.</em></p>
+    <p>Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.</p>
+  </div>
+  <div>
+    <ul>
+      <li>Prerequisites: Background in general neuroscience (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)</li>
+      <li>Goal:<ul>
+          <li>understand diffusion MRI methods</li>
+          <li>learn how to use a tractography software tool</li>
+          <li>receive hands-on experiences in analyzing dMRI data.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
 
-**Recordings**
-
-- Week1: Tools & Data Hub [(youtube)](https://youtu.be/BHsJ2hqqNic) [(bilibili)](https://www.bilibili.com/video/BV1eKRDYVEEk/)
-- Week2: Acquisition & Pipeline [(youtube)](https://youtu.be/Sn2eH07axF4) [(bilibili)](https://www.bilibili.com/video/BV1z1dQYbEXF/)
-- Week3: Tractography & Connectome [(youtube)](https://youtu.be/xyFNXB9nJ90) [(bilibili)](https://www.bilibili.com/video/BV1r957zgE5p/)
-- Week4: Differential & Correlational Tractography [(youtube)](https://youtu.be/Eeyq06TFNn8) [(bilibili)](https://www.bilibili.com/video/BV1udLpzMEkC/)
-
-- **Instructor:** Fang-Cheng (Frank) Yeh  
-- **Schedule:** Fridays, April 4, 11, 18, 25 10:00 AM – 11:00 AM EST**  
-- **Main Topic:** Introduction to DSI Studio "Hou" version
-- **Participant Demographics**
-
-![image](https://github.com/user-attachments/assets/976249ba-5190-43d0-8ce0-fad3d9cab29a)
-
-- Faculty 27
-- Post-doctoral Researcher	25
-- Research Scientist	22
-- Research Assistant	20
-- Student	58
-
-
-## 2022 DSI Studio Workshop
-
-- Week1: (We failed to record the first week's course)
-- Week2: White Matter Tract [(youtube)](https://www.youtube.com/watch?v=V2pxI2tooPs) [(bilibili)](https://www.bilibili.com/video/BV1i64y1J75L/)
-- Week3: Fiber Tracking [(youtube)](https://www.youtube.com/watch?v=oJK8jwTHVhc) [(bilibili)](https://www.bilibili.com/video/BV17a4y1z7jM/)
-- Week4: Diffusion MRI Basics [(youtube)](https://www.youtube.com/watch?v=9bnZeJ-M5Is) [(bilibili)](https://www.bilibili.com/video/BV1pC4y1B7Tz/)
-- Week5: Diffusion Models and Metrics [(youtube)](https://www.youtube.com/watch?v=wbrMJHD5mKs) [(bilibili)](https://www.bilibili.com/video/BV1wN4y1x7HS/)
-- Week6: Differential Tractography [(youtube)](https://www.youtube.com/watch?v=I9VHepdZhiA) [(bilibili)](https://www.bilibili.com/video/BV1PQ4y1J71t/)
-- Week7: Correlational Tractography [(youtube)](https://www.youtube.com/watch?v=ol5R7cCJp1I) [(bilibili)](https://www.bilibili.com/video/BV15e411q7LH/)
-
-## Past workshops
-
-  - Fall 2022 Date: 9/9, 9/16, 9/23, 9/30, 10/7, 10/14, 10/21. - Time: 10am-11am (EST) Friday
-  - Spring 2022, 4-5 pm (EST) Friday - wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)
-
-## CMU Practicum Course
-
-*CMU BME Students interested in taking practicum course. Please send CV to Frank Yeh.*
-Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.
-
-  - Prerequisites: Background in general neuroscience (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)
-  - Goal:
-    - understand diffusion MRI methods
-    - learn how to use a tractography software tool
-    - receive hands-on experiences in analyzing dMRI data.
+<section class="start">
+  <div>
+    <h2>Next workshop</h2>
+    <p>We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.</p>
+  </div>
+  <div class="opts">
+    <a href="https://dsi-studio.labsolver.org">DSI Studio<small>documentation</small></a>
+    <a href="https://brain.labsolver.org">Fiber Data Hub<small>datasets</small></a>
+    <a href="https://groups.google.com/g/dsi-studio">Forum<small>questions</small></a>
+  </div>
+</section>
