@@ -2,50 +2,228 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-    {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% include google_network_domain.html %}
-    {% endif %}
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
   </head>
   <body>
-    <button class="menu-toggle" onclick="toggleHeader()">☰ Menu</button>
-
-    <header class="page-header" role="banner">
-      <h2>2025 DSI Studio Workshop</h2>
-      <h3><a href="gui_cli.html">WK1 Tools & Data Hub </a></h3>
-      <h3><a href="mpipeline.html">WK2 Acquisition & Pipeline</a></h3>
-      <h3><a href="tracking.html">WK3 Tractography & Connectomics</a></h3>
-      <h3><a href="dT_cT.html">WK4 Differential & Correlational Tractography</a></h3>
-      <h2>2022 Fiber Tractography Lab Practicum</h2>
-      <h3><a href="anat.html">WK1 DSI Studio Basics </a></h3>
-      <h3><a href="wmt.html">WK2 White Matter Tracts </a></h3>
-      <h3><a href="roi_tracking.html">WK3 Fiber Tracking</a></h3>
-      <h3><a href="dwi.html">WK4 Diffusion MRI Basics </a></h3>
-      <h3><a href="metrics.html">WK5 Diffusion Models and Metrics</a></h3>
-      <h3><a href="dT.html">WK6 Differential Tractography</a></h3>
-      <h3><a href="ct.html">WK7 Correlational Tractography</a></h3>
-      <br>
-      <h2>Contact</h2>
-      <p>Fang-Cheng (Frank) Yeh<br>E-mail: frank.yeh@pitt.edu</p>
-      <p><a href="https://github.com/frankyeh/Practicum/">.</a></p>
+    <a class="skip-link" href="#content">Skip to main content</a>
+{%- assign is_home = false -%}
+{%- if page.layout == 'home' or page.url == '/' or page.url == '/index.html' -%}
+  {%- assign is_home = true -%}
+{%- endif -%}
+{%- assign is_doc = false -%}
+{%- if is_home == false -%}
+  {%- assign is_doc = true -%}
+{%- endif -%}
+{%- assign prev_item = nil -%}
+{%- assign next_item = nil -%}
+{%- assign last_seen = nil -%}
+{%- assign found_cur = false -%}
+{%- assign cur_group = '2025 Workshop' -%}
+{%- assign cur_nav_title = page.title -%}
+{%- if is_doc -%}
+  {%- for group in site.data.docs -%}
+    {%- for item in group.items -%}
+      {%- if found_cur and next_item == nil -%}
+        {%- assign next_item = item -%}
+      {%- endif -%}
+      {%- if item.url == page.url -%}
+        {%- assign cur_group = group.group -%}
+        {%- assign cur_nav_title = item.title -%}
+        {%- assign prev_item = last_seen -%}
+        {%- assign found_cur = true -%}
+      {%- endif -%}
+      {%- assign last_seen = item -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endif -%}
+    <header class="topbar">
+      <div class="dec"></div>
+      <div class="bar">
+        <a class="brand" href="/"><span class="brandtxt">DSI Studio <span style="color:#5b616e">Workshop</span></span></a>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-dd sup-dd">
+            <a class="nav-item{% if cur_group == '2025 Workshop' and is_doc %} on{% endif %}" id="wk25" href="/gui_cli.html">2025 Workshop<span class="caret">▾</span></a>
+            <div class="sup-menu" id="wk25-menu" style="min-width:260px">
+              {%- for item in site.data.docs[0].items -%}
+              <a href="{{ item.url }}"{% if item.url == page.url %} class="cur"{% endif %}>{{ item.title }}</a>
+              {%- endfor -%}
+            </div>
+          </div>
+          <div class="nav-dd sup-dd">
+            <a class="nav-item{% if cur_group == '2022 Practicum' and is_doc %} on{% endif %}" id="wk22" href="/anat.html">2022 Practicum<span class="caret">▾</span></a>
+            <div class="sup-menu" id="wk22-menu" style="min-width:260px">
+              {%- for item in site.data.docs[1].items -%}
+              <a href="{{ item.url }}"{% if item.url == page.url %} class="cur"{% endif %}>{{ item.title }}</a>
+              {%- endfor -%}
+            </div>
+          </div>
+          <a href="/#2025-dsi-studio-workshop">Recordings</a>
+          <a href="/#materials">Materials</a>
+          <a href="/#cmu-practicum-course">CMU Course</a>
+        </nav>
+        <a class="cta" href="https://dsi-studio.labsolver.org">DSI Studio ↗</a>
+        <a class="burger" id="burger" href="#sheet" aria-label="Menu">☰</a>
+      </div>
     </header>
-
-    <main id="content" class="main-content markdown-body" role="main">
-      {{ content }}
-      <footer class="site-footer">
-      </footer>
-    </main>
-
+    <nav class="sheet" id="sheet" aria-label="Mobile">
+      <details open>
+        <summary>2025 Workshop</summary>
+        {%- for item in site.data.docs[0].items -%}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {%- endfor -%}
+      </details>
+      <details>
+        <summary>2022 Practicum</summary>
+        {%- for item in site.data.docs[1].items -%}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {%- endfor -%}
+      </details>
+      <a class="cta" href="https://dsi-studio.labsolver.org">DSI Studio ↗</a>
+    </nav>
+{%- if is_home -%}
+{{ content }}
+{%- else -%}
+    <div class="doc">
+      <aside class="side" aria-label="Workshop navigation">
+        {%- for group in site.data.docs -%}
+        {%- unless group.extra and cur_group != group.group -%}
+        {%- assign is_open = false -%}
+        {%- if group.group == cur_group -%}
+          {%- assign is_open = true -%}
+        {%- elsif found_cur == false and forloop.first -%}
+          {%- assign is_open = true -%}
+        {%- endif -%}
+        <details{% if is_open %} open{% endif %}>
+          <summary><h6>{{ group.group }} <span class="caret">▾</span></h6></summary>
+          {%- for item in group.items -%}
+          <a href="{{ item.url }}"{% if item.url == page.url %} class="cur" aria-current="page"{% endif %}>{{ item.title }}</a>
+          {%- endfor -%}
+        </details>
+        {%- endunless -%}
+        {%- endfor -%}
+      </aside>
+      <article id="content">
+        <a class="section-chip" id="section-chip" href="#sheet"><span>{{ cur_group }} › <b>{{ cur_nav_title }}</b></span><span>▾</span></a>
+        <div class="crumbs">Workshop › {{ cur_group }}</div>
+        {{ content }}
+        <div class="pager">
+          {%- if prev_item -%}
+          <a href="{{ prev_item.url }}"><small>← Previous</small>{{ prev_item.title }}</a>
+          {%- else -%}
+          <span></span>
+          {%- endif -%}
+          {%- if next_item -%}
+          <a href="{{ next_item.url }}"><small>Next →</small>{{ next_item.title }}</a>
+          {%- else -%}
+          <span></span>
+          {%- endif -%}
+        </div>
+      </article>
+      <aside class="toc" id="doc-toc" aria-label="On this page"></aside>
+    </div>
+{%- endif -%}
+    <footer class="foot">
+      <div class="foot-in">
+        <div>
+          <h6>Author</h6>
+          <p><b style="color:#16181d">Fang-Cheng (Frank) Yeh</b></p>
+          <p>E-mail: frank.yeh@pitt.edu</p>
+        </div>
+        <div>
+          <h6>2025</h6>
+          <a href="/gui_cli.html">WK1</a>
+          <a href="/mpipeline.html">WK2</a>
+          <a href="/tracking.html">WK3</a>
+          <a href="/dT_cT.html">WK4</a>
+        </div>
+        <div>
+          <h6>2022</h6>
+          <a href="/#2022-practicum">WK1–WK7</a>
+          <a href="/#past-workshops">Past workshops</a>
+        </div>
+        <div>
+          <h6>Links</h6>
+          <a href="https://dsi-studio.labsolver.org">DSI Studio</a>
+          <a href="https://brain.labsolver.org">Fiber Data Hub</a>
+          <a href="https://groups.google.com/g/dsi-studio">Forum</a>
+        </div>
+      </div>
+      <div class="cite">Fiber Tractography Lab Practicum &nbsp;<a class="dot" href="https://github.com/frankyeh/Practicum/">.</a></div>
+    </footer>
     <script>
-    function toggleHeader(){
-      document.querySelector('.page-header').classList.toggle('show');
-    }
+    (function () {
+      var wk25 = document.getElementById("wk25");
+      var m25 = document.getElementById("wk25-menu");
+      var wk22 = document.getElementById("wk22");
+      var m22 = document.getElementById("wk22-menu");
+      var burger = document.getElementById("burger");
+      var chip = document.getElementById("section-chip");
+      var sheet = document.getElementById("sheet");
+
+      if (wk25 && m25) {
+        wk25.addEventListener("click", function (e) {
+          e.preventDefault();
+          if (m22) m22.classList.remove("open");
+          m25.classList.toggle("open");
+        });
+      }
+      if (wk22 && m22) {
+        wk22.addEventListener("click", function (e) {
+          e.preventDefault();
+          if (m25) m25.classList.remove("open");
+          m22.classList.toggle("open");
+        });
+      }
+      function toggleSheet(e) {
+        if (!sheet) return;
+        e.preventDefault();
+        var open = sheet.classList.toggle("open");
+        if (!open && location.hash === "#sheet" && history.replaceState) {
+          history.replaceState(null, "", location.pathname + location.search);
+        }
+      }
+      if (burger) burger.addEventListener("click", toggleSheet);
+      if (chip) chip.addEventListener("click", toggleSheet);
+
+      document.addEventListener("click", function (e) {
+        if (m25 && wk25 && !m25.contains(e.target) && !wk25.contains(e.target)) {
+          m25.classList.remove("open");
+        }
+        if (m22 && wk22 && !m22.contains(e.target) && !wk22.contains(e.target)) {
+          m22.classList.remove("open");
+        }
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          if (m25) m25.classList.remove("open");
+          if (m22) m22.classList.remove("open");
+          if (sheet) sheet.classList.remove("open");
+        }
+      });
+
+      if (location.search.indexOf("menu") !== -1 && sheet) sheet.classList.add("open");
+
+      var toc = document.getElementById("doc-toc");
+      var art = document.querySelector(".doc article");
+      if (toc && art) {
+        var hs = art.querySelectorAll("h2[id]");
+        if (hs.length > 0) {
+          var h6 = document.createElement("h6");
+          h6.style.cssText = "margin:0 0 8px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#5b616e";
+          h6.textContent = "On this page";
+          toc.appendChild(h6);
+          for (var i = 0; i < hs.length; i++) {
+            var a = document.createElement("a");
+            a.href = "#" + hs[i].id;
+            a.textContent = hs[i].textContent;
+            if (i === 0) a.className = "cur";
+            toc.appendChild(a);
+          }
+        }
+      }
+    })();
     </script>
   </body>
 </html>

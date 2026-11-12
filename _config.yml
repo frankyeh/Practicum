@@ -1,1 +1,10 @@
-theme: jekyll-theme-minimal
+title: DSI Studio Workshop
+description: Fiber Tractography Lab Practicum and DSI Studio Workshops
+url: https://practicum.labsolver.org
+baseurl: ""
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default

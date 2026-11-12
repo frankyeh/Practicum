@@ -1,3 +1,6 @@
+---
+layout: home
+---
 
 # Fiber Tractography Lab Practicum
 
