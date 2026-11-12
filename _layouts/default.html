@@ -80,6 +80,9 @@
         <a href="{{ item.url }}">{{ item.title }}</a>
         {%- endfor -%}
       </details>
+      <a href="/#2025-dsi-studio-workshop">Recordings</a>
+      <a href="/#materials">Materials</a>
+      <a href="/#cmu-practicum-course">CMU Course</a>
       <a class="cta" href="https://dsi-studio.labsolver.org">DSI Studio ↗</a>
     </nav>
 {%- if is_home -%}
@@ -202,6 +205,13 @@
           if (sheet) sheet.classList.remove("open");
         }
       });
+      if (sheet) {
+        sheet.addEventListener("click", function (e) {
+          if (e.target.tagName === "A" || (e.target.closest && e.target.closest("a"))) {
+            sheet.classList.remove("open");
+          }
+        });
+      }
 
       if (location.search.indexOf("menu") !== -1 && sheet) sheet.classList.add("open");
 
