@@ -71,7 +71,7 @@ title: Fiber Tractography Lab Practicum
       <li>Fall 2022 Date: 9/9, 9/16, 9/23, 9/30, 10/7, 10/14, 10/21. - Time: 10am-11am (EST) Friday</li>
       <li>Spring 2022, 4-5 pm (EST) Friday - wk1 (4/22), wk2 (4/29), wk3 (5/6), wk4 (5/13), wk5 (5/20), wk6 (5/27), wk7 (6/3)</li>
     </ul>
-    <div class="cite-card"><small>Recommended reference</small><a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/toc/10991492/2019/32/4">NMR in Biomedicine: Volume 32, Issue 4, 2019, Special Issue: Diffusion MRI of the brain: The naked truth</a></div>
+    <div class="cite-card"><small>Recommended reference</small><a href="https://doi.org/10.1016/j.neuroimage.2021.118651">Yeh et al. Tractography methods and findings in brain tumors and traumatic brain injury. NeuroImage 245 (2021), 118651.</a></div>
   </div>
   <div class="pair">
     <img src="https://user-images.githubusercontent.com/275569/149856247-7315a680-fda4-417e-9028-6f6552a56ed6.png" alt="Practicum example">
