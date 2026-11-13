@@ -65,10 +65,10 @@
 <img src="https://github.com/user-attachments/assets/1d832a3f-24e4-4f87-b288-85a7ec0b3731" width="800"/>
 
 
-**Example:** 
+**Example:**  
 - GQI + deterministic tracking  
 
-Warning: **Limitations (False Negatives):** 
+Warning: **Limitations (False Negatives):**  
 - May **misinterpret large turns as crossings** → early termination  
 - May **misinterpret sharp crossings as turns** → incorrect continuation  
 
@@ -85,16 +85,16 @@ Warning: **Limitations (False Negatives):**
 <img src="https://github.com/user-attachments/assets/3ff6d865-a7f2-42b2-a28f-ee7fd44f0c4e" width="800"/>
 
 
-**Examples:** 
+**Examples:**  
 - **bedpostx + probtrackx**  
 - **CSD + iFOD2**
 
-Warning: **Limitations (False Positives):** 
+Warning: **Limitations (False Positives):**  
 - May produce **spurious pathways** due to false configurations
 
 <img src="https://github.com/user-attachments/assets/2ff2ee39-1f0e-46a4-b680-c8378e6dc337" width="800"/>
 
- **Histology Reference:** 
+ **Histology Reference:**  
 [Allen Brain Atlas – Parvalbumin Stain](https://www.brainspan.org/ish/experiment/dual_view?id=100147602&imageId=153511337&imageType=ihc:parvalbumin&initImage=ihc:parvalbumin&x=28544&y=39296&z=2)
 
 ---
@@ -114,7 +114,7 @@ Warning: **Limitations (False Positives):**
 ---
 
  **Rule of Thumb**
-- Prefer **whole brain seeding** unless you are confident certain regions should be excluded from the tract 
+- Prefer **whole brain seeding** unless you are confident certain regions should be excluded from the tract  
 - Warning: Avoid using **END** regions too early — test with **ROI** first to make sure the tract reaches the target without premature termination
 
 ---
