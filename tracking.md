@@ -65,7 +65,7 @@
 <img src="https://github.com/user-attachments/assets/1d832a3f-24e4-4f87-b288-85a7ec0b3731" width="800"/>
 
 
-Example: **Example:** 
+**Example:** 
 - GQI + deterministic tracking  
 
 Warning: **Limitations (False Negatives):** 
@@ -85,7 +85,7 @@ Warning: **Limitations (False Negatives):**
 <img src="https://github.com/user-attachments/assets/3ff6d865-a7f2-42b2-a28f-ee7fd44f0c4e" width="800"/>
 
 
-Example: **Examples:** 
+**Examples:** 
 - **bedpostx + probtrackx**  
 - **CSD + iFOD2**
 
