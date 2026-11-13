@@ -32,9 +32,9 @@
 ### Protocol Checklist 1: Sufficient Diffusion Sensitivity
 
 - Use **b-value > 1,000 s/mm²** for human studies
-- Warning: No post-processing can recover low diffusion sensitivity 
+- Warning: No post-processing can recover low diffusion sensitivity  
 
-*Example: HCP-YA dataset* 
+*Example: HCP-YA dataset*  
 b-values: **0, 1000, 2000, 3000 s/mm²**  
 b-vector: **(0, 0, 1)**
 
@@ -47,7 +47,7 @@ b-vector: **(0, 0, 1)**
 - Ensure **slice thickness ≈ in-plane resolution**  
 - If anisotropic, consider **regridding to isotropic** before analysis  
 
-*Example: OpenNeuro ds005849* 
+*Example: OpenNeuro ds005849*  
 In-plane: **1.75 mm**  
 Slice thickness: **2.7 mm** → Warning: Not isotropic
 
@@ -161,8 +161,8 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ### DTI: 
 
-- Warning: *single tensor model cannot handle crossing fibers* 
-- Warning: FA maps are unreliable at **low SNR**, yet often used in fiber tracking. 
+- Warning: *single tensor model cannot handle crossing fibers*  
+- Warning: FA maps are unreliable at **low SNR**, yet often used in fiber tracking.  
 - still effective when paired with sufficient spatial resolution and smoothing
 
 ---
@@ -170,7 +170,7 @@ other corrections (less important): noise reduction, bias field correction, gibb
 ### GQI / QSDR: 
 
 - Warning: *Limited power for resolving complex crossing fibers*
-- Warning: sensitive to *b1 inhomogniety* 
+- Warning: sensitive to *b1 inhomogniety*  
 - main advantage: Provides a **robust anisotropy index** (QA) to guide fiber tracking
 
 ---
@@ -190,7 +190,7 @@ source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of w
 
 ---
 
-## Session 5: GUI-based Batch Processing (10 minutes) 
+## Session 5: GUI-based Batch Processing (10 minutes)   
    
 - NIFTI/bids [OpenNeuro ds001378 (SCA2)](https://openneuro.org/datasets/ds001378/)
 
