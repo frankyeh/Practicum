@@ -19,7 +19,7 @@ Adds an additional **termination criterion**:
 
 ### Hands-On Exercises
 
-**Example Dataset:** 
+**Example Dataset:**  
 - [OpenNeuro (disease)][ds001378] SCA2 study
 
 #### Longitudinal Analysis
@@ -60,14 +60,14 @@ Aggregate metrics (e.g., FA, QA) from: QSDR reconstructed files (`*.qsdr.fz`)
 
 ### Analysis Types
 
-#### Cross-Sectional Analysis 
+#### Cross-Sectional Analysis  
 - Correlate diffusion metrics with variables across subjects
 - FDR v.s. tract length
 
-#### Longitudinal Analysis 
+#### Longitudinal Analysis  
 
 - Changes in patients using unfiltered changes
 - Changes in patients versus healthy control using filtered changes
 
-#### Post-hoc Analysis 
+#### Post-hoc Analysis  
 - Segment tracts and compute associated values
