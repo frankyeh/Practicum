@@ -1,4 +1,4 @@
-## 🧭 Workshop Week 2 Outline
+## Workshop Week 2 Outline
 
 1. **Diffusion MRI Protocol**
    - Best practices and recommendations for diffusion MRI protocol
@@ -13,12 +13,12 @@
 
 ---
 
-## 🧭 Session 1: DSI Studio Pipeline (10 minutes)
+## Session 1: DSI Studio Pipeline (10 minutes)
 
 <img src="https://github.com/user-attachments/assets/9afac513-ccbd-419c-9d79-4b7dd9458294" width="800"/>
 
 
-## 🖐️ Hands-On Practice
+## Hands-On Practice
 
 ### NIFTI/bids [OpenNeuro ds002087](https://openneuro.org/datasets/ds002087): datasets with and without deliberate head movements for detection and imputation of dropout in diffusion MRI
    1. Convert NIFTI to SRC
@@ -26,15 +26,15 @@
       
 ---
 
-## 🧭 Session 2: Diffusion MRI Protocol (10 minutes)
+## Session 2: Diffusion MRI Protocol (10 minutes)
 
 
-### ✅ Protocol Checklist 1: Sufficient Diffusion Sensitivity
+### Protocol Checklist 1: Sufficient Diffusion Sensitivity
 
 - Use **b-value > 1,000 s/mm²** for human studies
-- ⚠️ No post-processing can recover low diffusion sensitivity  
+- Warning: No post-processing can recover low diffusion sensitivity 
 
-📌 *Example: HCP-YA dataset*  
+Example: *Example: HCP-YA dataset* 
 b-values: **0, 1000, 2000, 3000 s/mm²**  
 b-vector: **(0, 0, 1)**
 
@@ -42,26 +42,26 @@ b-vector: **(0, 0, 1)**
 
 ---
 
-### ✅ Protocol Checklist 2: Isotropic Resolution
+### Protocol Checklist 2: Isotropic Resolution
 
 - Ensure **slice thickness ≈ in-plane resolution**  
 - If anisotropic, consider **regridding to isotropic** before analysis  
 
-📌 *Example: OpenNeuro ds005849*  
+Example: *Example: OpenNeuro ds005849* 
 In-plane: **1.75 mm**  
-Slice thickness: **2.7 mm** → ⚠️ Not isotropic
+Slice thickness: **2.7 mm** → Warning: Not isotropic
 
 <img src="https://github.com/user-attachments/assets/df8847c7-a585-4aa1-88e6-32e8d0e1ba70" width="400"/>
 
 ---
 
-### ✅ Protocol Checklist 3: Reverse-Phase b0 Image
+### Protocol Checklist 3: Reverse-Phase b0 Image
 
 - Used to **correct susceptibility distortions**, especially in frontal and temporal lobes  
 - Some tools allow T1w-based correction, but **b0 pairs are preferred**  
 - **Sequence-based** corrections (e.g., readout segmentation) are also available  
 
-📌 *Source: [FSL Topup User Guide](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup(2f)TopupUsersGuide.html)*
+Example: *Source: [FSL Topup User Guide](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup(2f)TopupUsersGuide.html)*
 
 **Before Correction**  
 (Phase encoding: AP, AP, PA, PA)  
@@ -72,7 +72,7 @@ Slice thickness: **2.7 mm** → ⚠️ Not isotropic
 
 ---
 
-### ✅ Protocol Checklist 4: Multiple b-values
+### Protocol Checklist 4: Multiple b-values
 
 **Multi-shell scheme (HCP-like)**
 
@@ -88,7 +88,7 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 
 ---
 
-## 🧭 Session 3: Diffusion MRI Preprocessing (15 minutes)
+## Session 3: Diffusion MRI Preprocessing (15 minutes)
 
 ### Quality Issues in Diffusion MRI
 
@@ -103,9 +103,9 @@ Optimized for q-space sampling and advanced reconstruction (e.g., DSI, GQI)
 
 other corrections (less important): noise reduction, bias field correction, gibbs ringing correction
 
-### 🛠️ Tools for Corrections
+### Tools for Corrections
 
-**Popular Tools:**  ✅ FSL • ✅ MRtrix3 • ✅ QSIPrep • ✅ DIPY • ✅ DSI Studio
+**Popular Tools:** FSL • MRtrix3 • QSIPrep • DIPY • DSI Studio
 
 - [FSL's topup](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup.html): corrects **nonlinear distortion** caused by susceptibility  
 - [FSL's eddy](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/eddy(2f)UsersGuide.html): corrects **linear distortion** from eddy currents & subject motion  
@@ -113,7 +113,7 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ---
 
-## 🖐️ Hands-On Practice
+## Hands-On Practice
 
 ### Identify issues on [OpenNeuro ds002087] and correct it
 
@@ -125,7 +125,7 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ---
 
-### 🧩 Preprocessing Options
+### Preprocessing Options
 
 1. **FSL's `topup + eddy`** → most comprehensive  
 2. **FSL's `eddy` only** → for datasets lacking reverse-phase b0  
@@ -133,7 +133,7 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ---
 
-## 🖐️ Hands-On Practice
+## Hands-On Practice
 
 ### Compare correction results using Quality Control
 
@@ -143,7 +143,7 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ---
 
-## 🧭 Session 4: Diffusion Modeling Methods (15 minutes)
+## Session 4: Diffusion Modeling Methods (15 minutes)
 
 ---
 
@@ -153,25 +153,25 @@ other corrections (less important): noise reduction, bias field correction, gibb
 
 ---
 
-## 🖐️ Hands-On Practice
+## Hands-On Practice
 
 ### Reconstruct DTI and GQI data and compare FA and QA
 
 ---
 
-### 🧰 DTI: 
+### DTI: 
 
-- ⚠️ *single tensor model cannot handle crossing fibers*  
-- ⚠️ FA maps are unreliable at **low SNR**, yet often used in fiber tracking.  
-- ✅ still effective when paired with sufficient spatial resolution and smoothing
+- Warning: *single tensor model cannot handle crossing fibers* 
+- Warning: FA maps are unreliable at **low SNR**, yet often used in fiber tracking. 
+- still effective when paired with sufficient spatial resolution and smoothing
 
 ---
 
-### 🧰 GQI / QSDR: 
+### GQI / QSDR: 
 
-- ⚠️ *Limited power for resolving complex crossing fibers*
-- ⚠️ sensitive to *b1 inhomogniety*  
-- ✅ main advantage: Provides a **robust anisotropy index** (QA) to guide fiber tracking
+- Warning: *Limited power for resolving complex crossing fibers*
+- Warning: sensitive to *b1 inhomogniety* 
+- main advantage: Provides a **robust anisotropy index** (QA) to guide fiber tracking
 
 ---
 
@@ -190,7 +190,7 @@ source: Kjer, Hans Martin, et al. "Bridging the 3D geometrical organisation of w
 
 ---
 
-## 🧭 Session 5: GUI-based Batch Processing (10 minutes)   
+## Session 5: GUI-based Batch Processing (10 minutes) 
    
 - NIFTI/bids [OpenNeuro ds001378 (SCA2)](https://openneuro.org/datasets/ds001378/)
 
