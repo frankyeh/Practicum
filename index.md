@@ -50,37 +50,6 @@ title: Fiber Tractography Lab Practicum
   </section>
 </section>
 
-<section class="doors" id="materials">
-  <div class="door">
-    <h3>Materials</h3>
-    <p>Sample data and handouts used in the sessions.</p>
-    <ul>
-      <li><a href="/Materials/100206_qa.nii.gz">100206_qa.nii.gz</a></li>
-      <li><a href="/Materials/HM1.pdf">HM1.pdf</a></li>
-      <li><a href="/Materials/Region%20Manual%20v2_0_1_1.pdf">Region Manual v2.0</a></li>
-      <li><a href="/Materials/paper/review.pdf">Papers →</a></li>
-    </ul>
-  </div>
-  <div class="door">
-    <h3>CMU practicum course</h3>
-    <p>For CMU BME students: send a CV to Frank Yeh.</p>
-    <ul>
-      <li><a href="#cmu-practicum-course">Prerequisites</a></li>
-      <li><a href="#cmu-practicum-course">Goals</a></li>
-      <li><a href="#past-workshops">Past workshops</a></li>
-    </ul>
-  </div>
-  <div class="door">
-    <h3>Keep learning</h3>
-    <p>Documentation and data for after the workshop.</p>
-    <ul>
-      <li><a href="https://dsi-studio.labsolver.org/doc/how_to_acquire_dmri.html">DSI Studio documentation</a></li>
-      <li><a href="https://brain.labsolver.org">Fiber Data Hub</a></li>
-      <li><a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/toc/10991492/2019/32/4">Recommended reading (NMR Biomed 2019)</a></li>
-    </ul>
-  </div>
-</section>
-
 <section class="split">
   <div><img src="https://github.com/user-attachments/assets/976249ba-5190-43d0-8ce0-fad3d9cab29a" alt="2025 participant demographics"></div>
   <div>
