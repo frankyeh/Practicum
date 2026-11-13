@@ -121,11 +121,11 @@ Warning: **Limitations (False Positives):**
 
 ### Common Use Cases
 
-#### Example: **To find connections of a single region:**
+#### **To find connections of a single region:**
 - One **ROI** + whole brain seeding  
 - One **ROI** + **dilated tract coordinates** used as Seed + Limiting  
 
-#### Example: **To find connections between two regions:**
+#### **To find connections between two regions:**
 - Two **ROIs** + whole brain seeding  
 - Two **ROIs** + **dilated tract coordinates** as Seed + Limiting  
 - One **ROI** + one **END** + **dilated tract coordinates** as Seed + Limiting  
