@@ -10,7 +10,6 @@ title: Fiber Tractography Lab Practicum
     <div class="btns">
       <a class="btn primary" href="/gui_cli.html">Start 2025 Week 1</a>
       <a class="btn" href="#2025-workshop">All recordings</a>
-      <a class="btn" href="#cmu-practicum-course">CMU practicum</a>
     </div>
     <div class="release">2025: Fridays, April 4–25 · 10–11 AM EST · DSI Studio "Hou"</div>
   </div>
@@ -77,25 +76,6 @@ title: Fiber Tractography Lab Practicum
   <div class="pair">
     <img src="https://user-images.githubusercontent.com/275569/149856247-7315a680-fda4-417e-9028-6f6552a56ed6.png" alt="Practicum example">
     <img src="https://user-images.githubusercontent.com/275569/149856299-a2277a1a-8d6b-41ad-a6e8-f81f4dba0344.png" alt="Practicum example">
-  </div>
-</section>
-
-<section class="split">
-  <div>
-    <h2 id="cmu-practicum-course">CMU Practicum Course</h2>
-    <p><em>CMU BME Students interested in taking practicum course. Please send CV to Frank Yeh.</em></p>
-    <p>Diffusion MRI has arisen as the only non-invasive way to map fiber bundles and assess their structural integrity in the human brain. Mapping fiber bundles of the human brain and understanding their architecture is one of the largest research efforts in modern neuroscience. The fiber trajectories in the human brain define the essential wiring diagram of all brain connections and inform the basis of all brain function and etiology of many dysfunctions.</p>
-  </div>
-  <div>
-    <ul>
-      <li>Prerequisites: Background in general neuroscience (e.g. psychology, psychiatry, neuroscience, neuroimaging…etc.)</li>
-      <li>Goal:<ul>
-          <li>understand diffusion MRI methods</li>
-          <li>learn how to use a tractography software tool</li>
-          <li>receive hands-on experiences in analyzing dMRI data.</li>
-        </ul>
-      </li>
-    </ul>
   </div>
 </section>
 
