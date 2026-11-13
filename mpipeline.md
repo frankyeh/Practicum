@@ -34,7 +34,7 @@
 - Use **b-value > 1,000 s/mm²** for human studies
 - Warning: No post-processing can recover low diffusion sensitivity 
 
-Example: *Example: HCP-YA dataset* 
+*Example: HCP-YA dataset* 
 b-values: **0, 1000, 2000, 3000 s/mm²**  
 b-vector: **(0, 0, 1)**
 
@@ -47,7 +47,7 @@ b-vector: **(0, 0, 1)**
 - Ensure **slice thickness ≈ in-plane resolution**  
 - If anisotropic, consider **regridding to isotropic** before analysis  
 
-Example: *Example: OpenNeuro ds005849* 
+*Example: OpenNeuro ds005849* 
 In-plane: **1.75 mm**  
 Slice thickness: **2.7 mm** → Warning: Not isotropic
 
