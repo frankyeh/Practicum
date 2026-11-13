@@ -19,7 +19,7 @@ Adds an additional **termination criterion**:
 
 ### Hands-On Exercises
 
- **Example Dataset:** 
+**Example Dataset:** 
 - [OpenNeuro (disease)][ds001378] SCA2 study
 
 #### Longitudinal Analysis
@@ -52,7 +52,7 @@ Identifies fiber tracts that **correlate with a variable or condition**
 
 Aggregate metrics (e.g., FA, QA) from: QSDR reconstructed files (`*.qsdr.fz`)  
 
-Example: **Example Dataset:** SCA2 study
+**Example Dataset:** SCA2 study
 
 ---
 
