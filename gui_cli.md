@@ -98,7 +98,7 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 <img src="https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461" width="600"/>
 
- Raw images (DICOM, NIFTI, etc.) → .sz file (DWI signals + bval/bvec) → .fz files ( fiber orientations + anisotropy) → .tt.gz ( tractography) 
+Raw images (DICOM, NIFTI, etc.) → .sz file (DWI signals + bval/bvec) → .fz files ( fiber orientations + anisotropy) → .tt.gz ( tractography) 
 
 File Formats:
 
