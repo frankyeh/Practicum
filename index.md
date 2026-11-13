@@ -11,22 +11,12 @@ title: Fiber Tractography Lab Practicum
       <a class="btn primary" href="/gui_cli.html">Start 2025 Week 1</a>
       <a class="btn" href="#2025-workshop">All recordings</a>
     </div>
-    <div class="release">2025: Fridays, April 4–25 · 10–11 AM EST · DSI Studio "Hou"</div>
-  </div>
-  <div class="panel">
-    <h6>2025 DSI Studio Workshop</h6>
-    <div class="row"><span>Week 1 · <b>Tools &amp; Data Hub</b></span><a href="https://youtu.be/BHsJ2hqqNic">▶ watch</a></div>
-    <div class="row"><span>Week 2 · <b>Acquisition &amp; Pipeline</b></span><a href="https://youtu.be/Sn2eH07axF4">▶ watch</a></div>
-    <div class="row"><span>Week 3 · <b>Tractography &amp; Connectomics</b></span><a href="https://youtu.be/xyFNXB9nJ90">▶ watch</a></div>
-    <div class="row"><span>Week 4 · <b>Differential &amp; Correlational</b></span><a href="https://youtu.be/Eeyq06TFNn8">▶ watch</a></div>
-    <div class="row"><span>152 participants: faculty, postdocs, scientists, RAs, students</span></div>
   </div>
 </section>
 
 <section class="block" id="2025-dsi-studio-workshop">
   <h2 class="sec" id="2025-workshop">2025 DSI Studio Workshop</h2>
-  <p class="sub">Introduction to DSI Studio "Hou" version · four Friday sessions</p>
-  <p class="facts"><b>Instructor:</b> Fang-Cheng (Frank) Yeh · <b>Schedule:</b> Fridays, April 4, 11, 18, 25 10:00 AM – 11:00 AM EST · <b>Main topic:</b> Introduction to DSI Studio "Hou" version</p>
+  <p class="sub">Introduction to DSI Studio "Hou" version · Fridays, April 4, 11, 18, 25 (10:00–11:00 AM EST)</p>
   <section class="weeks">
     <div class="wk"><small>WEEK 1</small><h3><a href="/gui_cli.html" style="color:#16181d">Tools &amp; Data Hub</a></h3><div class="media"><a href="https://youtu.be/BHsJ2hqqNic"><img src="/assets/icons/youtube.svg" alt="" width="17" height="17">YouTube</a><a href="https://www.bilibili.com/video/BV1eKRDYVEEk/"><img src="/assets/icons/bilibili.svg" alt="" width="17" height="17">Bilibili</a></div></div>
     <div class="wk"><small>WEEK 2</small><h3><a href="/mpipeline.html" style="color:#16181d">Acquisition &amp; Pipeline</a></h3><div class="media"><a href="https://youtu.be/Sn2eH07axF4"><img src="/assets/icons/youtube.svg" alt="" width="17" height="17">YouTube</a><a href="https://www.bilibili.com/video/BV1z1dQYbEXF/"><img src="/assets/icons/bilibili.svg" alt="" width="17" height="17">Bilibili</a></div></div>
@@ -53,7 +43,7 @@ title: Fiber Tractography Lab Practicum
   <div><img src="https://github.com/user-attachments/assets/976249ba-5190-43d0-8ce0-fad3d9cab29a" alt="2025 participant demographics"></div>
   <div>
     <h2>Participant Demographics</h2>
-    <p>2025 DSI Studio Workshop</p>
+    <p>2025 DSI Studio Workshop · 152 participants</p>
     <ul>
       <li>Faculty 27</li>
       <li>Post-doctoral Researcher 25</li>
@@ -76,17 +66,5 @@ title: Fiber Tractography Lab Practicum
   <div class="pair">
     <img src="https://user-images.githubusercontent.com/275569/149856247-7315a680-fda4-417e-9028-6f6552a56ed6.png" alt="Practicum example">
     <img src="https://user-images.githubusercontent.com/275569/149856299-a2277a1a-8d6b-41ad-a6e8-f81f4dba0344.png" alt="Practicum example">
-  </div>
-</section>
-
-<section class="start">
-  <div>
-    <h2>Next workshop</h2>
-    <p>We regularly host DSI Studio training throughout the year. Future workshops will be announced in this page.</p>
-  </div>
-  <div class="opts">
-    <a href="https://dsi-studio.labsolver.org">DSI Studio<small>documentation</small></a>
-    <a href="https://brain.labsolver.org">Fiber Data Hub<small>datasets</small></a>
-    <a href="https://groups.google.com/g/dsi-studio">Forum<small>questions</small></a>
   </div>
 </section>
