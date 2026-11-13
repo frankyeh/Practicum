@@ -34,16 +34,16 @@ DSI Studio is built for simplicity, transparency, and accessibility—providing 
 
 ## 1.1 Design Paradigm
 
-• Minimal Preprocessing 
+• Minimal Preprocessing  
 DSI Studio follows a minimalist preprocessing philosophy, using only essential steps like FSL’s **TOPUP** and **eddy**. 
 
-• Diffusion Models 
+• Diffusion Models  
 The software supports models including **DTI**, **GQI**, and **QSDR**.
 
-• Actively Maintained and User-Driven 
+• Actively Maintained and User-Driven  
 Frequent updates reflect direct user feedback through the public forum. Most new features are developed in response to real research needs.
 
-• Concept-driven Methods 
+• Concept-driven Methods  
 DSI Studio introduces concept-driven methods such as tract-to-region connectome, differential tractography, and correlational tractography.  
 
 ## 1.2 Community Support
@@ -98,7 +98,7 @@ Prebuilt containers are available. Just download and run for consistent and port
 
 <img src="https://github.com/user-attachments/assets/091b5dcd-093b-4a9c-a0d8-85c9c350a461" width="600"/>
 
-Raw images (DICOM, NIFTI, etc.) → .sz file (DWI signals + bval/bvec) → .fz files ( fiber orientations + anisotropy) → .tt.gz ( tractography) 
+Raw images (DICOM, NIFTI, etc.) → .sz file (DWI signals + bval/bvec) → .fz files ( fiber orientations + anisotropy) → .tt.gz ( tractography)
 
 File Formats:
 
