@@ -61,7 +61,7 @@ Slice thickness: **2.7 mm** → Warning: Not isotropic
 - Some tools allow T1w-based correction, but **b0 pairs are preferred**  
 - **Sequence-based** corrections (e.g., readout segmentation) are also available  
 
-Example: *Source: [FSL Topup User Guide](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup(2f)TopupUsersGuide.html)*
+*Source: [FSL Topup User Guide](https://web.mit.edu/fsl_v5.0.10/fsl/doc/wiki/topup(2f)TopupUsersGuide.html)*
 
 **Before Correction**  
 (Phase encoding: AP, AP, PA, PA)  
